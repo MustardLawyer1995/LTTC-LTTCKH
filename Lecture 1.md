@@ -11,3 +11,38 @@ Gọi ${a_i},{b_i},{c_i}|\forall i = \overline {0,1,2,...}$ lần lượt là c�
 {c_1} = 2{a_1} - {c_0} = 2\left( {2{b_0} - {a_0}} \right) - {c_0} =  - 2{a_0} + 4{b_0} - {c_0}
 \end{array} \right.
 ```
+Khi ấy ta có hệ phương trình tổng quát tương ứng là: 
+```math
+\left\{ \begin{array}{l}
+{a_{n + 1}} = 2{b_n} - {a_n}\\
+{b_{n + 1}} = 2{c_n} - {b_n}\\
+{c_{n + 1}} =  - 2{a_n} + 4{b_n} - {c_n}
+\end{array} \right.,\forall n = \overline {0,1,2,...} 
+```
+Tiếp đến ta chuyển về hệ ma trận như sau; Với ${X_{x + 1}} = M{X_n}$ ta có hệ ma trận tương ứng là: 
+```math
+M = {\left[ {\begin{array}{*{20}{c}}
+{ - 1}&2&0\\
+0&{ - 1}&2\\
+{ - 2}&4&{ - 1}
+\end{array}} \right]^n},{X_n} = \left[ {\begin{array}{*{20}{c}}
+{{a_n}}\\
+{{b_n}}\\
+{{c_n}}
+\end{array}} \right]$
+```
+với ma trận $M$ có cùng hệ số là: 
+```math
+\left\{ \begin{array}{l}
+{X_{x + 1}} = {M^n}{X_0}\\
+M = {\left[ {\begin{array}{*{20}{c}}
+{ - 1}&2&0\\
+0&{ - 1}&2\\
+{ - 2}&4&{ - 1}
+\end{array}} \right]^n},{X_0} = \left[ {\begin{array}{*{20}{c}}
+{{a_0}}\\
+{{b_0}}\\
+{{c_0}}
+\end{array}} \right]
+\end{array} \right.$
+```
