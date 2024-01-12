@@ -29,7 +29,7 @@ M = {\left[ {\begin{array}{*{20}{c}}
 {{a_n}}\\
 {{b_n}}\\
 {{c_n}}
-\end{array}} \right]$
+\end{array}} \right]$ \với ma trận $M$ có cùng hệ số là: 
 ```
 với ma trận $M$ có cùng hệ số là: 
 ```math
