@@ -20,10 +20,6 @@ Khi ấy ta có hệ phương trình tổng quát tương ứng là:
 \end{array} \right.,\forall n = \overline {0,1,2,...} 
 ```
 Tiếp đến ta chuyển về hệ ma trận như sau; Với ${X_{x + 1}} = M{X_n}$ ta có hệ ma trận tương ứng là: 
-Dòng mới nè  
-Dòng 2 nè  <br>
-Dòng 3 nè  
-Dòng 4
 ```math
 M = {\left[ {\begin{array}{*{20}{c}}
 { - 1}&2&0\\
@@ -33,7 +29,7 @@ M = {\left[ {\begin{array}{*{20}{c}}
 {{a_n}}\\
 {{b_n}}\\
 {{c_n}}
-\end{array}} \right]$ \với ma trận $M$ có cùng hệ số là:
+\end{array}} \right]$ 
 ```
 với ma trận $M$ có cùng hệ số là: 
 ```math
