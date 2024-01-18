@@ -73,10 +73,9 @@ M = {\left[ {\begin{array}{*{20}{c}}
 {\left( {{a_{11}}{a_{22}}{a_{33}} + {a_{12}}{a_{23}}{a_{31}} + {a_{13}}{a_{21}}{a_{32}}} \right) - }\\
 {\left( {{a_{11}}{a_{23}}{a_{32}} + {a_{12}}{a_{21}}{a_{33}} + {a_{13}}{a_{22}}{a_{31}}} \right)}
 \end{array}} \right\}$
-     <code>
+     </code>
      </br>
      <li>
- 
      </li>      
 $$
  =  - {\lambda ^3} - 3{\lambda ^2} + 5\lambda  - 1 + \left( {\lambda  - 1\,} \right)\left( {{\lambda ^2} + 4\lambda  - 1} \right) = 0 \Leftrightarrow \left[ \begin{array}{l}
