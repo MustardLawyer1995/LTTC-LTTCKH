@@ -50,13 +50,13 @@ M = {\left[ {\begin{array}{*{20}{c}}
 - Trước hết ta điểm từng bước như sau:
    - <ins>Bước 1:</ins> Giá trị riêng của $\lambda$ : ta có: $\left( {A - \lambda I} \right)v = 0$ khi và chỉ khi $\det \left( {A - \lambda I} \right) = 0$
    - <ins>Bước 2:</ins> Nhắc lại sơ về khái niệm nghịch thế
-     - Cho tập $S ={1;2;3;...;n }$ với $n!$ hoán vị.
+     - Cho tập $\{$ $S ={1;2;3;...;n }$ với $n!$ hoán vị.
      - Xét các hoán vị ${ j_{1};j_{2};...;j_{n} }$ nghịch thế là cặp ${j_a} > {j_b}$ với $a < b$ .
      - Diễn đạt thay thế: phần tử đứng trước luôn “lắn” hơn phần tử đứng sau.
      - Ví dụ: $(3,1,2)$ có nghịch thế lần lượt là $(3;1)$ và $(3;2)$ . 
      - Kí hiệu nghịch thế: $N = { j_{1},j_{2},...,j_{n} }$ là một số nghịch thế.
    - <ins>Bước 3:</ins> Tính định thức ma trận $M$ và các giá trị riêng
-     - Aheh     
+     - Aheh
 
 
 
