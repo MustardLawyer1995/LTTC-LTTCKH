@@ -11,15 +11,15 @@ Gọi ${a_i},{b_i},{c_i}|\forall i = \overline {0,1,2,...}$ lần lượt là c�
 {c_1} = 2{a_1} - {c_0} = 2\left( {2{b_0} - {a_0}} \right) - {c_0} =  - 2{a_0} + 4{b_0} - {c_0}
 \end{array} \right.
 ```
-Khi ấy ta có hệ phương trình tổng quát tương ứng là: 
+- Khi ấy ta có hệ phương trình tổng quát tương ứng là: 
 ```math
 \left\{ \begin{array}{l}
 {a_{n + 1}} = 2{b_n} - {a_n}\\
 {b_{n + 1}} = 2{c_n} - {b_n}\\
 {c_{n + 1}} =  - 2{a_n} + 4{b_n} - {c_n}
-\end{array} \right.,\forall n = \overline {0,1,2,...} 
+\end{array} \right.,\forall n = \overline {0,1,2,...}
 ```
-Tiếp đến ta chuyển về hệ ma trận như sau; Với ${X_{x + 1}} = M{X_n}$ ta có hệ ma trận tương ứng là: 
+- Tiếp đến ta chuyển về hệ ma trận như sau; Với ${X_{x + 1}} = M{X_n}$ ta có hệ ma trận tương ứng là: 
 ```math
 M = {\left[ {\begin{array}{*{20}{c}}
 { - 1}&2&0\\
@@ -46,3 +46,19 @@ M = {\left[ {\begin{array}{*{20}{c}}
 \end{array}} \right]
 \end{array} \right.$
 ```
+- Kế tiếp ta sẽ tìm lũy thừa bậc $n$ của ma trận $M$ bằng phương pháp chéo hóa ma trận.
+- Trước hết ta điểm từng bước như sau:
+   - <ins>Bước 1:</ins> Giá trị riêng của $\lambda$ : ta có: $\left( {A - \lambda I} \right)v = 0$ khi và chỉ khi $\det \left( {A - \lambda I} \right) = 0$
+   - <ins>Bước 2:</ins> Nhắc lại sơ về khái niệm nghịch thế
+     - Cho tập $S ={1;2;3;...;n }$ với $n!$ hoán vị.
+     - Xét các hoán vị ${ j_{1};j_{2};...;j_{n} }$ nghịch thế là cặp ${j_a} > {j_b}$ với $a < b$ .
+     - Diễn đạt thay thế: phần tử đứng trước luôn “lắn” hơn phần tử đứng sau.
+     - Ví dụ: $(3,1,2)$ có nghịch thế lần lượt là $(3;1)$ và $(3;2)$ . 
+     - Kí hiệu nghịch thế: $N = { j_{1},j_{2},...,j_{n} }$ là một số nghịch thế.
+   - <ins>Bước 3:</ins> Tính định thức ma trận $M$ và các giá trị riêng
+     - Aheh     
+
+
+
+
+
