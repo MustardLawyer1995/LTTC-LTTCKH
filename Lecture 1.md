@@ -109,28 +109,41 @@ $$
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sử dụng phương pháp khử Gauss, ta suy ra:
 
 ```math
-\left[ {\begin{array}{*{20}{c}}
-{ - 2}&2&0&\vline& {{\rm{     }}0}\\
-0&{ - 2}&2&\vline& {{\rm{    }}0}\\
-{ - 2}&4&{ - 2}&\vline& {{\rm{    }}0}
-\end{array}} \right]{\rm{  }}\begin{array}{* {20}{c}}
+\left[
+\begin{array}{ccc|c}
+  -2 & 2 & 0 & 0 \\
+  0 & -2 & 2 & 0 \\
+  -2 & 4 & -2 & 0 \
+\end{array}
+\right]{\rm{  }}\begin{array}{* {20}{c}}
 {/2}\\
 {/2}\\
 {/2 - {R_1}}
-\end{array}{\rm{  }} \sim {\rm{  }}\left[ {\begin{array}{*{20}{c}}
-{ - 1}&1&0&\vline& {{\rm{    }}0}\\
-0&{ - 1}&1&\vline& {{\rm{    }}0}\\
-0&1&{ - 1}&\vline& {{\rm{    }}0}
-\end{array}} \right]{\rm{     +   }}\begin{array}{*{20}{c}}
+\end{array}{\rm{  }} \sim {\rm{  }}\left[
+\begin{array}{ccc|c}
+  -1 & 1 & 0 & 0 \\
+  0 & -1 & 1 & 0 \\
+  0 & 1 & -1 & 0 \
+\end{array}
+\right]{\rm{     +   }}\begin{array}{*{20}{c}}
 { + {R_2}}\\
 {}\\
 { - 2{R_2}}
-\end{array}{\rm{  }} \sim {\rm{  }}\left[ {\begin{array}{*{20}{c}}
-{ - 1}&0&1&\vline& {{\rm{    }}0}\\
-0&{ - 1}&1&\vline& {{\rm{    }}0}\\
-0&0&0&\vline& {{\rm{    }}0}
-\end{array}} \right]
+\end{array}{\rm{  }} \sim {\rm{  }}\left[
+\begin{array}{ccc|c}
+  -1 & 0 & 1 & 0 \\
+  0 & -1 & 1 & 0 \\
+  0 & 0 & 0 & 0 \
+\end{array}
+\right]
 ```
-
-   </p>
-    
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sau khi quy về dạng ma trận bậc thang ta có hệ sau: 
+```math
+\left\{ \begin{array}{l}
+ - {x_1} + {x_3} = 0\\
+ - {x_2} + {x_3} = 0
+\end{array} \right. \Leftrightarrow \left\{ \begin{array}{l}
+{x_1} = {x_3}\\
+{x_2} = {x_3}
+\end{array} \right.
+```
