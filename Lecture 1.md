@@ -88,18 +88,22 @@ M = {\left[ {\begin{array}{*{20}{c}}
     Thật vậy, giả sử tồn tại $k$ sao cho ${A^k} = {\left( {PD{P^{ - 1}}} \right)^k} = P{D^k}{P^{ - 1}}$ <br>
     Khi đó, tại $k+1$ , ta có: ${\left( {PD{P^{ - 1}}} \right)^{k + 1}} = {\left( {PD{P^{ - 1}}} \right)^k}PD{P^{ - 1}} = P{D^k}{P^{ - 1}}PD{P^{ - 1}}$ <br>
     Lại có với ma trận nghịch đảo thì ${P^{ - 1}}P = I$ nên $P{D^k}{P^{ - 1}}PD{P^{ - 1}} = P.{D^k}.I.D.{P^{ - 1}} = P.{D^k}.D.{P^{ - 1}} = P.{D^{k + 1}}.{P^{ - 1}}$ (đúng với nguyên lí quy nạp) . <br>
-    </p>
+    </p
   - <ins>Bước 5:</ins> Với mỗi $\lambda$ tính được, ta sẽ tìm được trị số vector riêng tương ứng (tìm $P$ và $D$)
-    - <ins>*Trường hợp 1:*</ins> với $\lambda _{1} = 1$ , ta có:
+    <p>
+    <i>Trường hợp 1:</i> với $\lambda _{1} = 1$ , ta có: 
+     <ol>
 ```math
-\left(
+\left[
 \begin{array}{ccc|c}
-  -2 & 2 & 0 & 0 \
-  0 & -2 & 2 & 0 \
+  -2 & 2 & 0 & 0 \\
+  0 & -2 & 2 & 0 \\
   -2 & 4 & -2 & 0 \
 \end{array}
-\right)
+\right]
 ```
-
+    </ol>
+   Sử dụng phương pháp khử gauss, ta suy ra: 
+   </p>
 rhg
     
