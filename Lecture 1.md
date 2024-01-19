@@ -77,9 +77,8 @@ Trước hết ta điểm từng bước như sau:
 {\lambda _2} =  - \sqrt 5  - 2
 \end{array} \right.;{\lambda _3} = \sqrt 5  - 2
 ```
-|                 |
-|-----------------|
-| *Nhận xét:* với ba giá trị riêng trên thì ma trận $3 \times 3$ này có thể giải bằng cách chéo hóa  |
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Nhận xét:* với ba giá trị riêng trên thì ma trận $3 \times 3$ này có thể giải bằng cách chéo hóa 
 
   </p> 
 
@@ -94,8 +93,8 @@ Trước hết ta điểm từng bước như sau:
   </p>       
 - <ins>Bước 5:</ins> Với mỗi $\lambda$ tính được, ta sẽ tìm được trị số vector riêng tương ứng (tìm $P$ và $D$)
   <p>
-    <i>Trường hợp 1:</i> với $\lambda _{1} = 1$ , ta có: 
-     <ol>
+  <i>Trường hợp 1:</i> với $\lambda _{1} = 1$ , ta có: 
+   <ol>
 $$
 \left[
 \begin{array}{ccc|c}
@@ -107,13 +106,14 @@ $$
 $$       
     </ol>
    </p>
-   <p Sử dụng phương pháp khử Gauss, ta suy ra: <br>
-$$
-\[\left[ {\begin{array}{*{20}{c}}
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sử dụng phương pháp khử Gauss, ta suy ra:
+
+```math
+\left[ {\begin{array}{*{20}{c}}
 { - 2}&2&0&\vline& {{\rm{     }}0}\\
 0&{ - 2}&2&\vline& {{\rm{    }}0}\\
 { - 2}&4&{ - 2}&\vline& {{\rm{    }}0}
-\end{array}} \right]{\rm{  }}\begin{array}{*{20}{c}}
+\end{array}} \right]{\rm{  }}\begin{array}{* {20}{c}}
 {/2}\\
 {/2}\\
 {/2 - {R_1}}
@@ -129,7 +129,8 @@ $$
 { - 1}&0&1&\vline& {{\rm{    }}0}\\
 0&{ - 1}&1&\vline& {{\rm{    }}0}\\
 0&0&0&\vline& {{\rm{    }}0}
-\end{array}} \right]\]
-$$     
+\end{array}} \right]
+```
+
    </p>
     
