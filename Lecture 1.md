@@ -137,7 +137,7 @@ $$
 \end{array}
 \right]
 ```
-   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sau khi quy về dạng ma trận bậc thang ta có hệ sau: 
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sau khi quy về dạng ma trận bậc thang ta có hệ phương trình sau: 
 ```math
 \left\{ \begin{array}{l}
  - {x_1} + {x_3} = 0\\
