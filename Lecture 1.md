@@ -148,13 +148,6 @@ $$
 \end{array} \right.
 ```
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nghiệm tổng quát 
-$$X = \left( {\begin{array}{* {20}{c}}
-{{x_3}}\\
-{{x_3}}\\
-{{x_3}}
-\end{array}} \right)$$   tức với  $x_{3}=1$ ta có vector riêng 
-${v_1} = \left( {\begin{array}{*{20}{c}}
-1\\
-1\\
-1
-\end{array}} \right)$
+
+Here is an inline matrix: \( \begin{pmatrix} a & b \ c & d \end{pmatrix} \).
+
