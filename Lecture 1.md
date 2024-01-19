@@ -1,4 +1,4 @@
-![image](https://github.com/MustardLawyer1995/LTTC-LTTCKH/assets/156400720/c2d6f4f3-0362-40f9-9333-7b5e4eaf3076)# Sheep Game
+# Sheep Game
 - <ins>Không gian giới hạn của trò chơi:</ins> Cánh đồng có kích thước $n \times 1$ gồm các ô vuông thành phần có kích thước $1 \times 1$
 - <ins>Mô phỏng luật chơi</ins>: Sau mỗi lượt con cừu ở vị trí (0) sẻ nhảy qua con cừu 2, con cừu 2 nhảy qua con cừu 3 và kế đến con cừu 3 nhảy về con cừu 1 (tất cả con cừu phải nhảy qua điểm đối xứng, chẳng hạn như con cừu 1 nhảy qua con cừu 2 và rơi xuống điểm đối xứng). Hỏi phải đặt 3 con cừu như thế nào để chúng nhảy không vượt qua cánh đồng đó.
 ## Lời giải
