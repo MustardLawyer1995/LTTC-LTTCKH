@@ -440,7 +440,7 @@ u
 {c_n} = 1 + {\left( { - \sqrt 5  - 2} \right)^n}\left( {\frac{{ - \sqrt 5  - 5}}{{10}}} \right) + {\left( {\sqrt 5  - 2} \right)^n}\left( {\frac{{\sqrt 5  - 5}}{{10}}} \right) + u\left( {1 + {{\left( { - \sqrt 5  - 2} \right)}^n}\frac{{\sqrt 5 }}{5} + {{\left( {\sqrt 5  - 2} \right)}^n}\left( { - \frac{{\sqrt 5 }}{5}} \right)} \right)
 ```
 Cuối cùng ta chỉ cần thu gọn ba phương trình vị trí tổng quát vừa tính bằng nhận xét như sau: 
-Mấu chốt: ta sẽ căn chỉnh để ba dãy số  $\\{ {{a_n}} \right\},\left\{ {{b_n}} \right\},\left\{ {{c_n}} \\}$ đều hội tụ về 1 điểm $L$ khi  $n \to  + \infty $
+Mấu chốt: ta sẽ căn chỉnh để ba dãy số  $ \{a_{n} \}, {b_n}, {c_n} $ đều hội tụ về 1 điểm $L$ khi  $n \to  + \infty $
 
 
 
