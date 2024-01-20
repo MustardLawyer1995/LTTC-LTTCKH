@@ -323,7 +323,7 @@ P = \left[ {\begin{array}{*{20}{c}}
 1&1&1
 \end{array}} \right]
 ```
- - <ins>Bước 6:</ins> Tiếp đến ta sẽ tính ma trận nghịch đảo $P^-1$
+ - <ins>Bước 6:</ins> Tiếp đến ta sẽ tính ma trận nghịch đảo $P^{-1}$
    <p></p> Ta có công thức tính ma trận nghịch đảo là: <br>
 ```math
 {A^{ - 1}} = \frac{1}{{\det A}}.{\left[ {\begin{array}{*{20}{c}}
