@@ -443,8 +443,7 @@ Cuối cùng ta chỉ cần thu gọn ba phương trình vị trí tổng quát 
 
 Mấu chốt: ta sẽ căn chỉnh để ba dãy số  $a_{n}, b_{n}, c_{n}$ đều hội tụ về 1 điểm $L$ khi  $n \to  + \infty $
 
-Nhận thấy: $\left| {\sqrt 5  - 2} \right| < 1 \to \mathop {\lim }\limits_{n \to \infty } {\left( {\sqrt 5  - 2} \right)^n} = 0$ nên ta sẽ loại bỏ được nhân tử ${\left( {\sqrt 5  - 2} \right)^n}$
-Khi đó ta suy ra: 
+Nhận thấy: $\left| {\sqrt 5  - 2} \right| < 1 \to \mathop {\lim }\limits_{n \to \infty } {\left( {\sqrt 5  - 2} \right)^n} = 0$ nên ta sẽ loại bỏ được nhân tử ${\left( {\sqrt 5  - 2} \right)^n}$ ,  khi đó ta suy ra: 
 ```math
 \left\{ \begin{array}{l}
 {a_n} = {\left( { - \sqrt 5  - 2} \right)^n}\left( {\frac{{ - \sqrt 5  + 3}}{2}\left( {\frac{{ - \sqrt 5  - 5}}{{10}}} \right) + u\frac{{ - \sqrt 5  + 3}}{2}\left( {\frac{{\sqrt 5 }}{5}} \right)} \right)\\
