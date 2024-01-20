@@ -1,1 +1,6 @@
-
+# Trò chơi Ma sói (Werewolf Game)
+- Mô phỏng luật chơi: Ở một làng có người dân và ma sói (trá hình người) chung sống, ban ngày tất cả mọi người sẽ bầu chọn 1 người để đem treo cổ nếu trúng con sói thì coi như gameover, sói thua, tất nhiên sói cũng được bầu chọn vì không ai biết nó là sói, nếu giết nhầm dân thường thì đêm đó (mọi người ngủ hết) sói sẽ giết 1 người. Chơi theo nhiều vòng, mỗi vòng là 1 ngày cho đến khi sói hoặc dân bị giết hết. Tất cả mọi người chơi đều lý tính tuyệt đối (tính toán tối ưu để phe mình thắng), được quyền thuyết phục lẫn nhau. Mỗi vòng bầu chọn (mỗi người chỉ 1 phiếu bầu và không được phép không bầu) chỉ kết thúc khi *phần lớn mọi người đều thống nhất với kết quả bầu, được phép bầu lại*, nếu có 2 người trở lên có số phiếu bầu ngang nhau và lớn nhất thì kết quả là hòa và không có ai bị treo cổ cả. Tính tỉ lệ win của phe dân trong các trường hợp: <br>
+a.	2 dân 1 sói <br>
+b.	3 dân 1 sói <br>
+c.	Tổng quát cho $n$ dân và 1 sói
+- Lưu ý: mỗi 1 vòng vote thực chất đã bao hàm 2 lượt vote ở trong, lượt vote đầu để chọn ra người sẽ bị xử tử, lượt vote sau để quyết định xem có nên xử tử người đó không (có thể diễn đạt khác lại là "phần lớn mọi người đều thống nhất với kết quả bầu", ngụ ý rằng nó cũng là 1 hình thức vote) - mỗi vote là Có/Không và tất cả người chơi (trừ quản trò) bắt buộc phải vote, tất nhiên không tính lượt vote của người đang sắp bị xử (vì không ai lại đồng ý với việc mình phải chết bao giờ cả).
