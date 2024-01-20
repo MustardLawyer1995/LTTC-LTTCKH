@@ -323,4 +323,77 @@ P = \left[ {\begin{array}{*{20}{c}}
 1&1&1
 \end{array}} \right]
 ```
+ - <ins>Bước 6:</ins> Tiếp đến ta sẽ tính ma trận nghịch đảo $P^-1$
+   <p></p> Ta có công thức tính ma trận nghịch đảo là: <br>
+```math
+{A^{ - 1}} = \frac{1}{{\det A}}.{\left[ {\begin{array}{*{20}{c}}
+{{A_{11}}}&{{A_{12}}}&{...}&{{A_{1n}}}\\
+{{A_{21}}}&{{A_{22}}}&{...}&{{A_{2n}}}\\
+ \vdots & \vdots & \ddots & \vdots \\
+{{A_{m1}}}&{{A_{m2}}}& \cdots &{{A_{mn}}}
+\end{array}} \right]^T}
+```
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Trong đó $A_{ij}$ là phần bù của đại số  $- {\left( { - 1} \right)^{i + j}}\det \left( {{M_{ij}}} \right)$
    
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Trước hết áp dụng công thức đã nêu ở bước 3, ta dễ dàng tính được: 
+```math
+\det \left( P \right) - \left| {\begin{array}{*{20}{c}}
+1&{\frac{{ - \sqrt 5  + 3}}{2}}&{\frac{{\sqrt 5  + 3}}{2}}\\
+1&{\frac{{ - \sqrt 5  + 1}}{2}}&{\frac{{\sqrt 5  + 1}}{2}}\\
+1&1&1
+\end{array}} \right| = \sqrt 5 
+```
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tính đến cần tính hạng tử của các ma trận sau:    
+```math
+\left( {{u_{11}};{u_{12}};{u_{13}}} \right) = \left( {\left| {\begin{array}{*{20}{c}}
+{\frac{{ - \sqrt 5  + 1}}{2}}&{\frac{{\sqrt 5  + 1}}{2}}\\
+1&1
+\end{array}} \right|; - \left| {\begin{array}{*{20}{c}}
+1&{\frac{{\sqrt 5  + 1}}{2}}\\
+1&1
+\end{array}} \right|;\left| {\begin{array}{*{20}{c}}
+1&{\frac{{ - \sqrt 5  + 1}}{2}}\\
+1&1
+\end{array}} \right|} \right) = \left( { - \sqrt 5 ;\frac{{1 - \sqrt 5 }}{2};\frac{{1 + \sqrt 5 }}{2}} \right)
+```
+```math
+\left( {{u_{21}};{u_{22}};{u_{23}}} \right) = \left( { - \left| {\begin{array}{*{20}{c}}
+{\frac{{ - \sqrt 5  + 3}}{2}}&{\frac{{\sqrt 5  + 3}}{2}}\\
+1&1
+\end{array}} \right|;\left| {\begin{array}{*{20}{c}}
+1&{\frac{{\sqrt 5  + 3}}{2}}\\
+1&1
+\end{array}} \right|; - \left| {\begin{array}{*{20}{c}}
+1&{\frac{{ - \sqrt 5  + 3}}{2}}\\
+1&1
+\end{array}} \right|} \right) = \left( {\sqrt 5 ;\frac{{ - 1 - \sqrt 5 }}{2};\frac{{1 - \sqrt 5 }}{2}} \right)
+```
+```math
+\left( {{u_{31}};{u_{32}};{u_{33}}} \right) = \left( {\left| {\begin{array}{*{20}{c}}
+{\frac{{ - \sqrt 5  + 3}}{2}}&{\frac{{\sqrt 5  + 3}}{2}}\\
+{\frac{{ - \sqrt 5  + 1}}{2}}&{\frac{{\sqrt 5  + 1}}{2}}
+\end{array}} \right|; - \left| {\begin{array}{*{20}{c}}
+1&{\frac{{\sqrt 5  + 3}}{2}}\\
+1&{\frac{{\sqrt 5  + 1}}{2}}
+\end{array}} \right|;\left| {\begin{array}{*{20}{c}}
+1&{\frac{{ - \sqrt 5  + 3}}{2}}\\
+1&{\frac{{ - \sqrt 5  + 1}}{2}}
+\end{array}} \right|} \right) = \left( {\sqrt 5 ;1; - 1} \right)
+```
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tới đây áp dụng công thức nghịch đảo ma trận vừa nêu, khi đó ta suy ra: 
+   
+```math
+ {P^{ - 1}} = \frac{1}{{\sqrt 5 }}.{\left[ {\begin{array}{*{20}{c}}
+{{u_{11}}}&{{u_{12}}}&{{u_{13}}}\\
+{{u_{21}}}&{{u_{22}}}&{{u_{23}}}\\
+{{u_{31}}}&{{u_{32}}}&{{u_{33}}}
+\end{array}} \right]^T} = \frac{1}{{\sqrt 5 }}.{\left[ {\begin{array}{*{20}{c}}
+{ - \sqrt 5 }&{\frac{{1 - \sqrt 5 }}{2}}&{\frac{{1 + \sqrt 5 }}{2}}\\
+{\sqrt 5 }&{\frac{{ - 1 - \sqrt 5 }}{2}}&{\frac{{ - 1 + \sqrt 5 }}{2}}\\
+{\sqrt 5 }&1&{ - 1}
+\end{array}} \right]^T} = {\left[ {\begin{array}{*{20}{c}}
+{ - 1}&1&1\\
+{\frac{{ - 5 + \sqrt 5 }}{{10}}}&{\frac{{ - 5 - \sqrt 5 }}{{10}}}&{\frac{{\sqrt 5 }}{5}}\\
+{\frac{{5 + \sqrt 5 }}{{10}}}&{\frac{{ - 5 + \sqrt 5 }}{{10}}}&{ - \frac{{\sqrt 5 }}{5}}
+\end{array}} \right]^T}
+```
