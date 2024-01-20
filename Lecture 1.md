@@ -227,7 +227,7 @@ $$
 1
 \end{array}} \right)
 ```
-
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Trường hợp 3:</i> với $\lambda _{3} = \sqrt {5}  - 2$ , ta có: 
 
 
 
