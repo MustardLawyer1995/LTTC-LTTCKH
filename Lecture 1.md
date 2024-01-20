@@ -284,22 +284,43 @@ $$
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sau khi quy về dạng ma trận bậc thang ta có hệ phương trình sau: 
 ```math
 \left\{ \begin{array}{l}
-{x_1} - \frac{{\sqrt 5  + 3}}{2}{x_3} = 0\\
+{x_1} - \frac{{\sqrt 5  + 3}}{2}{x_3} = 0\
  - {x_2} - \frac{{\sqrt 5  + 1}}{2}{x_3} = 0
 \end{array} \right. \Leftrightarrow \left\{ \begin{array}{l}
-{x_1} = \frac{{\sqrt 5  + 3}}{2}{x_3}\\
+{x_1} = \frac{{\sqrt 5  + 3}}{2}{x_3}\
 {x_2} = \frac{{\sqrt 5  + 1}}{2}{x_3}
 \end{array} \right.{;^{}}{x_3} = {x_3} \Rightarrow \text{ Nghiệm tổng quát } X = \left( {\begin{array}{*{20}{c}}
-{\frac{{  \sqrt 5  + 3}}{2}{x_3}}\\
+{\frac{{  \sqrt 5  + 3}}{2}{x_3}}\
 {\frac{{  \sqrt 5  + 1}}{2}{x_3}}\
 {{x_3}}
 \end{array}} \right)\xRightarrow[\text{}]{x_{3}=1} \text{ Vector riêng } {v_3} = \left( {\begin{array}{*{20}{c}}
-\frac{{  \sqrt 5  + 3}}{2}\\
+\frac{{  \sqrt 5  + 3}}{2}\
 \frac{{  \sqrt 5  + 1}}{2}\
 1
 \end{array}} \right)
 ```
-
-
-
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\Longrightarrow$ Từ ba vector riêng $v_{1}, v_{2}, v_{3}$ tính được ta suy ra: 
+```math
+D = \left[ {\begin{array}{*{20}{c}}
+{{\lambda _1}}&2&0\
+0&{{\lambda _2}}&0\
+0&0&{{\lambda _3}}
+\end{array}} \right] = \left[ {\begin{array}{*{20}{c}}
+{{1^n}}&2&0\
+0&{{{\left( { - \sqrt 5  - 2} \right)}^n}}&0\
+0&0&{{{\left( {\sqrt 5  - 2} \right)}^n}}
+\end{array}} \right] \to {D^n}\left[ {\begin{array}{*{20}{c}}
+1&2&0\
+0&{ - \sqrt 5  - 2}&0\
+0&0&{\sqrt 5  - 2}
+\end{array}} \right]
+```
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Khi đó ma trận $P$ nhận các vector riêng làm cột, tức ta biểu diễn $P$ như sau: 
+```math
+P = \left[ {\begin{array}{*{20}{c}}
+1&{\frac{{ - \sqrt 5  + 3}}{2}}&{\frac{{\sqrt 5  + 3}}{2}}\
+1&{\frac{{ - \sqrt 5  + 1}}{2}}&{\frac{{\sqrt 5  + 1}}{2}}\
+1&1&1
+\end{array}} \right]
+```
    
