@@ -380,20 +380,80 @@ P = \left[ {\begin{array}{*{20}{c}}
 1&{\frac{{ - \sqrt 5  + 1}}{2}}
 \end{array}} \right|} \right) = \left( {\sqrt 5 ;1; - 1} \right)
 ```
-   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tới đây áp dụng công thức nghịch đảo ma trận vừa nêu, khi đó ta suy ra: 
-   
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tới đây áp dụng công thức nghịch đảo ma trận vừa nêu, khi đó ta suy ra:    
 ```math
- {P^{ - 1}} = \frac{1}{{\sqrt 5 }}.{\left[ {\begin{array}{*{20}{c}}
-{{u_{11}}}&{{u_{12}}}&{{u_{13}}}\\
-{{u_{21}}}&{{u_{22}}}&{{u_{23}}}\\
+{P^{ - 1}} = \frac{1}{{\sqrt 5 }}.{\left[ {\begin{array}{*{20}{c}}
+{{u_{11}}}&{{u_{12}}}&{{u_{13}}}\
+{{u_{21}}}&{{u_{22}}}&{{u_{23}}}\
 {{u_{31}}}&{{u_{32}}}&{{u_{33}}}
-\end{array}} \right]^T} = \frac{1}{{\sqrt 5 }}.{\left[ {\begin{array}{*{20}{c}}
-{ - \sqrt 5 }&{\frac{{1 - \sqrt 5 }}{2}}&{\frac{{1 + \sqrt 5 }}{2}}\\
-{\sqrt 5 }&{\frac{{ - 1 - \sqrt 5 }}{2}}&{\frac{{ - 1 + \sqrt 5 }}{2}}\\
+\end{array}} \right]^T}
+```
+```math
+ = \frac{1}{{\sqrt 5 }}.{\left[ {\begin{array}{*{20}{c}}
+{ - \sqrt 5 }&{\frac{{1 - \sqrt 5 }}{2}}&{\frac{{1 + \sqrt 5 }}{2}}\
+{\sqrt 5 }&{\frac{{ - 1 - \sqrt 5 }}{2}}&{\frac{{ - 1 + \sqrt 5 }}{2}}\
 {\sqrt 5 }&1&{ - 1}
 \end{array}} \right]^T} = {\left[ {\begin{array}{*{20}{c}}
-{ - 1}&1&1\\
-{\frac{{ - 5 + \sqrt 5 }}{{10}}}&{\frac{{ - 5 - \sqrt 5 }}{{10}}}&{\frac{{\sqrt 5 }}{5}}\\
+{ - 1}&1&1\
+{\frac{{ - 5 + \sqrt 5 }}{{10}}}&{\frac{{ - 5 - \sqrt 5 }}{{10}}}&{\frac{{\sqrt 5 }}{5}}\
 {\frac{{5 + \sqrt 5 }}{{10}}}&{\frac{{ - 5 + \sqrt 5 }}{{10}}}&{ - \frac{{\sqrt 5 }}{5}}
 \end{array}} \right]^T}
 ```
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Đến đây chỉ cần thực hiện phép nhân sau đây: 
+```math
+A.B = \left[ {\begin{array}{*{20}{c}}
+{{C_{11}}}& \ldots &{{C_{1n}}}\
+ \vdots & \ddots & \vdots \
+{{C_{m1}}}& \cdots &{{C_{mn}}}
+\end{array}} \right] \text{ trong đó } {C_{ij}} = \sum\limits_{k = 1}^n {{A_{i.k}}{B_{k.j}}} 
+```
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Khi đó ta suy ra: 
+```math
+P.{D^n} = \left[ {\begin{array}{*{20}{c}}
+1&{\frac{{ - \sqrt 5  + 3}}{2}{{\left( { - \sqrt 5  - 2} \right)}^n}}&{\frac{{\sqrt 5  + 3}}{2}{{\left( {\sqrt 5  - 2} \right)}^n}}\
+1&{\frac{{ - \sqrt 5  + 1}}{2}{{\left( { - \sqrt 5  - 2} \right)}^n}}&{\frac{{\sqrt 5  + 1}}{2}{{\left( {\sqrt 5  - 2} \right)}^n}}\
+1&{{{\left( { - \sqrt 5  - 2} \right)}^n}}&{{{\left( {\sqrt 5  - 2} \right)}^n}}
+\end{array}} \right] \to P.{D^n}.{P^{ - 1}} = ...
+```
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Đặt con cừu (1) tại vị trí 0 và con cừu (2) ở vị trí 1, khi đó con cừu (3) ở vị trí $u$ , ta suy ra: 
+```math
+{X_0} = \left[ {\begin{array}{*{20}{c}}
+0\
+1\
+u
+\end{array}} \right]
+```
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Từ đây ta suy ra được vị trí tổng quát của từng con cừu như sau: 
+```math
+{a_n} = \left\{ \begin{array}{l}
+1 + \frac{{ - \sqrt 5  + 3}}{2}{\left( { - \sqrt 5  - 2} \right)^n}\left( {\frac{{ - \sqrt 5  - 5}}{{10}}} \right) + \frac{{\sqrt 5  + 3}}{2}{\left( {\sqrt 5  - 2} \right)^n}\left( {\frac{{\sqrt 5  - 5}}{{10}}} \right)\\
+ + u\left( {1 + \frac{{ - \sqrt 5  + 3}}{2}{{\left( { - \sqrt 5  - 2} \right)}^n}\frac{{\sqrt 5 }}{5} + \frac{{\sqrt 5  + 3}}{2}{{\left( {\sqrt 5  - 2} \right)}^n}\left( { - \frac{{\sqrt 5 }}{5}} \right)} \right)
+\end{array} \right\}
+```
+```math
+{b_n} = \left\{ \begin{array}{l}
+1 + \frac{{ - \sqrt 5  + 1}}{2}{\left( { - \sqrt 5  - 2} \right)^n}\left( {\frac{{ - \sqrt 5  - 5}}{{10}}} \right) + \frac{{\sqrt 5  + 1}}{2}{\left( {\sqrt 5  - 2} \right)^n}\left( {\frac{{\sqrt 5  - 5}}{{10}}} \right)\\
+ + u\left( {1 + \frac{{ - \sqrt 5  + 1}}{2}{{\left( { - \sqrt 5  - 2} \right)}^n}\frac{{\sqrt 5 }}{5} + \frac{{\sqrt 5  + 1}}{2}{{\left( {\sqrt 5  - 2} \right)}^n}\left( { - \frac{{\sqrt 5 }}{5}} \right)} \right)
+\end{array} \right\}
+```
+```math
+{c_n} = 1 + {\left( { - \sqrt 5  - 2} \right)^n}\left( {\frac{{ - \sqrt 5  - 5}}{{10}}} \right) + {\left( {\sqrt 5  - 2} \right)^n}\left( {\frac{{\sqrt 5  - 5}}{{10}}} \right) + u\left( {1 + {{\left( { - \sqrt 5  - 2} \right)}^n}\frac{{\sqrt 5 }}{5} + {{\left( {\sqrt 5  - 2} \right)}^n}\left( { - \frac{{\sqrt 5 }}{5}} \right)} \right)
+```
+Cuối cùng ta chỉ cần thu gọn ba phương trình vị trí tổng quát vừa tính bằng nhận xét như sau: 
+Mấu chốt: ta sẽ căn chỉnh để ba dãy số  $\\{ {{a_n}} \right\},\left\{ {{b_n}} \right\},\left\{ {{c_n}} \\}$ đều hội tụ về 1 điểm $L$ khi  $n \to  + \infty $
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
