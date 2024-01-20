@@ -440,12 +440,32 @@ u
 {c_n} = 1 + {\left( { - \sqrt 5  - 2} \right)^n}\left( {\frac{{ - \sqrt 5  - 5}}{{10}}} \right) + {\left( {\sqrt 5  - 2} \right)^n}\left( {\frac{{\sqrt 5  - 5}}{{10}}} \right) + u\left( {1 + {{\left( { - \sqrt 5  - 2} \right)}^n}\frac{{\sqrt 5 }}{5} + {{\left( {\sqrt 5  - 2} \right)}^n}\left( { - \frac{{\sqrt 5 }}{5}} \right)} \right)
 ```
 Cuối cùng ta chỉ cần thu gọn ba phương trình vị trí tổng quát vừa tính bằng nhận xét như sau: 
-Mấu chốt: ta sẽ căn chỉnh để ba dãy số  $ \{a_{n} \}, {b_n}, {c_n} $ đều hội tụ về 1 điểm $L$ khi  $n \to  + \infty $
 
+Mấu chốt: ta sẽ căn chỉnh để ba dãy số  $a_{n}, b_{n}, c_{n}$ đều hội tụ về 1 điểm $L$ khi  $n \to  + \infty $
 
+Nhận thấy: $\left| {\sqrt 5  - 2} \right| < 1 \to \mathop {\lim }\limits_{n \to \infty } {\left( {\sqrt 5  - 2} \right)^n} = 0$ nên ta sẽ loại bỏ được nhân tử ${\left( {\sqrt 5  - 2} \right)^n}$
+Khi đó ta suy ra: 
+```math
+\left\{ \begin{array}{l}
+{a_n} = {\left( { - \sqrt 5  - 2} \right)^n}\left( {\frac{{ - \sqrt 5  + 3}}{2}\left( {\frac{{ - \sqrt 5  - 5}}{{10}}} \right) + u\frac{{ - \sqrt 5  + 3}}{2}\left( {\frac{{\sqrt 5 }}{5}} \right)} \right)\\
+{b_n} = {\left( { - \sqrt 5  - 2} \right)^n}\left( {\frac{{ - \sqrt 5  + 1}}{2}\left( {\frac{{ - \sqrt 5  - 5}}{{10}}} \right) + u\frac{{ - \sqrt 5  + 1}}{2}\left( {\frac{{\sqrt 5 }}{5}} \right)} \right)\\
+{c_n} = {\left( { - \sqrt 5  - 2} \right)^n}\left( {\frac{{ - \sqrt 5  - 5}}{{10}} + \frac{{\sqrt 5 }}{5}u} \right)
+\end{array} \right.
+```
+Thêm nữa ta lại có: 
+```math
+\mathop {\lim }\limits_{n \to \infty } {\left( { - \sqrt 5  - 2} \right)^n} =  - \infty 
+```
+Nên ta cần tránh ba dãy số trên tiến về vô cùng, tức ta có điều kiện đủ là: 
+```math
+\left\{ \begin{array}{l}
+\frac{{ - \sqrt 5  + 3}}{2}\left( {\frac{{ - \sqrt 5  - 5}}{{10}}} \right) + u\frac{{ - \sqrt 5  + 3}}{2}\left( {\frac{{\sqrt 5 }}{5}} \right) = 0\\
+\frac{{ - \sqrt 5  + 1}}{2}\left( {\frac{{ - \sqrt 5  - 5}}{{10}}} \right) + u\frac{{ - \sqrt 5  + 1}}{2}\left( {\frac{{\sqrt 5 }}{5}} \right) = 0
+\end{array} \right.;\frac{{ - \sqrt 5  - 5}}{{10}} + \frac{{\sqrt 5 }}{5}u = 0 \Leftrightarrow u = \frac{{1 + \sqrt 5 }}{2}
+```
+Khi ấy ta kết luận ba con cừu đều hội tụ khi $u = \frac{{1 + \sqrt 5 }}{2}$
 
-
-
+Vậy con cừu (1) ở vị trí 0, con cừu (2) ở vị trí 1 và con cừu (3) ở vị trí  $I.\left( {\frac{{1 + \sqrt 5 }}{2}} \right)$
 
 
 
