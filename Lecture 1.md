@@ -231,8 +231,8 @@ $$
 ```math
 \left[
 \begin{array}{ccc|c}
-  -\sqrt {5}+1 & 2 & 0 & 0 \\
-  0 & \sqrt {5}+1 & 2 & 0 \\
+  -\sqrt {5}+1 & 2 & 0 & 0 \
+  0 & \sqrt {5}+1 & 2 & 0 \
   -2 & 4 & -\sqrt {5}+1 & 0 \
 \end{array}
 \right]   
@@ -241,19 +241,19 @@ $$
 ```math
 \left[
 \begin{array}{ccc|c}
-  -\sqrt {5}+1 & 2 & 0 & 0 \\
-  0 & \sqrt {5}+1 & 2 & 0 \\
+  -\sqrt {5}+1 & 2 & 0 & 0 \
+  0 & \sqrt {5}+1 & 2 & 0 \
   -2 & 4 & -\sqrt {5}+1 & 0 \
 \end{array}
 \right]{\rm{  }}\begin{array}{* {20}{c}}
-{{\frac{{-\sqrt 5  - 1}}{4}}}\\
+{{\frac{{-\sqrt 5  - 1}}{4}}}\
 {}\\
 {{\frac{{-\sqrt 5  - 1}}{4}}}
 \end{array}
 {\rm{  }} \sim {\rm{  }}\left[
 \begin{array}{ccc|c}
-  1 & \frac{-\sqrt {5}-1}{2} & 0 & 0 \\
-  0 & 1 & \frac{-\sqrt {5}-1}{2} & 0 \\
+  1 & \frac{-\sqrt {5}-1}{2} & 0 & 0 \
+  0 & 1 & \frac{-\sqrt {5}-1}{2} & 0 \
   -2 & 4 & -\sqrt {5}+1 & 0 \
 \end{array}
 \right]{\rm{     +   }}\begin{array}{*{20}{c}}
@@ -265,18 +265,18 @@ $$
 ```math
 {\rm{  }} \sim {\rm{  }}\left[
 \begin{array}{ccc|c}
-  1 & \frac{-\sqrt {5}-1}{2} & 0 & 0 \\
-  0 & 1 & \frac{-\sqrt {5}-1}{2} & 0 \\
+  1 & \frac{-\sqrt {5}-1}{2} & 0 & 0 \
+  0 & 1 & \frac{-\sqrt {5}-1}{2} & 0 \
   0 & 3 + \sqrt5 & -\sqrt {5}+1 & 0 \
 \end{array}
 \right]{\rm{  }}\begin{array}{* {20}{c}}
-{{ - \left( {\frac{{-\sqrt 5  - 1}}{2}} \right){R_2}}}\\
-{}\\
+{{ - \left( {\frac{{-\sqrt 5  - 1}}{2}} \right){R_2}}}\
+{}\
 {{ - \left( {-\sqrt 5  + 3} \right){R_2}}}
 \end{array}{\rm{  }} \sim {\rm{  }}\left[
 \begin{array}{ccc|c}
-  1 & 0 & \frac{-\sqrt {5}-3}{2} & 0 \\
-  0 & 1 & \frac{-\sqrt {5}-1}{2} & 0 \\
+  1 & 0 & \frac{-\sqrt {5}-3}{2} & 0 \
+  0 & 1 & \frac{-\sqrt {5}-1}{2} & 0 \
   0 & 0 & 0 & 0 \
 \end{array}
 \right]
@@ -289,7 +289,7 @@ $$
 \end{array} \right. \Leftrightarrow \left\{ \begin{array}{l}
 {x_1} = \frac{{\sqrt 5  + 3}}{2}{x_3}\
 {x_2} = \frac{{\sqrt 5  + 1}}{2}{x_3}
-\end{array} \right.{;^{}}{x_3} = {x_3} \Rightarrow \text{ Nghiệm tổng quát } X = \left( {\begin{array}{*{20}{c}}
+\end{array} \right.{; ^{}}{ x_3} = {x_3} \Rightarrow \text{ Nghiệm tổng quát } X = \left( {\begin{array}{*{20}{c}}
 {\frac{{  \sqrt 5  + 3}}{2}{x_3}}\
 {\frac{{  \sqrt 5  + 1}}{2}{x_3}}\
 {{x_3}}
