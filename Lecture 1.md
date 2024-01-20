@@ -73,7 +73,7 @@ Trước hết ta điểm từng bước như sau:
 ```
 ```math
  =  - {\lambda ^3} - 3{\lambda ^2} + 5\lambda  - 1 + \left( {\lambda  - 1\,} \right)\left( {{\lambda ^2} + 4\lambda  - 1} \right) = 0 \Leftrightarrow \left[ \begin{array}{l}
-{\lambda _1} = 1;\\
+{\lambda _1} = 1;\
 {\lambda _2} =  - \sqrt 5  - 2
 \end{array} \right.;{\lambda _3} = \sqrt 5  - 2
 ```
@@ -140,14 +140,48 @@ $$
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sau khi quy về dạng ma trận bậc thang ta có hệ phương trình sau: 
 ```math
 \left\{ \begin{array}{l}
- - {x_1} + {x_3} = 0\\
+ - {x_1} + {x_3} = 0\
  - {x_2} + {x_3} = 0
-\end{array} \right. \Leftrightarrow \left\{ \begin{array}{l}
-{x_1} = {x_3}\\
+\end{array} \right. \Leftrightarrow \left\{\begin{array}{l}
+{x_1} = {x_3}\
 {x_2} = {x_3}
-\end{array} \right.
+\end{array} \right. \Rightarrow X = \left( {\begin{array}{*{20}{c}}
+{{x_3}}\\
+{{x_3}}\\
+{{x_3}}
+\end{array}} \right) \xRightarrow[\text{}]{x_{3}=1} {v_1} = \left( {\begin{array}{*{20}{c}}
+1\\
+1\\
+1
+\end{array}} \right)
 ```
-   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nghiệm tổng quát 
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Trường hợp 2:</i> với $\lambda _{2} =- \sqrt {5}  - 2$ , ta có: 
+```math
+\left[
+\begin{array}{ccc|c}
+  \sqrt {5}+1 & 2 & 0 & 0 \\
+  0 & \sqrt {5}+1 & 2 & 0 \\
+  -2 & 4 & \sqrt {5}+1 & 0 \
+\end{array}
+\right]   
+```
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sử dụng phương pháp khử Gauss, ta suy ra:
+```math
+\left[
+\begin{array}{ccc|c}
+  \sqrt {5}+1 & 2 & 0 & 0 \\
+  0 & \sqrt {5}+1 & 2 & 0 \\
+  -2 & 4 & \sqrt {5}+1 & 0 \
+\end{array}
+\right]  
+```
 
-Here is an inline matrix: \( \begin{pmatrix} a & b \ c & d \end{pmatrix} \).
 
+
+
+
+
+
+
+
+   
