@@ -64,7 +64,7 @@ $\Longrightarrow$ Khi ấy ta kết luận ${r_{2m + 2}} = {r_{2m + 3}} = s + \l
 ```
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mà ${v_k} = {u_k} - 1$ tức ${v_m} = {u_m} - 1$ nên suy ra:
 ```math
-\frac{{1 - u\left( m \right)}}{{1 - u\left( 0 \right)}} = \frac{{1 - u\left( m \right)}}{{1 - 0}} = \frac{1}{{C_{2m}^m}}.\frac{{{4^m}}}{{\left( {2m + 1} \right)}}
+\frac{{1 - {u_m}}}{{1 - {u_0}}} = \frac{{1 - {u_m}}}{{1 - 0}} = \frac{1}{{C_{2m}^m}}.\frac{{{4^m}}}{{\left( {2m + 1} \right)}}
 ```
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Từ đó ta suy ra: 
 ```math
