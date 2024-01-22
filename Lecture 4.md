@@ -1,4 +1,4 @@
-![image](https://github.com/MustardLawyer1995/LTTC-LTTCKH/assets/156400720/fa34d598-5c4c-4227-9d6b-ed6ff415d54e)# Bài toán đồng xu giả 
+# Bài toán đồng xu giả 
 ### 1. Cây quyết định 
 Chúng ta cùng nhau khám phá và phân tích bài toán mở đầu như sau: “Cho $n$ đồng xu, trong đó có $n-1$ đồng xu thật và 1 đồng xu giả nhẹ hơn các đồng khác. Hãy sử dụng cân dĩa ***(cân Rô-béc-van)*** để xác định đồng xu giả đó. 
 #### *<ins>Định lí 1.1:</ins>* Mọi phương pháp cân đều cần ít nhất $\left\lceil {{{\log }_3}n} \right\rceil$ lần cân để xác định đồng xu giả. 
