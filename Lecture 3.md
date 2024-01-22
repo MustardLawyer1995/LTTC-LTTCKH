@@ -7,4 +7,17 @@ Có 22 người, lập ra nhóm 8 người rồi chia đôi ra nửa đội bỏ
 Khi cho tổng quát với $n$ người, việc chọn lựa sẽ khó khăn hơn, nhất là phải xét đến trường hợp mà team bị lẻ người ở 1 vòng nào đó, vì không phải lúc nào cũng chọn được số người có dạng $2^{k}$ (số chính phương).
 
 ## Lời giải 
-### 1. Thu hẹp phạm vi tìm kiếm
+### 1. Thu hẹp phạm vi tìm kiếm 
+- Số người của nhóm mình và số người ở nhóm tự do (bỏ phiếu ngẫu nhiên) sẽ thay đổi sau mỗi vòng như thế nào ? <br>
+- Gọi số người nhóm mình là $a$ , nhóm tự do là $b$ . Ta quy ước dấu “ $\rightarrow$ ” dùng để biểu diễn sự thay đổi số người mỗi bên sau 1 vòng bỏ phiếu.<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Trường hợp 1:* $a$ chẵn thì khi đó $a \rightarrow \frac{a}{2}$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nếu $b$ lẻ thì $b \rightarrow \frac{b-1}{2}$ và nếu $b$ chẵn thì $b \rightarrow \frac{b-2}{2} = \frac{b}{2} - 1$ <br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Trường hợp 2:* $a$ lẻ thì khi đó $a \rightarrow \frac{a-1}{2}$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nếu $b$ lẻ thì $b \rightarrow \frac{b-1}{2}$ và nếu $b$ chẵn thì $b \rightarrow \frac{b}{2}$ <br><br>
+$\Longrightarrow$ Tới đây ta đặt ra tình huống xấu nhất như sau: sau mỗi vòng số người tự do còn lại nhiều nhất, số người nhóm mình còn lại ít nhất; dựa trên nhận xét: nếu thế $(a,b)$ đảm bảo chiến thắng thì $(a,b-1)$ và $(a+1,b-1)$ cũng vậy (theo nguyên lí quy nạp). <br>
+
+- Gọi $V$ là số người cần lấy ra từ $N$ người để tạo ra nhóm, khi đó ta thu hẹp giới hạn để tìm $V$ <br>
+
+
+### 2. Công thức chính xác cho $V$
