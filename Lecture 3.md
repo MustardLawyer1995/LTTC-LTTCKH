@@ -50,7 +50,7 @@ $\Longrightarrow$ Đây cũng chính là *giới hạn dưới* của số ngư�
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Chứng minh </ins>* <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Với $a$ chẵn tức $\left( {a,b} \right) = \left( {2m + 2k,m} \right)$ sau 1 vòng bỏ phiếu $a = m + k,{\rm{ }}b \le \frac{{m - 1}}{2} \Rightarrow a:b \ge 2:1$ . <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Với $a$ lẻ tức $\left( {a,b} \right) = \left( {2m + 1 + 2k,m} \right)$ sau 1 vòng bỏ phiếu $a = m + k,{\rm{ }}b \le \frac{m}{2} \Rightarrow a:b \ge 2:1$ <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Như vậy trước khi bỏ phiếu $a:b \ge 2:1$ thì thì sau 1 vòng bỏ phiếu điều đó vẫn giữ nguyên, và vòng bỏ phiếu tiếp cũng thế,...,cứ thế cho tới tận vòng cuối. Như vậy tôi chỉ cần chọn $V:\left( {N - V} \right)$ ở thời điểm bắt đầu giữ tỉ lệ $ \ge 2:1$ là đảm bảo một thắng lợi cho đội mình. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Như vậy trước khi bỏ phiếu $a:b \ge 2:1$ thì thì sau 1 vòng bỏ phiếu điều đó vẫn giữ nguyên, và vòng bỏ phiếu tiếp cũng thế,...,cứ thế cho tới tận vòng cuối. Như vậy tôi chỉ cần chọn $V:\left( {N - V} \right)$ ở thời điểm bắt đầu giữ tỉ lệ $\ge 2:1$ là đảm bảo một thắng lợi cho đội mình. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Có ba trường hợp $N$ rơi vào: $N = \\{ 3m,3m + 1,3m + 2 \\}$ <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\Longrightarrow$ $V \le \frac{2}{3}\left( {N + 1} \right)$ là *giới hạn trên* của $V$ trong mọi trường hơp. <br> <br>
 $\Longrightarrow$ Tóm lại giới hạn của $V$ là: 
