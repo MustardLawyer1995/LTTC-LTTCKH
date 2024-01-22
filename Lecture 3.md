@@ -100,10 +100,6 @@ k = \left\lceil {{{\log }_2}\frac{{N + 2}}{3}} \right\rceil
 
 $\Longrightarrow$ Vậy công thức tổng quát cho số người tối ưu để lập đội luôn thắng trong trò chơi  “Luật thiểu số” là: <br>
 
-<p style="font-size: 24px">
-  \( V = {2^k} = {2^{\left\lceil {{{\log }_2}\frac{{N + 2}}{3}} \right\rceil }} \)
-</p>
-
 ```math
 {V = {2^k} = {2^{\left\lceil {{{\log }_2}\frac{{N + 2}}{3}} \right\rceil }}}
 ```
