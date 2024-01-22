@@ -1,4 +1,4 @@
-# Bài toán đồng xu giả 
+![image](https://github.com/MustardLawyer1995/LTTC-LTTCKH/assets/156400720/fa34d598-5c4c-4227-9d6b-ed6ff415d54e)# Bài toán đồng xu giả 
 ### 1. Cây quyết định 
 Chúng ta cùng nhau khám phá và phân tích bài toán mở đầu như sau: “Cho $n$ đồng xu, trong đó có $n-1$ đồng xu thật và 1 đồng xu giả nhẹ hơn các đồng khác. Hãy sử dụng cân dĩa ***(cân Rô-béc-van)*** để xác định đồng xu giả đó. 
 #### *<ins>Định lí 1.1:</ins>* Mọi phương pháp cân đều cần ít nhất $\left\lceil {{{\log }_3}n} \right\rceil$ lần cân để xác định đồng xu giả. 
@@ -61,6 +61,7 @@ H\left( k \right) =  - \frac{{k + 1}}{n}\log \frac{{k + 1}}{n} - \frac{{2k}}{n}\
 \frac{{k + 1}}{n}\log \frac{{k + 1}}{n} + \frac{{k - 1}}{n}\log \frac{{k - 1}}{n} > \frac{{2k}}{n}\log \frac{k}{n} \text{   tức   } H\left( k \right) > H\left( {k + 1} \right)
 ```
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Suy ra ở trường hợp này cách chia tốt nhất chính là $k,k,k + 1$ . <br>
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Trường hợp 3:* <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nếu $n=3k+2$ thì cần chọn $a=k$ hoặc $a=k+1$ , khi đó ta có 
 ```math
@@ -94,3 +95,51 @@ $\Longrightarrow$ $\left\lceil {{{\log }_3}\left( {3k + 3} \right)} \right\rceil
 ```
 &nbsp;&nbsp;&nbsp;&nbsp;Từ bản mã hóa, ta dịch được từng chuỗi 5 kí tự nhị phân để thu được văn bản ban đầu. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;Ta muốn làm tốt hơn thế, nhưng tất nhiên nếu chỉ dùng $2^{4}=16$ chuỗi nhị phân thì không đủ cho $26$ chữ cái. Ta muốn bản mã hóa có độ dài ngắn nhất có thể. Khi đó, với ý tưởng của mã hóa Huffman, ta sẽ dùng một bản mã với độ dài của từng ký tự có thể khác nhau. Lúc ấy ta phát sinh các vấn đề như sau: <br>
+#### *<ins>Ví dụ 3.1:</ins>* <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Giả sử ta mã hóa $a \to 0,b \to 1,c \to 01$ , khi đó từ bản mã hóa $01$ ta có thể thu được hai văn bản ban đầu đó là $ab$ hoặc $c$ (không duy nhất). Đây chính là điều ta muốn tránh <br>
+#### *<ins>Định nghĩa 3.2:</ins>* <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Một mã được gọi là ***phi tiền tố (prefix-free)*** nếu không có hai ký tự khác nhau được mã hóa thành hai chuỗi nhị phân $,t$ với $s$ là tiền tố của $t$ . <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Chú ý:</ins>* <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Đối với mã phi tiền tố, không ký tự nào được phép mã hóa thành chuỗi rỗng (vì chuỗi rỗng là tiền tố của mọi chuỗi khác $\rightarrow$ điều này là mâu thuẫn). <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Giả sử ta mã hóa bằng một mã phi tiền tố. Để giải mã, ta cần đọc bản mã hóa từ trái sang phải. Khi gặp một chuỗi nhị phân trùng với mã hóa của một chữ cái thì ta dịch nó ra ký tự đó. <br>
+#### *<ins>Bổ đề 3.3:</ins>* <br>
+Mã phi tiền tố đảm bảo việc dịch về văn bản ban đầu là duy nhất (nếu việc dịch là thực hiện được) <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Chứng minh:</ins>* <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Gọi $s$ là bản mã hóa. Ta sử dụng nguyên lí quy nạp theo độ dài của bản mã hóa. Nếu $s$ là mã rỗng thì tất nhiên đây là văn bản rỗng. Giả sử $s$ không là chuỗi rỗng và $s$ được dịch đồng thời theo hai cách tức ta có: 
+<p align="center">${s = {s_1}{s_2}....{s_n} = {t_1}{t_2}....{t_m}}$ với $s_{j},t_{j}, \forall j=1,2,...n$ là chữ cái của mã hóa nào đó</p> 
+
+&nbsp;&nbsp;&nbsp;&nbsp;Rõ ràng $s_1$ là tiền tố của $t_1$ và ngược lại, do là mã phi tiền tố nên $s_{1}=t_{1}$ . Ngoài ra $s_1$ và $t_1$ đều không phải là chuỗi rỗng tức ta có: ${{s_2}....{s_n} = {t_2}....{t_m}}$ . Hai vế lúc này đều là một chuỗi nhỏ hơn $s$ , nên theo nguyên lí quy nạp ta suy ra $m=n$ tức ${s_i} = {t_i},\forall i = \overline {2,3,....n}$ .
+#### *<ins>Ví dụ 3.4:</ins>* <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Chẳng hạn ta có 4 chữ cái $a,b,c,d$ , khi đó ta có mã phi tiền tố như sau: 
+```math
+{a \to 0,{\rm{      }}b \to 10,{\rm{      }}c \to 110,{\rm{      }}d \to 111}
+```
+&nbsp;&nbsp;&nbsp;&nbsp;Bản mã hóa $1100010111$ được dịch lại thành văn bản $caabd$ (dễ dàng kiểm tra được rằng không có dấu hiệu thiếu nhất quán khi dịch từ trái sang phải). <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Mã Huffman là một mã phi tiền tố. Ý tưởng của mã là chữ cái nào xuất hiện càng nhiều thì độ dài của nó càng ngắn
+&nbsp;&nbsp;&nbsp;&nbsp;Giả sử ta có bảng chữ cái ${a_1},{a_2}....{a_n}$ với tần suất xuất hiện của các chữ cái là ${p_1},{p_2}....{p_n}$ . Ứng với mỗi phương pháp mã hóa, gọi ${\ell _i}$ là độ dài của xâu mã ký tự ${a_i},\forall i = \overline {1,2,...n}$ . Độ dài trung bình của mỗi ký tự của phương pháp mã hóa này là: 
+```math
+{E = {p_1}{\ell _1} + {p_2}{\ell _2} + ... + {p_n}{\ell _n}}
+```
+&nbsp;&nbsp;&nbsp;&nbsp;Đến đây, ta có mục tiêu là cần tìm phương pháp mã hóa sao cho $E$ nhỏ nhất. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Mã Huffman được xây dựng qua cây Huffman $T$ như sau: <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Ban đầu, $T$ gồm $n$ đỉnh ứng với $n$ ký tự ban đầu và gán cho chúng tần suất tương ứng. Hàng chờ của chúng ***(queue)*** cũng gồm $n$ ký tự ban đầu. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Chọn hai đỉnh với tần suất nhỏ nhất, chẳng hạn là $a_i$ và $a_j$ . Xóa chúng khỏi queue, sau đó thêm một đỉnh mới vào cha của hai đỉnh nảy vào $T$ , gán cho nó tần suất là tổng $p_{i}+p_{j}$ . Tiếp đến ta thêm một ký tự giả $(a_{i};a_{j})$ vào queue. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Lặp lại bước 2 cho đến khi queue chỉ còn một ký tự. Khi ấy ký tự đó chính là ***gốc cây*** (tần suất bằng 1) . <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;Khi đó cây Huffman thu được là một ***cây nhị phân đầy đủ*** (mỗi đỉnh không phải là lá và có đúng 2 đỉnh con). Gán các mã cho đỉnh từ gốc cây như sau: Gốc cây là chuỗi trống. Nếu một đỉnh có mã là $s$ thì hai đỉnh con của nó có mã là $s_0$ và $s_1$ . Các kí tự của bảng chữ cái ban đầu đều là lá cây, vì thế dễ thấy mã thu được là phi tiền tố. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Khi giải mã, chúng ta bắt đầu từ gốc cây. Đọc dần các kí tự của bản mã hóa, Mỗi khi đọc ký tự 0  hoặc 1 thì ta đi xuống 1 trong 2 đỉnh con của đỉnh hiện tại (tùy theo ký tự đọc vào là 0 hay 1). Khi đi đến lá cây, ta lấy kí tự ở lá đó để thêm vào văn bản dịch, rồi sau đó quay lại gốc cây. <br>
+#### *<ins>Ví dụ 3.4:</ins>* <br>
+Sau đây là ví dụ về xây dựng mã Huffman <br>
+
+
+
+
+
+
+
+
+
+
