@@ -33,8 +33,7 @@ $\Longrightarrow$ Hoàn tất chứng minh *định lí 1.1* <br>
 &nbsp;&nbsp;&nbsp;&nbsp;Entrophy thông tin là đại lượng đo độ bất định của giá trị của 1 biến ngẫu nhiên. Một cách tương đương, nó đo đại lượng thông tin trung bình nhận được sau khi thực hiện phép đo giá trị của biến ngẫu nhiên đó. Nếu entrophy bằng không (giá trị tất định) thì việc đo giá trị không mang lại thêm thông tin gì. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;Khi $n$ cố định, ta áp dụng bất đẳng thức Jensen cho hàm lõm $log$ , khi đó ta có đánh giá sau:
 ```math
-H\left( X \right): = \sum\limits_{i = 1}^n {{p_i}\log \left( {\frac{1}{{{p_i}}}} \right)}  \le \log \sum\limits_{i = 1}^n {\left( {{p_i}\frac{1}{{{p_i}}}} \right)}  = \log \sum\limits_{i = 1}^n {\left( 1 \right)}  = \log \left( {\underbrace {1 + 1 + ... + 1}_{ 
-    n{\text{ lần}}}} \right) = \log n
+H(X) := \sum_{i = 1}^n p_i \log \left( \frac{1}{p_i} \right) \leq \log \left( \sum_{i = 1}^n \left( p_i \frac{1}{p_i} \right) \right) = \log \left( \sum_{i = 1}^n 1 \right) = \log \left( \underbrace{1 + 1 + \ldots + 1}_{\text{n times}} \right) = \log n
 ```
 &nbsp;&nbsp;&nbsp;&nbsp;Dấu bằng xảy ra khi và chỉ khi ${p_1} = ... = {p_n} = \frac{1}{n}$ , nghĩa là $X$ phân bố đều tức có độ bất định thông tin cao nhất. 
 &nbsp;&nbsp;&nbsp;&nbsp;Bây giờ, ta chia $n$ đồng xu thành 3 đống, 1 đống có $n-2a$ đồng và hai đống còn lại mỗi đống có $a$ đồng. Ta thực hiện cân hai đống có $a$ đồng, và từ đó có thể xác định được đồng xu giả nằm ở đống nào trong 3 đống. Như vậy, “đống xu chứa đồng giả” là một biến ngẫu nhiên nhận 3 giá trị, với phân bố xác suất theo quy tắc nhân chính là $\left( {\frac{{n - 2a}}{n}} \right)\left( {\frac{a}{n}} \right)\left( {\frac{a}{n}} \right)$ <br>
@@ -87,4 +86,11 @@ H\left( k \right) =  - \frac{{k + 2}}{n}\log \frac{{k + 2}}{n} - \frac{{2k}}{n}\
 &nbsp;&nbsp;&nbsp;&nbsp;Đặt $h = \left\lceil {{{\log }_3}n} \right\rceil$ thì $h \ge 1$ và ${3^{h - 1}} < n \le {3^h}$ . Do ${3^h}$ là bội của 3 nên ${3^{h - 1}} < n < 3k + 3 \le {3^h}$ . <br>
 $\Longrightarrow$ $\left\lceil {{{\log }_3}\left( {3k + 3} \right)} \right\rceil  = h = \left\lceil {{{\log }_3}n} \right\rceil$ <br>
 &nbsp;&nbsp;&nbsp;&nbsp;Tóm lại ta kết luận cần không quá $\left\lceil {{{\log }_3}n} \right\rceil$ lần cân. 
-### 3. Mã Huffman
+### 3. Mã Huffman <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Trước khi đến với vấn đề tìm cách cân với số lần cân trung bình nhỏ nhất, chúng ta giới thiệu bài toán có vẻ không liên quan sau đây về mã hóa và nén dữ liệu. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Bây giờ giả sử chúng ta cần mã hóa 1 văn bản sang hệ nhị phân (chẳng hạn, văn bản chỉ gồm $26$ kí tự in thường trong bảng chữ cái tiếng Anh). Tất nhiên chúng ta muốn rằng từ bản mã hóa phải dịch lại nguyên vẹn được văn bản ban đầu. Cách làm ngây thơ nhất là lấy $2^{5}=32$ chuỗi nhị phân với độ dài 5 để mã hóa: 
+```math
+{a \to 00000,{\rm{      }}b \to 00001,{\rm{      }}c \to 00010,......}
+```
+&nbsp;&nbsp;&nbsp;&nbsp;Từ bản mã hóa, ta dịch được từng chuỗi 5 kí tự nhị phân để thu được văn bản ban đầu. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Ta muốn làm tốt hơn thế, nhưng tất nhiên nếu chỉ dùng $2^{4}=16$ chuỗi nhị phân thì không đủ cho $26$ chữ cái. Ta muốn bản mã hóa có độ dài ngắn nhất có thể. Khi đó, với ý tưởng của mã hóa Huffman, ta sẽ dùng một bản mã với độ dài của từng ký tự có thể khác nhau. Lúc ấy ta phát sinh các vấn đề như sau: <br>
