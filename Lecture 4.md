@@ -8,7 +8,10 @@ Ta chứng minh định lí này bằng cách sử dụng *cây quyết định*
 Như vậy cây quyết định là một *cây tam phân (ternary tree)*, tức là mỗi đỉnh có không quá 3 đỉnh con. Ở mỗi lá cây, ta kết luận được đã tìm được đồng xu giả, nên cây quyết định cần ít nhất $n$ lá.
 #### *<ins>Ví dụ 1.2:</ins>* Đây là cây quyết định với trường hợp 5 đồng xu (tức $n=5$ ).
 
+<div align="center">
+  
 ![image](https://github.com/MustardLawyer1995/LTTC-LTTCKH/assets/156400720/7a46f667-f34e-4c4d-a35d-f8f6748c0c71)
+</div>
 
 Chiều cao của một cây là ***chiều sâu của đỉnh sâu nhất của cây*** , hay nói cách khác là thế hệ muộn nhất mà cây vẫn còn đỉnh. Ở đây, chiều cao của cây quyết định chính là số lần cân trong trường hợp xấu nhất (nghĩa là số lần cân để chắc chắn xác định được đồng xu giả).
 #### *<ins>Bổ đề 1.3:</ins>* Cho $T$ là một cây $D-$ phân. Ở thế hệ thứ $k$ , cây có không quá $D^k$ đỉnh. Nói riêng, nếu chiều cao của $T$ là $h$ thì nó không có $D^h$ lá. <br>
@@ -131,15 +134,31 @@ Mã phi tiền tố đảm bảo việc dịch về văn bản ban đầu là du
 
 &nbsp;&nbsp;&nbsp;&nbsp;Khi đó cây Huffman thu được là một ***cây nhị phân đầy đủ*** (mỗi đỉnh không phải là lá và có đúng 2 đỉnh con). Gán các mã cho đỉnh từ gốc cây như sau: Gốc cây là chuỗi trống. Nếu một đỉnh có mã là $s$ thì hai đỉnh con của nó có mã là $s_0$ và $s_1$ . Các kí tự của bảng chữ cái ban đầu đều là lá cây, vì thế dễ thấy mã thu được là phi tiền tố. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;Khi giải mã, chúng ta bắt đầu từ gốc cây. Đọc dần các kí tự của bản mã hóa, Mỗi khi đọc ký tự 0  hoặc 1 thì ta đi xuống 1 trong 2 đỉnh con của đỉnh hiện tại (tùy theo ký tự đọc vào là 0 hay 1). Khi đi đến lá cây, ta lấy kí tự ở lá đó để thêm vào văn bản dịch, rồi sau đó quay lại gốc cây. <br>
-#### *<ins>Ví dụ 3.4:</ins>* <br>
+#### *<ins>Ví dụ 3.5:</ins>* <br>
 Sau đây là ví dụ về xây dựng mã Huffman <br>
 
+<div align="center">
+  
+| Bảng chữ cái | $a$ | $b$ | $c$ | $d$ | $e$ |
+|:------------:|:--------:|:--------:|:--------:|:--------:|:--------:|
+| Tần suất     | $0.25$   | $0.15$   | $0.20$   | $0.10$   | $0.30$   |
+</div>
+Thứ tự từng bước là: 
 
+```math
+a,b,c,d,e \to \left( {d,b} \right),c,a,e \to \left( {d,b,c} \right),a,e \to \left( {d,b,c} \right),\left( {a,e} \right) \to \left( {d,b,c,a,e} \right)
+```
+Khi đó ta có hình vẽ xây dựng cây như sau: <br>
+<div align="center">
 
+![image](https://github.com/MustardLawyer1995/LTTC-LTTCKH/assets/156400720/b6639a9e-f3cb-43d5-8ffa-318585fb0e3b)
+</div>
+Độ dài trung bình khi mã hóa một kí tự của mã vừa xây dựng là:
 
+```math
+{0,25.2 + 0,15.3 + 0,2.3 + 0,1.3 + 0,3.2 = 2,45}
+```
+#### *<ins>Bổ đề 3.6:</ins>* <br>
+Giả sử $n \ge 3$ và ${a_1},{a_2}....{a_n}$ là một bảng chữ cái có tần suất tương ứng ${p_1} \ge {p_2} \ge ... \ge {p_n}$ . Trong đó ta kí hiệu $\\{ 0,1 \\}^{*}$ là tập tất cả các chuỗi nhị phân có độ dài hữu hạn. Tồn tại một hàm mã hóa có dạng là: $\\{ {a_1},{a_2}....{a_n} \\}$ $\to \\{ 0,1 \\}^{\*}$ , tối ưu so với các mã tiền tố khác, ta có: ${p_1}\left| {c\left( 1 \right)} \right| + {p_2}\left| {c\left( 2 \right)} \right| + ... + {p_n}\left| {c\left( n \right)} \right|$ nhỏ nhất với kí hiệu $\left| s \right|$ là độ dài chuỗi nhị phân $s$ , thỏa mãn các yếu tố sau đây: 
 
-
-
-
-
-
+-	Tồn tại một chuỗi nhị phân $w$ với $c\left( {n - 1} \right) = w0$  và  .
