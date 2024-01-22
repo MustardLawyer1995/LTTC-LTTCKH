@@ -168,3 +168,24 @@ Khi đó ta có hình vẽ xây dựng cây như sau: <br>
 
 Khi ấy, từ bổ đề trên, ta suy ra mã Huffman là mã tối ưu. <br>
 ### 4. Mã Huffman $D-$ phân và ứng dụng <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Giả sử bây giờ bảng chữ cái dùng để mã hóa có $D$ kí tự thay vì chỉ hai ký tự $0,1$ . Ta vẫn sẽ xây dựng mã Huffman dưới dạng cây $D-$ phân đầy đủ. Ở mỗi bước xây dựng cây, ta chọn $D$ đỉnh với tần suất nhỏ nhất rồi gộp lại thành đỉnh mới. Khi ấy ta có một chút vấn đề như sau: <br>
+#### *<ins>Bổ đề 4.1:</ins>* <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Một cây $D-$ phân đầy đủ thì có số lá  $\equiv {1^{}}^{}\left( {\bmod D - 1} \right)$ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
