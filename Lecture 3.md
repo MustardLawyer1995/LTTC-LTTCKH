@@ -87,8 +87,26 @@ $\Longrightarrow$ ***Bổ đề 2.1*** đã được chứng minh. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Khi đó ta có đủ cơ sở để quy về chứng minh mệnh đề sau:
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Mệnh đề 2.2:</ins>* ${2^m} < N < {2^{m + 1}}$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Chứng minh mệnh đề 2.2:</ins>* <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chọn $V = {2^m}$ và $N - V = N - {2^m} < {2^m} \Rightarrow N - V \le {2^m} - 1$  .
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dễ thấy thế bắt đầu $\left( {{2^m}{{,2}^m} - 1} \right)$ luôn dẫn đến chiến thắng vì số người 2 phe sẽ giảm dần tới $(1,0)$ sau $m$ lượt bỏ phiếu, suy ra  bất kỳ thế $\left( {{2^m},N - V} \right)$ nào thỏa mãn $N - V \le {2^m} - 1$ đều dẫn tới chiến thắng tức *(*5)* được chứng minh. Suy ra luôn tồn tại giá trị $V = {2^k}$ nhỏ nhất đảm bảo chiến thắng, kết hợp với ***bổ đề 2.1*** vừa nêu, ta kết luận đây cũng chính là giá trị tối ưu của $V$ mà ta cần chọn. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chọn $V = {2^m}$ và $N - V = N - {2^m} < {2^m} \Rightarrow N - V \le {2^m} - 1$ . <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dễ thấy thế bắt đầu $\left( {{2^m}{{,2}^m} - 1} \right)$ luôn dẫn đến chiến thắng vì số người 2 phe sẽ giảm dần tới $(1,0)$ sau $m$ lượt bỏ phiếu, suy ra  bất kỳ thế $\left( {{2^m},N - V} \right)$ nào thỏa mãn $N - V \le {2^m} - 1$ đều dẫn tới chiến thắng tức *(*5)* được chứng minh. Suy ra luôn tồn tại giá trị $V = {2^k}$ nhỏ nhất đảm bảo chiến thắng, kết hợp với ***bổ đề 2.1*** vừa nêu, ta kết luận đây cũng chính là giá trị tối ưu của $V$ mà ta cần chọn. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Điều này ngụ ý $2^k$ nằm trong khoảng giới hạn của giá trị $V$ tối ưu đã nói đến ở mục ***1.*** , mà ta cũng đã chứng minh trong khoảng giá trị đó chỉ tồn tại *"nhiều nhất"* 1 giá trị dạng *2^k* nên suy ra luôn tồn tại duy nhất 1 giá trị $2^k$ nằm trong khoảng giới hạn, và đây là giá trị $V$ tối ưu cần tìm  <br>
+
+$\Longrightarrow$ Hoặc là ${2^k} = \frac{{N + 2}}{3}$ , hoặc ${2^k}$ là giá trị dạng ${2^k}$ liền ngay sau $\frac{N + 2}{3}$ . <br>
+
+$\Longrightarrow$ Gọi $\lceil \rceil$ là hàm làm tròn lên, khi đó ta có thể tính được:  
+```math
+k = \left\lceil {{{\log }_2}\frac{{N + 2}}{3}} \right\rceil
+```
+
+$\Longrightarrow$ Vậy công thức tổng quát cho số người tối ưu để lập đội luôn thắng trong trò chơi  “Luật thiểu số” là: <br>
+
+<p style="font-size: 24px">
+  \( V = {2^k} = {2^{\left\lceil {{{\log }_2}\frac{{N + 2}}{3}} \right\rceil }} \)
+</p>
+
+```math
+{V = {2^k} = {2^{\left\lceil {{{\log }_2}\frac{{N + 2}}{3}} \right\rceil }}}
+```
 
 
 
