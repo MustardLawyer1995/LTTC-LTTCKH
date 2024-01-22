@@ -33,7 +33,8 @@ $\Longrightarrow$ Hoàn tất chứng minh *định lí 1.1* <br>
 &nbsp;&nbsp;&nbsp;&nbsp;Entrophy thông tin là đại lượng đo độ bất định của giá trị của 1 biến ngẫu nhiên. Một cách tương đương, nó đo đại lượng thông tin trung bình nhận được sau khi thực hiện phép đo giá trị của biến ngẫu nhiên đó. Nếu entrophy bằng không (giá trị tất định) thì việc đo giá trị không mang lại thêm thông tin gì. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;Khi $n$ cố định, ta áp dụng bất đẳng thức Jensen cho hàm lõm $log$ , khi đó ta có đánh giá sau:
 ```math
-H\left( X \right): = \sum\limits_{i = 1}^n {{p_i}\log \left( {\frac{1}{{{p_i}}}} \right)}  \le \log \sum\limits_{i = 1}^n {\left( {{p_i}\frac{1}{{{p_i}}}} \right)}  = \log \sum\limits_{i = 1}^n {\left( 1 \right)}  = \log \left( {\underbrace {1 + 1 + ... + 1}_{n{\rm{ lan}}}} \right) = \log n
+H\left( X \right): = \sum\limits_{i = 1}^n {{p_i}\log \left( {\frac{1}{{{p_i}}}} \right)}  \le \log \sum\limits_{i = 1}^n {\left( {{p_i}\frac{1}{{{p_i}}}} \right)}  = \log \sum\limits_{i = 1}^n {\left( 1 \right)}  = \log \left( {\underbrace {1 + 1 + ... + 1}_{ 
+    n{\text{ lần}}}} \right) = \log n
 ```
 &nbsp;&nbsp;&nbsp;&nbsp;Dấu bằng xảy ra khi và chỉ khi ${p_1} = ... = {p_n} = \frac{1}{n}$ , nghĩa là $X$ phân bố đều tức có độ bất định thông tin cao nhất. 
 &nbsp;&nbsp;&nbsp;&nbsp;Bây giờ, ta chia $n$ đồng xu thành 3 đống, 1 đống có $n-2a$ đồng và hai đống còn lại mỗi đống có $a$ đồng. Ta thực hiện cân hai đống có $a$ đồng, và từ đó có thể xác định được đồng xu giả nằm ở đống nào trong 3 đống. Như vậy, “đống xu chứa đồng giả” là một biến ngẫu nhiên nhận 3 giá trị, với phân bố xác suất theo quy tắc nhân chính là $\left( {\frac{{n - 2a}}{n}} \right)\left( {\frac{a}{n}} \right)\left( {\frac{a}{n}} \right)$ <br>
