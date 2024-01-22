@@ -52,7 +52,7 @@ h\left( x \right) =  - \left( {1 - 2x} \right)\log \left( {1 - 2x} \right) - 2x\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nếu $n=3k$ thì dĩ nhiên ta chọn $a=k$ . <br>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Trường hợp 2:* <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Nếu $n=3k+1$ thì cần chọn $a=k$ hoặc $a=k+1$ , khi đó ta có 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nếu $n=3k+1$ thì cần chọn $a=k$ hoặc $a=k+1$ , khi đó ta có 
 ```math
 H\left( k \right) =  - \frac{{k + 1}}{n}\log \frac{{k + 1}}{n} - \frac{{2k}}{n}\log \frac{{2k}}{n};H\left( {k + 1} \right) =  - \frac{{k - 1}}{n}\log \frac{{k - 1}}{n} - \frac{{2\left( {k + 1} \right)}}{n}\log \frac{{k + 1}}{n}
 ```
@@ -60,9 +60,9 @@ H\left( k \right) =  - \frac{{k + 1}}{n}\log \frac{{k + 1}}{n} - \frac{{2k}}{n}\
 ```math
 \frac{{k + 1}}{n}\log \frac{{k + 1}}{n} + \frac{{k - 1}}{n}\log \frac{{k - 1}}{n} > \frac{{2k}}{n}\log \frac{k}{n} \text{   tức   } H\left( k \right) > H\left( {k + 1} \right)
 ```
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Suy ra ở trường hợp này cách chia tốt nhất chính là $k,k,k + 1$ .
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Suy ra ở trường hợp này cách chia tốt nhất chính là $k,k,k + 1$ . <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Trường hợp 3:* <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Nếu $n=3k+2$ thì cần chọn $a=k$ hoặc $a=k+1$ , khi đó ta có 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nếu $n=3k+2$ thì cần chọn $a=k$ hoặc $a=k+1$ , khi đó ta có 
 ```math
 H\left( k \right) =  - \frac{{k + 2}}{n}\log \frac{{k + 2}}{n} - \frac{{2k}}{n}\log \frac{{2k}}{n};H\left( {k + 1} \right) =  - \frac{k}{n}\log \frac{k}{n} - \frac{{2\left( {k + 1} \right)}}{n}\log \frac{{k + 1}}{n}
 ```
@@ -73,6 +73,17 @@ H\left( k \right) =  - \frac{{k + 2}}{n}\log \frac{{k + 2}}{n} - \frac{{2k}}{n}\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Suy ra ở trường hợp này cách chia tốt nhất chính là $k,k+1,k + 1$ . <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sau lần cân đầu tiên với $n$ đồng xu, ta xác định được đồng xu giả nằm trong 1 trong 3 đống xu nhỏ. Ta áp dụng lại cách cân này với đống xu nhỏ đó. <br>
 
-#### *<ins>Bổ đề 1.3:</ins>* Cách cân như trên cần không quá $\left\lceil {{{\log }_3}n} \right\rceil$ lần cân trong mọi trường hợp.
-
-
+#### *<ins>Mệnh đề 2.2:</ins>* Cách cân như trên cần không quá $\left\lceil {{{\log }_3}n} \right\rceil$ lần cân trong mọi trường hợp. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Chứng minh:</ins>* <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Quy nạp theo số xu $n$ . Với $n \le 2$ , ta không có gì để chứng minh. Giả sử $n \ge 3$ . Nếu $n=3k$ thì ở lần cân tiếp theo, ta cần cân $k$ đồng xu. Khi ấy theo nguyên lí quy nạp, cần không quá:
+```math
+{1 + \left\lceil {{{\log }_3}k} \right\rceil  = \left\lceil {1 + {{\log }_3}k} \right\rceil  = \left\lceil {{{\log }_3}\left( {3k} \right)} \right\rceil  = \left\lceil {{{\log }_3}n} \right\rceil } \text{    (lần cân)}
+```
+&nbsp;&nbsp;&nbsp;&nbsp;Nếu $n = 3k + r,r \in  {1,2}$ , thì ở lần cân tiếp theo, ta cần $k$ hoặc $k+1$ đồng xu. Khi ấy theo nguyên lí quy nạp, cần không quá:
+```math
+{1 + \left\lceil {{{\log }_3}\left( {k + 1} \right)} \right\rceil  = \left\lceil {1 + {{\log }_3}\left( {k + 1} \right)} \right\rceil  = \left\lceil {{{\log }_3}\left( {3k + 3} \right)} \right\rceil } \text{    (lần cân)}
+```
+&nbsp;&nbsp;&nbsp;&nbsp;Đặt $h = \left\lceil {{{\log }_3}n} \right\rceil$ thì $h \ge 1$ và ${3^{h - 1}} < n \le {3^h}$ . Do ${3^h}$ là bội của 3 nên ${3^{h - 1}} < n < 3k + 3 \le {3^h}$ . <br>
+$\Longrightarrow$ $\left\lceil {{{\log }_3}\left( {3k + 3} \right)} \right\rceil  = h = \left\lceil {{{\log }_3}n} \right\rceil$ <br>
+&nbsp;&nbsp;Tóm lại ta kết luận cần không quá $\left\lceil {{{\log }_3}n} \right\rceil$ lần cân. 
+### 3. Mã Huffman
