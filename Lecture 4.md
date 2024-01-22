@@ -10,4 +10,5 @@ Như vậy cây quyết định là một *cây tam phân (ternary tree)*, tức
 
 ![image](https://github.com/MustardLawyer1995/LTTC-LTTCKH/assets/156400720/7a46f667-f34e-4c4d-a35d-f8f6748c0c71)
 
-Chiều cao của một cây là ***chiều sâu của đỉnh sâu nhất của cây*** , hay nói cách khác là thế hệ muộn nhất mà cây vẫn còn đỉnh. Ở đây, chiều cao của cây quyết định chính là số lần cân trong trường hợp xấu nhất (nghĩa là số lần cân để chắc chắn xác dịnh đồng xu giả).
+Chiều cao của một cây là ***chiều sâu của đỉnh sâu nhất của cây*** , hay nói cách khác là thế hệ muộn nhất mà cây vẫn còn đỉnh. Ở đây, chiều cao của cây quyết định chính là số lần cân trong trường hợp xấu nhất (nghĩa là số lần cân để chắc chắn xác định được đồng xu giả).
+#### *<ins>Bổ đề 1.3:</ins>* Cho $T$ là một cây $D-$ phân. Ở thế hệ thứ $k$ , cây có không quá $D^k$ đỉnh. Nói riêng, nếu chiều cao của $T$ là $h$ thì nó không có $D^h$ lá. 
