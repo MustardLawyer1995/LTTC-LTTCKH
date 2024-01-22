@@ -86,5 +86,5 @@ H\left( k \right) =  - \frac{{k + 2}}{n}\log \frac{{k + 2}}{n} - \frac{{2k}}{n}\
 ```
 &nbsp;&nbsp;&nbsp;&nbsp;Đặt $h = \left\lceil {{{\log }_3}n} \right\rceil$ thì $h \ge 1$ và ${3^{h - 1}} < n \le {3^h}$ . Do ${3^h}$ là bội của 3 nên ${3^{h - 1}} < n < 3k + 3 \le {3^h}$ . <br>
 $\Longrightarrow$ $\left\lceil {{{\log }_3}\left( {3k + 3} \right)} \right\rceil  = h = \left\lceil {{{\log }_3}n} \right\rceil$ <br>
-&nbsp;&nbsp;Tóm lại ta kết luận cần không quá $\left\lceil {{{\log }_3}n} \right\rceil$ lần cân. 
+&nbsp;&nbsp;&nbsp;&nbsp;Tóm lại ta kết luận cần không quá $\left\lceil {{{\log }_3}n} \right\rceil$ lần cân. 
 ### 3. Mã Huffman
