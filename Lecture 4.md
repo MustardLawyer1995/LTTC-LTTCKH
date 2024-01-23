@@ -170,22 +170,51 @@ Khi ấy, từ bổ đề trên, ta suy ra mã Huffman là mã tối ưu. <br>
 ### 4. Mã Huffman $D-$ phân và ứng dụng <br>
 &nbsp;&nbsp;&nbsp;&nbsp;Giả sử bây giờ bảng chữ cái dùng để mã hóa có $D$ kí tự thay vì chỉ hai ký tự $0,1$ . Ta vẫn sẽ xây dựng mã Huffman dưới dạng cây $D-$ phân đầy đủ. Ở mỗi bước xây dựng cây, ta chọn $D$ đỉnh với tần suất nhỏ nhất rồi gộp lại thành đỉnh mới. Khi ấy ta có một chút vấn đề như sau: <br>
 #### *<ins>Bổ đề 4.1:</ins>* <br>
-&nbsp;&nbsp;&nbsp;&nbsp;Một cây $D-$ phân đầy đủ thì có số lá  $\equiv {1^{}}^{}\left( {\bmod D - 1} \right)$ 
+&nbsp;&nbsp;&nbsp;&nbsp;Một cây $D-$ phân đầy đủ thì có số lá  $\equiv {1^{}}^{}\left( {\bmod D - 1} \right)$ <br>
 
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Chứng minh:</ins>* <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Một cây $D-$ phân đầy đủ được xây dựng bằng cách trồng thêm $D-$ lá vào lá cũ ở mỗi bước, nghĩa là số lá tăng thêm $D-1$ (lá cũ trở thành đỉnh trong). Bắt đầu từ cây chỉ có gốc có số lá bằng 1, ta có điều phải chứng minh. <br>
 
+&nbsp;&nbsp;&nbsp;&nbsp;Như vậy, số kí tự của bảng chữ cái ban đầu phải   để ta có thể xây dựng cây Huffman D-phân. Tuy nhiên ta có thể khắc phục rất đơn giản: thêm không quá   kí tự giả vào bảng chữ cái với tần suất bằng 0, rồi xây dựng cây Huffman như bình thường. Với  ,  ta không cần thêm gì cả, với  , ta chỉ cần thêm một kí tự giả nếu số kí tự ban đầu là số chẵn. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Ta bắt đầu xây dựng cây Huffman tam phân bằng cách bắt đầu gán tất cả các đỉnh trọng 1 (thay vì tần suất $\frac{1}{n}$ , nhằm đơn giản hóa việc tính toán). Từ đó ta lại tìm cách cân tối ưu (số lần cân trung bình ít nhất). <br>
 
+#### *<ins>Ví dụ 4.2:</ins>* <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Đây là ví dụ về cây Huffman với 11 đồng xu. <br>
+<div align="center">
 
+![image](https://github.com/MustardLawyer1995/LTTC-LTTCKH/assets/156400720/1a55eb36-13f9-4534-9e14-5833b9dcba03)
+</div>
+&nbsp;&nbsp;&nbsp;&nbsp;Trước hết ta chia lấy 6 đồng xu chia thành 2 đống đều nhau rồi đem cân. Nếu cân lệch thì đồng xu giả nằm trong đống nhẹ hơn. Nếu cân thăng bằng thì đồng xu giả nằm trong 5 đồng xu còn lại. Ta tiếp tục cân và đi xuống dưới theo cây Huffman đã xây dựng. Số lần cân trung bình bằng: 
 
+```math
+\frac{8}{{11}}.2 + \frac{3}{{11}}.3 = \frac{{25}}{{11}}
+```
+&nbsp;&nbsp;&nbsp;&nbsp;Nếu cân theo cách tối đa hóa entrophy thông tin như nêu mục trước thì ta có sơ đồ cây như sau: 
+<div align="center">
 
+![image](https://github.com/MustardLawyer1995/LTTC-LTTCKH/assets/156400720/9e76f09b-3e1a-4971-9a3a-2fb21ec2c720)
+</div>
+&nbsp;&nbsp;&nbsp;&nbsp;Khi ấy số lần cân trung bình là:
 
+```math
+\frac{7}{{11}}.2 + \frac{4}{{11}}.3 = \frac{{26}}{{11}}
+```
+&nbsp;&nbsp;&nbsp;&nbsp;Phương pháp cân này là một cách của *thuật toán tham lam*, nghĩa là làm tốt nhất có thể qua từng bước. Tuy nhiên, điều đó không có nghĩa rằng cách làm sau cùng chính là cách làm tối ưu *(tối ưu địa phương không thể suy ra được tối ưu toàn cục)* <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Không phải lúc này ta cũng xây dựng được một cách cân từ cây Huffman. Chẳng hạn với $n=6$ , ta phải thêm 1 đỉnh giả có trọng 0. Khi ấy cây Huffman lúc này được biểu diễn như sau: <br>
+<div align="center">
 
+![image](https://github.com/MustardLawyer1995/LTTC-LTTCKH/assets/156400720/7a50fac9-9b08-4a15-be37-d61fe52752a0)
+</div>
+&nbsp;&nbsp;&nbsp;&nbsp;Ta gọi 1 đỉnh với ba đỉnh con có trọng đôi một khác nhau là một đỉnh xấu. Rõ ràng, nếu gốc cây là một đỉnh xấu thì không thể cân theo cây Huffman được. 
+&nbsp;&nbsp;&nbsp;&nbsp;Nếu cây Huffman có đỉnh xấu, nhưng gốc cây không phải đỉnh xấu, ta vẫn có thể ứng biến như sau. Chẳng hạn xét trường hợp $n=12$ , ta có: 
+<div align="center">
 
+![image](https://github.com/MustardLawyer1995/LTTC-LTTCKH/assets/156400720/885bedd0-10c1-467b-ada0-b6c78a2bf2c8)
+</div>
 
-
-
-
-
-
+&nbsp;&nbsp;&nbsp;&nbsp;Để cân theo cây này, ta chia thành ba đống với số xu lần lượt là $6,3,3$ . Cân 2 đống với 3 đồng xu. Nếu xảy ra trường hợp cân thăng bằng thì đồng xu giả này nằm trong 6 đồng còn lại và quy về trường hợp $n=6$ như hình trước. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Tuy nhiên, ta lại dùng được cây Huffman theo cách như sau: ta chia 6 đồng xu này thành ba đống với số lượng lần lượt là $2,1,3$ . Ta có thể xác định đồng xu giả nằm ở đống nào bằng cách mượn 1 đồng xu thật (nhờ cân lần đầu, ta đã biết chắc 6 đồng xu là thật), thêm vào 1 đống có 1 đồng, rồi cân nó cùng với đống có 2 đồng. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Tổng quát, ta luôn cân được theo cây Huffman nếu có thêm $\left\lfloor {\frac{n}{2}} \right\rfloor$ đồng xu thật làm mẫu. Thật vậy, ta đang ở 1 đỉnh có trọng là $m$ (nghĩa là ta biết đồng xu giả nằm trong $m$ đồng xu nào đó), $m \le n$ . Dựa vào các đỉnh con của đỉnh này trong cây Huffman để chia $m$ đồng xu thành 3 đống, với trọng ${m_1} \le {m_2} \le {m_3}$ . Ít nhất 1 trong hai số lần lượt là ${m_3} - {m_2}$ và ${m_2} - {m_1}$ không vượt quá $\frac{m}{2} \le \frac{n}{2}$ . Vì thế ta có thể lấy $k \le \left\lfloor {\frac{n}{2}} \right\rfloor$ đồng xu thật làm mẫu sao cho để cân được ${m_2} + k$ với ${m_3}$ hoặc ${m_1} + k$ với ${m_2}$  
 
 
 
