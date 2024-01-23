@@ -83,7 +83,7 @@ H\left( k \right) =  - \frac{{k + 2}}{n}\log \frac{{k + 2}}{n} - \frac{{2k}}{n}\
 ```math
 {1 + \left\lceil {{{\log }_3}k} \right\rceil  = \left\lceil {1 + {{\log }_3}k} \right\rceil  = \left\lceil {{{\log }_3}\left( {3k} \right)} \right\rceil  = \left\lceil {{{\log }_3}n} \right\rceil } \text{    (lần cân)}
 ```
-&nbsp;&nbsp;&nbsp;&nbsp;Nếu $n = 3k + r,r \in  {1,2}$ , thì ở lần cân tiếp theo, ta cần $k$ hoặc $k+1$ đồng xu. Khi ấy theo nguyên lí quy nạp, cần không quá:
+&nbsp;&nbsp;&nbsp;&nbsp;Nếu $n = 3k + r,r \in  \\{ 1,2 \\}$ , thì ở lần cân tiếp theo, ta cần $k$ hoặc $k+1$ đồng xu. Khi ấy theo nguyên lí quy nạp, cần không quá:
 ```math
 {1 + \left\lceil {{{\log }_3}\left( {k + 1} \right)} \right\rceil  = \left\lceil {1 + {{\log }_3}\left( {k + 1} \right)} \right\rceil  = \left\lceil {{{\log }_3}\left( {3k + 3} \right)} \right\rceil } \text{    (lần cân)}
 ```
