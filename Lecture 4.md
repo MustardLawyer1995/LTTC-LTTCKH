@@ -159,11 +159,11 @@ Khi đó ta có hình vẽ xây dựng cây như sau: <br>
 {0,25.2 + 0,15.3 + 0,2.3 + 0,1.3 + 0,3.2 = 2,45}
 ```
 #### *<ins>Bổ đề 3.6:</ins>* <br>
-&nbsp;&nbsp;&nbsp;&nbsp;Giả sử $n \ge 3$ và ${a_1},{a_2}....{a_n}$ là một bảng chữ cái có tần suất tương ứng ${p_1} \ge {p_2} \ge ... \ge {p_n}$ . Trong đó ta kí hiệu $\\{ 0,1 \\}^{*}$ là tập tất cả các chuỗi nhị phân có độ dài hữu hạn. Tồn tại một hàm mã hóa có dạng là: $\\{ {a_1},{a_2}....{a_n} \\}$ $\to \\{ 0,1 \\}^{\*}$ , tối ưu so với các mã tiền tố khác, ta có: ${p_1}\left| {c\left( 1 \right)} \right| + {p_2}\left| {c\left( 2 \right)} \right| + ... + {p_n}\left| {c\left( n \right)} \right|$ nhỏ nhất với kí hiệu $\left| s \right|$ là độ dài chuỗi nhị phân $s$ , thỏa mãn các yếu tố sau đây: 
+&nbsp;&nbsp;&nbsp;&nbsp;Giả sử $n \ge 3$ và ${a_1},{a_2}....{a_n}$ là một bảng chữ cái có tần suất tương ứng ${p_1} \ge {p_2} \ge ... \ge {p_n}$ . Trong đó ta kí hiệu $\\{ 0,1 \\}^{*}$ là tập tất cả các chuỗi nhị phân có độ dài hữu hạn. Tồn tại một hàm mã hóa có dạng là: $c: \\{ {a_1},{a_2}....{a_n} \\}$ $\to \\{ 0,1 \\}^{\*}$ , tối ưu so với các mã tiền tố khác, ta có: ${p_1}\left| {c\left( 1 \right)} \right| + {p_2}\left| {c\left( 2 \right)} \right| + ... + {p_n}\left| {c\left( n \right)} \right|$ nhỏ nhất với kí hiệu $\left| s \right|$ là độ dài chuỗi nhị phân $s$ , thỏa mãn các yếu tố sau đây: 
 
 -	Tồn tại một chuỗi nhị phân $w$ với $c\left( {n - 1} \right) = w0$ và $c\left( n \right) = w1$ .
 -	Xét bảng chữ cái ${b_1},{b_2}...{b_{n - 1}}$ với tần suất ${q_1},{q_2}...{q_{n - 1}}$ 
- cho bởi: ${q_1} = {p_1}....{q_{n - 2}} = {p_{n - 2}},{q_{n - 1}} = {p_{n + 1}} + {p_n}$  và hàm mã hóa $\\{ {a_1},{a_2}....{a_n} \\}$ $\to \\{ 0,1 \\}^{\*}$ là cho bởi $c'\left( {{b_1}} \right) = c\left( {{a_1}} \right),....,c'\left( {{b_{n - 2}}} \right) = c\left( {{a_{n - 2}}} \right),c'\left( {{b_{n - 1}}} \right) = w$ <br>
+ cho bởi: ${q_1} = {p_1}....{q_{n - 2}} = {p_{n - 2}},{q_{n - 1}} = {p_{n - 1}} + {p_n}$  và hàm mã hóa $c': \\{ {b_1},{b_2}....{b_n} \\}$ $\to \\{ 0,1 \\}^{\*}$ là cho bởi $c'\left( {{b_1}} \right) = c\left( {{a_1}} \right),....,c'\left( {{b_{n - 2}}} \right) = c\left( {{a_{n - 2}}} \right),c'\left( {{b_{n - 1}}} \right) = w$ <br>
   Khi đó ta nhận thấy $c'$ tối ưu trên bảng chữ cái $\\{ {b_1},{b_2}....b_{n - 1} \\}$ <br>
 
 Khi ấy, từ bổ đề trên, ta suy ra mã Huffman là mã tối ưu. <br>
@@ -175,7 +175,7 @@ Khi ấy, từ bổ đề trên, ta suy ra mã Huffman là mã tối ưu. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;*<ins>Chứng minh:</ins>* <br>
 &nbsp;&nbsp;&nbsp;&nbsp;Một cây $D-$ phân đầy đủ được xây dựng bằng cách trồng thêm $D-$ lá vào lá cũ ở mỗi bước, nghĩa là số lá tăng thêm $D-1$ (lá cũ trở thành đỉnh trong). Bắt đầu từ cây chỉ có gốc có số lá bằng 1, ta có điều phải chứng minh. <br>
 
-&nbsp;&nbsp;&nbsp;&nbsp;Như vậy, số kí tự của bảng chữ cái ban đầu phải   để ta có thể xây dựng cây Huffman D-phân. Tuy nhiên ta có thể khắc phục rất đơn giản: thêm không quá   kí tự giả vào bảng chữ cái với tần suất bằng 0, rồi xây dựng cây Huffman như bình thường. Với  ,  ta không cần thêm gì cả, với  , ta chỉ cần thêm một kí tự giả nếu số kí tự ban đầu là số chẵn. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Như vậy, số kí tự của bảng chữ cái ban đầu phải $\equiv {1^{}}^{}\left( {\bmod D - 1} \right)$ để ta có thể xây dựng cây Huffman $D-$ phân. Tuy nhiên ta có thể khắc phục rất đơn giản: thêm (không quá $D-2$ ) kí tự giả vào bảng chữ cái với tần suất bằng 0, rồi xây dựng cây Huffman như bình thường. (Với $D=2$ ,  ta không cần thêm gì cả, với  , ta chỉ cần thêm một kí tự giả nếu số kí tự ban đầu là số chẵn). <br>
 &nbsp;&nbsp;&nbsp;&nbsp;Ta bắt đầu xây dựng cây Huffman tam phân bằng cách bắt đầu gán tất cả các đỉnh trọng 1 (thay vì tần suất $\frac{1}{n}$ , nhằm đơn giản hóa việc tính toán). Từ đó ta lại tìm cách cân tối ưu (số lần cân trung bình ít nhất). <br>
 
 #### *<ins>Ví dụ 4.2:</ins>* <br>
