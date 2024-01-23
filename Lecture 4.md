@@ -205,8 +205,9 @@ Khi ấy, từ bổ đề trên, ta suy ra mã Huffman là mã tối ưu. <br>
 
 ![image](https://github.com/MustardLawyer1995/LTTC-LTTCKH/assets/156400720/7a50fac9-9b08-4a15-be37-d61fe52752a0)
 </div>
-&nbsp;&nbsp;&nbsp;&nbsp;Ta gọi 1 đỉnh với ba đỉnh con có trọng đôi một khác nhau là một đỉnh xấu. Rõ ràng, nếu gốc cây là một đỉnh xấu thì không thể cân theo cây Huffman được. 
-&nbsp;&nbsp;&nbsp;&nbsp;Nếu cây Huffman có đỉnh xấu, nhưng gốc cây không phải đỉnh xấu, ta vẫn có thể ứng biến như sau. Chẳng hạn xét trường hợp $n=12$ , ta có: 
+&nbsp;&nbsp;&nbsp;&nbsp;Ta gọi 1 đỉnh với ba đỉnh con có trọng đôi một khác nhau là một đỉnh xấu. Rõ ràng, nếu gốc cây là một đỉnh xấu thì không thể cân theo cây Huffman được. <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;Nếu cây Huffman có đỉnh xấu, nhưng gốc cây không phải đỉnh xấu, ta vẫn có thể ứng biến như sau. Chẳng hạn xét trường hợp $n=12$ ta có: <br>
 <div align="center">
 
 ![image](https://github.com/MustardLawyer1995/LTTC-LTTCKH/assets/156400720/885bedd0-10c1-467b-ada0-b6c78a2bf2c8)
