@@ -31,16 +31,36 @@ Tuy hơi giống Lý thuyết quyết định, nhưng LTTC nghiên cứu các qu
 </div>
 
 &nbsp;&nbsp;&nbsp;&nbsp;Dạng mở rộng mô tả các trò chơi có hành động thực hiện theo thứ tự. Chúng được biểu diễn bằng một sơ đồ hình cây như hình vẽ trên. Mỗi nút biểu thị một trạng thái của trò chơi mà ở đó 1 người chơi sẽ đưa ra lựa chọn-biểu thị bằng các đoạn thẳng đi ra từ nút đó. Tiện ích của các tay chơi được ghi rõ tại mỗi nút kết quả ở đáy cây.
-Trò chơi trong ảnh có 2 người chơi (I và II) thực hiện nước đi lần lượt, mỗi lượt đều có 2 lựa chọn là L hoặc R. Tại các nút kết quả trò chơi, thường thì tiện ích của người chơi trước-Player I, được viết trước, sau đó là tiện ích của Player II (8, 9, 10 chỉ là số thứ tự để gọi các nút, không có ý nghĩa gì khác). Trò chơi thuộc loại thông tin hoàn hảo có thể được giải dễ dàng bằng thuật toán quy nạp ngược (thuật toán Zermelo), dựa vào 2 điểm: <br>
+Trò chơi trong ảnh có 2 người chơi (I và II) thực hiện nước đi lần lượt, mỗi lượt đều có 2 lựa chọn là L hoặc R. Tại các nút kết quả trò chơi, thường thì tiện ích của người chơi trước-Player I, được viết trước, sau đó là tiện ích của Player II (8, 9, 10 chỉ là số thứ tự để gọi các nút, không có ý nghĩa gì khác). Trò chơi thuộc loại thông tin hoàn hảo có thể được giải dễ dàng bằng thuật toán quy nạp ngược *(thuật toán Zermelo)* , dựa vào 2 điểm: <br>
 - Mỗi tay chơi có thể quan sát được toàn bộ hành động mà những tay chơi khác đã thực hiện. <br>
 - Tất cả các tay chơi đều duy lý. <br>
 
 $\longrightarrow$ Mỗi tay chơi có thể tự đặt mình vào vị trí của các tay chơi khác và dự đoán được lựa chọn của họ ở mỗi nút, quá trình suy diễn đi ngược từ đáy cây về nút bắt đầu nên được gọi là "quy nạp ngược". Ở trò chơi trong ảnh, tại nút 10, Player I chắc chắn sẽ chọn L vì nó mang lại 3 điểm thay vì 2 điểm khi chọn R $\longrightarrow$ có thể cắt bỏ nhánh 10R khỏi sơ đồ $\longrightarrow$ tại nút 9, nếu Player II chọn R sẽ dẫn thẳng tới kết quả $(3,1)$ , nên chọn L sẽ mang lại tiện ích lớn hơn cho anh ta $(2>1)$ $\longrightarrow$ nhánh 9R bị cắt bỏ $\longrightarrow$ ở nút 8, Player I chọn L với lý do tương tự $\longrightarrow$ $(1,10)$ là kết quả tất yếu của trò chơi. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;Ngược lại, trò chơi qua cầu ở I/ có thông tin không hoàn hảo, vì người chạy trốn và thợ săn phải đưa ra quyết định trong khi không biết hành động của người còn lại. Nó được biểu diễn bằng dạng chuẩn tắc thông qua ví dụ sau: <br>
+
 <div align="center">
-  
-![image](https://github.com/MustardLawyer1995/LTTC-LTTCKH/assets/156400720/8c1c7797-2764-4592-b21b-54922df32ef1)
+<table style="border-collapse: collapse;">
+  <tr>
+    <td style="border: 1px solid black; position: relative; width: 60px; height: 60px;">
+      <div style="position: absolute; width: 100%; height: 100%; background: linear-gradient(to bottom right, transparent calc(50% - 1px), black calc(50% - 1px), black 50%, transparent 50%);"></div>
+      <div style="position: relative; z-index: 2; padding: 5px;">
+        Cell 1
+      </div>
+    </td>
+    <!-- More cells with similar inline styling -->
+    <td style="/* ... */">Cell 2</td>
+    <td style="/* ... */">Cell 3</td>
+    <td style="/* ... */">Cell 4</td>
+  </tr>
+  <!-- More rows with inline styling -->
+  <tr>
+    <!-- ... -->
+  </tr>
+  <!-- ... -->
+</table>
+
 </div>
+
 
 
 
