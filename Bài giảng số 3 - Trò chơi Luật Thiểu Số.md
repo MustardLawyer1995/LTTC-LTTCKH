@@ -23,17 +23,17 @@ $\Longrightarrow$ Tới đây ta đặt ra tình huống xấu nhất như sau: 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Giả sử có $n$ vòng bỏ phiếu, khi đó ta có dãy số như sau: 
 ```math
 \left\{ \begin{array}{l}
-{a_{k + 1}} = 2{a_k}\\
+{a_{k + 1}} = 2{a_k}\
 {b_{k + 1}} = 2\left( {{b_k} + 1} \right)
 \end{array} \right.;\left\{ \begin{array}{l}
-V = {a_n}\\
+V = {a_n}\
 N - V = {b_n}
 \end{array} \right.
 ```
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Giải dãy số trên, ta thu được: 
 ```math
 \left\{ \begin{array}{l}
-{a_n} = {2^n}{a_0}\\
+{a_n} = {2^n}{a_0}\
 {b_n} = {2^{n + 1}}{b_0} - 2
 \end{array} \right. \Rightarrow N = {a_n} + {b_n} = \left( {{a_0} + 2{b_0}} \right){2^n} - 2 = \left( {1 + 2\frac{{{b_0}}}{{{a_0}}}} \right)V - 2 \Leftrightarrow V = \left( {N + 2} \right)\left( {1 + 2\frac{{{b_0}}}{{{a_0}}}} \right)
 ```
