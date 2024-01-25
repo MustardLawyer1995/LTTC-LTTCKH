@@ -122,7 +122,39 @@ $2{x_1} + {x_2} \le 3{x_1} = {x_1} + 3{x_2} \to \left( {{x_1};{x_2}} \right) = \
 {x_1} + 3{x_2} \le 2{x_1} + {x_2} = 3{x_1}
 \end{array} \right. \longrightarrow \text{   } \nexists \text{   } ( x_{1} ; x_{2} )
 ```
+&nbsp;&nbsp;&nbsp;&nbsp;Từ đây suy ra trò chơi chỉ có một NE duy nhất là $\( X_{1} , Y_{2} \)$ , trong đó $X, Y$ nhận được tiện ích lần lượt là $1$ và $3$ . <br>
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Giải mã:</ins>* Dễ dàng kiểm tra rằng, kết quả của trò chơi ở ***mục 1 phần c*** (tìm ra bởi *thuật toán Zermelo*) và *PD game* (tìm ra bằng cách loại bỏ các chiến lược bị thống trị) cũng là các NE. <br>
 
+&nbsp;&nbsp; $\Longrightarrow$ Giờ hãy thử giải trò chơi qua cầu (đã nêu ***mục 1 phần c***) bằng kỹ thuật đã học được từ ví dụ như sau: 
+Đầu tiên ta dễ thấy trò chơi không tồn tại NE với chiến lược thuần túy. Bởi vậy người chạy trốn sẽ gán các xác suất $f₁, f₂, f₃$ lần lượt cho hành động lựa chọn cầu 1, cầu 2, cầu 3 của anh ta, tương tự, thợ săn là $h_{1} , h_{2} , h_{3}$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Với ${f_1} + {f_2} + {f_3} = {h_1} + {h_2} + {h_3} = 1$ , tiện ích trung bình của người chạy trốn và thợ săn lần lượt là: <br>
+<div align="center">
+  
+${f_1}\left( {{h_2} + {h_3}} \right) + {f_2}\left( {\frac{2}{3}{h_1} + \frac{2}{3}{h_3}} \right) + {f_3}\left( {\frac{1}{2}{h_1} + \frac{1}{2}{h_2}} \right)$ và ${h_1}\left( {{f_1} + \frac{1}{3}{f_2} + \frac{1}{2}{f_3}} \right) + {h_2}\left( {{f_2} + \frac{1}{2}{f_3}} \right) + {h_3}\left( {\frac{1}{3}{f_2} + {f_3}} \right)$
+</div>
+
+&nbsp;&nbsp;&nbsp;&nbsp;Do ${f_1},{f_2},{f_3} \ne 1$ (không có NE với chiến lược thuần túy), nên không có giá trị nào trong $\left( {{h_2} + {h_3}} \right);\left( {\frac{2}{3}{h_1} + \frac{2}{3}{h_3}} \right);\left( {\frac{1}{2}{h_1} + \frac{1}{2}{h_2}} \right)$ lớn hơn 2 giá trị còn lại, do đó ta luận được 3 khả năng sau: <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Trường hợp 1:</ins>* Nếu ${h_1} = 0$ với $1 \le \frac{2}{3}{h_3} = \frac{1}{2}{h_2}$ (vô lý). <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Trường hợp 2:</ins>* Nếu ${h_2} = 0$ với ${h_3} = \frac{2}{3}{h_3} > \frac{1}{2}{h_1} \to {h_1} = \frac{1}{3},{f_3} = 0 \to {f_1} + \frac{1}{3}{f_2} = \frac{1}{3}{f_2} \ge {f_2}$ (vô lý) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Trường hợp 3:</ins>* Nếu ${h_3} = 0$ với 
+```math
+\left[ \begin{array}{l}
+{h_2} < \frac{2}{3}{h_1} = {\frac{1}{2}^{}} \to {h_1} = \frac{3}{4},{h_2} = \frac{1}{4},{f_1} = 0\
+{h_2} = \frac{1}{2} > \frac{2}{3}{h_1} \to {h_1} = {h_2} = \frac{1}{2},{f_2} = 0
+\end{array} \right. \longrightarrow {f_1} + \frac{{{f_2}}}{3} + \frac{{{f_3}}}{2} = {f_2} + \frac{{{f_3}}}{2} \ge \frac{{{f_3}}}{2} + {f_3}
+```
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nhận ra ${f_1} = 0$ hoặc ${f_2} = 0$ đều vô lí cả nên tóm lại ta suy ra ${h_1},{h_2},{h_3} \ne 0$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Suy ra:  ${f_1} + \frac{{{f_2}}}{3} + \frac{{{f_3}}}{2} = {f_2} + \frac{{{f_3}}}{2} = \frac{{{f_2}}}{3} + {f_3} \to {f_1} = \frac{2}{9};{f_2} = \frac{1}{3};{f_3} = \frac{4}{9}$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Kéo theo đó ta cũng có được: ${h_2} + {h_3} = \frac{2}{3}\left( {{h_1} + {h_3}} \right) = \frac{{{h_1} + {h_2}}}{2} \to {h_1} = \frac{5}{9};{h_2} = \frac{1}{3};{h_3} = \frac{1}{9}$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Vậy lời giải cho trò chơi qua cầu là NE với chiến lược hỗn hợp là: 
+
+----------------------------------------------------------------------------------------------------------------------------------------
+<div align="left">
+  
+Cho ${f_1} = \frac{2}{9};{f_2} = \frac{1}{3};{f_3} = \frac{4}{9}$ và ${h_1} = \frac{5}{9};{h_2} = \frac{1}{3};{h_3} = \frac{1}{9}$ thì khi ấy người chạy trốn có xu hướng sử dụng những cây cầu nguy hiểm hơn, và thợ săn có xu hướng chọn những cây cầu an toàn hơn.
+</div>
+
+----------------------------------------------------------------------------------------------------------------------------------------
 
 
 
