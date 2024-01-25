@@ -37,7 +37,21 @@ Trò chơi trong ảnh có 2 người chơi (I và II) thực hiện nước đi
 
 $\longrightarrow$ Mỗi tay chơi có thể tự đặt mình vào vị trí của các tay chơi khác và dự đoán được lựa chọn của họ ở mỗi nút, quá trình suy diễn đi ngược từ đáy cây về nút bắt đầu nên được gọi là "quy nạp ngược". Ở trò chơi trong ảnh, tại nút 10, Player I chắc chắn sẽ chọn L vì nó mang lại 3 điểm thay vì 2 điểm khi chọn R $\longrightarrow$ có thể cắt bỏ nhánh 10R khỏi sơ đồ $\longrightarrow$ tại nút 9, nếu Player II chọn R sẽ dẫn thẳng tới kết quả $(3,1)$ , nên chọn L sẽ mang lại tiện ích lớn hơn cho anh ta $(2>1)$ $\longrightarrow$ nhánh 9R bị cắt bỏ $\longrightarrow$ ở nút 8, Player I chọn L với lý do tương tự $\longrightarrow$ $(1,10)$ là kết quả tất yếu của trò chơi. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;Ngược lại, trò chơi qua cầu ở I/ có thông tin không hoàn hảo, vì người chạy trốn và thợ săn phải đưa ra quyết định trong khi không biết hành động của người còn lại. Nó được biểu diễn bằng dạng chuẩn tắc thông qua ví dụ sau: <br>
+<div align="center">
 
+![image](https://github.com/MustardLawyer1995/LTTC-LTTCKH/assets/156400720/9c0cbeee-174b-4081-8d2b-ab619a77860c)
+</div>
+
+&nbsp;&nbsp;&nbsp;&nbsp;Ta thấy 3 lựa chọn của người chạy trốn tạo thành các hàng của ma trận, 3 lựa chọn của thợ săn tạo thành các cột của ma trận. Mỗi ô của ma trận ghi mức thưởng tương ứng của 2 người chơi đối với mỗi kết quả tạo ra từ tổ hợp hành động của họ. Đối với mỗi kết quả, mức thưởng của người chơi Hàng (ở đây là Người chạy trốn) luôn được viết trước, sau đó đến mức thưởng của người chơi Cột (ở đây là Thợ săn). Cách biểu diễn này ngụ ý rằng 2 tay chơi thực hiện nước đi đồng thời. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Hạn chế của dạng chuẩn tắc là nó chỉ mô tả được trò chơi 2 người, nên ta cũng biểu diễn trò chơi có thông tin không hoàn hảo bằng dạng mở rộng, trong đó người đi lượt sau không biết hành động của người đi lượt trước, do vậy tạo nên hiệu ứng tương tự như "chơi đồng thời". <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Ta có ví dụ tiếp theo như sau: <br>
+<div align="center">
+
+![image](https://github.com/MustardLawyer1995/LTTC-LTTCKH/assets/156400720/0c6a1ea7-861c-428d-8b47-338c72aef6f8)
+</div>
+
+&nbsp;&nbsp;&nbsp;&nbsp;Ở trò chơi trong ảnh, hình oval được vạch ra xung quanh các nút b và c đã chỉ ra rằng chúng nằm bên trong một tập thông tin chung (đôi khi người ta cũng thay thế hình oval bằng 1 đường đứt đoạn nối b và c). Điều này nghĩa là khi đưa ra quyết định, Player II không biết mình đang ở nút b hay c. Nói cách khác, Player II không biết được điều mà Player I đã làm ở nút a. Nó tương đương với việc Player I và Player II đưa ra lựa chọn đồng thời (do không ai biết lựa chọn của người còn lại). Vì vậy dạng mở rộng là hoàn toàn khái quát, nó còn có thể biểu diễn được các trò chơi chứa cả những nước đi đồng thời lẫn những nước đi theo trật tự (đây vẫn là trò chơi thuộc loại thông tin không hoàn hảo). <br>
+   Lưu ý: Thông tin hoàn hảo thường bị nhầm lẫn với "thông tin đầy đủ". Tính chất thông tin đầy đủ đòi hỏi mỗi tay chơi biết về các lựa chọn và hàm tiện ích của các tay chơi khác, nhưng không nhất thiết biết về nước đi cụ thể của họ. Trò chơi qua cầu thuộc loại thông tin đầy đủ.
 
 
 
