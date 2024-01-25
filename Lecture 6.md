@@ -38,7 +38,33 @@ Trò chơi có các NE là:
 &nbsp;&nbsp;&nbsp;&nbsp;Bất cứ nguyên tắc nào giải quyết các trò chơi bằng cách loại bỏ 1 hoặc nhiều NE khỏi sự xem xét thì đều được coi là bộ lọc của NE. Trong trường hợp ở ảnh 3 thì việc loại bỏ các chiến lược bị thống trị yếu chính là một bộ lọc vì nó giữ lại duy nhất NE $\( s_{1} ; t_{2} \)$  và lọc đi tất cả các NE khác, và song song là một bộ lọc khác, giữ lại mỗi NE $\( s_{2} ; t_{1} \)$ . <br>
 &nbsp;&nbsp;&nbsp;&nbsp;Vậy thì bộ lọc nào thích hợp hơn với vai trò là một khái niệm giải pháp? Ưu khuyết của chúng và một số lượng lớn các bộ lọc khác đều cần phải bàn thêm. <br>
 #### &nbsp;&nbsp;&nbsp;&nbsp; *b. Sự cân bằng hoàn hảo của trò chơi con* <br>
-&nbsp;&nbsp;&nbsp;&nbsp;Ta xét 2 ví dụ tương ứng với 2 trò chơi như sau: 
+&nbsp;&nbsp;&nbsp;&nbsp;Ta xét 2 ví dụ tương ứng với 2 trò chơi như sau: <br>
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Ví dụ 1:</ins>* Cho hình vẽ sau: <br>
+<div align="center">
+
+![image](https://github.com/MustardLawyer1995/LTTC-LTTCKH/assets/156400720/ad99b231-ad32-422e-ac04-b8fd42bfe1fe)
+</div>
+
+&nbsp;&nbsp;&nbsp;&nbsp;Áp dụng *thuật toán Zermelo*, ta tìm được lời giải cho trò chơi là $\( LR, RL \)$ . (Player I chơi chiến lược $LR$ , Player II chơi chiến lược $RL$ ). Mỗi người chơi có 2 nút thông tin, mỗi nút có 2 lựa chọn hành động, nên tổng cộng mỗi người có 4 chiến lược. Chữ cái đầu tiên/thứ 2 trong mỗi chiến lược là điều mà người chơi sẽ làm khi họ ở nút thông tin đầu tiên/thứ 2. $\( LR, RL \)$ có nghĩa là Player I chơi $4L$ và $7R$ , Player II chơi $5R$ và $6L$ . <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Ảnh bên phải vẫn là trò chơi này nhưng được biểu diễn ở dạng chuẩn tắc. Quan sát ma trận này, ta phát hiện ra $\( LL, RL \)$ cũng là NE. Có gì đó không đúng ở đây, nhìn lại dạng mở rộng, tại sao Player I lại muốn chơi $7L$ trong khi chơi $7R$ đem lại mức thưởng cao hơn? <br>
+&nbsp;&nbsp;&nbsp;&nbsp; $\Longrightarrow$ Phép phân tích NE bỏ qua điều này vì nó không quan tâm đến những diễn biến bên ngoài cuộc chơi-tức là lựa chọn của Player I ở nút 7, điều sẽ không bao giờ xảy ra khi Player I đã chọn $4L$ . Tuy nhiên đó lại là điều ta phải xem xét đến khi phân tích trò chơi, vì nó là động lực cho những gì xảy ra trong cuộc chơi: hành động của Player I ở nút 7 quyết định hành động của Player II ở nút 6, và đó lại là nguyên nhân cho hành động của Player I ở nút 4. Chúng ta sẽ vứt bỏ lượng thông tin quan trọng này nếu chỉ phân tích NE theo lối đơn thuần. <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Nhận xét:</ins>* <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Việc thuật toán Zermelo chọn $\( LR, RL \)$ là lời giải duy nhất của trò chơi cho thấy nó đạt được một khái niệm cân bằng trên cả NE. Thực tế thì nó đang tạo ra sự cân bằng hoàn hảo của trò chơi con ***<ins>(SPE-subgame perfect equilibrium)</ins>*** . Một NE của trò chơi là SPE khi nó là NE trong mọi trò chơi con của trò chơi đó (định nghĩa trò chơi con: cho một cây trò chơi, nếu giữ lại 1 nút thông tin cùng tất cả các nhánh đi xuống xuất phát từ nó, và xóa bỏ toàn bộ phần còn lại của cây trò chơi, ta thu được một trò chơi mới là trò chơi con của trò chơi ban đầu). <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Ví dụ 2:</ins>* Cho hình vẽ sau: <br>
+<div align="center">
+
+![image](https://github.com/MustardLawyer1995/LTTC-LTTCKH/assets/156400720/f29f9a1e-a30c-4dca-a49c-7cf11b19dbde)
+</div>
+
+&nbsp;&nbsp;&nbsp;&nbsp;Một trò chơi giữa 2 người chơi C và D, được biểu diễn ở cả 2 dạng: mở rộng (trái) và chuẩn tắc (phải). <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Trong 3 NE được đánh dấu (*) ở dạng chuẩn tắc, chỉ có NE $\( E, EB \)$ - đánh dấu (**)-là SPE, có thể xác định bằng thuật toán Zermelo. Ta thấy $\( B, EE \)$ cũng là một NE, nhưng nó không thể được chấp nhận là lời giải của trò chơi. Tại kết quả $\( B, EE \)$ , C chơi B bởi vì D "đe dọa" sẽ chơi E nếu C chơi E, nhưng nếu C chơi E thật thì D chắc chắn sẽ không làm thế-chơi B rõ ràng có lợi cho D hơn $\left( {l > 0} \right)$ , do đó đây là một lời đe doạ "không đáng tin". Các NE bất hợp lý này giống như một lỗi kỹ thuật phát sinh khi ta chuyển trò chơi từ dạng mở rộng về dạng chuẩn tắc (do một phần thông tin về trò chơi đã bị giấu đi, khiến cho 2 người chơi trông như là đang đưa ra quyết định đồng thời). Nếu một NE không phải là SPE, nó là bất hợp lý và không thể là lời giải của trò chơi. Ở đây *thuật toán Zermelo* có vai trò như một bộ lọc vậy, nó loại bỏ tất cả các NE không phải là SPE. <br>
+#### &nbsp;&nbsp;&nbsp;&nbsp; *c. Những bàn tay run* <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Những vấn đề ở trên mở ra một rắc rối liên quan tới nền tảng logic của LTTC. Quay lại trò chơi ở ***ví dụ 1*** , lời giải là $\( LR, RL \)$ được tìm ra bởi *qui nạp ngược* . Cụ thể: Player I chơi $4L$ vì anh ta biết Player II là người duy lý-sẽ chơi $5R$ và $6L$ . Player II chơi 6L vì biết Player I là người duy lý - sẽ chơi $7R$ . Nhưng lại xuất hiện một nghịch lý, trò chơi chỉ đến được nút 6 nếu Player I không duy lý! Nếu Player I không duy lý thì Player II không thể chắc chắn rằng Player I sẽ chơi $7R$ , vì vậy chưa chắc là Player II sẽ chơi $6L$ , và nếu Player II chơi $6R$ thì Player I sẽ có phần thưởng tốt hơn nếu chơi $4R$ . Cả 2 tay chơi phải sử dụng lối qui nạp ngược đòi hỏi rằng mỗi người chơi là duy lý và biết người kia cũng duy lý, nhưng đồng thời họ phải giả định đối thủ hành động phi lý. Mâu thuẫn này được gọi là "nghịch lý qui nạp ngược". <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Cách chuẩn mực nhất để giải quyết nghịch lý này là viện đến khái niệm "bàn tay run" của Selten [1975]. Tư tưởng này cho rằng một hành động phi lý có thể gắn với một xác suất dương vô cùng bé. Nghĩa một tay chơi có thể mắc lỗi khi thực hiện hành động-với một khả năng rất nhỏ. Vậy là không còn mâu thuẫn nào khi sử dụng lý lẽ qui nạp ngược nữa. Trong ví dụ của chúng ta, Player II có thể nghĩ về lựa chọn ở nút 6 dựa vào định đề rằng Player I muốn chọn $4L$ , nhưng sau đó đã "lỡ tay" chọn $4R$ . <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Khái niệm này cũng củng cố tính hợp lý của các bộ lọc đã thảo luận ở ***phần 3/, a/*** . Nếu "bàn tay" đối thủ của tôi có thể "run", thì tôi có lý do chính đáng để tránh cái chiến lược bị thống trị yếu $s_2$ trong hình mục ***phần 3/, b/*** . Đối thủ của tôi có thể cam kết chơi t1 và tôi có thể tin vào lời hứa của anh ta. Nhưng nếu sau đó anh ta "run tay" và chơi $t_2$ , thì tôi phải nhận một kết quả tồi tệ nhất. <br>
+#### &nbsp;&nbsp;&nbsp;&nbsp; *d. Cân bằng tuần tự* <br>
 
 
 
