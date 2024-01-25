@@ -83,7 +83,7 @@ Khi đó kết quả trên là *NE* nếu: $u_{k} \( {S_1},{S_2},{S_3},...{S_{k}
 </div>
 
 &nbsp;&nbsp;&nbsp;&nbsp;*<ins>Lưu ý:</ins>* <br>
-Tiện ích của người chơi $k$ không tăng lên khi anh ta thay đổi sang một chiến lược ${S_k}'$ khác.
+&nbsp;&nbsp;&nbsp;&nbsp;Tiện ích của người chơi $k$ không tăng lên khi anh ta thay đổi sang một chiến lược ${S_k}'$ khác.
 &nbsp;&nbsp;&nbsp;&nbsp;Đây là trạng thái mà mỗi người chơi đều không có động lực để thay đổi chiến lược hiện tại của mình. NE thỏa mãn tiên đề về tính duy lý, khi hành động của mỗi người chơi là đáp trả tốt nhất đối với hành động của những người khác, ngược lại, nếu một kết quả trò chơi thỏa mãn tính duy lý thì nó phải là NE. Vì vậy NE là giải pháp hợp lý duy nhất của trò chơi. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;*<ins>Ví dụ:</ins>* <br>
 <div align="center">
@@ -91,12 +91,37 @@ Tiện ích của người chơi $k$ không tăng lên khi anh ta thay đổi sa
 ![image](https://github.com/MustardLawyer1995/LTTC-LTTCKH/assets/156400720/12bc1c6a-5caf-4a5f-9eca-8714de665493)
 </div>
 
-&nbsp;&nbsp;&nbsp;&nbsp;Xét game trong ảnh với 2 người chơi là $X$ và $Y$ . $X$ có 2 hành động để lựa chọn là $X_1$, $X_2$ ; $Y$ có 3 hành động để lựa chọn là $Y_{1} , Y_{2} , Y_{3}$. Mỗi ô kết quả ghi $\( u_{X}, u__{Y} \)$ lần lượt là tiện ích/phần thưởng của $X$ và $Y$ . Một NE của trò chơi được gọi là *"NE với chiến lược thuần túy"* khi tất cả người chơi đều sử dụng chiến lược thuần túy tại kết quả này; khi ít nhất 1 người chơi sử dụng chiến lược hỗn hợp thì ta gọi là "NE với chiến lược hỗn hợp". <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Xét game trong ảnh với 2 người chơi là $X$ và $Y$ . $X$ có 2 hành động để lựa chọn là $X_1$, $X_2$ ; $Y$ có 3 hành động để lựa chọn là $Y_{1} , Y_{2} , Y_{3}$ . Mỗi ô kết quả ghi $\( u_{X}, u_{Y} \)$ lần lượt là tiện ích/phần thưởng của $X$ và $Y$ . Một NE của trò chơi được gọi là *"NE với chiến lược thuần túy"* khi tất cả người chơi đều sử dụng chiến lược thuần túy tại kết quả này; khi ít nhất 1 người chơi sử dụng chiến lược hỗn hợp thì ta gọi là "NE với chiến lược hỗn hợp". <br>
 &nbsp;&nbsp;&nbsp;&nbsp;Để giải trò chơi trong ảnh, trước tiên ta tìm tất cả các NE với chiến lược thuần túy. Điều này có thể thực hiện dễ dàng bằng cách kiểm tra từng hàng của ma trận: <br>
 -	Khi $X$ chọn $X_1$ thì $Y$ có tiện ích cao nhất nếu chọn $Y_2$ , khi $Y$ chọn $Y_2$ thì $X$ có tiện ích cao nhất nếu chọn $X_{1}$. Suy ra $\( X_{1}, Y_{2} \)$ là NE. <br>
--	Khi $X$ chọn $X_2$ thì $Y$ có tiện ích cao nhất nếu chọn $Y_3$ , nhưng khi $Y$ chọn $Y_3$ thì $X$ đạt tiện ích cao nhất nếu chọn $X_1$ . Suy ra không có NE nào ở hàng $X_@$ cả. <br>
-&nbsp;&nbsp;&nbsp;&nbsp;Như vậy trò chơi chỉ có một NE với chiến lược thuần túy duy nhất là $\( X_{1}, Y_{2} \)$ . Điều này sẽ giúp ta tìm kiếm các NE với chiến lược hỗn hợp ở bước tiếp theo đây: Giả sử $X$ phân phối các xác suất $x_{1} , x_{2}$ lần lượt cho $\( X_{1}, X_{2} \)$ và $Y$ phân phối các xác suất $\( y_{1} ,y_{2} , y_{3} \)$ lần lượt cho $Y_{1} , Y_{2}, Y_{3} \)$
-&nbsp;&nbsp;&nbsp;&nbsp; Ta có: 
+-	Khi $X$ chọn $X_2$ thì $Y$ có tiện ích cao nhất nếu chọn $Y_3$ , nhưng khi $Y$ chọn $Y_3$ thì $X$ đạt tiện ích cao nhất nếu chọn $X_1$ . Suy ra không có NE nào ở hàng $X_2$ cả. <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;Như vậy trò chơi chỉ có một NE với chiến lược thuần túy duy nhất là $\( X_{1}, Y_{2} \)$ . Điều này sẽ giúp ta tìm kiếm các NE với chiến lược hỗn hợp ở bước tiếp theo đây: Giả sử $X$ phân phối các xác suất $x_{1} , x_{2}$ lần lượt cho $\( X_{1}, X_{2} \)$ và $Y$ phân phối các xác suất $\( y_{1} ,y_{2} , y_{3} \)$ lần lượt cho $Y_{1} , Y_{2}, Y_{3} \)$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Ta có: ${x_1} + {x_2} = {y_1} + {y_2} + {y_3} = 1$ . <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Suy ra các mức tiện ích trung bình của $Y$ khi sử dụng chiến lược hỗn hợp lần lượt là: ${y_1} \( {2{x_1} + {x_2}} \) + {y_2}\( {3{x_1}} \) + {y_3}\( {{x_1} + 3{x_2}} \)$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Nhận thấy $Y$ cố gắng để tối đa hóa giá trị này thông qua 3 khả năng thành phần sau: <br>
+```math
+\left[ \begin{array}{l}
+2{x_1} + {x_2} > \max \left\{ {3{x_1},{x_1} + 3{x_2}} \right\} \to Y:{y_1} = 1\
+3{x_1} > \max \left\{ {2{x_1} + {x_2},{x_1} + 3{x_2}} \right\} \to Y:{y_2} = 1\
+{x_1} + 3{x_2} > \max \left\{ {2{x_1} + {x_2},3{x_1}} \right\} \to Y:{y_3} = 1
+\end{array} \right.
+```
+&nbsp;&nbsp;&nbsp;&nbsp;Ở cả 3 trường hợp này, kết quả đều sẽ rơi về NE với chiến lược thuần túy $\longrightarrow$ ta phải chọn 1 trong 3 khả năng sau: <br>
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Trường hợp 1:</ins>* 
+<div align="center">
+  
+$2{x_1} + {x_2} \le 3{x_1} = {x_1} + 3{x_2} \to \left( {{x_1};{x_2}} \right) = \left( {\frac{3}{5};\frac{2}{5}} \right) \to 2{x_1} + {x_2} < 3{x_1} = {x_1} + 3{x_2}$
+</div>
+
+&nbsp;&nbsp;&nbsp;&nbsp;tức $Y$ cho $y_{1}=0$ tức các mức tiện ích trung bình của $X$ khi chọn $X_1$ hoặc $X_2$ lần lượt là ${y_2} + 3{y_3} \text{    } \( {{y_2} + {y_3} = 1} \)$ và $0y_{2}+3y_{3}$ . Nhưng nếu vậy $X$ sẽ chọn $X_1$ $\( x_{1}=1 \)$ , mâu thuẫn với kết luận $\( {x_1};{x_2} \) = \( \frac{3}{5}; \frac{2}{5} \)$  ở trên. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Trường hợp 2:</ins>* 
+```math
+\left\{ \begin{array}{l}
+3{x_1} \le 2{x_1} + {x_2} = {x_1} + 3{x_2}\\
+{x_1} + 3{x_2} \le 2{x_1} + {x_2} = 3{x_1}
+\end{array} \right. \longrightarrow \text{   } \nexists \text{   } ( x_{1} ; x_{2} )
+```
 
 
 
