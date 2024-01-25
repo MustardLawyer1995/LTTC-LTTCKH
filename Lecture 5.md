@@ -82,6 +82,22 @@ $\longrightarrow$ Mỗi tay chơi có thể tự đặt mình vào vị trí c�
 Khi đó kết quả trên là *NE* nếu: $u_{k} \( {S_1},{S_2},{S_3},...{S_{k}'}...,{S_n} \) \le u_{k} \( {S_1},{S_2},{S_3},...{S_k}...,{S_n} \) , \text{    } \forall S_{k}' \ne S_{k} , \text{    } \forall k \in \[ 1;n \]$
 </div>
 
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Lưu ý:</ins>* <br>
+Tiện ích của người chơi $k$ không tăng lên khi anh ta thay đổi sang một chiến lược ${S_k}'$ khác.
+&nbsp;&nbsp;&nbsp;&nbsp;Đây là trạng thái mà mỗi người chơi đều không có động lực để thay đổi chiến lược hiện tại của mình. NE thỏa mãn tiên đề về tính duy lý, khi hành động của mỗi người chơi là đáp trả tốt nhất đối với hành động của những người khác, ngược lại, nếu một kết quả trò chơi thỏa mãn tính duy lý thì nó phải là NE. Vì vậy NE là giải pháp hợp lý duy nhất của trò chơi. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Ví dụ:</ins>* <br>
+<div align="center">
+  
+![image](https://github.com/MustardLawyer1995/LTTC-LTTCKH/assets/156400720/12bc1c6a-5caf-4a5f-9eca-8714de665493)
+</div>
+
+&nbsp;&nbsp;&nbsp;&nbsp;Xét game trong ảnh với 2 người chơi là $X$ và $Y$ . $X$ có 2 hành động để lựa chọn là $X_1$, $X_2$ ; $Y$ có 3 hành động để lựa chọn là $Y_{1} , Y_{2} , Y_{3}$. Mỗi ô kết quả ghi $\( u_{X}, u__{Y} \)$ lần lượt là tiện ích/phần thưởng của $X$ và $Y$ . Một NE của trò chơi được gọi là *"NE với chiến lược thuần túy"* khi tất cả người chơi đều sử dụng chiến lược thuần túy tại kết quả này; khi ít nhất 1 người chơi sử dụng chiến lược hỗn hợp thì ta gọi là "NE với chiến lược hỗn hợp". <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Để giải trò chơi trong ảnh, trước tiên ta tìm tất cả các NE với chiến lược thuần túy. Điều này có thể thực hiện dễ dàng bằng cách kiểm tra từng hàng của ma trận: <br>
+-	Khi $X$ chọn $X_1$ thì $Y$ có tiện ích cao nhất nếu chọn $Y_2$ , khi $Y$ chọn $Y_2$ thì $X$ có tiện ích cao nhất nếu chọn $X_{1}$. Suy ra $\( X_{1}, Y_{2} \)$ là NE. <br>
+-	Khi $X$ chọn $X_2$ thì $Y$ có tiện ích cao nhất nếu chọn $Y_3$ , nhưng khi $Y$ chọn $Y_3$ thì $X$ đạt tiện ích cao nhất nếu chọn $X_1$ . Suy ra không có NE nào ở hàng $X_@$ cả. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Như vậy trò chơi chỉ có một NE với chiến lược thuần túy duy nhất là $\( X_{1}, Y_{2} \)$ . Điều này sẽ giúp ta tìm kiếm các NE với chiến lược hỗn hợp ở bước tiếp theo đây: Giả sử $X$ phân phối các xác suất $x_{1} , x_{2}$ lần lượt cho $\( X_{1}, X_{2} \)$ và $Y$ phân phối các xác suất $\( y_{1} ,y_{2} , y_{3} \)$ lần lượt cho $Y_{1} , Y_{2}, Y_{3} \)$
+&nbsp;&nbsp;&nbsp;&nbsp; Ta có: 
+
 
 
 
