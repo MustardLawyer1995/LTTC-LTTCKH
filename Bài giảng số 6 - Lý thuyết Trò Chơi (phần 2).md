@@ -152,18 +152,47 @@ $${u_k}\left( {{s_k}^\prime ,s} \right) < {u_k}\left( {{s_k},s} \right) \to \fra
 &nbsp;&nbsp;&nbsp;&nbsp;Dù vẫn còn các tranh cãi xung quanh định đề "tối thiểu hóa thiệt hại do run tay", hãy nghĩ về lời giải này như một phản ứng tối ưu của (II) cho tình huống (I) lỡ tay đưa trò chơi vào tập thông tin $\\{ 2,3 \\}$ . <br>
 ### 4. Trò chơi có thông tin không đầy đủ <br>
 #### &nbsp;&nbsp;&nbsp;&nbsp; *a. Người chơi tự nhiên* <br>
-&nbsp;&nbsp;&nbsp;&nbsp;Sinh viên B đến thư viện để chuẩn bị cho bài thi môn LTTC vào ngày mai thì gặp A - một tay ngang đến tìm sách nhập môn về LTTC, họ chưa từng biết nhau. <br>
-&nbsp;&nbsp;&nbsp;&nbsp;Có 2 loại sách cho A chọn là cơ bản (M) và nâng cao (E) (giả sử A chỉ có đủ thời gian để đọc trọn vẹn 1 quyển). B có thể: ở lại thư viện ôn thi qua đêm (L) hoặc mượn sách về nhà (H). Từ cuộc trò chuyện với thủ thư về A-người hay đến đây đọc sách, B biết A thuộc 1 trong 2 kiểu người: xuất chúng (A1)-xác suất 0.7 hoặc bình thường (A2)-xác suất 0.3 (ta cũng giả định A biết B đã nắm được bao nhiêu thông tin về A). <br>
-&nbsp;&nbsp;&nbsp;&nbsp;Các mức tiện ích của A: 1 _đọc sách không phù hợp với khả năng; 2 _đọc sách phù hợp; 3 _đọc sách không phù hợp nhưng được học cùng với B; 4 _đọc sách phù hợp và học cùng B. <br>
-&nbsp;&nbsp;&nbsp;&nbsp;Các mức tiện ích của B: 1 _ở lại và học cùng A1 (đạt điểm cao); 0 _ôn thi ở nhà (điểm thi trung bình); -1 _ở lại học cùng và mất thời gian với A2 (điểm thấp). <br>
-&nbsp;&nbsp;&nbsp;&nbsp;Tình huống trên là một trò chơi có thông tin hoàn hảo (A hành động trước B, B thấy rõ hành động của A) nhưng không đầy đủ vì B không biết chính xác các tiện ích của mình và của đối phương ở mỗi kết quả. Harsanyi (đồng giải Nobel với Nash và Selten, 1994) giải quyết khó khăn này bằng cách thêm vào 1 người chơi ảo gọi là "Tự nhiên" (N-nature), điều này sẽ được diễn giải chi tiết bằng ví dụ nêu sau đây. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Sinh viên $B$ đến thư viện để chuẩn bị cho bài thi môn LTTC vào ngày mai thì gặp $A$ - một tay ngang đến tìm sách nhập môn về LTTC, họ chưa từng biết nhau. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Có 2 loại sách cho $A$ chọn là cơ bản (M) và nâng cao (E) (giả sử $A$ chỉ có đủ thời gian để đọc trọn vẹn 1 quyển). $B$ có thể: ở lại thư viện ôn thi qua đêm (L) hoặc mượn sách về nhà (H). Từ cuộc trò chuyện với thủ thư về $A$ - người hay đến đây đọc sách, $B$ biết $A$ thuộc 1 trong 2 kiểu người: xuất chúng $A_1$ -xác suất 0.7 hoặc bình thường $A_2$ - xác suất 0.3 (ta cũng giả định $A$ biết $B$ đã nắm được bao nhiêu thông tin về $A$ ). <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Các mức tiện ích của $A$ : 1 _đọc sách không phù hợp với khả năng; 2 _đọc sách phù hợp; 3 _đọc sách không phù hợp nhưng được học cùng với $B$ ; 4 _đọc sách phù hợp và học cùng $B$ . <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Các mức tiện ích của $B$ : 1 _ở lại và học cùng $A_1$ (đạt điểm cao); 0 _ôn thi ở nhà (điểm thi trung bình); -1 _ở lại học cùng và mất thời gian với $A_2$ (điểm thấp). <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Tình huống trên là một trò chơi có thông tin hoàn hảo ( $A$ hành động trước $B$ , $B$ thấy rõ hành động của $A$ ) nhưng không đầy đủ vì $B$ không biết chính xác các tiện ích của mình và của đối phương ở mỗi kết quả. Harsanyi (đồng giải Nobel với Nash và Selten, 1994) giải quyết khó khăn này bằng cách thêm vào 1 người chơi ảo gọi là "Tự nhiên" ( $N$ - nature), điều này sẽ được diễn giải chi tiết bằng *ví dụ* nêu sau đây. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Ví dụ 4.1:</ins>* Cho hình vẽ sau<br>
+<div align="center">
 
+![image](https://github.com/MustardLawyer1995/LTTC-LTTCKH/assets/156400720/c82df17e-77ba-409e-b863-e3ac91780ac4)
+</div>
 
+&nbsp;&nbsp;&nbsp;&nbsp;Bằng cách quy ước 1 người chơi ảo là $N$ , ta có thể biểu diễn trò chơi về dạng mở rộng, trong đó $N$ đi nước đầu tiên để ấn định $A$ là $A_1$ hay $A_2$ , với chiến lược hỗn hợp $0.7{a_1} + 0.3{a_2}$ . $N$ đặc biệt so với các người chơi khác ở chỗ: không có tiện ích và luôn phân phối xác suất cho các chiến lược theo một cách cố định - tất cả người chơi đều biết phân phối đó (thông tin chung). Dĩ nhiên khi hành động thì $A$ đã biết mình là ai ( $A_1$ và $A_2$ ở 2 nút thông tin tách biệt, có thể đưa ra quyết định khác nhau). Ngược lại, các nút 17,18 thuộc cùng một tập thông tin ( $19,20$ cũng vậy) bởi $B$ không biết hành động của $A$ đến từ nút $A_1$ hay $A_2$ . Cách biểu diễn này đã biến trò chơi có thông tin không đầy đủ thành trò chơi có thông tin không hoàn hảo (nhưng đầy đủ), từ đây nó có thể được giải theo cách thông thường. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Một trò chơi thuộc dạng này được gọi là trò chơi Bayes và các NE của nó được gọi là ***<ins>BNE (bayesian nash equilibrium)</ins>***. Trò chơi Thư viện của chúng ta có các BNE là: <br>
 
+```math
+\left\{ \begin{array}{l}
+\left( {EE,{\rm{ }}L\left( {rL + \left( {1 - r} \right)H} \right)} \right),r \le \frac{1}{2}\
+\left( {MM,{\rm{ }}\left( {sL + \left( {1 - s} \right)H} \right)L} \right),s \le \frac{1}{2}
+\end{array} \right.
+```
+&nbsp;&nbsp;&nbsp;&nbsp; $B$ chơi $LH$ nghĩa là $B$ chơi $L$ ở tập thông tin $\\{ 17,18 \\}$ và chơi $H$ ở $\\{ 19,20 \\}$ ; $A$ chơi $EM$ nghĩa là $A$ sẽ chơi $E$ nếu là $A_1$ và chơi $M$ nếu là $A_2$. Cần lưu ý rằng $A_1$ và $A_2$ về bản chất không phải là cùng 1 người, do đó các tiện ích của họ là riêng biệt, $A_1$ không quan tâm đến tiện ích của $A_2$ và ngược lại. <br>
+#### &nbsp;&nbsp;&nbsp;&nbsp; *b. Cân bằng Bayes hoàn hảo* <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Trước khi đi sâu vào lời giải cho trò chơi *Thư viện* , ta nói qua một chút về ***<ins>cân bằng Bayes hoàn hảo (PBE-perfect bayesian equilibrium)</ins>***. Một PBE cũng gồm 2 phần: chiến lược và niềm tin-như một SE. Một BNE là PBE khi niềm tin của mỗi tay chơi là nhất quán với chiến lược của những tay chơi khác. Khác với SE, PBE không yêu cầu chiến lược của mỗi tay chơi phải là tối ưu đối với niềm tin của tay chơi khác, điều này có thể dẫn đến những tình huống như ở *Con ngựa Selten*. Do đó PBE là một bộ lọc mạnh hơn SPE nhưng yếu hơn SE, nó thường chỉ được sử dụng trong trò chơi Bayes (dù về nguyên tắc có thể áp dụng cho bất cứ trò chơi mở rộng nào). Cũng có thể dùng SE và các cân bằng mạnh hơn SE đã nêu ở ***mục 3/*** để lọc các PBE trong trò chơi Bayes. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Ví dụ 4.2:</ins>* Cho thư viện hình vẽ sau<br>
+<div align="center">
 
+![image](https://github.com/MustardLawyer1995/LTTC-LTTCKH/assets/156400720/0d041873-8ba4-4e2d-aaf2-eb70d65b9c15)
+</div>
 
-
-
+&nbsp;&nbsp;&nbsp;&nbsp;Ở trò chơi Bayes trong hình, $N$ ấn định xác suất cho 2 kiểu người chơi $A_{1} , A_{2}$ là $p$ và $1-p$ , trò chơi luôn có các BNE sau với mọi $p$ : $\left( {LL,{\rm{ }}l} \right),{\rm{ }}\left( {RR,{\rm{ }}tl + \left( {1 - t} \right)r} \right),t \le \frac{1}{2}$ . Niềm tin của $B$ tại tập thông tin $\\{ 21,22 \\}$ ấn định xác suất cho các nút 21,22 là $q,1-q$ . $B$ sẽ điều chỉnh các chiến lược của mình tối ưu theo $q$ . Tuy nhiên tiện ích trung bình của $B$ khi chơi $l$ và $r$ lần lượt là: $1 \times q + 0 \times \left( {1 - q} \right) = q$ và $0 \times q + \left( { - 1} \right) \times \left( {1 - q} \right) = q - 1$ $\Longrightarrow$   $B$ sẽ luôn chơi l trong mọi tình huống. <br>
+&nbsp;&nbsp;&nbsp;&nbsp; $\Longrightarrow$ BNE $\left( {RR,{\rm{ }}tl + \left( {1 - t} \right)r} \right),t \le \frac{1}{2}$ không phải là PBE, bởi vì chiến lược $\left( {tl + \left( {1 - t} \right)r} \right),t \le \frac{1}{2}$ của $B$ không phù hợp với bất cứ niềm tin nào mà anh ta có thể có tại $\\{ 21,22 \\}$ . Ở đây ta thấy một logic tương tự SPE nhưng được áp dụng lên 1 tập thông tin thay vì 1 nút thông tin đơn lẻ: $B$ đe doạ sẽ chơi $\left( {tl + \left( {1 - t} \right)r} \right),t \le \frac{1}{2}$ khi trò chơi đi vào tập thông tin $\\{ 21,22 \\}$ nhưng nếu điều đó thật sự xảy ra thì $B$ lại không làm thế, đây là một lời đe dọa không đáng tin. <br>
+&nbsp;&nbsp;&nbsp;&nbsp; $\Longrightarrow$ Vậy trò chơi chỉ có duy nhất 1 PBE là $\( LL, l \)$ <br>
+#### &nbsp;&nbsp;&nbsp;&nbsp; *c. Tiêu chuẩn trực quan* <br>
+#### &nbsp;&nbsp;&nbsp;&nbsp; *d. Quy nạp ngược và quy nạp xuôi* <br>
+### 5. Bản chất tiện ích, đạo đức, và hiệu quả <br>
+#### &nbsp;&nbsp;&nbsp;&nbsp; *a. Bản chất tiện ích* <br>
+#### &nbsp;&nbsp;&nbsp;&nbsp; *b. Tính đạo đức và hiệu quả* <br>
+### 6. Những trò chơi kéo dài vô tận <br>
+#### &nbsp;&nbsp;&nbsp;&nbsp; *a. Trò chơi lặp lại* <br>
+#### &nbsp;&nbsp;&nbsp;&nbsp; *b. Trò chơi dài vô tận nhưng có kích thước hữu hạn* <br>
+### 7. Lý thuyết trò chơi tiến hóa <br>
 
 
 
