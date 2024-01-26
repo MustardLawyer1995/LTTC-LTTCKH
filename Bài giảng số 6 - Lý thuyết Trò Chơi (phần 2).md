@@ -115,7 +115,7 @@ Trong ví dụ Con ngựa Selten, khi tập thông tin $\{13,14 \}$ nhận xác 
 \left( {\frac{4}{5}M + \frac{1}{5}R,\frac{1}{6}{l_2} + \frac{5}{6}{r_2},{l_3}} \right),{\rm{ }}\left( {R,{\rm{ }}{r_2},{\rm{ }}{l_3}} \right)
 \end{array} \right.
 ```
-&nbsp;&nbsp;&nbsp;&nbsp;Không khó để nhận ra tất cả chúng đều là SE, niềm tin của (II) ấn định cho các nút 15, 16 xác suất lần lượt là $q$ , $1-q$ (II) sẽ chơi: $l_2$ khi $q > \frac{4}{5}$ , $r_2$ khi $q < \frac{4}{5}$ , chiến lược tùy ý nếu $q = \frac{4}{5}$ . Tuy nhiên, mọi chuyện sẽ khác nếu ta tính đến sự “run tay” của (III) - chơi $l_3$ và $r_3$ với xác suất lần lượt là $1- \varepsilon$ và $\varepsilon$ . Ở SE thứ nhất ta có $q \ge \frac{4}{5}$ , nếu $q > \frac{4}{5}$ thì (II) sẽ chơi $l_2$ , nếu $q = \frac{4}{5}$ , tiện ích của (II) khi chơi $l_2$ và $r_2$ lần lượt là:
+&nbsp;&nbsp;&nbsp;&nbsp;Không khó để nhận ra tất cả chúng đều là SE, niềm tin của (II) ấn định cho các nút 15, 16 xác suất lần lượt là $q$ , $1-q$ , (II) sẽ chơi: $l_2$ khi $q > \frac{4}{5}$ , $r_2$ khi $q < \frac{4}{5}$ , chiến lược tùy ý nếu $q = \frac{4}{5}$ . Tuy nhiên, mọi chuyện sẽ khác nếu ta tính đến sự “run tay” của (III) - chơi $l_3$ và $r_3$ với xác suất lần lượt là $1- \varepsilon$ và $\varepsilon$ . Ở SE thứ nhất ta có $q \ge \frac{4}{5}$ , nếu $q > \frac{4}{5}$ thì (II) sẽ chơi $l_2$ , nếu $q = \frac{4}{5}$ , tiện ích của (II) khi chơi $l_2$ và $r_2$ lần lượt là:
 
 ```math
 \left\{ \begin{array}{l}
@@ -128,9 +128,20 @@ Trong ví dụ Con ngựa Selten, khi tập thông tin $\{13,14 \}$ nhận xác 
 &nbsp;&nbsp;&nbsp;&nbsp;Ở SE cuối cùng, dễ thấy độ run tay của cả 3 tay chơi đều không ảnh hưởng tới chiến lược của họ, nên $\left( {R,{\rm{ }}{r_2},{\rm{ }}{l_3}} \right)$ là THPE. Ta thấy rằng, dù SPE, SE đã mang ý niệm về “bàn tay run”, song chúng chưa áp dụng định đề này một cách nhất quán. Tại sao ta lại cho rằng tay chơi (I) có thể run tay - đưa trò chơi vào tập thông tin $\{ 15,16 \}$ , nhưng tay chơi (III) thì không ? <br>
 #### &nbsp;&nbsp;&nbsp;&nbsp; *e. Cân bằng thích hợp* <br>
 &nbsp;&nbsp;&nbsp;&nbsp;THPE gán cho mỗi hành động phi lý của người chơi một xác suất dương tiệm cận 0, nhưng lờ đi sự so sánh xác suất của 2 hành động phi lý. Điều này có lẽ cũng không phản trực giác lắm, bởi vì ta không có thói quen so sánh 2 giá trị vô cùng bé, và nếu 2 hành động đều sinh ra từ sự lỡ tay của người chơi, thì chẳng lẽ họ lại còn phân phối xác suất cho nó? Tuy nhiên, có những căn nguyên rất hợp lý để cho rằng, giữa 2 hành động phi lý, người chơi sẽ thực hiện hành động đem lại thiệt hại lớn hơn (tiện ích thấp hơn) với xác suất nhỏ hơn rất nhiều: <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Khi đó ta có: <br> 
+<div align="center">
 
+$${u_k}\left( {{s_k}^\prime ,s} \right) < {u_k}\left( {{s_k},s} \right) \to \frac{{{p_k}\left( {{s_k}^\prime ,s} \right)}}{{{p_k}\left( {{s_k},s} \right)}} = \varepsilon $$
+</div>
 
+&nbsp;&nbsp;&nbsp;&nbsp;trong đó $s_k$ là chiến lược của tay chơi $k$ , $s$ là tập chiến lược mà các tay chơi còn lại lựa chọn, $u_{k} \( s_{k};s \)$ là tiện ích của tay chơi $k$ ứng với kết quả đó và $p_{k} \( s_{k};s \)$ là xác suất mà anh ta gán cho $s_k$ khi những người còn lại chơi $s$ ). Một THPE đạt được điều kiện trên là một ***<ins>cân bằng thích hợp (PE-proper equilibrium)</ins>*** <br>
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Ví dụ 3.8:</ins>* Cho hình vẽ sau<br>
+<div align="center">
 
+![image](https://github.com/MustardLawyer1995/LTTC-LTTCKH/assets/156400720/ea7ea034-3f85-4bc2-aa13-f69e9628a578)
+</div>
+
+&nbsp;&nbsp;&nbsp;&nbsp;Trò chơi giữa 2 người chơi (I) và (II) (hình trên) có các nút 2 và 3 cùng nằm trong một tập thông tin chung (ký hiệu bằng đường đứt đoạn thay vì hình oval). Trò chơi có vô hạn NE: (I) chắc chắn sẽ chơi $L$ - chiến lược thống trị nghiêm ngặt, và (II) có thể làm bất cứ cái gì. Tất cả NE đều là THPE, vì (II) có thể ấn định bất cứ niềm tin nào cho tập thông tin $\{ 2,3 \}$ (nguyên lý của THPE cho phép tỉ số $\frac{p\( M \)}{p\( R \)}$ nhận giá trị tùy ý khi chúng đều là các xác suất tiệm cận 0). Nhưng chỉ có 1 PE duy nhất là  . Lấy THPE   làm ví dụ, rõ ràng (II) chỉ chơi   nếu anh ta tin rằng   ( là xác suất (II) ở nút 2 khi trò chơi đã đi vào tập thông tin {2,3}), nhưng lúc này (I) lại ấn định   ((I) nhận được 0 khi chơi R và 3 khi chơi M), đồng nghĩa: 
 
 
 
