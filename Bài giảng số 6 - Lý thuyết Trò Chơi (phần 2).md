@@ -4,7 +4,8 @@
 &nbsp;&nbsp;&nbsp;&nbsp;Một cách lý giải về điểm cân bằng trong các trò chơi như *Qua cầu* là lý giải tiến hóa. Nếu thợ săn và người chạy trốn/tổ tiên của họ thường xuyên chơi các trò chơi có cấu trúc tương tự trong quá khứ thì sức ép từ những thói quen/văn hóa/sinh học là thứ đưa cả 2 tới việc chơi các chiến lược NE và duy lý hóa hành động đó (sẽ nói rõ hơn khi thảo luận về *"Lý thuyết trò chơi tiến hóa"*). Cách hiểu như vậy rất phù hợp với các mô hình xã hội quy mô lớn, đặc biệt trong kinh tế học, nơi mà một hệ thống kinh tế được diễn giải như mạng lưới của các mối quan hệ nhân quả, thường nằm trong sự cân bằng và chỉ bị xáo trộn khi có sự can thiệp của một lực lượng ngoại sinh. Nhưng một số người lại coi LTTC là một lý thuyết về suy lý chiến lược đơn thuần mà với họ, lời giải của trò chơi phải là một kết quả dự đoán được bằng cách sử dụng duy nhất các cơ chế tính toán duy lý. Các lý thuyết gia này phải đối mặt với những vướng mắc đã đề cập ***cuối mục 0/***. Vấn đề sẽ được giải quyết nếu ta thừa nhận rằng tính duy lý trong LTTC có thể do người chơi tự tính toán hoặc được bao hàm trong những cấu trúc hành vi hình thành bởi sự chọn lọc kinh tế, văn hóa hoặc tự nhiên. <br>
 ### 3. Tinh chỉnh cân bằng Nash <br>
 #### &nbsp;&nbsp;&nbsp;&nbsp; *a. Bộ lọc cân bằng Nash* <br>
-&nbsp;&nbsp;&nbsp;&nbsp;Bởi các đặc tính của NE, nếu trò chơi chỉ có 1 kết quả NE thì nó phải là lời giải duy nhất. Tuy nhiên, ở các trò chơi có nhiều NE, không phải tất cả các NE đều trông hợp lý. Hãy xem trò chơi sau <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Bởi các đặc tính của NE, nếu trò chơi chỉ có 1 kết quả NE thì nó phải là lời giải duy nhất. Tuy nhiên, ở các trò chơi có nhiều NE, không phải tất cả các NE đều trông hợp lý. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Ví dụ 3.1:</ins>* Hãy xem trò chơi sau<br> 
 <div align="center">
 
 ![image](https://github.com/MustardLawyer1995/LTTC-LTTCKH/assets/156400720/69634713-e24f-4ee9-8d01-2d2e7dce72a1)
@@ -12,7 +13,7 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;Trò chơi này có 2 NE với chiến lược thuần túy: $\left( {{s_1},{t_1}} \right),\left( {{s_2},{t_2}} \right)$  và 1 NE với chiến lược hỗn hợp: $\left( {\frac{1}{{11}}{s_1} + \frac{{10}}{{11}}{s_2},\frac{1}{{11}}{t_1} + \frac{{10}}{{11}}{t_2}} \right)$ (Player I phân phối xác suất cho ${s_1},{s_2}$ lần lượt là $\frac{1}{{11}}$ và $\frac{10}{{11}}$ ; tương tự với Player II <br>
 &nbsp;&nbsp;&nbsp;&nbsp;Nếu NE là khái niệm giải pháp duy nhất thì 3 kết quả này đều phải được coi là lời giải của trò chơi. Nhưng có điều gì đó đã bị bỏ quên: những người chơi duy lý và có đầy đủ thông tin chắc chắn sẽ hội tụ vào $\left( {{s_1},{t_1}} \right)$   ? <br>
-&nbsp;&nbsp;&nbsp;&nbsp;Xem tiếp ví dụ sau:
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Ví dụ 3.2:</ins>* Hãy xem tiếp trò chơi sau<br> 
 <div align="center">
 
 ![image](https://github.com/MustardLawyer1995/LTTC-LTTCKH/assets/156400720/889e17dd-b9f9-4ecf-a30d-21864ae45095)
@@ -27,6 +28,7 @@
 ```
 &nbsp;&nbsp;&nbsp;&nbsp;Không có chiến lược nào thống trị / bị thống trị nghiêm ngặt. Tuy nhiên, hàng $s_1$ "thống trị yếu" $s_2$ , nghĩa là phần thưởng của Player I khi chơi $s_1$ luôn lớn hơn hoặc ít nhất cũng bằng phần thưởng khi chơi $s_2$ dù Player II chơi bất cứ cột nào. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;Vậy chúng ta có nên xóa đi hàng $s_2$ bị thống trị yếu để cho $\( s_{1} ; t_{2} \)$ trở thành NE duy nhất không? Để kiểm chứng, ta thử thay đổi các khoản tiện ích của trò chơi một chút (qua *ví dụ* mới dưới đây). <br>
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Ví dụ 3.3:</ins>* Hãy xem trò chơi sau<br> 
 <div align="center">
 
 ![image](https://github.com/MustardLawyer1995/LTTC-LTTCKH/assets/156400720/67ffa881-7779-460f-b040-0cc9ace973a6)
@@ -97,7 +99,7 @@ $$q = \frac{p\( L \)}{p\( L \)+p\( R \) \times p\( l_{2} \)}$$
 &nbsp;&nbsp;&nbsp;&nbsp;*<ins>Nhận xét:</ins>* <br>
 &nbsp;&nbsp;&nbsp;&nbsp;Có một cách hiểu trực giác đằng sau việc kết quả hấp dẫn $\( 4;4;4 \)$ không phải là SE, đó là (III) hoàn toàn không biết những gì xảy ra ở các nút 11 và 12, nên một khi trò chơi đã đi đến tập thông tin {13,14}, (III) sẽ luôn hành động theo cùng một kiểu, phụ thuộc vào cái niềm tin của anh ta-đã được ấn định ngay vào lúc bắt đầu trò chơi. Vì thế nếu (I) "run tay" và chơi $R$ (dù anh ta định chơi $L$ ), thì (II) sẽ không ngần ngại chơi $l_2$ để tăng tối đa tiện ích của mình. Ở đây lại một lần nữa ta phải viện đến khái niệm "bàn tay run". 
 #### &nbsp;&nbsp;&nbsp;&nbsp; *e. Cân bằng hoàn hảo của bàn tay run* <br>
-Trong ví dụ Con ngựa Selten, khi tập thông tin $\{13,14 \}$ nhận xác suất là 0, ta thấy một điểm trái khoáy là xác suất q có thể nhận giá trị tùy ý, tức là (III) có thể tin vào bất kỳ điều gì xảy ra ở tập thông tin {13,14}. Để hóa giải mâu thuẫn này, ta phải cho rằng mọi tay chơi đều sử dụng chiến lược *hỗn hợp hoàn toàn* - tất cả các chiến lược thuần túy đều được gán xác suất dương, ta ngầm hiểu là các chiến lược thuần túy không được sử dụng đều bị gán xác suất $ε \( ε→0⁺ \)$. Điều này cũng tương đương với định đề "tất cả các bàn tay đều run" vậy! Nếu một SE tồn tại ở trạng thái như thế, thì nó là một ***cân bằng hoàn hảo của bàn tay run (THPE-trembling hand perfect equilibrium)*** . Có thể nhận ra ngay các NE thu được bằng cách loại bỏ chiến lược bị thống trị yếu đã nói ở mục 3/,a/ cũng là các THPE, nếu ta biểu diễn các trò chơi trên ảnh 2,3 của mục đó về dạng mở rộng. <br>
+Trong ví dụ Con ngựa Selten, khi tập thông tin $\{13,14 \}$ nhận xác suất là 0, ta thấy một điểm trái khoáy là xác suất q có thể nhận giá trị tùy ý, tức là (III) có thể tin vào bất kỳ điều gì xảy ra ở tập thông tin {13,14}. Để hóa giải mâu thuẫn này, ta phải cho rằng mọi tay chơi đều sử dụng chiến lược *hỗn hợp hoàn toàn* - tất cả các chiến lược thuần túy đều được gán xác suất dương, ta ngầm hiểu là các chiến lược thuần túy không được sử dụng đều bị gán xác suất $ε \( ε→0⁺ \)$. Điều này cũng tương đương với định đề "tất cả các bàn tay đều run" vậy! Nếu một SE tồn tại ở trạng thái như thế, thì nó là một ***cân bằng hoàn hảo của bàn tay run (THPE-trembling hand perfect equilibrium)*** . Có thể nhận ra ngay các NE thu được bằng cách loại bỏ chiến lược bị thống trị yếu đã nói ở mục 3/,a/ cũng là các THPE, nếu ta biểu diễn các trò chơi ở ***ví dụ 3.2 và 3.3*** của mục đó về dạng mở rộng. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;*<ins>Ví dụ:</ins>* Cho hình vẽ sau<br>
 <div align="center">
 
