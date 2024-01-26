@@ -141,7 +141,39 @@ $${u_k}\left( {{s_k}^\prime ,s} \right) < {u_k}\left( {{s_k},s} \right) \to \fra
 ![image](https://github.com/MustardLawyer1995/LTTC-LTTCKH/assets/156400720/ea7ea034-3f85-4bc2-aa13-f69e9628a578)
 </div>
 
-&nbsp;&nbsp;&nbsp;&nbsp;Trò chơi giữa 2 người chơi (I) và (II) (hình trên) có các nút 2 và 3 cùng nằm trong một tập thông tin chung (ký hiệu bằng đường đứt đoạn thay vì hình oval). Trò chơi có vô hạn NE: (I) chắc chắn sẽ chơi $L$ - chiến lược thống trị nghiêm ngặt, và (II) có thể làm bất cứ cái gì. Tất cả NE đều là THPE, vì (II) có thể ấn định bất cứ niềm tin nào cho tập thông tin $\{ 2,3 \}$ (nguyên lý của THPE cho phép tỉ số $\frac{p\( M \)}{p\( R \)}$ nhận giá trị tùy ý khi chúng đều là các xác suất tiệm cận 0). Nhưng chỉ có 1 PE duy nhất là  . Lấy THPE   làm ví dụ, rõ ràng (II) chỉ chơi   nếu anh ta tin rằng   ( là xác suất (II) ở nút 2 khi trò chơi đã đi vào tập thông tin {2,3}), nhưng lúc này (I) lại ấn định   ((I) nhận được 0 khi chơi R và 3 khi chơi M), đồng nghĩa: 
+&nbsp;&nbsp;&nbsp;&nbsp;Trò chơi giữa 2 người chơi (I) và (II) (hình trên) có các nút 2 và 3 cùng nằm trong một tập thông tin chung (ký hiệu bằng đường đứt đoạn thay vì hình oval). Trò chơi có vô hạn NE: (I) chắc chắn sẽ chơi $L$ - chiến lược thống trị nghiêm ngặt, và (II) có thể làm bất cứ cái gì. Tất cả NE đều là THPE, vì (II) có thể ấn định bất cứ niềm tin nào cho tập thông tin $\\{ 2,3 \\}$ (nguyên lý của THPE cho phép tỉ số $\frac{p\( M \)}{p\( R \)}$ nhận giá trị tùy ý khi chúng đều là các xác suất tiệm cận $0$ ). Nhưng chỉ có 1 PE duy nhất là $\left( {L,{\rm{ }}\frac{3}{5}l + \frac{2}{5}r} \right)$ . Lấy THPE $\( L,r \)$ làm ví dụ, rõ ràng (II) chỉ chơi $r$ nếu anh ta tin rằng $q_{2} \le \frac{2}{3}$ (với $q_2$ là xác suất (II) ở nút 2 khi trò chơi đã đi vào tập thông tin $\\{ 2,3 \\}$ ), nhưng lúc này (I) lại ấn định $\frac{p\( R \)}{p\( M \)} = \varepsilon$ (với (I) nhận được 0 khi chơi $R$ và 3 khi chơi $M$ ), đồng nghĩa: 
+
+```math
+{q_2} = \frac{{{p_M}}}{{{p_R} + {p_M}}} = {\left. {\frac{1}{{1 + \varepsilon }}} \right|_{\varepsilon  \to {0^ + }}} \to {1^ - }
+```
+&nbsp;&nbsp;&nbsp;&nbsp; $\Longrightarrow$ Khi ấy ta kết luận $\( L, r \)$ không phải là PE <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Ta nhận ra là tại kết quả PE, (II) phải chơi các chiến lược giống như trong một NE của trò chơi con bắt đầu từ nút $1'$ ở hình dưới. Thật vậy, (II) sẽ chơi chiến lược tối ưu theo niềm tin của mình $\( q_{2};q_{3} \)$ vốn phụ thuộc vào $\frac{p\( M \)}{p\( R \)}$ , ngược lại, (I) cũng tối đa hóa tiện ích của mình tại tập $\\{ 2,3 \\}$ bằng cách điều chỉnh $\frac{p\( M \)}{p\( R \)}$ theo chiến lược của (II). <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Điều này hóa ra lại rất có sức thuyết phục, nó tạo nên "tính bất biến của lời giải" - một lời giải bền vững với các cách biểu diễn khác nhau của cùng một trò chơi. PE trong trò chơi ban đầu (trên) là SPE duy nhất trong một dị bản của nó (dưới) - về bản chất vẫn giống với trò chơi gốc. Hành động $T$ tương đương với "không chọn $L$", ở nút $1'$ , (I) bắt đầu suy nghĩ về việc chọn $M$ hay $R$ sau khi lỡ tay bỏ phí kết quả hấp dẫn $\( 4,0 \)$ . Lời giải hợp lý nhất là PE, vì nó làm cho trò chơi con xuất phát từ nút $1'$ cũng đạt được NE. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Dù vẫn còn các tranh cãi xung quanh định đề "tối thiểu hóa thiệt hại do run tay", hãy nghĩ về lời giải này như một phản ứng tối ưu của (II) cho tình huống (I) lỡ tay đưa trò chơi vào tập thông tin $\\{ 2,3 \\}$ . <br>
+### 4. Trò chơi có thông tin không đầy đủ <br>
+#### &nbsp;&nbsp;&nbsp;&nbsp; *a. Người chơi tự nhiên* <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Sinh viên B đến thư viện để chuẩn bị cho bài thi môn LTTC vào ngày mai thì gặp A - một tay ngang đến tìm sách nhập môn về LTTC, họ chưa từng biết nhau. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Có 2 loại sách cho A chọn là cơ bản (M) và nâng cao (E) (giả sử A chỉ có đủ thời gian để đọc trọn vẹn 1 quyển). B có thể: ở lại thư viện ôn thi qua đêm (L) hoặc mượn sách về nhà (H). Từ cuộc trò chuyện với thủ thư về A-người hay đến đây đọc sách, B biết A thuộc 1 trong 2 kiểu người: xuất chúng (A1)-xác suất 0.7 hoặc bình thường (A2)-xác suất 0.3 (ta cũng giả định A biết B đã nắm được bao nhiêu thông tin về A). <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Các mức tiện ích của A: 1 _đọc sách không phù hợp với khả năng; 2 _đọc sách phù hợp; 3 _đọc sách không phù hợp nhưng được học cùng với B; 4 _đọc sách phù hợp và học cùng B. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Các mức tiện ích của B: 1 _ở lại và học cùng A1 (đạt điểm cao); 0 _ôn thi ở nhà (điểm thi trung bình); -1 _ở lại học cùng và mất thời gian với A2 (điểm thấp). <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Tình huống trên là một trò chơi có thông tin hoàn hảo (A hành động trước B, B thấy rõ hành động của A) nhưng không đầy đủ vì B không biết chính xác các tiện ích của mình và của đối phương ở mỗi kết quả. Harsanyi (đồng giải Nobel với Nash và Selten, 1994) giải quyết khó khăn này bằng cách thêm vào 1 người chơi ảo gọi là "Tự nhiên" (N-nature), điều này sẽ được diễn giải chi tiết bằng ví dụ nêu sau đây. <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
