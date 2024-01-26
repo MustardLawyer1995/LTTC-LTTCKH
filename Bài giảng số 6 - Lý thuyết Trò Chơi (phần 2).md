@@ -18,7 +18,7 @@
 ![image](https://github.com/MustardLawyer1995/LTTC-LTTCKH/assets/156400720/889e17dd-b9f9-4ecf-a30d-21864ae45095)
 </div>
 
-Trò chơi có các NE là: 
+&nbsp;&nbsp;&nbsp;&nbsp;Trò chơi có các NE là: 
 ```math
 \left\{ \begin{array}{l}
 \left( {{s_1},{t_2}} \right)\
@@ -66,6 +66,26 @@ Trò chơi có các NE là:
 &nbsp;&nbsp;&nbsp;&nbsp;Cách chuẩn mực nhất để giải quyết nghịch lý này là viện đến khái niệm "bàn tay run" của Selten [1975]. Tư tưởng này cho rằng một hành động phi lý có thể gắn với một xác suất dương vô cùng bé. Nghĩa một tay chơi có thể mắc lỗi khi thực hiện hành động-với một khả năng rất nhỏ. Vậy là không còn mâu thuẫn nào khi sử dụng lý lẽ qui nạp ngược nữa. Trong ví dụ của chúng ta, Player II có thể nghĩ về lựa chọn ở nút 6 dựa vào định đề rằng Player I muốn chọn $4L$ , nhưng sau đó đã "lỡ tay" chọn $4R$ . <br>
 &nbsp;&nbsp;&nbsp;&nbsp;Khái niệm này cũng củng cố tính hợp lý của các bộ lọc đã thảo luận ở ***phần 3/, a/*** . Nếu "bàn tay" đối thủ của tôi có thể "run", thì tôi có lý do chính đáng để tránh cái chiến lược bị thống trị yếu $s_2$ trong hình mục ***phần 3/, b/*** . Đối thủ của tôi có thể cam kết chơi $t_1$ và tôi có thể tin vào lời hứa của anh ta. Nhưng nếu sau đó anh ta "run tay" và chơi $t_2$ , thì tôi phải nhận một kết quả tồi tệ nhất. <br>
 #### &nbsp;&nbsp;&nbsp;&nbsp; *d. Cân bằng tuần tự* <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Giờ ta hãy xem xét trò chơi tay 3 với thông tin không hoàn hảo dưới đây - được gọi là ***"Con ngựa Selten"*** *(tên người tạo ra trò chơi, được giải Nobel, Reinhard Selten)* thông qua hình sau. <br>
+<div align="center">
+
+![image](https://github.com/MustardLawyer1995/LTTC-LTTCKH/assets/156400720/7702ea00-3a1f-4f23-b8e5-be0b8befec8a)
+</div>
+&nbsp;&nbsp;&nbsp;&nbsp;Trò chơi có các NE là: <br>
+
+```math
+\left\{ \begin{array}{l}
+\left( {L,{\rm{ }}s{l_2} + \left( {1 - s} \right){r_2},{\rm{ }}{l_3}} \right),s \le \frac{1}{2}{\rm{ }}\
+\left( {R,{\rm{ }}{r_2},{\rm{ }}t{l_3} + \left( {1 - t} \right){r_3}} \right),s \le \frac{1}{3}
+\end{array} \right. 
+```
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lần lượt ứng với kết quả $\( 4;4;4 \)$ và $\( 3;3;0 \)$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Nhưng ta không thể lọc chúng bằng thuật toán Zermelo. Vì các nút 13 và 14 cùng nằm trong một tập thông tin chung nên Con ngựa Selten chỉ có 1 trò chơi con - là toàn bộ trò chơi, dẫn đến việc tất cả các NE đều là SPE. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Hãy để ý rằng khi đưa ra lựa chọn, tay chơi (III) chỉ biết là mình đang ở tập thông tin chung nhưng không rõ là nút 13 hay 14, nên anh ta phải gán các xác suất cho mỗi nút. Các xác suất này-có vai trò như hệ thống niềm tin của (III), là cái mà (III) băn khoăn, mặt khác (I) và (II) cũng phải phỏng đoán về nó để lựa chọn chiến lược phù hợp. <br> <br>
+&nbsp;&nbsp;&nbsp;&nbsp; $\Longrightarrow$ Từ đây ta có một khái niệm mới: ***<ins>cân bằng tuần tự (SE-sequential equilibrium)</ins>***. Một SE gồm 2 phần: (1) tập chiến lược mà các tay chơi lựa chọn; (2) một hệ thống niềm tin cho các tay chơi, nó ấn định cho mỗi tập thông tin $h$ một phân phối xác suất lên các nút trong $h$ , được lý giải là niềm tin của tay chơi sở hữu $h$ về việc anh ta đang ở nút nào trong $h$ . Một SPE là SE khi chiến lược của mỗi tay chơi là tối ưu và nhất quán đối với niềm tin của các tay chơi khác. <br>
+
+
+
 
 
 
