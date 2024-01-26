@@ -42,7 +42,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;Trước hết hãy xét phiên bản đơn giản hơn - khi chỉ có 2 xạ thủ (không phải một trò chơi đúng nghĩa theo LTTC, 2 xạ thủ không phải đắn đo gì khi họ chỉ có 1 lựa chọn duy nhất - bắn người kia). Cho tỉ lệ bắn trúng của người bắn trước (sau) là $p\( q \)$ , tỉ lệ người bắn trước thắng là: <br>
 
 ```math
-p + \left( {1 - p} \right)\left( {1 - q} \right)p + \left( {1 - p} \right)\left( {1 - q} \right)p + ... + {\left( {1 - p} \right)^k}{\left( {1 - q} \right)^k}p + ... = \frac{p}{{1 - \left( {1 - p} \right)\left( {1 - q} \right)}}
+p + \left( {1 - p} \right)\left( {1 - q} \right)p + \left( {1 - p} \right)^2\left( {1 - q} \right)^2p + ... + {\left( {1 - p} \right)^k}{\left( {1 - q} \right)^k}p + ... = \frac{p}{{1 - \left( {1 - p} \right)\left( {1 - q} \right)}}
 ```
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;với ${\left( {1 - p} \right)^k}{\left( {1 - q} \right)^k}p$ là xác suất anh ta giết được đối thủ ở lần bắn thứ $k+1$ của mình, và người bắn sau là: $1 - \frac{p}{{1 - \left( {1 - p} \right)\left( {1 - q} \right)}}$ <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Coi tiện ích là tỉ lệ sống sót đến cuối cùng của mỗi tay chơi (như trò chơi Qua cầu), giai đoạn chỉ còn 2 người xem như đã là điểm kết thúc của trò chơi 3 xạ thủ, với 6 trường hợp như sau: <br>
