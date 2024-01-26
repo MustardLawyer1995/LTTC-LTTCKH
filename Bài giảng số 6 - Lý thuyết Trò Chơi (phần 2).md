@@ -126,7 +126,7 @@ Trong ví dụ Con ngựa Selten, khi tập thông tin $\{13,14 \}$ nhận xác 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\Longrightarrow$ (II) sẽ chơi $l_2$ và khi đó ta thu được THPE  $\left( {L,{\rm{ }}{l_2},{\rm{ }}{l_3}} \right)$ <br>
 &nbsp;&nbsp;&nbsp;&nbsp;Tương tự ở SE thứ 2, $q = \frac{4}{5}$ $\Longrightarrow$ (II) cũng sẽ chơi $l_2$ $\Longrightarrow$ SE $\left( {\frac{4}{5}M + \frac{1}{5}R,\frac{1}{6}{l_2} + \frac{5}{6}{r_2},{l_3}} \right)$ không phải là THPE <br>
 &nbsp;&nbsp;&nbsp;&nbsp;Ở SE cuối cùng, dễ thấy độ run tay của cả 3 tay chơi đều không ảnh hưởng tới chiến lược của họ, nên $\left( {R,{\rm{ }}{r_2},{\rm{ }}{l_3}} \right)$ là THPE. Ta thấy rằng, dù SPE, SE đã mang ý niệm về “bàn tay run”, song chúng chưa áp dụng định đề này một cách nhất quán. Tại sao ta lại cho rằng tay chơi (I) có thể run tay - đưa trò chơi vào tập thông tin $\{ 15,16 \}$ , nhưng tay chơi (III) thì không ? <br>
-#### &nbsp;&nbsp;&nbsp;&nbsp; *e. Cân bằng thích hợp* <br>
+#### &nbsp;&nbsp;&nbsp;&nbsp; *f. Cân bằng thích hợp* <br>
 &nbsp;&nbsp;&nbsp;&nbsp;THPE gán cho mỗi hành động phi lý của người chơi một xác suất dương tiệm cận 0, nhưng lờ đi sự so sánh xác suất của 2 hành động phi lý. Điều này có lẽ cũng không phản trực giác lắm, bởi vì ta không có thói quen so sánh 2 giá trị vô cùng bé, và nếu 2 hành động đều sinh ra từ sự lỡ tay của người chơi, thì chẳng lẽ họ lại còn phân phối xác suất cho nó? Tuy nhiên, có những căn nguyên rất hợp lý để cho rằng, giữa 2 hành động phi lý, người chơi sẽ thực hiện hành động đem lại thiệt hại lớn hơn (tiện ích thấp hơn) với xác suất nhỏ hơn rất nhiều: <br>
 &nbsp;&nbsp;&nbsp;&nbsp;Khi đó ta có: <br> 
 <div align="center">
