@@ -83,13 +83,26 @@
 &nbsp;&nbsp;&nbsp;&nbsp;Nhưng ta không thể lọc chúng bằng thuật toán Zermelo. Vì các nút 13 và 14 cùng nằm trong một tập thông tin chung nên Con ngựa Selten chỉ có 1 trò chơi con - là toàn bộ trò chơi, dẫn đến việc tất cả các NE đều là SPE. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;Hãy để ý rằng khi đưa ra lựa chọn, tay chơi (III) chỉ biết là mình đang ở tập thông tin chung nhưng không rõ là nút 13 hay 14, nên anh ta phải gán các xác suất cho mỗi nút. Các xác suất này-có vai trò như hệ thống niềm tin của (III), là cái mà (III) băn khoăn, mặt khác (I) và (II) cũng phải phỏng đoán về nó để lựa chọn chiến lược phù hợp. <br> <br>
 &nbsp;&nbsp;&nbsp;&nbsp; $\Longrightarrow$ Từ đây ta có một khái niệm mới: ***<ins>cân bằng tuần tự (SE-sequential equilibrium)</ins>***. Một SE gồm 2 phần: (1) tập chiến lược mà các tay chơi lựa chọn; (2) một hệ thống niềm tin cho các tay chơi, nó ấn định cho mỗi tập thông tin $h$ một phân phối xác suất lên các nút trong $h$ , được lý giải là niềm tin của tay chơi sở hữu $h$ về việc anh ta đang ở nút nào trong $h$ . Một SPE là SE khi chiến lược của mỗi tay chơi là tối ưu và nhất quán đối với niềm tin của các tay chơi khác. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Giờ ta sẽ áp dụng khái niệm này cho trò chơi ***Con ngựa Selten*** . Giả sử (III) ấn định $q$ là xác suất anh ta đang ở nút 13 (và $1-q$ là xác suất của nút 14). (III) đưa ra lựa chọn để tối đa hóa tiện ích của mình theo $q$ . Tiện ích trung bình của (III) khi chơi $l_3$ và $r_3$ lần lượt là $4q$ và $2-q$ , nên (III) sẽ: chơi $l_3$ khi $q > \frac{2}{5}$ ; chơi $r_3$ khi $q < \frac{2}{5}$ ; chơi chiến lược tùy ý khi $q = \frac{2}{5}$ . (I) và (II) phải chơi các chiến lược nhất quán với niềm tin của (III), tức là họ sẽ hành động sao cho xác suất mà (III) đang ở nút 13 đúng là $q$ . Đây là các xác suất có điều kiện (dựa trên sự kiện đã xảy ra là (III) đang ở trong tập thông tin {13,14}) nên theo quy tắc Bayes, ta đánh giá được: <br>
+<div align="center">
 
+$$q = \frac{p\( L \)}{p\( L \)+p\( R \) \times p\( l_{2} \)}$$
+</div>
 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;trong đó $p\( x \)$ là xác suất mà chiến lược $x$ được sử dụng, $p\( L \)+p\( R \) = 1$ ). Đồng thời, chiến lược mà (I) và (II) lựa chọn phải là tối ưu theo $q$ . <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Xét NE $\left( {L,{\rm{ }}s{l_2} + \left( {1 - s} \right){r_2},{l_3}} \right),s \le \frac{1}{2}$ , (III) chơi $l_3 \( q \ge \frac{2}{5} \)$  nhất quán với p\( L \) = 1 \( q=1 \) ; nhưng nếu trò chơi đến được nút 12, (II) sẽ phải chơi $l_2$ , bởi vì (II) biết (III) sẽ chơi $l_3$ theo niềm tin $q=1$ . <br> 
+&nbsp;&nbsp;&nbsp;&nbsp; $\Longrightarrow$ $\left( {L,{\rm{ }}s{l_2} + \left( {1 - s} \right){r_2},{l_3}} \right),s \le \frac{1}{2}$ không phải là SE. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Xét NE $\left( {R,{r_2},t{l_3} + \left( {1 - t} \right){r_3}} \right),t \le \frac{1}{3}$ , (III) chơi chiến lược hỗn hợp $t{l_3} + \left( {1 - t} \right){r_3}$ $\( q \ge \frac{2}{5} \)$ nhất quán với $p\( L \) = p\( l_{2} \) = 0 ( $q=\frac{0}{0}$ , giá trị bất định, nghĩa là (III) có thể ấn định $q$ bằng bao nhiêu cũng được); và chiến lược của (I),(II) đã là tối ưu theo lựa chọn của (III) <br>
+&nbsp;&nbsp;&nbsp;&nbsp; $\Longrightarrow$ $\left( {R,{r_2},t{l_3} + \left( {1 - t} \right){r_3}} \right),t \le \frac{1}{3}$ là SE. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Nhận xét:</ins>* <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Có một cách hiểu trực giác đằng sau việc kết quả hấp dẫn $\( 4;4;4 \)$ không phải là SE, đó là (III) hoàn toàn không biết những gì xảy ra ở các nút 11 và 12, nên một khi trò chơi đã đi đến tập thông tin {13,14}, (III) sẽ luôn hành động theo cùng một kiểu, phụ thuộc vào cái niềm tin của anh ta-đã được ấn định ngay vào lúc bắt đầu trò chơi. Vì thế nếu (I) "run tay" và chơi $R$ (dù anh ta định chơi $L$ ), thì (II) sẽ không ngần ngại chơi $l_2$ để tăng tối đa tiện ích của mình. Ở đây lại một lần nữa ta phải viện đến khái niệm "bàn tay run". 
+#### &nbsp;&nbsp;&nbsp;&nbsp; *e. Cân bằng hoàn hảo của bàn tay run* <br>
+Trong ví dụ Con ngựa Selten, khi tập thông tin $\{13,14 \}$ nhận xác suất là 0, ta thấy một điểm trái khoáy là xác suất q có thể nhận giá trị tùy ý, tức là (III) có thể tin vào bất kỳ điều gì xảy ra ở tập thông tin {13,14}. Để hóa giải mâu thuẫn này, ta phải cho rằng mọi tay chơi đều sử dụng chiến lược *hỗn hợp hoàn toàn* - tất cả các chiến lược thuần túy đều được gán xác suất dương, ta ngầm hiểu là các chiến lược thuần túy không được sử dụng đều bị gán xác suất $ε \( ε→0⁺ \)$. Điều này cũng tương đương với định đề "tất cả các bàn tay đều run" vậy! Nếu một SE tồn tại ở trạng thái như thế, thì nó là một ***cân bằng hoàn hảo của bàn tay run (THPE-trembling hand perfect equilibrium)*** . Có thể nhận ra ngay các NE thu được bằng cách loại bỏ chiến lược bị thống trị yếu đã nói ở mục 3/,a/ cũng là các THPE, nếu ta biểu diễn các trò chơi trên ảnh 2,3 của mục đó về dạng mở rộng. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Ví dụ:</ins>* Cho hình vẽ sau<br>
+<div align="center">
 
-
-
-
-
+![image](https://github.com/MustardLawyer1995/LTTC-LTTCKH/assets/156400720/299d2f6b-18cc-4a5e-8043-03beca338d90)
+</div>
 
 
 
