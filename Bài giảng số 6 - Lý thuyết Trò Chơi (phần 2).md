@@ -41,7 +41,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;Vậy thì bộ lọc nào thích hợp hơn với vai trò là một khái niệm giải pháp? Ưu khuyết của chúng và một số lượng lớn các bộ lọc khác đều cần phải bàn thêm. <br>
 #### &nbsp;&nbsp;&nbsp;&nbsp; *b. Sự cân bằng hoàn hảo của trò chơi con* <br>
 &nbsp;&nbsp;&nbsp;&nbsp;Ta xét 2 ví dụ tương ứng với 2 trò chơi như sau: <br>
-&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Ví dụ 1:</ins>* Cho hình vẽ sau: <br>
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Ví dụ 3.4:</ins>* Cho hình vẽ sau: <br>
 <div align="center">
 
 ![image](https://github.com/MustardLawyer1995/LTTC-LTTCKH/assets/156400720/ad99b231-ad32-422e-ac04-b8fd42bfe1fe)
@@ -54,7 +54,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;*<ins>Nhận xét:</ins>* <br>
 &nbsp;&nbsp;&nbsp;&nbsp;Việc thuật toán Zermelo chọn $\( LR, RL \)$ là lời giải duy nhất của trò chơi cho thấy nó đạt được một khái niệm cân bằng trên cả NE. Thực tế thì nó đang tạo ra sự cân bằng hoàn hảo của trò chơi con ***<ins>(SPE-subgame perfect equilibrium)</ins>*** . Một NE của trò chơi là SPE khi nó là NE trong mọi trò chơi con của trò chơi đó (định nghĩa trò chơi con: cho một cây trò chơi, nếu giữ lại 1 nút thông tin cùng tất cả các nhánh đi xuống xuất phát từ nó, và xóa bỏ toàn bộ phần còn lại của cây trò chơi, ta thu được một trò chơi mới là trò chơi con của trò chơi ban đầu). <br>
 
-&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Ví dụ 2:</ins>* Cho hình vẽ sau: <br>
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Ví dụ 3.5:</ins>* Cho hình vẽ sau: <br>
 <div align="center">
 
 ![image](https://github.com/MustardLawyer1995/LTTC-LTTCKH/assets/156400720/f29f9a1e-a30c-4dca-a49c-7cf11b19dbde)
@@ -69,6 +69,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;Khái niệm này cũng củng cố tính hợp lý của các bộ lọc đã thảo luận ở ***phần 3/, a/*** . Nếu "bàn tay" đối thủ của tôi có thể "run", thì tôi có lý do chính đáng để tránh cái chiến lược bị thống trị yếu $s_2$ trong hình mục ***phần 3/, b/*** . Đối thủ của tôi có thể cam kết chơi $t_1$ và tôi có thể tin vào lời hứa của anh ta. Nhưng nếu sau đó anh ta "run tay" và chơi $t_2$ , thì tôi phải nhận một kết quả tồi tệ nhất. <br>
 #### &nbsp;&nbsp;&nbsp;&nbsp; *d. Cân bằng tuần tự* <br>
 &nbsp;&nbsp;&nbsp;&nbsp;Giờ ta hãy xem xét trò chơi tay 3 với thông tin không hoàn hảo dưới đây - được gọi là ***"Con ngựa Selten"*** *(tên người tạo ra trò chơi, được giải Nobel, Reinhard Selten)* thông qua hình sau. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Ví dụ 3.6:</ins>* <br>
 <div align="center">
 
 ![image](https://github.com/MustardLawyer1995/LTTC-LTTCKH/assets/156400720/7702ea00-3a1f-4f23-b8e5-be0b8befec8a)
@@ -92,15 +93,15 @@ $$q = \frac{p\( L \)}{p\( L \)+p\( R \) \times p\( l_{2} \)}$$
 </div>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;trong đó $p\( x \)$ là xác suất mà chiến lược $x$ được sử dụng, $p\( L \)+p\( R \) = 1$ ). Đồng thời, chiến lược mà (I) và (II) lựa chọn phải là tối ưu theo $q$ . <br>
-&nbsp;&nbsp;&nbsp;&nbsp;Xét NE $\left( {L,{\rm{ }}s{l_2} + \left( {1 - s} \right){r_2},{l_3}} \right),s \le \frac{1}{2}$ , (III) chơi $l_3 \( q \ge \frac{2}{5} \)$  nhất quán với p\( L \) = 1 \( q=1 \) ; nhưng nếu trò chơi đến được nút 12, (II) sẽ phải chơi $l_2$ , bởi vì (II) biết (III) sẽ chơi $l_3$ theo niềm tin $q=1$ . <br> 
+&nbsp;&nbsp;&nbsp;&nbsp;Xét NE $\left( {L,{\rm{ }}s{l_2} + \left( {1 - s} \right){r_2},{l_3}} \right),s \le \frac{1}{2}$ , (III) chơi $l_3 \text{     } \( q \ge \frac{2}{5} \)$  nhất quán với $p\( L \) = 1 \text{     } \( q=1 \)$ ; nhưng nếu trò chơi đến được nút 12, (II) sẽ phải chơi $l_2$ , bởi vì (II) biết (III) sẽ chơi $l_3$ theo niềm tin $q=1$ . <br> 
 &nbsp;&nbsp;&nbsp;&nbsp; $\Longrightarrow$ $\left( {L,{\rm{ }}s{l_2} + \left( {1 - s} \right){r_2},{l_3}} \right),s \le \frac{1}{2}$ không phải là SE. <br>
-&nbsp;&nbsp;&nbsp;&nbsp;Xét NE $\left( {R,{r_2},t{l_3} + \left( {1 - t} \right){r_3}} \right),t \le \frac{1}{3}$ , (III) chơi chiến lược hỗn hợp $t{l_3} + \left( {1 - t} \right){r_3}$ $\( q \ge \frac{2}{5} \)$ nhất quán với $p\( L \) = p\( l_{2} \) = 0 ( $q=\frac{0}{0}$ , giá trị bất định, nghĩa là (III) có thể ấn định $q$ bằng bao nhiêu cũng được); và chiến lược của (I),(II) đã là tối ưu theo lựa chọn của (III) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Xét NE $\left( {R,{r_2},t{l_3} + \left( {1 - t} \right){r_3}} \right),t \le \frac{1}{3}$ , (III) chơi chiến lược hỗn hợp $t{l_3} + \left( {1 - t} \right){r_3}$ $\text{     } \( q \ge \frac{2}{5} \)$ nhất quán với $p\( L \) = p\( l_{2} \) = 0$ ( $q=\frac{0}{0}$ , giá trị bất định, nghĩa là (III) có thể ấn định $q$ bằng bao nhiêu cũng được); và chiến lược của (I),(II) đã là tối ưu theo lựa chọn của (III) <br>
 &nbsp;&nbsp;&nbsp;&nbsp; $\Longrightarrow$ $\left( {R,{r_2},t{l_3} + \left( {1 - t} \right){r_3}} \right),t \le \frac{1}{3}$ là SE. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;*<ins>Nhận xét:</ins>* <br>
 &nbsp;&nbsp;&nbsp;&nbsp;Có một cách hiểu trực giác đằng sau việc kết quả hấp dẫn $\( 4;4;4 \)$ không phải là SE, đó là (III) hoàn toàn không biết những gì xảy ra ở các nút 11 và 12, nên một khi trò chơi đã đi đến tập thông tin {13,14}, (III) sẽ luôn hành động theo cùng một kiểu, phụ thuộc vào cái niềm tin của anh ta-đã được ấn định ngay vào lúc bắt đầu trò chơi. Vì thế nếu (I) "run tay" và chơi $R$ (dù anh ta định chơi $L$ ), thì (II) sẽ không ngần ngại chơi $l_2$ để tăng tối đa tiện ích của mình. Ở đây lại một lần nữa ta phải viện đến khái niệm "bàn tay run". 
 #### &nbsp;&nbsp;&nbsp;&nbsp; *e. Cân bằng hoàn hảo của bàn tay run* <br>
 Trong ví dụ Con ngựa Selten, khi tập thông tin $\{13,14 \}$ nhận xác suất là 0, ta thấy một điểm trái khoáy là xác suất q có thể nhận giá trị tùy ý, tức là (III) có thể tin vào bất kỳ điều gì xảy ra ở tập thông tin {13,14}. Để hóa giải mâu thuẫn này, ta phải cho rằng mọi tay chơi đều sử dụng chiến lược *hỗn hợp hoàn toàn* - tất cả các chiến lược thuần túy đều được gán xác suất dương, ta ngầm hiểu là các chiến lược thuần túy không được sử dụng đều bị gán xác suất $ε \( ε→0⁺ \)$. Điều này cũng tương đương với định đề "tất cả các bàn tay đều run" vậy! Nếu một SE tồn tại ở trạng thái như thế, thì nó là một ***cân bằng hoàn hảo của bàn tay run (THPE-trembling hand perfect equilibrium)*** . Có thể nhận ra ngay các NE thu được bằng cách loại bỏ chiến lược bị thống trị yếu đã nói ở mục 3/,a/ cũng là các THPE, nếu ta biểu diễn các trò chơi ở ***ví dụ 3.2 và 3.3*** của mục đó về dạng mở rộng. <br>
-&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Ví dụ:</ins>* Cho hình vẽ sau<br>
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Ví dụ 3.7:</ins>* Cho hình vẽ sau<br>
 <div align="center">
 
 ![image](https://github.com/MustardLawyer1995/LTTC-LTTCKH/assets/156400720/299d2f6b-18cc-4a5e-8043-03beca338d90)
