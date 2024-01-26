@@ -212,22 +212,30 @@ $${u_k}\left( {{s_k}^\prime ,s} \right) < {u_k}\left( {{s_k},s} \right) \to \fra
 ![image](https://github.com/MustardLawyer1995/LTTC-LTTCKH/assets/156400720/7057c3f8-e719-4c78-864a-cd37f4d29d99)
 </div>
 
-&nbsp;&nbsp;&nbsp;&nbsp;Theo ***5/ b/***, tình huống của PD game chỉ liên quan đến cấu trúc tiện ích, sự hợp tác và bội ước (không nhất thiết mang nghĩa xấu về đạo đức) nên ta sẽ dùng ma trận trong ảnh (hình trên) để tránh phải làm việc với các số âm (phần 1, ảnh 4). Ký hiệu: C _hợp tác; D _bội ước; A _người chơi hàng; B _người chơi cột.
-   Một chiến lược rất nổi tiếng (nhưng không nhất thiết là tối ưu như người ta thường nói) trong trò chơi PD lặp lại vô hạn là tit for tat (ăn miếng trả miếng), trong đó người chơi sẽ: i) luôn hợp tác ở vòng đầu; ii) lặp lại hành động của đối thủ ở vòng trước. Nếu 2 người đều chơi tit for tat, họ sẽ hợp tác ở tất cả các vòng-đây là một NE. 
-   Thật vậy, nếu A chơi D (trong khi B vẫn chơi C) ở một vòng nào đó, A sẽ phải chấp nhận chơi C trong khi B chơi D ở vòng sau  mức thưởng của A qua 2 vòng là  , mức thưởng khi hợp tác cùng B ở 2 vòng đó. Nếu A chơi D ở các vòng tiếp theo thay vì chịu phạt thì B cũng làm y hệt (cho đến khi A chịu chơi C), tình trạng căng thẳng này càng kéo dài càng thiệt cho A (được 1 ở mỗi vòng thay vì 2). Thực ra ở trạng thái NE-cả 2 cùng tit for tat, ta không thể quan sát được các động thái trừng phạt nêu trên (2 người sẽ hợp tác ngay từ vòng đầu đến mọi vòng tiếp theo), nói cách khác, chúng là các diễn biến bên ngoài cuộc chơi (phần 2, chú thích ảnh 5). Vậy liệu các đe doạ trừng phạt đó có "đáng tin" không? hay: NE-cùng tit for tat có phải SPE? Câu trả lời là: Có. Dễ thấy trò chơi con bắt đầu từ vòng chơi mà B phạt A có NE là: A luôn chơi C ở 2 vòng đầu, và từ vòng 3 thì lặp lại hành động của B ở vòng trước; B luôn chơi D ở vòng đầu, sau đó lặp lại hành động của A ở vòng trước (tương tự, có thể chỉ ra rằng cái NE này cũng là SPE luôn)  Đe doạ của B là đáng tin vì B hoàn toàn có lợi khi trừng phạt A.
-   Nhưng có một khía cạnh khác của vấn đề, đó là trạng thái mà cả 2 tay chơi bội ước ở tất cả các vòng (mỗi người luôn chơi D) cũng là một SPE. Ngoài ra, trò chơi PD lặp lại vô hạn còn có các SPE khác như:
-
-
-
-
-
-
-
-
-
-
-
+&nbsp;&nbsp;&nbsp;&nbsp;Theo ***5/ b/***, tình huống của PD game chỉ liên quan đến cấu trúc tiện ích, sự hợp tác và bội ước (không nhất thiết mang nghĩa xấu về đạo đức) nên ta sẽ dùng ma trận trong ảnh (hình trên) để tránh phải làm việc với các số âm (xem lại ví dụ ở ***mục 2/, phần a/***). <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Tiếp đến ta ký hiệu: C _hợp tác; D _bội ước; A _người chơi hàng; B _người chơi cột. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Một chiến lược rất nổi tiếng (nhưng không nhất thiết là tối ưu như người ta thường nói) trong trò chơi PD lặp lại vô hạn là tit for tat (ăn miếng trả miếng), trong đó người chơi sẽ: <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i) luôn hợp tác ở vòng đầu <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ii) lặp lại hành động của đối thủ ở vòng trước. <br>
+&nbsp;&nbsp;&nbsp;&nbsp; $\Longrightarrow$ Nếu 2 người đều chơi tit for tat, họ sẽ hợp tác ở tất cả các vòng - đây là một NE. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Thật vậy, nếu A chơi D (trong khi B vẫn chơi C) ở một vòng nào đó, A sẽ phải chấp nhận chơi C trong khi B chơi D ở vòng sau  mức thưởng của A qua 2 vòng là  , mức thưởng khi hợp tác cùng B ở 2 vòng đó. Nếu A chơi D ở các vòng tiếp theo thay vì chịu phạt thì B cũng làm y hệt (cho đến khi A chịu chơi C), tình trạng căng thẳng này càng kéo dài càng thiệt cho A (được 1 ở mỗi vòng thay vì 2). Thực ra ở trạng thái NE-cả 2 cùng tit for tat, ta không thể quan sát được các động thái trừng phạt nêu trên (2 người sẽ hợp tác ngay từ vòng đầu đến mọi vòng tiếp theo), nói cách khác, chúng là các diễn biến bên ngoài cuộc chơi (xem lại ví dụ 3.4). Vậy liệu các đe doạ trừng phạt đó có "đáng tin" không? hay: NE-cùng tit for tat có phải SPE ? Câu trả lời là: Có. Dễ thấy trò chơi con bắt đầu từ vòng chơi mà B phạt A có NE là: A luôn chơi C ở 2 vòng đầu, và từ vòng 3 thì lặp lại hành động của B ở vòng trước; B luôn chơi D ở vòng đầu, sau đó lặp lại hành động của A ở vòng trước (tương tự, có thể chỉ ra rằng cái NE này cũng là SPE luôn)  Đe doạ của B là đáng tin vì B hoàn toàn có lợi khi trừng phạt A. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Nhưng có một khía cạnh khác của vấn đề, đó là trạng thái mà cả 2 tay chơi bội ước ở tất cả các vòng (mỗi người luôn chơi D) cũng là một SPE. Ngoài ra, trò chơi PD lặp lại vô hạn còn có các SPE khác như: <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chuỗi $\left( {C,D} \right)\left( {D,C} \right)\left( {C,D} \right)\left( {D,C} \right)...$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i) Nếu A (B) chơi D ở lượt lẽ ra phải chơi C, B (A) sẽ chơi D ở 2 vòng tiếp; <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ii) A (B) phải chịu phạt bằng cách chơi C ở ít nhất 1 trong 2 vòng đó, quay trở lại i) (2 tits for tat). <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chuỗi $\left( {C,D} \right)\left( {C,D} \right)\left( {D,C} \right)\left( {C,D} \right)\left( {C,D} \right)\left( {D,C} \right)...$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ương tự 2 tits for tat chỉ thay 2 vòng thành 3 vòng (3 tits for tat) <br>
+&nbsp;&nbsp;&nbsp;&nbsp; $\Longrightarrow$ Các chuỗi kết quả trên tuy có tiện ích thấp hơn SPE - cùng tit for tat (thậm chí có cả sự bất bình đẳng giữa 2 tay chơi) nhưng chúng vẫn là SPE. Những người ủng hộ tit for tat là lời giải của trò chơi dường như đã quên rằng trước tiên họ cần phát triển những cơ sở lý luận về Bộ lọc NE ***(mục 3/)***, một loại vấn đề phức tạp mà không phải cứ viện đến ưu thế lợi ích là được. Cũng cần phải lưu ý rằng chỉ cần thay đổi ma trận PD một chút (hình dưới) thì tit for tat sẽ không còn là NE nữa, một tay chơi sẽ có lợi khi đổi chiến lược từ tit for tat thành chơi xen kẽ D và C (tiện ích trung bình mỗi vòng là $2.5$ ). Ở trò chơi mới này, 2 người cùng chơi 2 tits for tat là một SPE khá triển vọng để xem xét tới. <br>
 #### &nbsp;&nbsp;&nbsp;&nbsp; *b. Trò chơi dài vô tận nhưng có kích thước hữu hạn* <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Khác với những trò chơi lặp lại vô hạn mà ở đó tiện ích được tích lũy qua các vòng chơi và tiến dần ra vô cực (hoặc không xác định), có những trò chơi dù không có điểm kết thúc nhưng tiện ích sau cùng của người chơi vẫn là các giá trị hữu hạn. Xét trò chơi sau: 3 xạ thủ (I),(II),(III) với tỉ lệ bắn trúng lần lượt là $\frac{1}{4}, \frac{1}{3}, \frac{2}{3}$ tham gia một cuộc đấu sinh tử; xạ thủ tồi được ưu tiên bắn trước, quay vòng lần lượt, ai chết thì người liền sau được hưởng lượt bắn; cả 3 phải đứng tại 3 vị trí cố định cách đều nhau trong suốt cuộc đấu; ở mỗi lượt, người chơi sẽ lựa chọn bắn 1 trong 2 người còn lại; trò chơi kết thúc với chỉ 1 người sống sót. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Trước hết hãy xét phiên bản đơn giản hơn - khi chỉ có 2 xạ thủ (không phải một trò chơi đúng nghĩa theo LTTC, 2 xạ thủ không phải đắn đo gì khi họ chỉ có 1 lựa chọn duy nhất - bắn người kia). Cho tỉ lệ bắn trúng của người bắn trước (sau) là $p\( q \)$ , tỉ lệ người bắn trước thắng là: <br>
+
+```math
+p + \left( {1 - p} \right)\left( {1 - q} \right)p + \left( {1 - p} \right)\left( {1 - q} \right)p + ... + {\left( {1 - p} \right)^k}{\left( {1 - q} \right)^k}p + ... = \frac{p}{{1 - \left( {1 - p} \right)\left( {1 - q} \right)}}
+```
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;với ${\left( {1 - p} \right)^k}{\left( {1 - q} \right)^k}p$ là xác suất anh ta giết được đối thủ ở lần bắn thứ $k+1$ của mình, và người bắn sau là: $1 - \frac{p}{{1 - \left( {1 - p} \right)\left( {1 - q} \right)}}$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Coi tiện ích là tỉ lệ sống sót đến cuối cùng của mỗi tay chơi (như trò chơi Qua cầu), giai đoạn chỉ còn 2 người xem như đã là điểm kết thúc của trò chơi 3 xạ thủ, với 6 trường hợp như sau: <br>
+
 ### 7. Lý thuyết trò chơi tiến hóa <br>
 &nbsp;&nbsp;&nbsp;&nbsp;LTTC được áp dụng vào sinh học để mô hình hóa và dự đoán kết quả của các cuộc cạnh tranh sinh tồn dưới tác động chọn lọc tự nhiên, tạo nên ***<ins>Lý thuyết trò chơi tiến hóa (LTTCTH)</ins>***. Bất cứ sinh vật nào có các đặc điểm di truyền làm tăng số lượng con cái của chúng trong một môi trường nhất định thì đều có khuynh hướng để lại nhiều con cái hơn những sinh vật khác chừng nào môi trường vẫn còn tương đối bền vững. Thế hệ con cái ấy sẽ kế thừa những đặc điểm đã nêu. Vì vậy tỉ lệ của những đặc điểm này sẽ tăng dần trong quần thể qua các thế hệ. LTTC tiếp cận vấn đề này như thế nào? Một trong những khía cạnh quan trọng nhất đối với sự sinh tồn của một sinh vật là khuynh hướng hành vi của các sinh vật khác. Ta có thể nghĩ về mỗi loài/gen như là đang "cố gắng" tối đa hóa tính thích ứng (số con cháu/bản sao) thông qua việc xác định các chiến lược tối ưu của những loài/gen khác. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nói cách khác, các loài/gen được xem như là những người chơi trong "trò chơi tiến hóa". Hãy bắt đầu bằng việc giới thiệu mô hình của loại trò chơi này: <br>
