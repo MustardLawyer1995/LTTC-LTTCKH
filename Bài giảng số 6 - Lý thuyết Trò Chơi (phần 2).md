@@ -104,8 +104,30 @@ Trong ví dụ Con ngựa Selten, khi tập thông tin $\{13,14 \}$ nhận xác 
 &nbsp;&nbsp;&nbsp;&nbsp;*<ins>Ví dụ 3.7:</ins>* Cho hình vẽ sau<br>
 <div align="center">
 
-![image](https://github.com/MustardLawyer1995/LTTC-LTTCKH/assets/156400720/299d2f6b-18cc-4a5e-8043-03beca338d90)
+![image](https://github.com/MustardLawyer1995/LTTC-LTTCKH/assets/156400720/ef10d2de-ff00-48c1-b35f-400bea9290f5)
 </div>
+
+&nbsp;&nbsp;&nbsp;&nbsp;Bởi vì (III) sẽ luôn chơi $l_3$ , trò chơi xem như đã bị rút gọn về dạng 2 người chơi. Dùng các kỹ thuật đã học, ta tìm được các SPE lần lượt là:  
+
+```math
+\left\{ \begin{array}{l}
+\left( {L,s{l_2} + \left( {1 - s} \right){r_2},{l_3}} \right),s \ge \frac{1}{4}\
+\left( {\frac{4}{5}M + \frac{1}{5}R,\frac{1}{6}{l_2} + \frac{5}{6}{r_2},{l_3}} \right),{\rm{ }}\left( {R,{\rm{ }}{r_2},{\rm{ }}{l_3}} \right)
+\end{array} \right.
+```
+&nbsp;&nbsp;&nbsp;&nbsp;Không khó để nhận ra tất cả chúng đều là SE, niềm tin của (II) ấn định cho các nút 15, 16 xác suất lần lượt là $q$ , $1-q$ (II) sẽ chơi: $l_2$ khi $q > \frac{4}{5}$ , $r_2$ khi $q < \frac{4}{5}$ , chiến lược tùy ý nếu $q = \frac{4}{5}$ . Tuy nhiên, mọi chuyện sẽ khác nếu ta tính đến sự “run tay” của (III) - chơi $l_3$ và $r_3$ với xác suất lần lượt là $1- \varepsilon$ và $\varepsilon$ . Ở SE thứ nhất ta có $q \ge \frac{4}{5}$ , nếu $q > \frac{4}{5}$ thì (II) sẽ chơi $l_2$ , nếu $q = \frac{4}{5}$ , tiện ích của (II) khi chơi $l_2$ và $r_2$ lần lượt là:
+
+```math
+\left\{ \begin{array}{l}
+\frac{4}{5} \times 2 + \frac{1}{5} \times 4 = \frac{{12}}{5}\
+\frac{4}{5} \times 1 + \frac{1}{5} \times \left( {8\left( {1 - \varepsilon } \right) + 2\varepsilon } \right) = \frac{1}{5}\left( {12\varepsilon  - 6} \right)
+\end{array} \right.
+```
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\Longrightarrow$ (II) sẽ chơi $l_2$ và khi đó ta thu được THPE  $\left( {L,{\rm{ }}{l_2},{\rm{ }}{l_3}} \right)$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Tương tự ở SE thứ 2, $q = \frac{4}{5}$ $\Longrightarrow$ (II) cũng sẽ chơi $l_2$ $\Longrightarrow$ SE $\left( {\frac{4}{5}M + \frac{1}{5}R,\frac{1}{6}{l_2} + \frac{5}{6}{r_2},{l_3}} \right)$ không phải là THPE <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Ở SE cuối cùng, dễ thấy độ run tay của cả 3 tay chơi đều không ảnh hưởng tới chiến lược của họ, nên $\left( {R,{\rm{ }}{r_2},{\rm{ }}{l_3}} \right)$ là THPE. Ta thấy rằng, dù SPE, SE đã mang ý niệm về “bàn tay run”, song chúng chưa áp dụng định đề này một cách nhất quán. Tại sao ta lại cho rằng tay chơi (I) có thể run tay - đưa trò chơi vào tập thông tin $\{ 15,16 \}$ , nhưng tay chơi (III) thì không ? <br>
+#### &nbsp;&nbsp;&nbsp;&nbsp; *e. Cân bằng thích hợp* <br>
+&nbsp;&nbsp;&nbsp;&nbsp;THPE gán cho mỗi hành động phi lý của người chơi một xác suất dương tiệm cận 0, nhưng lờ đi sự so sánh xác suất của 2 hành động phi lý. Điều này có lẽ cũng không phản trực giác lắm, bởi vì ta không có thói quen so sánh 2 giá trị vô cùng bé, và nếu 2 hành động đều sinh ra từ sự lỡ tay của người chơi, thì chẳng lẽ họ lại còn phân phối xác suất cho nó? Tuy nhiên, có những căn nguyên rất hợp lý để cho rằng, giữa 2 hành động phi lý, người chơi sẽ thực hiện hành động đem lại thiệt hại lớn hơn (tiện ích thấp hơn) với xác suất nhỏ hơn rất nhiều: <br>
 
 
 
