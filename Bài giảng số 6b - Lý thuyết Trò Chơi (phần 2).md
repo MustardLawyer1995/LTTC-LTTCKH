@@ -78,15 +78,16 @@ u(I) = \frac{1}{4} \times \frac{1}{3} + \frac{3}{4} \times \frac{1}{3} \times \f
 ```
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\longrightarrow$ Tương tự ta suy ra $u(II) = \frac{7}{20}$ và $u(III) = \frac{4}{15}$ <br>
 &nbsp;&nbsp;&nbsp;&nbsp;Ở một diễn biến khác: (I) luôn bắn (III) trước, (II) và (III) luôn bắn (I) trước, tiện ích của 3 tay chơi (cách tính tương tự) là $\( \frac{1}{10}, \frac{29}{70}, \frac{17}{35} \)$ , (II) và (III) đều lời hơn hẳn so với NE đầu tiên! Đây cũng là một NE, nếu cam kết giữa (II) và (III) đi kèm với sự trừng phạt tương tự tit for tat. (II) và (III) đều bị cám dỗ để quay qua bắn nhau thay vì bắn (I), khi (II) bắn (I), (III) sẽ có lợi nếu bắn (II) (bội ước), sự trừng phạt ở đây là (II) sẽ bắn (III) ở lượt sau nếu (III) bắn trượt (và ngược lại). <br>
+
 &nbsp;&nbsp;&nbsp;&nbsp;Thật vậy, (II) so sánh tiện ích sau 2 lượt khi:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Bắn (I): $\frac{1}{3} \times \frac{1}{7} + \frac{2}{3} \times \frac{2}{3} \times \frac{3}{7}$ ((III) bắn (I) ở lượt sau) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Bắn (III): $\frac{1}{3} \times \frac{1}{2} + \frac{2}{3} \times \frac{2}{3} \times 0$ ((III) bắn (II) ở lượt sau)  <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$\Longrightarrow$ Ta nhận xét được rằng bắn (I) rõ ràng là tốt hơn <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\longrightarrow$ Ta nhận xét được rằng bắn (I) rõ ràng là tốt hơn <br>
 
-&nbsp;&nbsp;&nbsp;&nbsp;Ngược lại, (III) cũng so sánh tiện ích sau 3 lượt và thấy rằng:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Ngược lại, (III) cũng so sánh tiện ích sau 3 lượt như sau:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Khi bắn (I) (bao gồm (I) bắn (III), (II) bắn (I)) được: $\frac{2}{3} \times \frac{4}{7} + \frac{1}{3} \times \frac{1}{4} \times 0 + \frac{1}{3} \times \frac{3}{4} \times \frac{1}{3} \times \frac{6}{7}$ <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Khi bắn (II) (bao gồm (I) bắn (III), (II) bắn (III)) được: $\frac{2}{3} \times \frac{2}{3} + \frac{1}{3} \times \frac{1}{4} \times 0 + \frac{1}{3} \times \frac{3}{4} \times \frac{1}{3} \times 0$ <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\longrightarrow$ Từ đây ta nhận xét được bắn (I) sẽ tốt hơn khi bắn (II) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\longrightarrow$ Từ đây ta nhận xét được bắn (I) sẽ tốt hơn khi bắn (II) <br>
 
 &nbsp;&nbsp;&nbsp;&nbsp; $\Longrightarrow$ (II) và (III) sẽ duy trì cam kết "cùng bắn (I)" vì họ e ngại sự trừng phạt từ đối phương. Mặt khác, cũng như tit for tat, sự trừng phạt này là đáng tin vì người bị phản bội có lợi khi làm thế, do vậy NE này là SPE. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;Thực ra trò chơi còn một SPE khác: (I) và (III) ưu tiên bắn (II), (II) ưu tiên bắn (III). Chỉ có (I) bị cám dỗ bội ước-bắn (III) rõ ràng có lợi hơn. (III) trừng phạt bằng cách bắn (I) ở lượt sau, để sự trừng phạt này đáng tin, (I) sẽ tiếp tục bắn (III) nếu (III) không trừng phạt, để hành động thách thức đó của (I) là đáng tin, (III) sẽ thỏa thuận từ trước: nếu (III) không trừng phạt thì nghĩa là (III) đã chán hợp tác với (I) và sẽ bắn (II) ở tất cả các lượt còn lại (tất nhiên các kết luận này đi kèm với tính toán cụ thể, tương tự các thao tác ta đã làm ở NE thứ 2). <br>
