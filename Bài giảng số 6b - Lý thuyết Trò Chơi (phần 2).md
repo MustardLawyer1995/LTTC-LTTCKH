@@ -54,8 +54,18 @@ p + \left( {1 - p} \right)\left( {1 - q} \right)p + \left( {1 - p} \right)^2\lef
 ```
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;với ${\left( {1 - p} \right)^k}{\left( {1 - q} \right)^k}p$ là xác suất anh ta giết được đối thủ ở lần bắn thứ $k+1$ của mình, và người bắn sau là: $1 - \frac{p}{{1 - \left( {1 - p} \right)\left( {1 - q} \right)}}$ <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Coi tiện ích là tỉ lệ sống sót đến cuối cùng của mỗi tay chơi (như trò chơi Qua cầu), giai đoạn chỉ còn 2 người xem như đã là điểm kết thúc của trò chơi 3 xạ thủ, với 6 trường hợp như sau: <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quy ước: Người bắn trước/sau $\Longrightarrow$ $\left( {u\left( I \right),{\rm{ }}u\left( {II} \right),{\rm{ }}u\left( {III} \right)} \right)$ <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Quy ước:</ins>* Người bắn trước/sau $\Longrightarrow$ $\left( {u\left( I \right),{\rm{ }}u\left( {II} \right),{\rm{ }}u\left( {III} \right)} \right)$ <br>
+<div align="center">
+
+| Người bắn trước/sau | Tiện ích | Người bắn trước/sau | Tiện ích |
+|:--------:|:--------:|:--------:|:--------:|
+| (I)/(II) $\longrightarrow$ | $\left( {\frac{1}{2},\frac{1}{2},0} \right)$ | (I)/(III) $\longrightarrow$ | $\left( {\frac{1}{3},0,\frac{2}{3}} \right)$ |
+| (II)/(III) $\longrightarrow$ | $\left( {0,\frac{3}{7},\frac{4}{7}} \right)$ | (II)/(I) $\longrightarrow$ | $\left( {\frac{1}{3},\frac{2}{3},0} \right)$ |
+| (III)/(I) $\longrightarrow$ | $\left( {\frac{1}{9},0,\frac{8}{9}} \right)$ | (III)/(II) $\longrightarrow$ | $\left( {0,\frac{1}{7},\frac{6}{7}} \right)$ |
+</div>
+
+&nbsp;&nbsp;&nbsp;&nbsp;Khi đó ta mô tả trò chơi bằng dạng mở rộng như sau: <br>
+
 ### 7. Lý thuyết trò chơi tiến hóa <br>
 &nbsp;&nbsp;&nbsp;&nbsp;LTTC được áp dụng vào sinh học để mô hình hóa và dự đoán kết quả của các cuộc cạnh tranh sinh tồn dưới tác động chọn lọc tự nhiên, tạo nên ***<ins>Lý thuyết trò chơi tiến hóa (LTTCTH)</ins>***. Bất cứ sinh vật nào có các đặc điểm di truyền làm tăng số lượng con cái của chúng trong một môi trường nhất định thì đều có khuynh hướng để lại nhiều con cái hơn những sinh vật khác chừng nào môi trường vẫn còn tương đối bền vững. Thế hệ con cái ấy sẽ kế thừa những đặc điểm đã nêu. Vì vậy tỉ lệ của những đặc điểm này sẽ tăng dần trong quần thể qua các thế hệ. LTTC tiếp cận vấn đề này như thế nào? Một trong những khía cạnh quan trọng nhất đối với sự sinh tồn của một sinh vật là khuynh hướng hành vi của các sinh vật khác. Ta có thể nghĩ về mỗi loài/gen như là đang "cố gắng" tối đa hóa tính thích ứng (số con cháu/bản sao) thông qua việc xác định các chiến lược tối ưu của những loài/gen khác. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nói cách khác, các loài/gen được xem như là những người chơi trong "trò chơi tiến hóa". Hãy bắt đầu bằng việc giới thiệu mô hình của loại trò chơi này: <br>
