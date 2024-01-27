@@ -34,16 +34,22 @@
 &nbsp;&nbsp;&nbsp;&nbsp;Theo ***5/ b/***, tình huống của PD game chỉ liên quan đến cấu trúc tiện ích, sự hợp tác và bội ước (không nhất thiết mang nghĩa xấu về đạo đức) nên ta sẽ dùng ma trận trong ảnh (hình trên) để tránh phải làm việc với các số âm (xem lại ví dụ ở ***mục 2/, phần a/***). <br>
 &nbsp;&nbsp;&nbsp;&nbsp;Tiếp đến ta ký hiệu: C _hợp tác; D _bội ước; A _người chơi hàng; B _người chơi cột. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;Một chiến lược rất nổi tiếng (nhưng không nhất thiết là tối ưu như người ta thường nói) trong trò chơi PD lặp lại vô hạn là tit for tat (ăn miếng trả miếng), trong đó người chơi sẽ: <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i) luôn hợp tác ở vòng đầu <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ii) lặp lại hành động của đối thủ ở vòng trước. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i) luôn hợp tác ở vòng đầu <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ii) lặp lại hành động của đối thủ ở vòng trước. <br>
 &nbsp;&nbsp;&nbsp;&nbsp; $\Longrightarrow$ Nếu 2 người đều chơi tit for tat, họ sẽ hợp tác ở tất cả các vòng - đây là một NE. <br>
-&nbsp;&nbsp;&nbsp;&nbsp;Thật vậy, nếu A chơi D (trong khi B vẫn chơi C) ở một vòng nào đó, A sẽ phải chấp nhận chơi C trong khi B chơi D ở vòng sau $\Rightarrow$ mức thưởng của A qua 2 vòng là $3+0<2+2$ , mức thưởng khi hợp tác cùng B ở 2 vòng đó. Nếu A chơi D ở các vòng tiếp theo thay vì chịu phạt thì B cũng làm y hệt (cho đến khi A chịu chơi C), tình trạng căng thẳng này càng kéo dài càng thiệt cho A (được 1 ở mỗi vòng thay vì 2). Thực ra ở trạng thái NE-cả 2 cùng tit for tat, ta không thể quan sát được các động thái trừng phạt nêu trên (2 người sẽ hợp tác ngay từ vòng đầu đến mọi vòng tiếp theo), nói cách khác, chúng là các diễn biến bên ngoài cuộc chơi (xem lại ví dụ 3.4). Vậy liệu các đe doạ trừng phạt đó có "đáng tin" không? hay: NE-cùng tit for tat có phải SPE ? Câu trả lời là: Có. Dễ thấy trò chơi con bắt đầu từ vòng chơi mà B phạt A có NE là: A luôn chơi C ở 2 vòng đầu, và từ vòng 3 thì lặp lại hành động của B ở vòng trước; B luôn chơi D ở vòng đầu, sau đó lặp lại hành động của A ở vòng trước (tương tự, có thể chỉ ra rằng cái NE này cũng là SPE luôn) $\Rightarrow$ Đe doạ của B là đáng tin vì B hoàn toàn có lợi khi trừng phạt A. <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;Thật vậy, nếu A chơi D (trong khi B vẫn chơi C) ở một vòng nào đó, A sẽ phải chấp nhận chơi C trong khi B chơi D ở vòng sau $\Rightarrow$ mức thưởng của A qua 2 vòng là $3+0<2+2$ , mức thưởng khi hợp tác cùng B ở 2 vòng đó. Nếu A chơi D ở các vòng tiếp theo thay vì chịu phạt thì B cũng làm y hệt (cho đến khi A chịu chơi C), tình trạng căng thẳng này càng kéo dài càng thiệt cho A (được 1 ở mỗi vòng thay vì 2). Thực ra ở trạng thái NE-cả 2 cùng tit for tat, ta không thể quan sát được các động thái trừng phạt nêu trên (2 người sẽ hợp tác ngay từ vòng đầu đến mọi vòng tiếp theo), nói cách khác, chúng là các diễn biến bên ngoài cuộc chơi (xem lại ***ví dụ 3.4***).<br> 
+
+&nbsp;&nbsp;&nbsp;&nbsp;Vậy liệu các đe doạ trừng phạt đó có "đáng tin" không? hay: NE-cùng tit for tat có phải SPE ? <br>
+&nbsp;&nbsp;&nbsp;&nbsp; $\Longrightarrow$ Câu trả lời là: Có. Dễ thấy trò chơi con bắt đầu từ vòng chơi mà B phạt A có NE là: A luôn chơi C ở 2 vòng đầu, và từ vòng 3 thì lặp lại hành động của B ở vòng trước; B luôn chơi D ở vòng đầu, sau đó lặp lại hành động của A ở vòng trước (tương tự, có thể chỉ ra rằng cái NE này cũng là SPE luôn) $\Rightarrow$ Đe doạ của B là đáng tin vì B hoàn toàn có lợi khi trừng phạt A. <br>
+
 &nbsp;&nbsp;&nbsp;&nbsp;Nhưng có một khía cạnh khác của vấn đề, đó là trạng thái mà cả 2 tay chơi bội ước ở tất cả các vòng (mỗi người luôn chơi D) cũng là một SPE. Ngoài ra, trò chơi PD lặp lại vô hạn còn có các SPE khác như: <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chuỗi $\left( {C,D} \right)\left( {D,C} \right)\left( {C,D} \right)\left( {D,C} \right)...$ <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i) Nếu A (B) chơi D ở lượt lẽ ra phải chơi C, B (A) sẽ chơi D ở 2 vòng tiếp; <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ii) A (B) phải chịu phạt bằng cách chơi C ở ít nhất 1 trong 2 vòng đó, quay trở lại i) (2 tits for tat). <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chuỗi $\left( {C,D} \right)\left( {C,D} \right)\left( {D,C} \right)\left( {C,D} \right)\left( {C,D} \right)\left( {D,C} \right)...$ <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tương tự 2 tits for tat chỉ thay 2 vòng thành 3 vòng (3 tits for tat) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Chuỗi $\left( {C,D} \right)\left( {D,C} \right)\left( {C,D} \right)\left( {D,C} \right)...$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i) Nếu A (B) chơi D ở lượt lẽ ra phải chơi C, B (A) sẽ chơi D ở 2 vòng tiếp; <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ii) A (B) phải chịu phạt bằng cách chơi C ở ít nhất 1 trong 2 vòng đó, quay trở lại i) (2 tits for tat). <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Chuỗi $\left( {C,D} \right)\left( {C,D} \right)\left( {D,C} \right)\left( {C,D} \right)\left( {C,D} \right)\left( {D,C} \right)...$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Tương tự 2 tits for tat chỉ thay 2 vòng thành 3 vòng (3 tits for tat) <br>
+
 &nbsp;&nbsp;&nbsp;&nbsp; $\Longrightarrow$ Các chuỗi kết quả trên tuy có tiện ích thấp hơn SPE - cùng tit for tat (thậm chí có cả sự bất bình đẳng giữa 2 tay chơi) nhưng chúng vẫn là SPE. Những người ủng hộ tit for tat là lời giải của trò chơi dường như đã quên rằng trước tiên họ cần phát triển những cơ sở lý luận về Bộ lọc NE ***(mục 3/)***, một loại vấn đề phức tạp mà không phải cứ viện đến ưu thế lợi ích là được. Cũng cần phải lưu ý rằng chỉ cần thay đổi ma trận PD một chút (hình dưới) thì tit for tat sẽ không còn là NE nữa, một tay chơi sẽ có lợi khi đổi chiến lược từ tit for tat thành chơi xen kẽ D và C (tiện ích trung bình mỗi vòng là $2.5$ ). Ở trò chơi mới này, 2 người cùng chơi 2 tits for tat là một SPE khá triển vọng để xem xét tới. <br>
 #### &nbsp;&nbsp;&nbsp;&nbsp; *b. Trò chơi dài vô tận nhưng có kích thước hữu hạn* <br>
 &nbsp;&nbsp;&nbsp;&nbsp;Khác với những trò chơi lặp lại vô hạn mà ở đó tiện ích được tích lũy qua các vòng chơi và tiến dần ra vô cực (hoặc không xác định), có những trò chơi dù không có điểm kết thúc nhưng tiện ích sau cùng của người chơi vẫn là các giá trị hữu hạn.<br> 
@@ -103,6 +109,7 @@ u(I) = \frac{1}{4} \times \frac{1}{3} + \frac{3}{4} \times \frac{1}{3} \times \f
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•1) Cho một quần thể, mỗi cá thể trong đó thuộc về 1 kiểu hình/đặc điểm nhất định. Mỗi loại kiểu hình đó được xem là 1 chiến lược. Khác với LTTC cổ điển, các cá thể không thể lựa chọn/thay đổi chiến lược của mình: chúng được sinh ra với một chiến lược và con cái của chúng kế thừa chiến lược đó. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•2) Các cá thể gặp nhau trong các cuộc đấu tay đôi, thường là trong một phân bố dân số hỗn hợp (bắt cặp ngẫu nhiên). Tổ hợp chiến lược của 2 cá thể trong mỗi cuộc đấu quyết định mức tiện ích (được diễn giải như là khả năng sinh sản/thích nghi) của chúng, thể hiện qua một ma trận trò chơi chung. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•3) Dựa vào kết quả trên, mỗi cá thể sau đó sẽ trải qua quá trình sinh sản dưới tác dụng của chọn lọc tự nhiên, tạo ra một thế hệ con cái mới. Thế hệ mới thay thế thế hệ trước và tham gia vào trò chơi, chu kỳ lặp lại. <br>
+
 &nbsp;&nbsp;&nbsp;&nbsp;Một chiến lược được coi là tốt hơn chiến lược khác khi nó để lại nhiều bản sao của mình hơn ở những thế hệ tiếp theo. Vì vậy về bản chất, mỗi chiến lược chính là 1 người chơi (và cũng vì vậy nên mô hình trò chơi tiến hóa không cần giả thiết về tính duy lý). Thay vì quan tâm đến NE của các trò chơi đơn giữa 2 cá thể, ta hướng sự chú ý tới điểm cân bằng của cả quần thể-một hỗn hợp tỉ lệ bền vững của các chiến lược, và việc chúng thay đổi ra sao theo thời gian. Loại cân bằng nổi tiếng nhất trong LTTCTH là ***<ins>Chiến lược ổn định tiến hóa (ESS-Evolutionary Stable Strategy) </ins>***. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;***ESS*** là một hỗn hợp tỉ lệ các chiến lược trong quần thể sao cho:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•1) Các cá thể trong quần thể đều nhận được tiện ích (trung bình) như nhau <br>
@@ -127,14 +134,89 @@ u(I) = \frac{1}{4} \times \frac{1}{3} + \frac{3}{4} \times \frac{1}{3} \times \f
 </div>
 
 &nbsp;&nbsp;&nbsp;&nbsp;Xét một quần thể trong đó các cá thể liên tục gặp nhau và tranh giành nguồn tài nguyên của môi trường. Có 3 loại cá thể: người công bằng ($E$) luôn đòi hỏi $\frac{1}{2}$ lượng tài nguyên; người tham lam ($G$) luôn đòi hỏi $\frac{2}{3}$ ; và người khiêm tốn ($M$) chỉ đòi hỏi $\frac{1}{3}$ . Khi 2 cá thể đụng độ, nếu tổng tỉ lệ tài nguyên cả 2 đòi hỏi $\le 1$ , họ sẽ được đáp ứng; nếu tổng tỉ lệ $>1$ , họ sẽ đánh nhau và cả 2 đều không được gì. Kết quả của các cuộc đụng độ được thể hiện qua ma trận trên ảnh, trong đó tiện ích là tỉ lệ tài nguyên mà cá thể lấy được. <br>
+
 &nbsp;&nbsp;&nbsp;&nbsp;Trò chơi tiến hóa này có 2 ESS: <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- $\frac{1}{2}$ cư dân là $G$ và $\frac{1}{2}$ cư dân là $M$ . 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Thứ nhất:</ins>* <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\frac{1}{2}$ cư dân là $G$ và $\frac{1}{2}$ cư dân là $M$ . Tiện ích trung bình của mỗi người đều là $\frac{1}{3}$ . Người $M$ luôn lấy $\frac{1}{3}$ tài nguyên trong mỗi cuộc đối đầu. Người $G$ lấy $\frac{2}{3}$ khi gặp người $M$ , nhưng được $0$ khi gặp người $G$ khác <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\rightarrow$ Tiện ích của họ là: $u_{G} = \frac{1}{2} \times \frac{2}{3} + \frac{1}{2} \times 0 = \frac{1}{3}$ . <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Một người $E$ đột biến xuất hiện trong quần thể sẽ được $\frac{1}{2}$ khi gặp người $M$ nhưng được $0$ khi gặp người $G$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\rightarrow$ Tiện ích của $E$ là: $u_{E} = \frac{1}{2} \times \frac{1}{2} + \frac{1}{2} \times 0 = \frac{1}{4} < \frac{1}{3}$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\rightarrow$ Người $E$ này sẽ thua trong cuộc cạnh tranh sinh tồn và nhanh chóng bị loại bỏ khỏi quần thể. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Giờ ta xét kịch bản tỉ lệ cư dân $M$ hoặc $G$ tăng thêm một lượng rất nhỏ, với $\varepsilon  \to {0^ + }$ <br> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.  Khi tỉ lệ $M$ tăng, ta có: <br>
 
+```math
+{u_G} = \frac{{{\raise0.5ex\hbox{$\scriptstyle 1$}
+\kern-0.1em/\kern-0.15em
+\lower0.25ex\hbox{$\scriptstyle 2$}} \times 0 + \left( {{\raise0.5ex\hbox{$\scriptstyle 1$}
+\kern-0.1em/\kern-0.15em
+\lower0.25ex\hbox{$\scriptstyle 2$}} + \varepsilon } \right) \times {\raise0.5ex\hbox{$\scriptstyle 2$}
+\kern-0.1em/\kern-0.15em
+\lower0.25ex\hbox{$\scriptstyle 3$}}}}{{1 + \varepsilon }} = \frac{1}{3}\left( {1 + \frac{\varepsilon }{{1 + \varepsilon }}} \right) > \frac{1}{3} = {u_M}
+```
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.  Khi tỉ lệ $G$ tăng, ta có: <br>
 
+```math
+{u_G} = \frac{{\left( {{\raise0.5ex\hbox{$\scriptstyle 1$}
+\kern-0.1em/\kern-0.15em
+\lower0.25ex\hbox{$\scriptstyle 2$}} + \varepsilon } \right) \times 0 + {\raise0.5ex\hbox{$\scriptstyle 1$}
+\kern-0.1em/\kern-0.15em
+\lower0.25ex\hbox{$\scriptstyle 2$}} \times {\raise0.5ex\hbox{$\scriptstyle 2$}
+\kern-0.1em/\kern-0.15em
+\lower0.25ex\hbox{$\scriptstyle 3$}}}}{{1 + \varepsilon }} = \frac{1}{{3\left( {1 + \varepsilon } \right)}} < \frac{1}{3} = {u_M}
+```
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\rightarrow$ Sự gia tăng tỉ lệ của bất cứ chiến lược nào sẽ gây bất lợi cho chính chiến lược đó và vì vậy tỉ lệ của nó giảm trở về mức ban đầu. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Thứ hai:</ins>* <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 100% cư dân là $E$ . Mỗi người đều có tiện ích $\frac{1}{2}$ . Những người $G$ đột biến xuất hiện trong quần thể này có $u_{G}=0$ , những người $M$ đột biến vẫn có $u_{M}=\frac{1}{3}$ , đều thua kém $u_{E}=\frac{1}{2}$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\rightarrow$ Các đột biến này sẽ nhanh chóng bị đào thải. <br>
 
+&nbsp;&nbsp;&nbsp;&nbsp;Dễ thấy mọi ESS đều là NE của ma trận trò chơi đơn giữa các cặp cá thể. Tuy nhiên không phải mọi NE của ma trận này đều là ESS. Ở ví dụ bên trên, ta thấy ngay một NE khác với tỉ lệ cư dân là $\frac{1}{3}G,\frac{1}{6}E,\frac{1}{2}M$ , mỗi chiến lược đều đem lại tiện ích là $\frac{1}{3}$ . <br>
 
+&nbsp;&nbsp;&nbsp;&nbsp;Tại NE này, ta nhận xét được: <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•1) Khi tỉ lệ $M$ tăng:  <br>
 
+```math
+{u_M} = \frac{1}{3}{\rm{  <  }}{u_E} = \frac{{{\raise0.5ex\hbox{$\scriptstyle 1$}
+\kern-0.1em/\kern-0.15em
+\lower0.25ex\hbox{$\scriptstyle 3$}} + {\raise0.5ex\hbox{$\scriptstyle 1$}
+\kern-0.1em/\kern-0.15em
+\lower0.25ex\hbox{$\scriptstyle 2$}} \times \varepsilon }}{{1 + \varepsilon }} < {u_G} = \frac{{{\raise0.5ex\hbox{$\scriptstyle 1$}
+\kern-0.1em/\kern-0.15em
+\lower0.25ex\hbox{$\scriptstyle 3$}} + {\raise0.5ex\hbox{$\scriptstyle 2$}
+\kern-0.1em/\kern-0.15em
+\lower0.25ex\hbox{$\scriptstyle 3$}} \times \varepsilon }}{{1 + \varepsilon }}
+```
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\rightarrow$ $M$ là chiến lược tệ nhất. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•2) Khi tỉ lệ $E$ tăng:  <br>
 
+```math
+{u_G} = \frac{{{\raise0.5ex\hbox{$\scriptstyle 1$}
+\kern-0.1em/\kern-0.15em
+\lower0.25ex\hbox{$\scriptstyle 3$}} + 0 \times \varepsilon }}{{1 + \varepsilon }} < {u_M} = {\raise0.5ex\hbox{$\scriptstyle 1$}
+\kern-0.1em/\kern-0.15em
+\lower0.25ex\hbox{$\scriptstyle 3$}} < {u_E} = \frac{{{\raise0.5ex\hbox{$\scriptstyle 1$}
+\kern-0.1em/\kern-0.15em
+\lower0.25ex\hbox{$\scriptstyle 3$}} + {\raise0.5ex\hbox{$\scriptstyle 1$}
+\kern-0.1em/\kern-0.15em
+\lower0.25ex\hbox{$\scriptstyle 2$}} \times \varepsilon }}{{1 + \varepsilon }}
+```
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\rightarrow$ $E$ là chiến lược tốt nhất vượt qua cả $M$ . <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•3) Khi tỉ lệ $G$ tăng:  <br>
+
+```math
+{u_G} = \frac{{{\raise0.5ex\hbox{$\scriptstyle 1$}
+\kern-0.1em/\kern-0.15em
+\lower0.25ex\hbox{$\scriptstyle 3$}} + 0 \times \varepsilon }}{{1 + \varepsilon }} = {u_E} < {u_M} = {\raise0.5ex\hbox{$\scriptstyle 1$}
+\kern-0.1em/\kern-0.15em
+\lower0.25ex\hbox{$\scriptstyle 3$}}
+```
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\rightarrow$ Chiến lược $G$ và $E$ tốt ngang nhau, chỉ thua $M$ . <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; $\Longrightarrow$ Một đột biến tạo $M$ sẽ bị dập tắt ngay lập tức nhưng một đột biến tạo $E$ sẽ xâm chiếm quần thể nhanh chóng (cho đến khi toàn bộ cư dân đều là $E$ ). Một đột biến tạo $G$ không có khả năng xâm chiếm quần thể nhưng làm biến đổi cấu trúc quần thể ( $G$ và $E$ có mức sinh sản/thích nghi ngang nhau nên sẽ bị đào thải cùng lúc, quần thể chỉ còn lại những người $M$ ). Vì vậy NE này không phải là một ESS. <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;Vậy là ta có một cách để tìm ra tất cả các ESS của một trò chơi tiến hóa. Đó là tìm tất cả NE của ma trận trò chơi, rồi lọc đi các NE không phải là ESS. Hơn nữa, một trò chơi tiến hóa "đối xứng" (mô hình mà các cá thể có vai trò tương đương nhau, trò chơi ở trên là một ví dụ) luôn có ESS là một NE đối xứng (người chơi hàng và người chơi cột sử dụng cùng một chiến lược). <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Ví dụ 7.2:</ins>* Cho bảng sau: <br>
 
 
 &nbsp;&nbsp;&nbsp;&nbsp;LTTCTH đã được sử dụng để lý giải nhiều hiện tượng trong sinh học. Mặt khác, *"chọn lọc tự nhiên"* trong ngữ cảnh của LTTCTH có ý nghĩa mở: trong một môi trường cạnh tranh, những người chơi không thực hiện một chiến lược đủ tốt sẽ bị đào thải, hoặc điều này trở thành động lực để họ thay đổi chiến lược. Đây là tiền đề để áp dụng LTTCTH vào cả các lĩnh vực bên ngoài sinh học như kinh tế học, xã hội học, nhân học và triết học. <br>
