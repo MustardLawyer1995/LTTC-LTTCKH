@@ -46,7 +46,10 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tương tự 2 tits for tat chỉ thay 2 vòng thành 3 vòng (3 tits for tat) <br>
 &nbsp;&nbsp;&nbsp;&nbsp; $\Longrightarrow$ Các chuỗi kết quả trên tuy có tiện ích thấp hơn SPE - cùng tit for tat (thậm chí có cả sự bất bình đẳng giữa 2 tay chơi) nhưng chúng vẫn là SPE. Những người ủng hộ tit for tat là lời giải của trò chơi dường như đã quên rằng trước tiên họ cần phát triển những cơ sở lý luận về Bộ lọc NE ***(mục 3/)***, một loại vấn đề phức tạp mà không phải cứ viện đến ưu thế lợi ích là được. Cũng cần phải lưu ý rằng chỉ cần thay đổi ma trận PD một chút (hình dưới) thì tit for tat sẽ không còn là NE nữa, một tay chơi sẽ có lợi khi đổi chiến lược từ tit for tat thành chơi xen kẽ D và C (tiện ích trung bình mỗi vòng là $2.5$ ). Ở trò chơi mới này, 2 người cùng chơi 2 tits for tat là một SPE khá triển vọng để xem xét tới. <br>
 #### &nbsp;&nbsp;&nbsp;&nbsp; *b. Trò chơi dài vô tận nhưng có kích thước hữu hạn* <br>
-&nbsp;&nbsp;&nbsp;&nbsp;Khác với những trò chơi lặp lại vô hạn mà ở đó tiện ích được tích lũy qua các vòng chơi và tiến dần ra vô cực (hoặc không xác định), có những trò chơi dù không có điểm kết thúc nhưng tiện ích sau cùng của người chơi vẫn là các giá trị hữu hạn. Xét trò chơi sau: 3 xạ thủ (I),(II),(III) với tỉ lệ bắn trúng lần lượt là $\frac{1}{4}, \frac{1}{3}, \frac{2}{3}$ tham gia một cuộc đấu sinh tử; xạ thủ tồi được ưu tiên bắn trước, quay vòng lần lượt, ai chết thì người liền sau được hưởng lượt bắn; cả 3 phải đứng tại 3 vị trí cố định cách đều nhau trong suốt cuộc đấu; ở mỗi lượt, người chơi sẽ lựa chọn bắn 1 trong 2 người còn lại; trò chơi kết thúc với chỉ 1 người sống sót. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Khác với những trò chơi lặp lại vô hạn mà ở đó tiện ích được tích lũy qua các vòng chơi và tiến dần ra vô cực (hoặc không xác định), có những trò chơi dù không có điểm kết thúc nhưng tiện ích sau cùng của người chơi vẫn là các giá trị hữu hạn.<br> 
+
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Ví dụ 6.2:</ins>* <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Xét trò chơi sau: 3 xạ thủ (I),(II),(III) với tỉ lệ bắn trúng lần lượt là $\frac{1}{4}, \frac{1}{3}, \frac{2}{3}$ tham gia một cuộc đấu sinh tử; xạ thủ tồi được ưu tiên bắn trước, quay vòng lần lượt, ai chết thì người liền sau được hưởng lượt bắn; cả 3 phải đứng tại 3 vị trí cố định cách đều nhau trong suốt cuộc đấu; ở mỗi lượt, người chơi sẽ lựa chọn bắn 1 trong 2 người còn lại; trò chơi kết thúc với chỉ 1 người sống sót. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;Trước hết hãy xét phiên bản đơn giản hơn - khi chỉ có 2 xạ thủ (không phải một trò chơi đúng nghĩa theo LTTC, 2 xạ thủ không phải đắn đo gì khi họ chỉ có 1 lựa chọn duy nhất - bắn người kia). Cho tỉ lệ bắn trúng của người bắn trước (sau) là $p\( q \)$ , tỉ lệ người bắn trước thắng là: <br>
 
 ```math
@@ -94,13 +97,45 @@ u(I) = \frac{1}{4} \times \frac{1}{3} + \frac{3}{4} \times \frac{1}{3} \times \f
 &nbsp;&nbsp;&nbsp;&nbsp;Tuy nhiên, sự trừng phạt của (III) đem lại tổn thất cho (III) về lâu dài, hơn nữa cam kết này giống một sự ép buộc với (I) hơn là đôi bên cùng có lợi ((I) được ít hơn hẳn so với NE đầu tiên). Nếu (I) liên tục bắn (III)-chấp nhận rủi ro từ một số hữu hạn đợt trừng phạt của (III) ((I) biết (III) không thể duy trì sự trừng phạt này mãi), thì (III) đến một lúc nào đó sẽ phải bắn (II)-trò chơi quay trở về trạng thái NE đầu tiên. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;3 NE được nêu trên đều là SPE, có lẽ chúng ta chưa đủ khả năng để kết luận xem cái nào trong số chúng hợp lý nhất, nhưng nếu đã tin tưởng rằng tit for tat là lời giải duy nhất cho trò chơi PD lặp lại vô hạn, thì ta buộc phải thừa nhận NE thứ 2-(II) và (III) hợp tác chống lại (I), là lời giải duy nhất của trò chơi 3 xạ thủ, bởi vì chúng có cùng một logic. <br>
 
-
 ### 7. Lý thuyết trò chơi tiến hóa <br>
 &nbsp;&nbsp;&nbsp;&nbsp;LTTC được áp dụng vào sinh học để mô hình hóa và dự đoán kết quả của các cuộc cạnh tranh sinh tồn dưới tác động chọn lọc tự nhiên, tạo nên ***<ins>Lý thuyết trò chơi tiến hóa (LTTCTH)</ins>***. Bất cứ sinh vật nào có các đặc điểm di truyền làm tăng số lượng con cái của chúng trong một môi trường nhất định thì đều có khuynh hướng để lại nhiều con cái hơn những sinh vật khác chừng nào môi trường vẫn còn tương đối bền vững. Thế hệ con cái ấy sẽ kế thừa những đặc điểm đã nêu. Vì vậy tỉ lệ của những đặc điểm này sẽ tăng dần trong quần thể qua các thế hệ. LTTC tiếp cận vấn đề này như thế nào? Một trong những khía cạnh quan trọng nhất đối với sự sinh tồn của một sinh vật là khuynh hướng hành vi của các sinh vật khác. Ta có thể nghĩ về mỗi loài/gen như là đang "cố gắng" tối đa hóa tính thích ứng (số con cháu/bản sao) thông qua việc xác định các chiến lược tối ưu của những loài/gen khác. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nói cách khác, các loài/gen được xem như là những người chơi trong "trò chơi tiến hóa". Hãy bắt đầu bằng việc giới thiệu mô hình của loại trò chơi này: <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•1) Cho một quần thể, mỗi cá thể trong đó thuộc về 1 kiểu hình/đặc điểm nhất định. Mỗi loại kiểu hình đó được xem là 1 chiến lược. Khác với LTTC cổ điển, các cá thể không thể lựa chọn/thay đổi chiến lược của mình: chúng được sinh ra với một chiến lược và con cái của chúng kế thừa chiến lược đó. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•2) Các cá thể gặp nhau trong các cuộc đấu tay đôi, thường là trong một phân bố dân số hỗn hợp (bắt cặp ngẫu nhiên). Tổ hợp chiến lược của 2 cá thể trong mỗi cuộc đấu quyết định mức tiện ích (được diễn giải như là khả năng sinh sản/thích nghi) của chúng, thể hiện qua một ma trận trò chơi chung. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•3) Dựa vào kết quả trên, mỗi cá thể sau đó sẽ trải qua quá trình sinh sản dưới tác dụng của chọn lọc tự nhiên, tạo ra một thế hệ con cái mới. Thế hệ mới thay thế thế hệ trước và tham gia vào trò chơi, chu kỳ lặp lại. <br>
-&nbsp;&nbsp;&nbsp;&nbsp;Một chiến lược được coi là tốt hơn chiến lược khác khi nó để lại nhiều bản sao của mình hơn ở những thế hệ tiếp theo. Vì vậy về bản chất, mỗi chiến lược chính là 1 người chơi (và cũng vì vậy nên mô hình trò chơi tiến hóa không cần giả thiết về tính duy lý). Thay vì quan tâm đến NE của các trò chơi đơn giữa 2 cá thể, ta hướng sự chú ý tới điểm cân bằng của cả quần thể-một hỗn hợp tỉ lệ bền vững của các chiến lược, và việc chúng thay đổi ra sao theo thời gian. Loại cân bằng nổi tiếng nhất trong LTTCTH là ***<ins>Chiến lược ổn định tiến hóa (ESS-Evolutionary Stable Strategy)</ins>***. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Một chiến lược được coi là tốt hơn chiến lược khác khi nó để lại nhiều bản sao của mình hơn ở những thế hệ tiếp theo. Vì vậy về bản chất, mỗi chiến lược chính là 1 người chơi (và cũng vì vậy nên mô hình trò chơi tiến hóa không cần giả thiết về tính duy lý). Thay vì quan tâm đến NE của các trò chơi đơn giữa 2 cá thể, ta hướng sự chú ý tới điểm cân bằng của cả quần thể-một hỗn hợp tỉ lệ bền vững của các chiến lược, và việc chúng thay đổi ra sao theo thời gian. Loại cân bằng nổi tiếng nhất trong LTTCTH là ***<ins>Chiến lược ổn định tiến hóa (ESS-Evolutionary Stable Strategy) </ins>***. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;***ESS*** là một hỗn hợp tỉ lệ các chiến lược trong quần thể sao cho:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•1) Các cá thể trong quần thể đều nhận được tiện ích (trung bình) như nhau <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•2) Khi một chiến lược tăng tỉ lệ (với mức độ vô cùng nhỏ) thì nó trở nên thua kém (nhận được tiện ích thấp hơn) so với bất cứ chiến lược nào khác trong quần thể. <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;Nguyên nhân: <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•1) Các cá thể đều có mức sinh sản ngang nhau, nên tỉ lệ các chiến lược sẽ được duy trì như cũ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•2) Khi tỉ lệ cá thể sử dụng một chiến lược nào đó tăng lên (do đột biến), chúng trở nên kém thích nghi/sinh sản nhất trong quần thể, dẫn tới giảm tỉ lệ của chúng về mức ban đầu. <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;Để hiểu hơn về ESS hãy xem qua *ví dụ* sau <br>
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Ví dụ 7.1:</ins>* Cho bảng sau: <br>
+<div align="center">
+
+|  | G | E | M |
+|:--------:|:--------:|:--------:|:--------:|
+| G | $\( 0;0 \)$ | $\( 0;0 \)$ | $\( \frac{2}{3};\frac{1}{3} \)$ |
+| E | $\( 0;0 \)$ | $\( \frac{1}{2};\frac{1}{2} \)$ | $\( \frac{1}{2};\frac{1}{3} \)$ |
+| M | $\( \frac{1}{3};\frac{2}{3} \)$ | $\( \frac{1}{3};\frac{1}{2} \)$ | $\( \frac{1}{3};\frac{1}{3} \)$ |
+</div>
+
+&nbsp;&nbsp;&nbsp;&nbsp;Xét một quần thể trong đó các cá thể liên tục gặp nhau và tranh giành nguồn tài nguyên của môi trường. Có 3 loại cá thể: người công bằng ($E$) luôn đòi hỏi $\frac{1}{2}$ lượng tài nguyên; người tham lam ($G$) luôn đòi hỏi $\frac{2}{3}$ ; và người khiêm tốn ($M$) chỉ đòi hỏi $\frac{1}{3}$ . Khi 2 cá thể đụng độ, nếu tổng tỉ lệ tài nguyên cả 2 đòi hỏi $\le 1$ , họ sẽ được đáp ứng; nếu tổng tỉ lệ $>1$ , họ sẽ đánh nhau và cả 2 đều không được gì. Kết quả của các cuộc đụng độ được thể hiện qua ma trận trên ảnh, trong đó tiện ích là tỉ lệ tài nguyên mà cá thể lấy được. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Trò chơi tiến hóa này có 2 ESS: <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- $\frac{1}{2}$ cư dân là $G$ và $\frac{1}{2}$ cư dân là $M$ . 
+
+
+
+
+
+
+
+
 &nbsp;&nbsp;&nbsp;&nbsp;LTTCTH đã được sử dụng để lý giải nhiều hiện tượng trong sinh học. Mặt khác, *"chọn lọc tự nhiên"* trong ngữ cảnh của LTTCTH có ý nghĩa mở: trong một môi trường cạnh tranh, những người chơi không thực hiện một chiến lược đủ tốt sẽ bị đào thải, hoặc điều này trở thành động lực để họ thay đổi chiến lược. Đây là tiền đề để áp dụng LTTCTH vào cả các lĩnh vực bên ngoài sinh học như kinh tế học, xã hội học, nhân học và triết học. <br>
 
