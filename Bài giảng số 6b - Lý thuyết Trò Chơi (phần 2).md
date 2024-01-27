@@ -128,9 +128,9 @@ u(I) = \frac{1}{4} \times \frac{1}{3} + \frac{3}{4} \times \frac{1}{3} \times \f
 
 |  | G | E | M |
 |:--------:|:--------:|:--------:|:--------:|
-| G | $\( 0;0 \)$ | $\( 0;0 \)$ | $\( \frac{2}{3};\frac{1}{3} \)$ |
-| E | $\( 0;0 \)$ | $\( \frac{1}{2};\frac{1}{2} \)$ | $\( \frac{1}{2};\frac{1}{3} \)$ |
-| M | $\( \frac{1}{3};\frac{2}{3} \)$ | $\( \frac{1}{3};\frac{1}{2} \)$ | $\( \frac{1}{3};\frac{1}{3} \)$ |
+| **G** | $\( 0;0 \)$ | $\( 0;0 \)$ | $\( \frac{2}{3};\frac{1}{3} \)$ |
+| **E** | $\( 0;0 \)$ | $\( \frac{1}{2};\frac{1}{2} \)$ | $\( \frac{1}{2};\frac{1}{3} \)$ |
+| **M** | $\( \frac{1}{3};\frac{2}{3} \)$ | $\( \frac{1}{3};\frac{1}{2} \)$ | $\( \frac{1}{3};\frac{1}{3} \)$ |
 </div>
 
 &nbsp;&nbsp;&nbsp;&nbsp;Xét một quần thể trong đó các cá thể liên tục gặp nhau và tranh giành nguồn tài nguyên của môi trường. Có 3 loại cá thể: người công bằng ($E$) luôn đòi hỏi $\frac{1}{2}$ lượng tài nguyên; người tham lam ($G$) luôn đòi hỏi $\frac{2}{3}$ ; và người khiêm tốn ($M$) chỉ đòi hỏi $\frac{1}{3}$ . Khi 2 cá thể đụng độ, nếu tổng tỉ lệ tài nguyên cả 2 đòi hỏi $\le 1$ , họ sẽ được đáp ứng; nếu tổng tỉ lệ $>1$ , họ sẽ đánh nhau và cả 2 đều không được gì. Kết quả của các cuộc đụng độ được thể hiện qua ma trận trên ảnh, trong đó tiện ích là tỉ lệ tài nguyên mà cá thể lấy được. <br>
@@ -217,7 +217,33 @@ u(I) = \frac{1}{4} \times \frac{1}{3} + \frac{3}{4} \times \frac{1}{3} \times \f
 &nbsp;&nbsp;&nbsp;&nbsp;Vậy là ta có một cách để tìm ra tất cả các ESS của một trò chơi tiến hóa. Đó là tìm tất cả NE của ma trận trò chơi, rồi lọc đi các NE không phải là ESS. Hơn nữa, một trò chơi tiến hóa "đối xứng" (mô hình mà các cá thể có vai trò tương đương nhau, trò chơi ở trên là một ví dụ) luôn có ESS là một NE đối xứng (người chơi hàng và người chơi cột sử dụng cùng một chiến lược). <br>
 
 &nbsp;&nbsp;&nbsp;&nbsp;*<ins>Ví dụ 7.2:</ins>* Cho bảng sau: <br>
+<div align="center">
+  
+|  | Hawk | Dove |
+|:--------:|:--------:|:--------:|
+| **Hawk** | $\( \frac{V-C}{2},\frac{V-C}{2} \)$ | $\( V,0 \)$ |
+| **Dove** | $\( 0;V \)$ | $\( \frac{V}{2};\frac{V}{2} \)$ |
+</div>
 
+&nbsp;&nbsp;&nbsp;&nbsp;Trò chơi tiến hóa trong ảnh được gọi là Hawk - Dove, một trò chơi khá nổi tiếng. Mô hình của nó là một quần thể với 2 loại cá thể: hawk (diều hâu) - hung dữ, và dove (bồ câu) - nhút nhát. Hai dove gặp nhau sẽ chia đôi số tài nguyên của môi trường; khi dove gặp hawk, hawk sẽ cướp hết tài nguyên về mình; 2 hawk gặp nhau sẽ đánh nhau và chịu một phần tổn thất bên cạnh lượng tài nguyên chiếm được. Tất cả được biểu diễn qua ma trận trên ảnh với $C>V>0$ (nếu $C \le V$ , trò chơi trở thành một phiên bản của PD game). <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;Trò chơi có 3 NE, bao gồm: <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•1) 2 NE chiến lược thuần túy là (Hawk, Dove), (Dove, Hawk) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•2) 1 NE chiến lược hỗn hợp mà tại đó người chơi hàng và người chơi cột đều chơi Hawk với xác suất $\frac{V}{C}$ và chơi Dove với xác suất $1-\frac{V}{C}$ . <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Tuy nhiên chỉ có NE chiến lược hỗn hợp là ESS của trò chơi tiến hóa ( $\frac{V}{C}$ , $1-\frac{V}{C}$  là tỉ lệ của hawk và dove trong quần thể), 2 NE chiến lược thuần túy đều phi đối xứng nên không thể là ESS. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Một trò chơi tiến hóa là phi đối xứng khi người chơi hàng và người chơi cột là những cá thể thuộc 2 quần thể khác nhau, hoặc là 2 loại cá thể có vai trò khác nhau trong quần thể. Trong trường hợp này ma trận của trò chơi có thể đối xứng hoặc không (trò chơi tiến hóa đối xứng luôn có ma trận đối xứng). Hawk-Dove game có thể chuyển thành phiên bản phi đối xứng với người chơi hàng là những chủ sở hữu lãnh thổ và người chơi cột là những kẻ xâm nhập vào lãnh thổ (các cá thể lang thang không có lãnh thổ). Trái với phiên bản đối xứng, trò chơi mới này nhận 2 NE chiến lược thuần túy là ESS. NE chiến lược hỗn hợp không phải là ESS vì trong nhóm cá thể sở hữu lãnh thổ, chiến lược Hawk và Dove tốt ngang nhau, một đột biến làm tăng hawk hoặc dove ở nhóm này sẽ không bị đào thải, tỉ lệ   vì thế không còn ổn định nữa, điều tương tự cũng xảy ra ở nhóm những cá thể lang thang. Như vậy, rõ ràng là ESS của một trò chơi tiến hóa phi đối xứng chỉ có thể là các NE chiến lược thuần túy mà thôi. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Thế nên không phải mọi trò chơi tiến hóa đều tồn tại ESS, như một *ví dụ* mà ta sẽ thấy sau đây. <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Ví dụ 7.3:</ins>* <br>
+<div align="center">
+  
+![image](https://github.com/MustardLawyer1995/LTTC-LTTCKH/assets/156400720/11554738-531c-42cd-bd71-22189dd61630)
+</div>
+
+&nbsp;&nbsp;&nbsp;&nbsp;Trò chơi oẳn tù tì quen thuộc khi được xem xét dưới góc độ của một trò chơi tiến hóa-ở dạng đối xứng, không có bất kì ESS nào cả. Gán các mức tiện ích là: 4 _thắng, 0 _hòa, -4 _thua (như trên ảnh, mặc dù có thể thay $±4$ bằng $±1$ hay giá trị khác tùy ý), ma trận trò chơi có duy nhất 1 NE mà 2 người chơi (hàng và cột) cùng phân phối xác suất đồng đều ( $\frac{1}{3}$ mỗi loại) cho kéo, búa, bao. Tuy nhiên NE này không phải là ESS, giả dụ một đột biến làm tăng tỉ lệ búa trong quần thể, khi đó chiến lược Bao là tốt nhất và chiến lược Kéo là tệ nhất. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Chiến lược Búa tệ hơn so với Bao, nhưng vẫn tốt hơn so với Kéo. Do đó đột biến này không bị đào thải khỏi quần thể, nó không có khả năng xâm chiếm, nhưng sẽ làm xáo trộn cấu trúc của quần thể. Sự phát triển của một quần thể kéo-búa-bao được mô phỏng bằng máy tính (ảnh), với những đột biến ngẫu nhiên được thiết lập, ta thấy rằng tỉ lệ của 3 loại cá thể kéo, búa, bao không hề ổn định mà biến động liên tục theo chu kỳ. <br>
+
+----------------------------------------------------------------------------------------------------------------------------------------
 
 &nbsp;&nbsp;&nbsp;&nbsp;LTTCTH đã được sử dụng để lý giải nhiều hiện tượng trong sinh học. Mặt khác, *"chọn lọc tự nhiên"* trong ngữ cảnh của LTTCTH có ý nghĩa mở: trong một môi trường cạnh tranh, những người chơi không thực hiện một chiến lược đủ tốt sẽ bị đào thải, hoặc điều này trở thành động lực để họ thay đổi chiến lược. Đây là tiền đề để áp dụng LTTCTH vào cả các lĩnh vực bên ngoài sinh học như kinh tế học, xã hội học, nhân học và triết học. <br>
 
