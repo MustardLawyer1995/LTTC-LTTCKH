@@ -81,7 +81,7 @@ $b = 1\left( 0 \right)y\left( {...} \right)......{\rm{     }}$  <br>
 &nbsp;&nbsp;&nbsp;&nbsp;Ta giả sử $A \oplus B = A \text{   xor   }B$ đúng với $A < a,B \le b$ và $A \le a,B < b$ . Theo định nghĩa của $a \oplus b$ , ta có: <br>
 
 ```math
-a \oplus b{\rm{ }} = mex\left( {\left\{ {a' \oplus b|a' < a\}  \cup \{ a \oplus b'|b' < b} \right\}} \right){\rm{ }} \Rightarrow {\rm{ }}a \oplus b{\rm{ }} = mex\left( {\left\{ {a\prime {\rm{ }}xor{\rm{ }}b|a\prime  < a} \right\} \cup \left\{ {a{\rm{ }}xor{\rm{ }}b\prime |b\prime  < b} \right\}} \right)
+a \oplus b{\rm{ }} = \text{Mex} \left( {\left\{ {a' \oplus b|a' < a\}  \cup \{ a \oplus b'|b' < b} \right\}} \right){\rm{ }} \Rightarrow {\rm{ }}a \oplus b{\rm{ }} = \text{Mex} \left( {\left\{ {a' {\rm{ }} \text{   xor   } {\rm{ }}b|a'  < a} \right\} \cup \left\{ {a{\rm{ }} \text{   xor   } {\rm{ }}b' |b'  < b} \right\}} \right)
 ```
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;, với mỗi giá trị $k < a \text{   xor   } b$ , theo (*) và (**) ta luôn thấy: <br>
 ```math
@@ -94,6 +94,7 @@ k \subset \left( {\left\{ {a' {\rm{ }} \text{   xor   }{\rm{ }}b|a'  < a} \right
 &nbsp;&nbsp;&nbsp;&nbsp; $\longrightarrow$ $A \oplus B = A \text{   xor   }B$ vẫn đúng khi $A=a, B=b$ <br>
 &nbsp;&nbsp;&nbsp; $\Longrightarrow$ ***Định lý đã được chứng minh bằng quy nạp*** <br>
 
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Nhận xét:</ins>* <br>
 &nbsp;&nbsp;&nbsp;&nbsp;Điều này có nghĩa là tổng nimber có thể được tính toán thông qua tổng xor - một thao tác đơn giản hơn nhiều. Ý nghĩa của định lý Sprague Grundy bây giờ đã rõ ràng. Với một normal impartial game: $H = {H_1} + {H_2} + {H_3} + ... + {H_n}$ , nếu mỗi trò chơi con $H_i$ tương đương với 1 đống nim có $G\( H_{i} \)$ quân thì hiển nhiên $H$ tương đương với một nim game gồm các đống nim có số lượng lần lượt là $G\( H_{1} \),G\( H_{2} \),G\( H_{3} \),...G\( H_{n} \)$ . Vì vậy, quy luật chiến thắng của $H$ , cũng giống như quy luật chiến thắng của nim game, đó là: <br>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•1) Tính các giá trị $G\( H_{i} \)$ <br>
