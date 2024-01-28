@@ -31,7 +31,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;Quy tắc đơn giản của trò chơi Nim ở ***mục 1/*** là nền tảng cho ***<ins>định lý Sprague Grundy</ins>***: Mỗi impartial game chơi theo luật normal luôn tương đương với một nim game. <br>
 
 &nbsp;&nbsp;&nbsp;&nbsp;*<ins>Chứng minh:</ins>* <br>
-&nbsp;&nbsp;&nbsp;&nbsp;Ta đặt ra một loại giá trị đại diện cho mỗi trạng thái của trò chơi gọi là nimber (còn có tên khác là số Grundy). Nimber của trạng thái $h$ , ký hiệu là $G(h)$ , được định nghĩa bằng đệ quy: $G\(h\)=0$  nếu người chơi trước tại h thua ngay lập tức *(không có nước đi tiếp theo tại* $h$ *)* <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Ta đặt ra một loại giá trị đại diện cho mỗi trạng thái của trò chơi gọi là nimber (còn có tên khác là số Grundy). Nimber của trạng thái $h$ , ký hiệu là $G(h)$ , được định nghĩa bằng đệ quy: $G\(h\)=0$  nếu người chơi trước tại $h$ thua ngay lập tức *(không có nước đi tiếp theo tại* $h$ *)* <br>
 &nbsp;&nbsp;&nbsp;&nbsp;Ta có: $G\( h\) = \text{ Mex } \\{ g\( h_{1} \) ; g\( h_{2} \) ; g\( h_{3} \) ; ... g\( h_{n} \) \\}$ với $h_{1},h_{2},...h_{n}$ là tất cả các trạng thái trò chơi có thể xảy ra sau nước đi tiếp theo (Mex của một tập hợp là số tự nhiên nhỏ nhất ngoài tập hợp đó: $\text{Mex}A = \text{Min} \( \mathbb{N} \backslash A \)$ ). <br>
 &nbsp;&nbsp;&nbsp;&nbsp;Dễ thấy nếu $G(N)$ là nimber tương ứng của nim game gồm 1 đống $N$ quân thì $G(N)=N$ . Mặt khác, theo định nghĩa nimber, $\forall n < G\( h \) \ne 0 , \( {n \in \mathbb{N} } \)$ , luôn có nước đi để đưa trò chơi từ trạng thái $h$ về trạng thái $h'$ sao cho $G\(h'\)=n$ $\rightarrow$ Nếu bạn đưa trò chơi từ trạng thái $H$ về $H'$ sao cho $G\(H'\) > G\(H\)$ , đối phương sẽ luôn có nước đi để nimber trở về mức $G(H)$ $\rightarrow$ Những nước đi làm tăng nimber chính là những động thái khả đảo $\rightarrow$ trò chơi $H$ tương đương với 1 đống nim có $G(H)$ quân. ***(đpcm)*** <br>
 &nbsp;&nbsp;&nbsp;&nbsp;Nim game gồm 2 đống nim với số lượng $a,b$ sẽ có nimber đại diện là $a \oplus b$ (tổng nimber): 
@@ -39,6 +39,9 @@
 ```math
 a \oplus b{\rm{ }} = \text{Mex  }\left( {\left\{ {a' \oplus b|a' < a\}  \cup \{ a \oplus b'|b' < b} \right\}} \right)
 ```
+&nbsp;&nbsp;&nbsp;&nbsp;Công thức này (được suy ra trực tiếp từ định nghĩa của nimber) ngụ ý rằng nước đi tiếp theo chỉ có thể tác động vào 1 trong 2 đống nim. Ta có định lý sau: Đối với mọi impartial game chơi theo luật normal, ta có tính chất sau: $a \oplus b = a \text{   xor   }b$   <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Chứng minh:</ins>* <br>
 
 #### &nbsp;&nbsp;&nbsp;&nbsp; *a. Bản chất tiện ích* <br>
 
