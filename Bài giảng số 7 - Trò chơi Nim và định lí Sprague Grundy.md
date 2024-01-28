@@ -34,6 +34,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;Ta đặt ra một loại giá trị đại diện cho mỗi trạng thái của trò chơi gọi là nimber (còn có tên khác là số Grundy). Nimber của trạng thái $h$ , ký hiệu là $G(h)$ , được định nghĩa bằng đệ quy: $G\(h\)=0$  nếu người chơi trước tại $h$ thua ngay lập tức *(không có nước đi tiếp theo tại* $h$ *)* <br>
 &nbsp;&nbsp;&nbsp;&nbsp;Ta có: $G\( h\) = \text{ Mex } \\{ g\( h_{1} \) ; g\( h_{2} \) ; g\( h_{3} \) ; ... g\( h_{n} \) \\}$ với $h_{1},h_{2},...h_{n}$ là tất cả các trạng thái trò chơi có thể xảy ra sau nước đi tiếp theo (Mex của một tập hợp là số tự nhiên nhỏ nhất ngoài tập hợp đó: $\text{Mex} \( A \) = \text{Min} \( \mathbb{N} \backslash A \)$ ). <br>
 &nbsp;&nbsp;&nbsp;&nbsp;Dễ thấy nếu $G(N)$ là nimber tương ứng của nim game gồm 1 đống $N$ quân thì $G(N)=N$ . Mặt khác, theo định nghĩa nimber, $\forall n < G\( h \) \ne 0 , \( {n \in \mathbb{N} } \)$ , luôn có nước đi để đưa trò chơi từ trạng thái $h$ về trạng thái $h'$ sao cho $G\(h'\)=n$ $\rightarrow$ Nếu bạn đưa trò chơi từ trạng thái $H$ về $H'$ sao cho $G\(H'\) > G\(H\)$ , đối phương sẽ luôn có nước đi để nimber trở về mức $G(H)$ $\rightarrow$ Những nước đi làm tăng nimber chính là những động thái khả đảo $\rightarrow$ trò chơi $H$ tương đương với 1 đống nim có $G(H)$ quân. ***(đpcm)*** <br>
+
 &nbsp;&nbsp;&nbsp;&nbsp;Nim game gồm 2 đống nim với số lượng $a,b$ sẽ có nimber đại diện là $a \oplus b$ (tổng nimber): 
 
 ```math
@@ -42,9 +43,68 @@ a \oplus b{\rm{ }} = \text{Mex  }\left( {\left\{ {a' \oplus b|a' < a\}  \cup \{ 
 &nbsp;&nbsp;&nbsp;&nbsp;Công thức này (được suy ra trực tiếp từ định nghĩa của nimber) ngụ ý rằng nước đi tiếp theo chỉ có thể tác động vào 1 trong 2 đống nim. Ta có định lý sau: Đối với mọi impartial game chơi theo luật normal, ta có tính chất sau: $a \oplus b = a \text{   xor   }b$   <br>
 
 &nbsp;&nbsp;&nbsp;&nbsp;*<ins>Chứng minh:</ins>* <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Ta đặt $c = a \oplus b$ , theo định lí Sprague Grundy, 2 đống nim có số lượng $a,b$ tương đương với 1 đống nim số lượng $c$ $\rightarrow$ nim game gồm 3 đống có số lượng $a,b,c$ tương đương với nim game gồm 2 đống đều có số lượng <br>
+&nbsp;&nbsp;&nbsp;&nbsp; $\rightarrow$ Nim game này đang ở thế thua cho người đi trước, theo chiến lược tất thắng ở ***mục 1/***, phải có: <br>
+```math
+a \text{   xor   } b \text{   xor   } c = 0  \Leftrightarrow a \text{   xor   }b = c
+```
+&nbsp;&nbsp;&nbsp;&nbsp; $\longrightarrow$ Từ đó ta có điều phải chứng minh. <br>
 
-#### &nbsp;&nbsp;&nbsp;&nbsp; *a. Bản chất tiện ích* <br>
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Cách chứng minh khác:</ins>* <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Xét giá trị $k < a \text{   xor   } b$ ta thấy: $a \text{   xor   } \( a \text{   xor   } k \) = k$ và $b \text{   xor   } \( b \text{   xor   } k \) = k$ (*) , có thể chứng minh rằng ít nhất 1 trong 2 trường hợp sau đây xảy ra: $a \text{   xor   } k < b \vee b \text{   xor   } k < a$ (**) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Thật vậy, ta giả sử $a \text{   xor   } k \ge b$ và $b \text{   xor   } k \ge a$ . Ở dạng nhị phân, số chữ số của $k$ phải $\le$ của $a$ hoặc $b$ (do ta xét $k < a \text{   xor   } b$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1- Riêng trường hợp số chữ số của $a$ $>$ của $b$ thì số chữ số của $k$ bằng của $a$ (do $b \text{   xor   } k \ge a$ ) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\longrightarrow$ Từ đó ta rút ra được dạng các số $a,k,b$ như sau: <br>
+<div align="center">
 
+$a = 1\left( 0 \right)x\left( {...} \right)......{\rm{      }}$ <br>
+$k = 1\left( 0 \right)y\left( {...} \right)......{\rm{      }}$ <br>
+$b = 0\left( 0 \right)0\left( 0 \right)1......{\rm{      }}$    <br>
+(hãy chú ý các chữ số được dóng thẳng hàng dọc, những chỗ $(0)$ là 1 đoạn các số 0) <br>
+</div>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Nếu $a \text{   xor   } k >b$ thì $\( x,y \) = \( 1,0 \)$ hoặc $\( 0,1 \)$ , nhưng nếu $\( 1,0 \)$ thì vi phạm $b \text{   xor   } k \ge a$ và nếu $\( 0,1 \)$ thì vi phạm $k < a \text{   xor   } b$ $\rightarrow$ Mâu thuẫn <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Nếu $a \text{   xor   } k =b$ thì $a \text{   xor   } b =k$ $\rightarrow$ điều này vi phạm $k < a \text{   xor   } b$ $\rightarrow$ Mâu thuẫn <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2- Trường hợp $a,k,b$ có số chữ số bằng nhau, thì khi ấy ta rút ra được dạng các số $a,k,b$ như sau: <br>
+<div align="center">
+
+$a = 1\left( 0 \right)x\left( {...} \right)......{\rm{      }}$ <br>
+$k = 0\left( 0 \right)0\left( 0 \right)1......{\rm{      }}$    <br>
+$b = 1\left( 0 \right)y\left( {...} \right)......{\rm{     }}$  <br>
+</div>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\longrightarrow$ Suy ra $\( x,y \) = \( 1,0 \)$ hoặc $\( 0,1 \)$ thỏa mãn $k < a \text{   xor   } b$ . Dễ thấy nếu  $\( 1,0 \)$ thì vi phạm $b \text{   xor   } k \ge a$ và nếu $\( 0,1 \)$ thì vi phạm $a \text{   xor   } k \ge b$ $\rightarrow$ Mâu thuẫn<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; $\longrightarrow$ Từ 2 trường hợp trên ta nhận thấy rằng hai điều kiện $a \text{   xor   } k \ge b$ và $b \text{   xor   } k \ge a$ không thể đồng thời thỏa mãn được thỏa mãn $\longrightarrow$ Kết luận (**) là chính xác <br> 
+
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Quy nạp:</ins>* <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Ta giả sử $A \oplus B = A \text{   xor   }B$ đúng với $A < a,B \le b$ và $A \le a,B < b$ . Theo định nghĩa của $a \oplus b$ , ta có: <br>
+
+```math
+a \oplus b{\rm{ }} = mex\left( {\left\{ {a' \oplus b|a' < a\}  \cup \{ a \oplus b'|b' < b} \right\}} \right){\rm{ }} \Rightarrow {\rm{ }}a \oplus b{\rm{ }} = mex\left( {\left\{ {a\prime {\rm{ }}xor{\rm{ }}b|a\prime  < a} \right\} \cup \left\{ {a{\rm{ }}xor{\rm{ }}b\prime |b\prime  < b} \right\}} \right)
+```
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;, với mỗi giá trị $k < a \text{   xor   } b$ , theo (*) và (**) ta luôn thấy: <br>
+```math
+k \subset \left( {\left\{ {a' {\rm{ }} \text{   xor   }{\rm{ }}b|a'  < a} \right\} \cup \left\{ {a{\rm{ }} \text{   xor   } {\rm{ }}b' |b'  < b} \right\}} \right)
+```
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;, mặt khác, $a \text{   xor   }b$ không thể nằm trong tập hợp này (trừ khi a'=a và b'=b - điều này là vô lí) $\rightarrow$ khi ấy suy ra Mex của tập hợp này bằng $a \oplus b$ (theo định nghĩa về Mex) <br>
+```math
+\longrightarrow a \oplus b{\rm{ }} = \text{Mex} \left( {\left\{ {a' {\rm{ }} \text{   xor   }{\rm{ }}b|a'  < a} \right\} \cup \left\{ {a{\rm{ }} \text{   xor   } {\rm{ }}b' |b'  < b} \right\}} \right) = a{\rm{ }} \text{   xor   } {\rm{ }}b
+```
+&nbsp;&nbsp;&nbsp;&nbsp; $\longrightarrow$ $A \oplus B = A \text{   xor   }B$ vẫn đúng khi $A=a, B=b$ <br>
+&nbsp;&nbsp;&nbsp; $\Longrightarrow$ ***Định lý đã được chứng minh bằng quy nạp*** <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;Điều này có nghĩa là tổng nimber có thể được tính toán thông qua tổng xor - một thao tác đơn giản hơn nhiều. Ý nghĩa của định lý Sprague Grundy bây giờ đã rõ ràng. Với một normal impartial game: $H = {H_1} + {H_2} + {H_3} + ... + {H_n}$ , nếu mỗi trò chơi con $H_i$ tương đương với 1 đống nim có $G\( H_{i} \)$ quân thì hiển nhiên $H$ tương đương với một nim game gồm các đống nim có số lượng lần lượt là $G\( H_{1} \),G\( H_{2} \),G\( H_{3} \),...G\( H_{n} \)$ . Vì vậy, quy luật chiến thắng của $H$ , cũng giống như quy luật chiến thắng của nim game, đó là: <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•1) Tính các giá trị $G\( H_{i} \)$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•2) Tính $G(H) = G\( H_{1} \) \oplus G\( H_{2} \) \oplus G\( H_{3} \) \oplus ... \oplus G\( H_{n} \) = G\( H_{1} \) \text{   xor   } G\( H_{2} \) \text{   xor   } G\( H_{3} \) \text{   xor   }...\text{   xor   } G\( H_{n} \)$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•3) Nếu $G(H)=0$ , người đi trước ở thế thua. Nếu $G(H) \ne 0$ , anh ta đang ở thế thắng, lúc này chỉ cần chọn nước đi để đưa $H$ về $H'$ , sao cho $G\( H' \)=0$ , và cứ lặp lại các thao tác này cho đến khi đối thủ không còn nước để đi (thua). <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;Hãy cùng xem qua các ví dụ về việc vận dụng định lý này cho các impartial game chơi theo luật normal. <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Ví dụ 3.1:</ins>* <br>
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Ví dụ 3.2:</ins>* <br>
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Ví dụ 3.3:</ins>* <br>
 
 
 
