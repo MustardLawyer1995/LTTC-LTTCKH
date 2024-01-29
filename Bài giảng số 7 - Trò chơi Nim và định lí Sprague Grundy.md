@@ -134,7 +134,53 @@ $G\( 3 \) = \text{Mex} \\{ G\( 2 \), G\( 1 \) , G\( 0 \) \\} = 3$ <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Mở rộng:</ins>* <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vậy khi có nhiều hơn 1 đống thì sao? Trò chơi lúc này sẽ giống một nim game nhưng số quân tối đa được phép lấy từ 1 đống chỉ là $k$, chứ không phải bất kỳ số nào như Nim thường. Lúc này chỉ cần tính nimber của từng đống rồi tính tổng xor của chúng, lấy tổng này làm nimber chung của cả trò chơi, rồi cứ làm theo quy tắc đã biết: Nếu bạn đang đi trước, và nimber $= 0$ , bạn ở thế thua, hãy đi bừa 1 nước và cầu cho người kia không biết chiến lược tất thắng này; nếu nimber khác 0, đánh 1 nước sao cho nimber $= 0$ ở lượt tiếp theo, cứ như vậy cho đến khi bạn lấy được quân cuối cùng và thắng. <br>
 
-&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Ví dụ 3.3:</ins>* Hình ảnh mô phỏng Grundy Games<br>
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Ví dụ 3.3:</ins>* Mô phỏng Grundy Games<br>
+<div align="center">
+
+Player I : $8 \longrightarrow 7+1$ <br> 
+Player II : $7+1 \longrightarrow 4+3+1$ <br>
+Player I : $4+3+1 \longrightarrow 4+2+1+1$ <br>
+Player II : $4+2+1+1 \longrightarrow 3+1+2+1+1$ <br>
+Player I : $3+1+2+1+1 \longrightarrow 2+1+1+2+1+1$ <br>
+</div>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Đôi khi việc áp dụng định lý Sprague Grundy cũng chỉ giúp ta nhẹ gánh đi 1 phần, vì dãy giá trị nimber không có quy luật rõ ràng. Điển hình là Grundy game, luật chơi: Cho trước 1 số, người chơi đầu tiên tách nó thành 2 số không bằng nhau có tổng = số ban đầu. Người chơi kế tiếp chọn 1 số và tách nó thành 2 theo cách tương tự. Người nào không còn nước để đi thì thua cuộc (1 ván chơi mẫu được minh họa trên ảnh). Với game này, ta cần 1 bảng để tra giá trị nimber đối với từng số, giá trị nimber tương ứng của các số từ 0 đến 20 lần lượt là: 0 0 0 1 0 2 1 0 2 1 0 2 1 3 2 1 3 2 4 3 0 ... <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\longrightarrow$ Khi số khởi đầu là 0, 1, 2, 4, 7, 10, 20,... người đi trước ở thế tất bại. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Thật không may, việc dãy số này có tuân theo chu kỳ nào không là một bài toán chưa được giải. Nhưng định lý Sprague Grundy vẫn có ích khi bảo cho ta biết rằng phải tách sao cho tạo ra nhóm số mà tổng nimber của chúng (cũng chính là tổng xor của các nimber ứng với mỗi số) = 0 để giành chiến thắng (với điều kiện là tổng nimber khi đến lượt của bạn phải khác 0). <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Ví dụ 3.4:</ins>* Trò chơi trừ bình phương<br>
+<div align="center">
+
+Player I : $6-2\*2=2$ <br> 
+Player II : $2-1\*1=1$ <br> 
+Player I : $1-1\*1=0$ <br> 
+Player II : Loses<br> 
+</div>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Khởi đầu là 1 số, và 2 người chơi lần lượt trừ đi 1 lượng có dạng $k^2$ ( $k$ là số nguyên dương) cho đến khi ai không còn nước để đi (số về 0) là thua (như hình trên). Ta có thể thiết lập 1 bảng giá trị nimber cho các số, 28 số tự nhiên đầu tiên bao gồm 0 có giá trị nimber như sau: 0, 1, 0, 1, 2, 0, 1, 0, 1, 2, 0, 1, 0, 1, 2, 0, 1, 0, 1, 2, 0, 1, 0, 1, 2, 3, 2, 3, 4, … và ta cũng thấy là nó...chẳng có 1 quy luật nào cả. Với phiên bản nhiều số hơn, ở mỗi lượt người chơi chỉ thực hiện phép trừ ở 1 số anh ta chọn, ai không còn nước để đi thì thua. Định lý Sprague Grundy nói rằng hãy tính nimber của từng số, tổng nimber của trò chơi = tổng xor của tất cả các giá trị nimber của mỗi số, sau đó chỉ việc chơi theo chiến lược của một trò chơi Nim thông thường: hãy làm tổng nimber về 0 khi đến lượt của đối thủ. <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Ví dụ 3.5:</ins>* <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ta cũng có thể ***"tự chế"*** ra 1 impartial game tùy ý và dùng định lý Sprague Grundy để tìm chiến lược thắng cho nó. Giả sử ta thay đổi luật trong trò chơi Nim thành: ở mỗi lượt, chỉ được phép lấy 1 quân khỏi 1 đống, hoặc lấy toàn bộ đống đó. Quy luật trò chơi sẽ thay đổi thế nào? <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tìm các giá trị nimber $G(N)$ cho 1 đống có $N$ quân: $G(0)=0$ (điều này là hiển nhiên), ta có:  <br>
+<div align="center">
+
+$G\( 1 \) = \text{Mex} \\{ G\( 0 \) \\} = 1$ <br>
+$G\( 2 \) = \text{Mex} \\{  G\( 1 \), G\( 0 \) \\} = 2$ <br>
+$G\( 3 \) = \text{Mex} \\{ G\( 2 \), G\( 0 \) \\} = 1$ <br>
+</div>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\longrightarrow$ từ đây dễ thấy $G\( N\) = 1$ nếu $N$ lẻ và $G\( N\) = 2$ nếu $N$ với mọi $N>0$ ; $G(N)=0$ khi $N=0$ . <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Nhận xét:</ins>* Với nhiều đống nim: tổng nimber = tổng xor của các giá trị nimber của mỗi đống, nhưng có điều đặc biệt là các giá trị nimber của mỗi đống luôn bằng 1 hoặc 2, hay ở hệ nhị phân là 01 và 10, nên chiến lược ở đây rất đơn giản: hãy làm cho ở lượt đối phương có chẵn đống lẻ và chẵn đống chẵn (tổng nimber =0), còn nếu đến lượt của bạn mà như vậy thì bạn tiêu rồi. <br>
+
+
+
+
+
+
+
+
+
+
 
 
 
