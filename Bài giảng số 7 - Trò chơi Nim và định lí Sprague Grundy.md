@@ -87,7 +87,7 @@ a \oplus b{\rm{ }} = \text{Mex} \left( {\left\{ {a' \oplus b|a' < a\}  \cup \{ a
 ```math
 k \subset \left( {\left\{ {a' {\rm{ }} \text{   xor   }{\rm{ }}b|a'  < a} \right\} \cup \left\{ {a{\rm{ }} \text{   xor   } {\rm{ }}b' |b'  < b} \right\}} \right)
 ```
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;, mặt khác, $a \text{   xor   }b$ không thể nằm trong tập hợp này (trừ khi a'=a và b'=b - điều này là vô lí) $\rightarrow$ khi ấy suy ra Mex của tập hợp này bằng $a \oplus b$ (theo định nghĩa về Mex) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;, mặt khác, $a \text{   xor   }b$ không thể nằm trong tập hợp này (trừ khi $a'=a$ và $b'=b$ - điều này là vô lí) $\rightarrow$ khi ấy suy ra Mex của tập hợp này bằng $a \oplus b$ (theo định nghĩa về Mex) <br>
 ```math
 \longrightarrow a \oplus b{\rm{ }} = \text{Mex} \left( {\left\{ {a' {\rm{ }} \text{   xor   }{\rm{ }}b|a'  < a} \right\} \cup \left\{ {a{\rm{ }} \text{   xor   } {\rm{ }}b' |b'  < b} \right\}} \right) = a{\rm{ }} \text{   xor   } {\rm{ }}b
 ```
@@ -103,9 +103,39 @@ k \subset \left( {\left\{ {a' {\rm{ }} \text{   xor   }{\rm{ }}b|a'  < a} \right
 
 &nbsp;&nbsp;&nbsp;&nbsp;Hãy cùng xem qua các ví dụ về việc vận dụng định lý này cho các impartial game chơi theo luật normal. <br>
 
-&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Ví dụ 3.1:</ins>* <br>
-&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Ví dụ 3.2:</ins>* <br>
-&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Ví dụ 3.3:</ins>* <br>
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Ví dụ 3.1:</ins>* Trò chơi Nim thông thường<br>
+<div align="center">
+
+![image](https://github.com/MustardLawyer1995/LTTC-LTTCKH/assets/156400720/d2adf3bc-83cf-4266-842e-8339242b9b8f)
+</div>
+
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Ví dụ 3.2:</ins>* Hình ảnh mô phỏng trò chơi loại trừ <br>
+<div align="center">
+
+![image](https://github.com/MustardLawyer1995/LTTC-LTTCKH/assets/156400720/e6a9d3ef-7fc1-494e-b7b9-12a273261e87)
+</div>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Mô phỏng:</ins>* Có 1 đống vật thể, mỗi người chơi khi đến lượt sẽ phải lấy ít nhất 1 quân từ đó, và được lấy nhiều nhất $k$ quân, ai lấy quân cuối cùng thì thua. Đây là dạng trò chơi mà các bạn có lẽ đã gặp rồi, nhưng thường ở dạng đếm số (bắt đầu từ 1 số lớn và đếm lùi dần, ai bị ép phải đếm "0" thì thua). Game này hay chơi theo luật misére, nhưng để có thể sử dụng định lý Sprague Grundy, ta buộc phải xét theo luật chơi normal (người lấy được quân cuối cùng thắng), còn trường hợp của các trò chơi theo phiên bản misére sẽ được xét sau. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Giả sử $k=3$ . Ta tính nimber $G(N)$ tương ứng với 1 đống $N$ quân: $G(0)=0$ (người đi trước thua vì không còn quân để lấy thêm), khi đó ta lần lượt có: <br>
+<div align="center">
+
+$G\( 1 \) = \text{Mex} \\{ G\( 0 \) \\} = 1$ <br>
+$G\( 2 \) = \text{Mex} \\{  G\( 1 \), G\( 0 \) \\} = 2$ <br>
+$G\( 3 \) = \text{Mex} \\{ G\( 2 \), G\( 1 \) , G\( 0 \) \\} = 3$ <br>
+</div>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nhưng có 1 ngoại lệ khi $N=4$ , do chỉ được phép lấy tối đa $3$ quân nên: $G\( 4 \) = \text{Mex} \\{ G\( 3 \), G\( 2 \) , G\( 1 \) \\} = 0$ <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chu kỳ tiếp diễn: $G \( 5 \) = \text{Mex} \\{ G \( 4 \), G \( 3 \) , G \( 2 \) \\} = 1 ; G \( 6 \) = 2 ; G \( 7 \) = 3 ; ...$ khi đó ta tổng quát được $G\( x \) = x \text{   mod   } 4$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dễ chứng minh rằng với giá trị $k$ bất kỳ, thì: $G\( x \) = x \text{   mod   } \( k + 1 \)$ <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Chứng minh:</ins>* Thật vậy, nếu trò chơi bắt đầu với 1 đống có $N = \( k+1 \)m$  quân (với $G(N)=0$ ), thì người đi trước không thể tránh khỏi thất bại, khi anh ta lấy $s$ quân, người đi sau chỉ cần lấy $k+1-s$ quân để đưa số quân còn lại về bội số của $k+1$ , cứ tiếp diễn như vậy và anh ta sẽ lấy được quân cuối cùng <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Mở rộng:</ins>* <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vậy khi có nhiều hơn 1 đống thì sao? Trò chơi lúc này sẽ giống một nim game nhưng số quân tối đa được phép lấy từ 1 đống chỉ là $k$, chứ không phải bất kỳ số nào như Nim thường. Lúc này chỉ cần tính nimber của từng đống rồi tính tổng xor của chúng, lấy tổng này làm nimber chung của cả trò chơi, rồi cứ làm theo quy tắc đã biết: Nếu bạn đang đi trước, và nimber $= 0$ , bạn ở thế thua, hãy đi bừa 1 nước và cầu cho người kia không biết chiến lược tất thắng này; nếu nimber khác 0, đánh 1 nước sao cho nimber $= 0$ ở lượt tiếp theo, cứ như vậy cho đến khi bạn lấy được quân cuối cùng và thắng. <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Ví dụ 3.3:</ins>* Hình ảnh mô phỏng Grundy Games<br>
+
 
 
 
