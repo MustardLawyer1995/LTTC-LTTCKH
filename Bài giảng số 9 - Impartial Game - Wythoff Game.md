@@ -60,7 +60,7 @@ j < \frac{m}{s};\frac{{m + 1}}{s} < j + 1
 &nbsp;&nbsp;&nbsp;&nbsp;Giờ ta thấy rằng $\left\lfloor {k\phi } \right\rfloor$ và $\left\lfloor {k {\phi}^2 } \right\rfloor$ chính là 2 dãy Beatty bù nhau do $\frac{1}{{{\phi ^2}}} + 1 = \frac{1}{\phi } \Leftrightarrow {\phi ^2} = \phi  + 1$ . Từ định nghĩa ta dễ dàng suy ra: (*) <br>
 
 ```math
-\left\lfloor {k{\phi ^2}} \right\rfloor  = \left\lfloor {k\phi  + k} \right\rfloor  = \left\lfloor {k\phi } \right\rfloor  + k{\rm{ }}\left( {k \in {^*}} \right) \Leftrightarrow \left\lfloor {k{\phi ^2}} \right\rfloor  - \left\lfloor {k\phi } \right\rfloor  = k{\rm{ }}\left( {k \in {\mathbb{N}^*}} \right) (*)
+\left\lfloor {k{\phi ^2}} \right\rfloor  = \left\lfloor {k\phi  + k} \right\rfloor  = \left\lfloor {k\phi } \right\rfloor  + k{\rm{ }}\left( {k \in {\mathbb{N}^*}} \right) \Leftrightarrow \left\lfloor {k{\phi ^2}} \right\rfloor  - \left\lfloor {k\phi } \right\rfloor  = k{\rm{ }}\left( {k \in {\mathbb{N}^*}} \right) (*)
 ```
 
 &nbsp;&nbsp;&nbsp;&nbsp;***Chứng minh rằng*** trong Wythoff game, trạng thái có 2 đống với số lượng $\left\lfloor {k\phi } \right\rfloor$ và $\left\lfloor {k {\phi}^2 } \right\rfloor$ là trạng thái tất bại cho người đi trước, và tồn tại chiến lược tất thắng bằng cách đưa đối phương rơi vào trạng thái này: <br>
