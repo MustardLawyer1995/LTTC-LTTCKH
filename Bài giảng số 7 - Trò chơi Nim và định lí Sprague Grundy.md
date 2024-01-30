@@ -172,7 +172,20 @@ $G\( 3 \) = \text{Mex} \\{ G\( 2 \), G\( 0 \) \\} = 1$ <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\longrightarrow$ từ đây dễ thấy $G\( N\) = 1$ nếu $N$ lẻ và $G\( N\) = 2$ nếu $N$ với mọi $N>0$ ; $G(N)=0$ khi $N=0$ . <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Nhận xét:</ins>* Với nhiều đống nim: tổng nimber = tổng xor của các giá trị nimber của mỗi đống, nhưng có điều đặc biệt là các giá trị nimber của mỗi đống luôn bằng 1 hoặc 2, hay ở hệ nhị phân là 01 và 10, nên chiến lược ở đây rất đơn giản: hãy làm cho ở lượt đối phương có chẵn đống lẻ và chẵn đống chẵn (tổng nimber =0), còn nếu đến lượt của bạn mà như vậy thì bạn tiêu rồi. <br>
 
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Ví dụ 3.6:</ins>* Hãy tìm chiến lược thắng cho:<br>
+Hình 1            | Hình 2
+:-------------------------:|:-------------------------:
+![image](https://github.com/MustardLawyer1995/LTTC-LTTCKH/assets/156400720/42274bb3-6d36-4d84-a5c6-91be1f4ab744)  |  ![image](https://github.com/MustardLawyer1995/LTTC-LTTCKH/assets/156400720/dd914fa5-f523-4eb6-a840-252ff0f72ebf)
 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1) Trò chơi White Knight. Luật chơi: 2 người lần lượt di chuyển quân mã theo 1 trong 4 hướng được xác định trên hình, quân mã tiến dần về góc trên-trái của bàn cờ, ai không còn nước đi khi đến lượt mình thì thua (hay: ai đi quân mã vào hình vuông "Home" trước là thắng - xem hình 1 và 2).<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2) Trò chơi White Knight bội hóa: có nhiều bàn cờ, mỗi bàn cờ đều giống như ở ***1)***, mỗi lượt, người chơi chỉ được chọn 1 trong các bàn cờ để di chuyển quân mã trong đó, ai không còn nước đi khi đến lượt mình thì thua (mọi bàn cờ đều có quân mã nằm ở Home). <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Lời giải cho ví dụ trên:</ins>* <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Xem các giá trị nimber ứng với mỗi vị trí trên bàn cờ ở hình dưới đây. Không khó để chứng minh chúng có tính chất chu kỳ. Từ đây ta có lởi giải như sau: <br>
+<div align="center">
+
+![image](https://github.com/MustardLawyer1995/LTTC-LTTCKH/assets/156400720/ffe2728a-5cab-4121-8252-f78c8f4bb940)
+</div>
 
 
 
