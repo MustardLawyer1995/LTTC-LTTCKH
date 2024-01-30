@@ -1,9 +1,11 @@
 # Xoay quanh về bài toán que diêm
 
-&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Ví dụ 3.7:</ins>* Hãy tìm chiến lược thắng **<ins>tốt nhất</ins>** cho trò chơi sau:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Đề bài:</ins>* Hãy tìm chiến lược thắng **<ins>tốt nhất</ins>** cho trò chơi sau:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Có 27 que diêm, hai người chơi lần lượt nhặt diêm vào tay mình. Mỗi lần chỉ được phép nhặt tối thiểu 1 que và tối đa 4 que. Sau khi nhặt hết diêm, trong tay người chơi nào có số diêm chẵn thì người đó thắng cuộc <br>
 
-&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Lời giải cho ví dụ trên:</ins>* <br>
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Lời giải cho bài toán trên:</ins>* <br>
 &nbsp;&nbsp;&nbsp;&nbsp;Gọi số quân (que diêm) trên bàn là $n$ . Nếu 2 người chơi đều đi những nước có lợi nhất cho mình thì kết cục trò chơi đã được quyết định ngay từ lúc bắt đầu - phụ thuộc vào giá trị $n$ và người đi trước đang có chẵn hay lẻ quân - theo quy luật sau: <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quy ước: "người đi trước": là người được đi nước tiếp theo - nói cách khác - là người đi trước trong giai đoạn còn lại của trò chơi <br>
 <div align="center">
