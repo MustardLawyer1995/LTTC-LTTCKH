@@ -76,7 +76,7 @@ j < \frac{m}{s};\frac{{m + 1}}{s} < j + 1
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\Longrightarrow$ 2 ý nhỏ (•) trên đây đã được chứng minh, và chúng cho biết chiến lược tất thắng của Wythoff game như sau: <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(1) Nếu trạng thái trò chơi không phải là $\\{ \left\lfloor {k\phi } \right\rfloor ; \left\lfloor {k {\phi}^2 } \right\rfloor \\}$ (tất bại), nó sẽ là trạng thái tất thắng, luôn tồn tại 1 nước đi để đưa trò chơi về trạng thái tất bại. <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(2) Ngược lại, đối phương bị rơi vào trạng thái tất bại đi bất cứ nước nào cũng đều làm trò chơi chuyển về trạng thái tất thắng $\rightarrow$ Trở lại (1) $\rightarrow$ Vòng lặp tiếp diễn đến khi đối phương bị rơi vào trạng thái \\{ 1,2 \\} (là $\\{ \left\lfloor {\phi } \right\rfloor ; \left\lfloor { {\phi}^2 } \right\rfloor \\}$ ) $\rightarrow$ Điều này đồng nghĩa với việc thua.  <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(2) Ngược lại, đối phương bị rơi vào trạng thái tất bại đi bất cứ nước nào cũng đều làm trò chơi chuyển về trạng thái tất thắng $\rightarrow$ Trở lại (1) $\rightarrow$ Vòng lặp tiếp diễn đến khi đối phương bị rơi vào trạng thái $\\{ 1,2 \\}$ (là $\\{ \left\lfloor {\phi } \right\rfloor ; \left\lfloor { {\phi}^2 } \right\rfloor \\}$ ) $\rightarrow$ Điều này đồng nghĩa với việc thua.  <br>
 
 &nbsp;&nbsp;&nbsp;&nbsp;*<ins>Mở rộng:</ins>* Một câu hỏi khác cần suy nghĩ: nếu đổi sang phiên bản misere, người nào bị ép phải đi nước cuối cùng là người thua cuộc, thì chiến lược tất thắng của game sẽ là gì ? <br>
 
