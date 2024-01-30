@@ -187,7 +187,7 @@ Hình 1            | Hình 2
 ![image](https://github.com/MustardLawyer1995/LTTC-LTTCKH/assets/156400720/ffe2728a-5cab-4121-8252-f78c8f4bb940)
 </div>
 
-&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Ví dụ 3.7:</ins>* Hãy tìm chiến lược thắng cho trò chơi sau:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Ví dụ 3.7:</ins>* Hãy tìm chiến lược thắng **<ins>tốt nhất</ins>** cho trò chơi sau:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Có 27 que diêm, hai người chơi lần lượt nhặt diêm vào tay mình. Mỗi lần chỉ được phép nhặt tối thiểu 1 que và tối đa 4 que. Sau khi nhặt hết diêm, trong tay người chơi nào có số diêm chẵn thì người đó thắng cuộc <br>
 
 &nbsp;&nbsp;&nbsp;&nbsp;*<ins>Lời giải cho ví dụ trên:</ins>* <br>
