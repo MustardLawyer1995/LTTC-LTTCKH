@@ -15,7 +15,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;*<ins>Nhắc lại:</ins>* Nếu $y \le x < y+1$ với $y \in \mathbb{Z}$ thì $\left\lfloor {x} \right\rfloor = y$ <br>  
 &nbsp;&nbsp;&nbsp;&nbsp;Để hiểu tại sao lại có điều kỳ diệu này, ta cần biết một khái niệm là ***<ins>dãy số Beatty</ins>*** <br>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dãy số Beatty là các dãy số có dạng $\left\lfloor {kr} \right\rfloor$ (với $k \in \mathbb{Z^+}$ ) với $r$ là số vô tỉ lớn hơn 1. Theo định lí Rayleigh nói rằng nếu hai dãy Beatty $\left\lfloor {kr} \right\rfloor$ và $\left\lfloor {ks} \right\rfloor$<br> thỏa mãn $\frac{1}{r}+\frac{1}{s}=1$ thì 2 dãy này là phần bù của nhau trên tập số tự nhiên. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dãy số Beatty là các dãy số có dạng $\left\lfloor {kr} \right\rfloor$ (với $k \in \mathbb{Z^+}$ ) với $r$ là số vô tỉ lớn hơn 1. Theo định lí Rayleigh nói rằng nếu hai dãy Beatty $\left\lfloor {kr} \right\rfloor$ và $\left\lfloor {ks} \right\rfloor$ thỏa mãn $\frac{1}{r}+\frac{1}{s}=1$ thì 2 dãy này là phần bù của nhau trên tập số tự nhiên. <br>
 
 &nbsp;&nbsp;&nbsp;&nbsp;*<ins>Ví dụ:</ins>* Xét lần lượt hai dãy sau:  <br>
 
