@@ -97,6 +97,7 @@
 
 $\Longrightarrow$ Từ đó ta hoàn tất chứng minh ***<ins>Định lí Arrow:</ins>*** <br>
 
+### 11. Sự khiếm khuyết của các hệ thống bầu cử nhiều hơn hai lựa chọn - định lí Gibbard 
 
 
 
