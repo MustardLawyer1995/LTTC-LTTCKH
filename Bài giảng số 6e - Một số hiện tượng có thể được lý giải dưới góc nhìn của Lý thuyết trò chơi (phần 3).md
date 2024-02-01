@@ -56,3 +56,21 @@ p_{\text{không}} = ( 1 - p^{*} )^{N} = ( \frac{a}{b} )^{\frac{N}{N-1}}
 #### &nbsp;&nbsp;&nbsp;&nbsp; *d. Bằng chứng đáng sợ* <br>
 &nbsp;&nbsp;&nbsp;&nbsp;Hội chứng Carol không chỉ đơn thuần là lý thuyết, nhiều cô nàng, chàng trai hấp dẫn đã báo rằng mình mắc phải hội chứng này. Tìm kiếm trên mạng chỉ ra một số trường hợp nổi tiếng, trong một cuộc phỏng vấn tờ Sunday Times vào tháng 2 năm 2008, nữ diễn viên người Mỹ Uma Thurman chia sẻ rằng:"Các chàng trai hiếm khi nói chuyện với tôi". Cô cho rằng mình kém may mắn với lời nguyền không đàn ông suốt đời. Trường hợp tương tự với ngôi sao ca nhạc người Mỹ Jessica Simpson, người đã tuyên bố trên tivi: "Tôi khiến các chàng trai xa lánh". Một ví dụ khác, được báo cáo vào tháng 3 năm 2009 bởi tờ Telegraph onliine, rằng diễn viên 19 tuổi người Anh, Emma Watson, với vai diễn nổi tiếng trong tiểu thuyết Harry Potter, mang đến một biệt danh nổi tiếng khắp thế giới, "người phụ nữ mà các chàng trai không dám lại gần". <br>
 &nbsp;&nbsp;&nbsp;&nbsp;Do đó, sự may mắn của Carol không hề thừa, mặc dù hiển nhiên khác so với những người nổi tiếng như Thurman. Toán học có thể giải thích như sau. Số lượng người hâm mộ Thurman là khổng lồ nên giá trị của $\frac{b}{a}$ xấp xỉ tốt cho $p_{\text{không}}$ và điều đó làm Thurman thoải mái. Còn đối với Carol, $N$ không lớn như vậy, nhưng tỉ số $\frac{b}{a}$ ứng với $p_{\text{không}}$ tiến về 1. Đó là nguyên nhân dẫn đến hội chứng Carol. <br>
+
+#### &nbsp;&nbsp;&nbsp;&nbsp; *e. Nhận xét chung* <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Có thể thừa nhận tính bắt buộc đối xứng của lời giải nếu ta coi mô hình này là một trò chơi tiến hóa. Khi đó mỗi chàng trai thuộc về 1 trong 2 kiểu hình cố định là: <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (i) luôn "tấn công" <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (ii) luôn từ bỏ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Xác suất $p$ lúc này chính là tỉ lệ của kiểu hình (i) trong quần thể <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Cũng rất tình cờ là NE đối xứng duy nhất này chính là ESS của trò chơi <br>
+
+
+
+
+
+
+
+
+
+
+
