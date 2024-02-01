@@ -34,7 +34,7 @@
 #### *<ins>Định nghĩa 10.4:</ins>*
 &nbsp;&nbsp;&nbsp;&nbsp;Một quan hệ hai ngôi $P$ trên $X$ được gọi là **một thứ tự (ordering)** nếu nó thỏa mãn hai điều kiện sau: <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (1) **<ins>Bất đối xứng (non-symmetry):</ins>** Với mọi $x,y ∈ X$ , hai điều kiện $x > y$ và $y > x$ không thể cùng đúng. <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (1) **<ins>Đầy đủ (completeness):</ins>** Với mọi $x,y,z ∈ X$ , nếu $x > z$ thì $x > y$ hoặc $y > z$ . <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (2) **<ins>Đầy đủ (completeness):</ins>** Với mọi $x,y,z ∈ X$ , nếu $x > z$ thì $x > y$ hoặc $y > z$ . <br>
 
 ---
 &nbsp;&nbsp;&nbsp;&nbsp;Một thứ tự luôn thỏa mãn tính **bất phản xạ (irreflexivity)**: $x > x$ luôn sai (điều kiện 1 cho $x=y$ ), cũng như tính **truyền dẫn (transitivity)**: Nếu $x > y$ và $y > z$ thì $x > z$ (thật vậy, vì $x > y$ nên theo điều kiện 2 thì $x > z$ hoặc $z > y$ , nhưng $y > z$ nên theo điều kiện 1 thì ta không thể có $z > y$ , do đó $x > z$ ). <br>
