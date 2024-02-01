@@ -206,5 +206,6 @@ vì $x > z$ theo $f(P')$ . Ta khẳng định rằng $y = v(P')$ . Thật vậy,
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Giả thiết 2 đương nhiên được thỏa mãn vì $y > x$ theo $P_{i}$ và $x > y$ theo $P_{j}$ với mọi $j ≠ i$ . <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Giả thiết 3 được thỏa mãn: ta có $y > x$ theo $f(P)$ vì $y > x$ theo $P_{i}$ và $i$ là kẻ độc tài đối với $f$ . <br>
 
-&nbsp;&nbsp; $\Longrightarrow$ Kết luận của ***Bổ đề 11.6*** nói rằng $x ≠ g(s')$ , mâu thuẫn. <br>
-$\Longrightarrow$Vậy $g(s') = y$ và điều này kết thúc chứng minh của ***định lý Gibbard***. <br>
+&nbsp;&nbsp; $\longrightarrow$ Kết luận của ***Bổ đề 11.6*** nói rằng $x ≠ g(s')$ , mâu thuẫn. <br>
+
+$\Longrightarrow$ Vậy $g(s') = y$ và điều này kết thúc chứng minh của ***định lý Gibbard***. <br>
