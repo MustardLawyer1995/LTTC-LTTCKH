@@ -171,8 +171,8 @@ $\Longrightarrow$ Từ đó ta hoàn tất chứng minh ***<ins>Định lí Arro
 &nbsp;&nbsp;&nbsp;&nbsp;Đặt $P^{\*} = P^{\*}\\{ x,y \\}, t = \(t_{1},t_{2},...,t_{n} \) = σ\( P^{\*} \)$ . Chú ý rằng $x ≠ g(t)$ , vì nếu $x = g(t) = v(P^{
 \*} \\{ x,y \\})$ thì $x > y$ theo $f(P)$ , mâu thuẫn với giả thiết. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;Ta xét dãy $s^{0},s^{1},...,s^{n} ∈ S$ , trong đó $s^{0}=s'$ và $sⁱ =s^{i-1} \( i,t_{i} \)$ với $i=1,2,...,n$ (lần lượt thay các tọa độ của $s'$ bởi các tọa độ tương ứng của $t$ ). Ta có $x = g(s') = g(s^{0})$ và $x ≠ g(t) = g(s^{n})$ , vì thế ta có thể lấy chỉ số $i$ nhỏ nhất sao cho $x ≠ g(s^{i})$ . Theo giả thiết, $x$ và $y$ so sánh được theo $P_{i}$ . Ta xét hai trường hợp như sau: <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Trường hợp 1:</ins>* Nếu $g(s^{i}) = y$ và $y > x$ theo $P_{i}$ .Theo cách xây dựng $i$ , ta có $x = g(s^{i-1})$ , suy ra $g(s^{i}) > g(s^{i-1})$ theo $P_{i}$ . Mà $s^{i-1} = s^{i} \( i,s_{i}' \)$ nên theo định nghĩa thì $s_{i}'$ không phải là một chiến thuật $P_{i}$ - áp đảo cho $i$ . Mặt khác, từ $y > x$ theo $P_{i}$ và giả thiết, ta có $s'_{i} = σ_{i}(P_{i})$ , điều này mâu thuẫn với định nghĩa của hàm $σ_{i}$ . <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Trường hợp 2:</ins>*Nếu $g(s^{i}) ≠ y$ hoặc $y < x$ theo $P_{i}$ . Trong trường hợp này, ta luôn có $x > g(s^{i})$ theo $P_{i}^{\*} \\{ x,y \\}$ . Mà $x = g(s^{i-1})$ nên $g(s^{i-1}) > g(s^{i})$ theo $P_{i}^{\*} \\{ x,y \\}$ . Hơn nữa, $s^{i} =s^{i-1} \( i,t_{i} \)$ nên theo định nghĩa thì $t_{i}$ không phải là một chiến thuật $P_{i}^{\*} \\{ x,y \\}$ - áp đảo cho $i$ . Nhưng $t_{i} = σ_{i} \( P_{i}^{\*}\\{ x,y \\} \)$ , mâu thuẫn với định nghãi của hàm $σ_{i}$ . <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Trường hợp 1:</ins>* Nếu $g(s^{i}) = y$ và $y > x$ theo $P_{i}$ .Theo cách xây dựng $i$ , ta có $x = g(s^{i-1})$ , suy ra $g(s^{i}) > g(s^{i-1})$ theo $P_{i}$ . Mà $s^{i-1} = s^{i} \( i,s_{i}' \)$ nên theo định nghĩa thì $s_{i}'$ không phải là một chiến thuật $P_{i}$ - áp đảo cho $i$ . Mặt khác, từ $y > x$ theo $P_{i}$ và giả thiết, ta có $s_{i}' = σ_{i}(P_{i})$ , điều này mâu thuẫn với định nghĩa của hàm $σ_{i}$ . <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Trường hợp 2:</ins>* Nếu $g(s^{i}) ≠ y$ hoặc $y < x$ theo $P_{i}$ . Trong trường hợp này, ta luôn có $x > g(s^{i})$ theo $P_{i}^{\*} \\{ x,y \\}$ . Mà $x = g(s^{i-1})$ nên $g(s^{i-1}) > g(s^{i})$ theo $P_{i}^{\*} \\{ x,y \\}$ . Hơn nữa, $s^{i} =s^{i-1} \( i,t_{i} \)$ nên theo định nghĩa thì $t_{i}$ không phải là một chiến thuật $P_{i}^{\*} \\{ x,y \\}$ - áp đảo cho $i$ . Nhưng $t_{i} = σ_{i} \( P_{i}^{\*}\\{ x,y \\} \)$ , mâu thuẫn với định nghãi của hàm $σ_{i}$ . <br>
 &nbsp;&nbsp;&nbsp;&nbsp; $\Longrightarrow$ Các mâu thuẫn trên bác bỏ giả sử $x = g(s')$ , ta có điều phải chứng minh. <br>
 
 #### *<ins>Hệ quả 11.7:</ins>*
@@ -181,13 +181,13 @@ $\Longrightarrow$ Từ đó ta hoàn tất chứng minh ***<ins>Định lí Arro
 
 #### *<ins>Hệ quả 11.8:</ins>*
 &nbsp;&nbsp;&nbsp;&nbsp;Nếu $x,y ∈ X$ so sánh được theo $P_{i}$ với $i=1,...,n$ , và $x = v(P)$ , thì $x > y$ theo $f(P)$ . <br>
-&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Chứng minh hệ quả 11.8:</ins>* Giả sử phản chứng rằng $y > x$ hoặc $x \sim y$ theo $f(P)$ . Đặt $s' = s = σ(P)$ . Theo ***Bổ đề 11.6*** , ta có x ≠ g(s') = g(s) = v(P), mâu thuẫn. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Chứng minh hệ quả 11.8:</ins>* Giả sử phản chứng rằng $y > x$ hoặc $x \sim y$ theo $f(P)$ . Đặt $s' = s = σ(P)$ . Theo ***Bổ đề 11.6*** , ta có $x ≠ g(s') = g(s) = v(P)$ , mâu thuẫn. <br>
 
 #### *<ins>Bổ đề 11.9:</ins>*
 &nbsp;&nbsp;&nbsp;&nbsp; $f(P)$ là một thứ tự trên $X$ (hay $f$ là một hàm $O^{n} → O$ ). <br>
 &nbsp;&nbsp;&nbsp;&nbsp;*<ins>Chứng minh hệ quả 11.9:</ins>* <br>
 &nbsp;&nbsp;&nbsp;&nbsp;Theo ***Bổ đề 11.4***, ta chỉ còn phải chứng minh rằng $f(P)$ thỏa mãn tính đầy đủ, nghĩa là với mọi $x,y,z ∈ X$ thỏa mãn $x > z$ theo $f(P)$ , ta có $x > y$ hoặc $y > z$ theo $f(P)$ . Đặt $P' = P^{\*}\\{ x,y,z \\}$ . Ta có $P'^{\*}\\{ x,z \\} = P^{\*}\\{ x,z \\}$ vì $\\{ x,z \\} ⊆ \\{ x,y,z \\}$ . Do đó $x = v(P^{\*} \\{ x,z \\}) ⇔ x = v(P'^{\*} \\{ x,z \\})$ , hay $x > z$ theo $f(P) ⇔ x > z$ theo $f(P')$ . <br>
-&nbsp;&nbsp;&nbsp;&nbsp;Tương tự, $x > y$ theo $f(P) ⇔ x > y$ theo $f(P')$ , và $y > z$ theo $f(P) ⇔ y > z theo f(P')$ . Do đó, ta cần chứng minh rằng nếu $x > z$ theo $f(P')$ thì $x > y$ hoặc $y > z$ theo $f(P')$ . Điều này nhiển nhiên đúng nếu $x = y$ hoặc $y = z$ , nên ta giả sử rằng $y ≠ x,z$. Xét hai trường hợp như sau: <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Tương tự, $x > y$ theo $f(P) ⇔ x > y$ theo $f(P')$ , và $y > z$ theo $f(P) ⇔ y > z$ theo $f(P')$ . Do đó, ta cần chứng minh rằng nếu $x > z$ theo $f(P')$ thì $x > y$ hoặc $y > z$ theo $f(P')$ . Điều này nhiển nhiên đúng nếu $x = y$ hoặc $y = z$ , nên ta giả sử rằng $y ≠ x,z$. Xét hai trường hợp như sau: <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Trường hợp 1:</ins>* <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nếu $x = v(P')$ thì theo ***Hệ quả 11.8*** , $x > y$ theo $f(P')$ (chú ý rằng $P'_{i}$ là thứ tự tuyến tính với $i=1,...,n$ ). <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Trường hợp 2:</ins>* <br>
