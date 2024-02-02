@@ -18,7 +18,7 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;Hiện chỉ có 1 lớp trò chơi misere là đã có lời giải tổng quát, chúng được gọi là ***<ins>trò chơi thuần hóa (tame game)</ins>***, thỏa mãn định nghĩa: *tame game* là trò chơi chỉ gồm các trạng thái $\( 0,1 \),\( 1,0 \),\( k,k \) , \text{   } \( k \in \mathbb{N} \)$ <br>
 #### *<ins>Định lí 1.1</ins>*
-&nbsp;&nbsp;&nbsp;&nbsp;Một game là tame game $Leftrightarrow$ mọi trạng thái $x$ của nó thỏa mãn ít nhất 1 trong 3 mệnh đề sau: <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Một game là tame game $\Leftrightarrow$ mọi trạng thái $x$ của nó thỏa mãn ít nhất 1 trong 3 mệnh đề sau: <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- (a) $x \in V\( 0,1 \) \cup V\( 1,0 \) \cup V\( 0,0 \) \cup V\( 1,1 \)$ <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- (b) Từ $x$ có nước dẫn đến $\( 0,1 \)$ và $\( 1,0 \)$ . <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- (c) Từ $x$ có nước dẫn đến $\( 0,0 \)$ và $\( 1,1 \)$ . <br> 
@@ -59,8 +59,15 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chứng minh tame game thoả mãn những điều trên. Hiển nhiên rồi, đặt $V'\( 0,1 \) = V\( 0,1 \) ; V'\( 1,0 \) = V\( 1,0 \) ; V'\( 0,0 \) = V\( 0,0 \) ; V'\( 1,1 \) = V\( 1,1 \)$ thu được kết luận trên theo ***định lý 1.1*** $\rightarrow$ Ta có điều phải chứng minh. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- *(Chiều nghịch)*: <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chứng minh 1 game thỏa mãn những điều trên là tame game. Sử dụng quy nạp, chỉ ra rằng trong 1 game thỏa mãn các mệnh đề từ (i) đến (vii), nếu $V'\( 0,1 \) = V\( 0,1 \) ; V'\( 1,0 \) = V\( 1,0 \) ; V'\( 0,0 \) = V\( 0,0 \) ; V'\( 1,1 \) = V\( 1,1 \)$ với mọi $x$ có $d(x) \le D$ (bởi theo ***định lí 1.1***, điều này cũng có nghĩa là các điểm trong phạm vi $d(x) \le D$ đều tuân theo định nghĩa tame game) thì các điểm $x$ có $d(x)=D+1$ cũng vậy: xét $d(x)=D+1$ ta có: <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(1) Nếu
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(1) Nếu $x=\( 0,0 \)$ , từ $x$ không có nước đi tới hoán điểm (đồng nghĩa không có nước đi tới $V'\( 0,1 \) \cup V'\( 1,0 \)$ ) và không có nước đi tới $\( 0,0 \)$ (đồng nghĩa không có nước đi tới $V'\( 0,0 \)$ ) $\rightarrow$ $x$ phải thỏa mãn (a'), mặt khác không thể có $x \in V'\( 0,1 \) \cup V'\( 1,0 \) \cup V'\( 1,1 \)$ do (iii), (iv) và (v) $\rightarrow$ $x \in V'\( 0,0 \)$ . <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(2) Nếu $x=\( 0,j \)$ với $j>0$ , từ $x$ có nước đi tới $\( 1,0 \)$ (tức $V'\( 1,0 \)$ ) và không có nước đi tới $V'\( 0,1 \) \cup V'\( 0,0 \)$ $\rightarrow$ $x$ phải thỏa mãn (a'), mà $x \notin V'\( 1,0 \) \cup V'\( 0,0 \) \cup V'\( 1,1 \)$ do (i), (iv), (v) và (vi) $\rightarrow$ $x \in V'\( 0,1 \)$ $\rightarrow$ từ $x$ không có nước tới $\( 1,1 \)$ theo (iii) $\rightarrow$ $j=1$ (tương tự với $x=\( i,0 \)$ với $i>0$ $\rightarrow$ $x \in V'\( 1,0 \)$ ). <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(3) Nếu $x=\( 1,j \)$ với $j>0$ , từ $x$ có nước tới $\( 0,0 \)$ (tức $V'\( 0,0 \)$ ) không có nước tới $V'\( 1,0 \) \cup V'\( 1,1 \)$ $\rightarrow$ $x$ phải thỏa mãn (a'), mặt khác  $x \notin V'\( 0,1 \) \cup V'\( 1,0 \) \cup V'\( 0,0 \)$ do (i), (iii) và (iv) $\rightarrow$ $x \in V'\( 1,1 \)$ $\rightarrow$ từ $x$ không có nước tới $\( 0,1 \)$ theo (v) $\rightarrow$ $j=1$ (tương tự với $x=\( i,1 \)$ với $i>0$ $\rightarrow$ $i=1,x \in V'\( 1,1 \)$ ). <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(4) Nếu $x=\( 1,j \)$ với $i,j \ge 2$ , theo quy nạp, mọi điểm từ $x$ dẫn tới đều $V\( 0,1 \) \cup V\( 1,0 \) \cup V\( k,k \)$ $\rightarrow$ từ $x$ có các nước dẫn tới $\( 0, \textunderscore \) , \( 1, \textunderscore \), \( \textunderscore,0 \), \( \textunderscore,1 \)$ và $\( k,k \)$ với $2 \le k \le i-1$ , như vậy $x$ thỏa mãn ít nhất (b') và (c'), do đó $x \notin V'\( 1,0 \) \cup V'\( 0,0 \) \cup V'\( 1,1 \)$ , không có nước dẫn tới $\( i,i \)$ $\rightarrow$ $j= \text{Mex} \\{ k \le i-1 \\} = i$ . <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mệnh đề quy nạp đã được chứng minh. Mặt khác các điểm có $d(x)=0$ mặc nhiên thỏa mãn ***định lý 1.2*** (chúng chính là các tận điểm, và vì thế $=\( 0,1 \)$ ), quy nạp hoàn tất. <br>
 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\Longrightarrow$ Chứng minh ***<ins>định lí 1.2</ins>*** hoàn tất <br>
+
+#### &nbsp;&nbsp;&nbsp;&nbsp; *b. Tổng của các tame game*
 
 
 
