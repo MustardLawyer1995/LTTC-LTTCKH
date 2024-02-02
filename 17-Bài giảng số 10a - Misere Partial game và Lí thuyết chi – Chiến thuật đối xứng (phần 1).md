@@ -75,7 +75,8 @@
 &nbsp;&nbsp;&nbsp;&nbsp;Nếu $A_1$ và $A_2$ là 2 tame game thì game $A=A_{1}+A_{2}$ cũng là tame game. <br>
 
 &nbsp;&nbsp;&nbsp;&nbsp;*<ins>Chứng minh định lí 2.1:</ins>* <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quy ước trạng thái $x$ của $A$ tương ứng với $x_1$ ở $A_1$ và $x_2$ ở $A_2$ , ký hiệu $x=\[ x_{1};x_{2} \]$ . Game $A$ gồm 4 tập trạng thái $V'\( 0,1 \), V'\( 1,0 \), V'\( 0,0 \), V'\( 1,1 \)$ như sau: <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quy ước trạng thái $x$ của $A$ tương ứng với $x_1$ ở $A_1$ và $x_2$ ở $A_2$ , ký hiệu $x=\[ x_{1};x_{2} \]$ . <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Game $A$ gồm 4 tập trạng thái $V'\( 0,1 \), V'\( 1,0 \), V'\( 0,0 \), V'\( 1,1 \)$ như sau: <br>
 
 ```math
 \left\{ \begin{array}{l}
@@ -85,6 +86,28 @@ V'\left( {0,0} \right) = \left\{ {\left[ {\left( {0,1} \right),\left( {0,0} \rig
 V'\left( {1,1} \right) = \left\{ {\left[ {\left( {0,1} \right),\left( {1,1} \right)} \right],\left[ {\left( {1,0} \right),\left( {0,0} \right)} \right],\left[ {\left( {2n,2n} \right),\left( {2n + 1,2n + 1} \right)} \right]} \right\},\forall n \in \mathbb{N}
 \end{array} \right.
 ```
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(các trường hợp đối xứng như $\[ a;b \]$ và $\[ b;a \]$ sẽ không được viết đầy đủ ra, ta cần hiểu là chúng có được tính đến). <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ta thấy 4 tập hợp này hoàn toàn thỏa mãn các mệnh đề từ (i) đến (vii) của ***định lý 1.2*** nên $A$ chính là một tame game, và ***hệ quả phụ của (1.2)*** cho biết: $V\( 0,1 \) = V'\( 0,1 \) ; V\( 1,0 \) = V'\( 1,0 \) ; V\( 0,0 \) = V'\( 0,0 \) ; V\( 1,1 \) = V'\( 1,1 \)$ . <br>
+
+#### *<ins>Hệ quả 2.2</ins>*
+&nbsp;&nbsp;&nbsp;&nbsp;Nếu $A_{1};A_{2};...;A_{n}$ là tame game thì game $A=A_{1}+A_{2}+...+A_{n}$ cũng là tame game. Hơn nữa, một trạng thái $x= \[ x_{1};x_{2};...x_{n} \]$ ở $A$ là hoán điểm $\Leftrightarrow$ $x_{1};x_{2};...x_{n}$ đều là hoán điểm. <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Chứng minh hệ quả 2.2:</ins>* <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phép cộng các trò chơi con thành 1 trò chơi tổng hoàn toàn thỏa mãn các **tính chất giao hoán**, kết hợp y như phép cộng đại số; bởi ***định lý 2.1*** nên $A=A_{1}+A_{2}$ cũng là tame game $\rightarrow$ $\( A_{1}+A_{2} \) +A_{3} = A_{1}+A_{2}+A_{3}$ là tame game $\rightarrow$ $\( A_{1}+A_{2}+A_{3} \) +A_{4} = A_{1}+A_{2}+A_{3}+A_{4}$ là tame game $\rightarrow$ ... $\rightarrow$ $A=A_{1}+A_{2}+...+A_{n}$ cũng là tame game. <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Nhận xét:</ins>* <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hơn nữa, các tập trạng thái từ ***định lý 2.1*** cho biết để $x= \[ \[ x_{1};x_{2};...x_{n-1} \] ; x_{n} \]$ là hoán điểm thì $\[ x_{1};x_{2};...x_{n-1} \]$ và $x_n$ đều phải là hoán điểm, để $\[ x_{1};x_{2};...x_{n-1} \]$ là hoán điểm thì $\[ x_{1};x_{2};...x_{n-2} \]$ và $x_{n-1}$ đều phải là hoán điểm,...,theo cách tương tự ta suy ra $x_{1};x_{2};...x_{n}$ đều là hoán điểm. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Có thể suy diễn theo chiều ngược lại để chứng minh rằng nếu $x_{1};x_{2};...x_{n}$ đều là hoán điểm thì $x= \[ x_{1};x_{2};...x_{n} \]$ là hoán điểm. <br>
+
+#### &nbsp;&nbsp;&nbsp;&nbsp; *c. Chiến lược cho tame game*
+&nbsp;&nbsp;&nbsp;&nbsp;Khi chơi theo luật misere, nếu tame game chỉ gồm 1 game con đơn lẻ, chỉ việc tính toán số misere nimber $(G^{-})$ của nó, rồi liên tục thực hiện các nước đi để đưa $G^-$ về 0, với điều kiện là $G^{-} \ne 0$ khi tới lượt bạn (giống như giá trị $G^+$ khi chơi theo luật normal). (\*) <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;Nếu game đang xét là tổng của nhiều tame game, theo ***định lí 2.1*** nó cũng là tame game và vì thế các trạng thái của nó sẽ có $\( G^{+};G^{-} \)$ rơi vào $\( 0,1 \),\( 1,0 \),\( k,k \)$ với $k \in \mathbb{N}$ . Nhờ vậy có thể suy ra được $G^-$ của 1 trạng thái từ $G^+$ của nó (mà  lại có thể được tính toán thuận tiện qua tổng xor). Nếu $G^{+}=k \ge 2$ thì $G^{+} = G^{-} = k$ ; nếu $G^{+} = 0$ hoặc $1$ thì $G^{-} = 0$ hoặc $1$ chưa thể xác định ngay, song khó khăn này được giải quyết bởi ***hệ quả 2.2***. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Khi $G^{+} = 0$ , trạng thái hiện tại có thể là $\( 0,1 \)$ hoặc $\( 0,0 \)$ , nếu là $\( 0,1 \)$ (hoán điểm) thì các game con đều phải đang ở thế $\( 0,1 \)$ và $\( 1,0 \)$ , chỉ cần có ít nhất 1 game con đang không ở thế hoán điểm là đủ để kết luận game tổng cũng đang không ở thế hoán điểm (tức là nó đang ở thế $\( 0,0 \)$ , $G^{-} = 0$ ). Tương tự với trường hợp $G^{+} = 1$ . <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Khi đã biết cách tính $G^{-}$ của game tổng thì ta có thể thực hiện chiến lược theo phương thức như ở (*). Một cách nôm na, vì mục tiêu là đưa đối thủ về các trạng thái có $G^{-} = 0$ , chỉ cần đưa đối thủ về $\( 0,0 \)$ hoặc $\( 1,0 \)$ , nếu nước đi tiếp theo của bạn làm cho các game con đều ở thế $\( 0,1 \)$ và $\( 1,0 \)$ thì hãy đưa $G^{+}$ về 1 (nói cách khác là tạo ra 1 số lẻ các game con ở thế $\( 1,0 \)$ ); nếu không, hãy đưa   về 0. (chắc các bạn đã nhận ra nó giống chiến lược của misere nim game ở ***mục 1/***). <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;Các bạn có biết vì sao người ta lại chọn tame game để nghiên cứu không (dù nó không có tính tổng quát) ? <br>                       &nbsp;&nbsp;&nbsp;&nbsp; $\Longrightarrow$ Vì trong thực tế các impartial game phổ biến đều có dạng tame game (như 1 sự sắp đặt "tình cờ" của tự nhiên). <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Để hiểu rõ hơn, ta cùng xem qua các ví dụ dưới sau đây. <br>
 
 
 
