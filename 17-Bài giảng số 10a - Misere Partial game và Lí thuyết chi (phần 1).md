@@ -111,12 +111,10 @@ V'\left( {1,1} \right) = \left\{ {\left[ {\left( {0,1} \right),\left( {1,1} \rig
 &nbsp;&nbsp;&nbsp;&nbsp;Để hiểu rõ hơn, ta cùng xem qua các ví dụ dưới sau đây. <br>
 
 &nbsp;&nbsp;&nbsp;&nbsp;*<ins>Ví dụ 1:</ins>* Trò chơi Nim <br>
-<div align="center">
 
-![image](https://github.com/MustardLawyer1995/LTTC-LTTCKH/assets/156400720/0dee0bda-d704-4a1d-95a5-ba461201e4de)
-</div>
-
-&nbsp;&nbsp;&nbsp;&nbsp;Xét 1 đống nim (1 game con), misere nimber tương ứng cho đống $N$ quân là:
+|   |   |
+|:------------:|:------------:|
+| ![image](https://github.com/MustardLawyer1995/LTTC-LTTCKH/assets/156400720/0dee0bda-d704-4a1d-95a5-ba461201e4de) |   &nbsp;&nbsp;&nbsp;&nbsp;Xét 1 đống nim (1 game con), misere nimber tương ứng cho đống $N$ quân là:
                (quy ước),  ,
              .
               (với mọi  ).
@@ -124,9 +122,10 @@ V'\left( {1,1} \right) = \left\{ {\left[ {\left( {0,1} \right),\left( {1,1} \rig
  
    Và từ đây có thể suy ra lời giải cho misere nim game như ở 1/
 
-Right arrow Has just been classified 
+Right arrow Has just been classified <br> |
+ 
 
-
+ 
 
 
 
