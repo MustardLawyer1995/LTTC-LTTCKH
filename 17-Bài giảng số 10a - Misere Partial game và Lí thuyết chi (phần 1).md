@@ -111,20 +111,20 @@ V'\left( {1,1} \right) = \left\{ {\left[ {\left( {0,1} \right),\left( {1,1} \rig
 &nbsp;&nbsp;&nbsp;&nbsp;Để hiểu rõ hơn, ta cùng xem qua các ví dụ dưới sau đây. <br>
 
 &nbsp;&nbsp;&nbsp;&nbsp;*<ins>Ví dụ 1:</ins>* Trò chơi Nim <br>
+<div align="center">
 
 |   |   |
-|:------------:|:------------:|
-| ![image](https://github.com/MustardLawyer1995/LTTC-LTTCKH/assets/156400720/0dee0bda-d704-4a1d-95a5-ba461201e4de) |   &nbsp;&nbsp;&nbsp;&nbsp;Xét 1 đống nim (1 game con), misere nimber tương ứng cho đống $N$ quân là:
-               (quy ước),  ,
-             .
-              (với mọi  ).
-   Như đã nói ở bài về định lý Sprague Grundy, từ đây suy ra nim game là 1 tame game (theo định nghĩa):
- 
-   Và từ đây có thể suy ra lời giải cho misere nim game như ở 1/
+|:------------:|:------------|
+| ![image](https://github.com/MustardLawyer1995/LTTC-LTTCKH/assets/156400720/0dee0bda-d704-4a1d-95a5-ba461201e4de) | &nbsp;Xét 1 đống nim (1 game con), misere nimber tương ứng cho đống $N$ quân là: <br>&nbsp;&nbsp; $G^{-}(0)=1$ (quy ước), $G^{-}(1)=0$ , <br>&nbsp;&nbsp; $G^{-}(2)= \text{Mex} \\{ G^{-}(1);G^{-}(0) \\} = 2,...,G^{-}(N)=N$ với $N \ge 2$ <br>&nbsp;Như đã nói ở bài về *định lý Sprague Grundy*, từ đây suy ra nim game là 1 tame game (theo định nghĩa): <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $N = 0,x = \left( {0,1} \right)$ <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $N = 1,x = \left( {1,0} \right)$ <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $N \ge 2,x = \left( {N,N} \right)$ <br> &nbsp;&nbsp;Và từ đây có thể suy ra lời giải cho misere nim game như ở ***mục 1/*** |
+</div>
 
-Right arrow Has just been classified <br> |
- 
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Ví dụ 2:</ins>* Trò chơi loại trừ <br>
+<div align="center">
 
+|   |   |
+|:------------:|:------------|
+| ![image](https://github.com/MustardLawyer1995/LTTC-LTTCKH/assets/156400720/62fbb192-79a1-4fc2-992b-c84b2b6d7ef5) | &nbsp;Xét 1 đống nim (1 game con), misere nimber tương ứng cho đống $N$ quân là: <br>&nbsp;&nbsp; $G^{-}(0)=1$ (quy ước), $G^{-}(1)=0$ , <br>&nbsp;&nbsp; $G^{-}(2)= \text{Mex} \\{ G^{-}(1);G^{-}(0) \\} = 2,...,G^{-}(N)=N$ với $N \ge 2$ <br>&nbsp;Như đã nói ở bài về *định lý Sprague Grundy*, từ đây suy ra nim game là 1 tame game (theo định nghĩa): <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $N = 0,x = \left( {0,1} \right)$ <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $N = 1,x = \left( {1,0} \right)$ <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $N \ge 2,x = \left( {N,N} \right)$ <br> &nbsp;&nbsp;Và từ đây có thể suy ra lời giải cho misere nim game như ở ***mục 1/*** |
+</div>
  
 
 
