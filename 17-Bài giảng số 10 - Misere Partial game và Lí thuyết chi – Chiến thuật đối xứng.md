@@ -68,6 +68,25 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\Longrightarrow$ Chứng minh ***<ins>định lí 1.2</ins>*** hoàn tất <br>
 
 #### &nbsp;&nbsp;&nbsp;&nbsp; *b. Tổng của các tame game*
+&nbsp;&nbsp;&nbsp;&nbsp;Xét 1 game được tạo thành từ tổng của nhiều tame game. Ta sẽ chứng minh nó cũng là tame game, và vì vậy game này sẽ chỉ gồm các trạng thái $\( 0,1 \), \( 1,0 \), \( k,k \)$ , $k \in \mathbb{N}$ , thuận tiện để tìm ra chiến lược tất thắng. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Cần nhắc lại về định nghĩa tổng của 2 game: $A_1$ và $A_2$ là 2 impartial game, xét 1 trò chơi $A$ gồm $A_1$ và $A_2$ được chơi đồng thời, với quy ước rằng ở mỗi lượt người chơi chỉ được phép thực hiện 1 nước đi trong $A_1$ hoặc $A_2$ , không phải là cả 2, cũng không được phép không đi nước nào (bỏ lượt), khi đó $A$ cũng là 1 impartial game và được gọi là tổng của 2 trò chơi con $A_1$ và $A_2$ ( $A=A_{1}+A_{2}$ ). Tương tự nếu $A$ là tổng của từ 3 trò chơi con trở lên. <br>
+
+#### *<ins>Định lí 2.1</ins>*
+&nbsp;&nbsp;&nbsp;&nbsp;Nếu $A_1$ và $A_2$ là 2 tame game thì game $A=A_{1}+A_{2}$ cũng là tame game. <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Chứng minh định lí 2.1:</ins>* <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quy ước trạng thái $x$ của $A$ tương ứng với $x_1$ ở $A_1$ và $x_2$ ở $A_2$ , ký hiệu $x=\[ x_{1};x_{2} \]$ . Game $A$ gồm 4 tập trạng thái $V'\( 0,1 \), V'\( 1,0 \), V'\( 0,0 \), V'\( 1,1 \)$ như sau: <br>
+
+```math
+\left\{ \begin{array}{l}
+V'\left( {0,1} \right) = \left\{ {\left[ {\left( {0,1} \right),\left( {0,1} \right)} \right],\left[ {\left( {1,0} \right),\left( {1,0} \right)} \right]} \right\}{\rm{                 }}\
+V'\left( {1,0} \right) = \left\{ {\left[ {\left( {0,1} \right),\left( {1,0} \right)} \right]} \right\}\
+V'\left( {0,0} \right) = \left\{ {\left[ {\left( {0,1} \right),\left( {0,0} \right)} \right],\left[ {\left( {1,0} \right),\left( {1,1} \right)} \right],\left[ {\left( {n,n} \right),\left( {n,n} \right)} \right]} \right\},\forall n \in \mathbb{N} \
+V'\left( {1,1} \right) = \left\{ {\left[ {\left( {0,1} \right),\left( {1,1} \right)} \right],\left[ {\left( {1,0} \right),\left( {0,0} \right)} \right],\left[ {\left( {2n,2n} \right),\left( {2n + 1,2n + 1} \right)} \right]} \right\},\forall n \in \mathbb{N}
+\end{array} \right.
+```
+
+
 
 
 
