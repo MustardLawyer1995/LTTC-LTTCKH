@@ -106,11 +106,25 @@ V'\left( {1,1} \right) = \left\{ {\left[ {\left( {0,1} \right),\left( {1,1} \rig
 &nbsp;&nbsp;&nbsp;&nbsp;Khi $G^{+} = 0$ , trạng thái hiện tại có thể là $\( 0,1 \)$ hoặc $\( 0,0 \)$ , nếu là $\( 0,1 \)$ (hoán điểm) thì các game con đều phải đang ở thế $\( 0,1 \)$ và $\( 1,0 \)$ , chỉ cần có ít nhất 1 game con đang không ở thế hoán điểm là đủ để kết luận game tổng cũng đang không ở thế hoán điểm (tức là nó đang ở thế $\( 0,0 \)$ , $G^{-} = 0$ ). Tương tự với trường hợp $G^{+} = 1$ . <br>
 &nbsp;&nbsp;&nbsp;&nbsp;Khi đã biết cách tính $G^{-}$ của game tổng thì ta có thể thực hiện chiến lược theo phương thức như ở (*). Một cách nôm na, vì mục tiêu là đưa đối thủ về các trạng thái có $G^{-} = 0$ , chỉ cần đưa đối thủ về $\( 0,0 \)$ hoặc $\( 1,0 \)$ , nếu nước đi tiếp theo của bạn làm cho các game con đều ở thế $\( 0,1 \)$ và $\( 1,0 \)$ thì hãy đưa $G^{+}$ về 1 (nói cách khác là tạo ra 1 số lẻ các game con ở thế $\( 1,0 \)$ ); nếu không, hãy đưa   về 0. (chắc các bạn đã nhận ra nó giống chiến lược của misere nim game ở ***mục 1/***). <br>
 
-&nbsp;&nbsp;&nbsp;&nbsp;Các bạn có biết vì sao người ta lại chọn tame game để nghiên cứu không (dù nó không có tính tổng quát) ? <br>                       &nbsp;&nbsp;&nbsp;&nbsp; $\Longrightarrow$ Vì trong thực tế các impartial game phổ biến đều có dạng tame game (như 1 sự sắp đặt "tình cờ" của tự nhiên). <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Các bạn có biết vì sao người ta lại chọn tame game để nghiên cứu không (dù nó không có tính tổng quát) ? <br>                       
+&nbsp;&nbsp;&nbsp;&nbsp; $\Longrightarrow$ Vì trong thực tế các impartial game phổ biến đều có dạng tame game (như 1 sự sắp đặt "tình cờ" của tự nhiên). <br>
 &nbsp;&nbsp;&nbsp;&nbsp;Để hiểu rõ hơn, ta cùng xem qua các ví dụ dưới sau đây. <br>
 
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Ví dụ 1:</ins>* Trò chơi Nim <br>
+<div align="center">
 
+![image](https://github.com/MustardLawyer1995/LTTC-LTTCKH/assets/156400720/0dee0bda-d704-4a1d-95a5-ba461201e4de)
+</div>
 
+&nbsp;&nbsp;&nbsp;&nbsp;Xét 1 đống nim (1 game con), misere nimber tương ứng cho đống $N$ quân là:
+               (quy ước),  ,
+             .
+              (với mọi  ).
+   Như đã nói ở bài về định lý Sprague Grundy, từ đây suy ra nim game là 1 tame game (theo định nghĩa):
+ 
+   Và từ đây có thể suy ra lời giải cho misere nim game như ở 1/
+
+Right arrow Has just been classified 
 
 
 
