@@ -23,7 +23,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•2) Từ $x$ có nước tới $\( 0;1 \)$ , không có nước tới $\( 1;0 \)$ $\rightarrow$ $x= \( 1;0 \)$ . <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•3) Từ $x$ có nước tới $\( 1;0 \)$ , không có nước tới $\( 0;1 \)$ $\rightarrow$ $x= \( 0;1 \)$ . <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•4) Từ $x$ không có nước tới cả $\( 1;0 \)$ và $\( 0;1 \)$ $\rightarrow$ $x= \( 0;0 \)$ . <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\rightarrow$ Rõ ràng •4) không thể xảy ra theo<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\rightarrow$ Rõ ràng •4) không thể xảy ra theo theo dữ kiện game $A$ thỏa mãn (ii) $\rightarrow$ $x$ thỏa định nghĩa pet game.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\rightarrow$ Theo quy nạp, ta có điều phải chứng minh. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chứng minh (i) $\longleftarrow$ (iii): Tương tự, quy nạp rằng trong 1 game $A$ thỏa mãn (iii), nếu mọi $x$ với $d(x) \le D$ đều thỏa mãn (i) thì bất cứ $x$ nào có $d(x)=D+1$ cũng thỏa mãn (i). Xét $x$ có $d(x)=D+1$ , ta cũng có các trường hợp sau xảy ra: <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•1) Nếu $x=\( 0;j \)$ , $x$ có thể đi tới $\( 1;0 \)$ và không thể đi tới $\( 0;1 \)$ $\rightarrow$ $j=\text{Mex} \\{ 0 \\} = 1$ (tương tự với $x=\( 1;0 \)$ ). <br>
