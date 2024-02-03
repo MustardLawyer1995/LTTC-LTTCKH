@@ -136,9 +136,24 @@ V'\left( {1,1} \right) = \left\{ {\left[ {\left( {0,1} \right),\left( {1,1} \rig
 
 &nbsp;&nbsp;&nbsp;&nbsp; $\Longrightarrow$ Euclid game cũng là tame game. Cách tính các giá trị $G^{+}/G^{-}$ của nó sẽ được nói tới trong 1 bài riêng  (trong ảnh là bảng giá trị $G^+$ với 2 đống có kích thước $\\{ a,b \\}$ ). <br>
 
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Ví dụ 4:</ins>* Grundy Game <br>
+<div align="center">
 
+![image](https://github.com/MustardLawyer1995/LTTC-LTTCKH/assets/156400720/52629785-e733-4090-9f86-cde109905ddb)
+</div>
 
+&nbsp;&nbsp;&nbsp;&nbsp;Như bài trước đã giới thiệu, đây là dạng trò chơi tách số, ở mỗi lượt người chơi tách 1 số ra thành 2 số không bằng nhau có tổng bằng số ban đầu, trò chơi kết thúc khi trên bàn chỉ toàn các số 1 và 2. Trên ảnh là dãy giá trị $G^+$ cho các số khác nhau. Giờ ta thử đi tính dãy $G^-$ của nó, đây là kết quả cho 14 số tự nhiên đầu tiên gồm cả 0: <br>
+<div align="center">
+ 
+$1,{\rm{ }}1,{\rm{ }}1,{\rm{ }}0,{\rm{ }}1,{\rm{ }}2,{\rm{ }}0,{\rm{ }}1,{\rm{ }}2,{\rm{ }}0,{\rm{ }}1,{\rm{ }}2,{\rm{ }}0,{\rm{ }}1,...$
+</div>
 
+&nbsp;&nbsp;&nbsp;&nbsp;Ta thấy các số từ $0$ tới $12$ đều thỏa mãn định nghĩa Tame game, nhưng ${G^ - }\left( {13} \right) = 1,{\rm{ }}{G^ + }\left( {13} \right) = 3 \rightarrow \\{ 13 \\} = \( 3;1 \)$ tức vi phạm định nghĩa tame game. <br>   
+&nbsp;&nbsp;&nbsp;&nbsp;Tuy nhiên nếu 1 ván Grundy game chỉ gồm toàn các số $\le 12$ thì ta vẫn áp dụng chiến lược của tame game được, lý do là tất cả các số $\le 12$ đều là các điểm $\( 0;1 \);\( 1;0 \);\( k;k \)$ thỏa mãn định nghĩa tame game, ta gọi đây là 1 kiểu tame game cục bộ (Grundy game không phải tame game trên toàn bộ trò chơi nhưng là tame game nếu chỉ giới hạn trong 1 tập trạng thái nhỏ). <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Chứng minh cho ý "Grundy game chỉ gồm các số không quá 12 là tame game" không quá khó, nhưng nó không đơn giản đến mức hiển nhiên theo kiểu "nhìn là thấy ngay được". Bởi vì mỗi nước đi ở một số sẽ tách nó thành 2 số, ta cần phải chứng minh rằng trò chơi gồm 2 số này là tame game. Nếu mỗi số trong đó khi xét riêng rẽ đều là tame game thì trò chơi gồm cả 2 số cũng là tame game (***định lý 2.1*** trong bài) <br>
+&nbsp;&nbsp;&nbsp;&nbsp; $\Rightarrow$ Quy nạp $\Longrightarrow$ Kết luận được chứng minh. <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Mở rộng:</ins>* Trò chơi Trừ bình phương có phải tame game hay không? Hôm nay chúng ta cùng đi tìm câu trả lời cho vấn đề này, trên tất cả, nhiều khi để giải đáp được 1 câu hỏi, ta phải đi ra ngoài vấn đề đang được xét, đến những địa hạt rộng lớn hơn... <br>
 
 
 
