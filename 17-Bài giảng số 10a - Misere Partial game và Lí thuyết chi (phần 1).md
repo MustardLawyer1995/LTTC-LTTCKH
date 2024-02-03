@@ -1,4 +1,4 @@
-# Misere Partial game và Lí thuyết chi
+# Misere Partial game và Lí thuyết chi (phần 1)
 ### 1. Chiến thuật của Misere Nim Game <br>
 &nbsp;&nbsp;&nbsp;&nbsp;Người ta nhận ra 1 điểm kỳ lạ: khi một nim game được chơi theo phiên bản misere, các tính toán trên máy tính cho thấy các nước đi (tối ưu) vẫn giống như trong phiên bản normal, chỉ khác ở những nước đi cuối cùng. Cụ thể, gần về cuối game, nếu 1 tình huống mà ở normal game người thắng phải tạo ra một số lượng chẵn các đống chỉ gồm 1 quân, thì ở misere game, phải tạo số lẻ. Có thể tổng quát chiến lược tất thắng cho misere nim game như sau: <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-	Nimber của mỗi đống được tính theo cách như của normal nim game, tính tổng xor giữa chúng. <br>
