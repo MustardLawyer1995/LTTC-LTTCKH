@@ -60,11 +60,35 @@
 &nbsp;&nbsp;&nbsp;&nbsp;Kết quả ấn tượng của ***định đề 3.1*** nói lên rằng 1 *trò chơi gia giảm* khi chỉ có 1 đống sẽ là *pet game* (và vì vậy cũng là tame game luôn) nên phiên bản gồm nhiều đống của chúng là tổng của nhiều trò chơi con (1 đống) mà mỗi trò chơi con đều là tame game <br>
 &nbsp;&nbsp;&nbsp;&nbsp; $\Longrightarrow$ Trò chơi gia giảm với số lượng đống bất kỳ là tame game bởi ***định lý 2.1*** và ***hệ quả 2.2***. <br>
 
+### 4. Trò chơi trừ bình phương <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Theo định nghĩa, trò chơi ***<ins>Trừ bình phương</ins>*** chính là 1 trò chơi gia giảm với tập $S = \\{ 1,4,9,16,...,k^{2},...\\} \text{ } , \text{ } k \in \mathbb{Z}^+$ , khi đó nó là tame game. Muốn tính dãy $G^{-}(N)$ của nó thì ta phải làm sao ? Viết dãy $G^{+}(N)$ ra, tráo đổi vị trí các số 1 và 0 cho nhau, ta đã có dãy $G^{-}(N)$ (nhớ rằng 1 đống của trò chơi Trừ bình phương là pet game).  <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Qua cuộc phiêu lưu này, ta không chỉ chứng minh được Trừ bình phương là tame game, ta còn thu được 1 kết quả rộng lớn hơn rất nhiều, làm nhẹ gánh cho hành trình khám phá các impartial games về sau... <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Ngoài Trừ bình phương, bạn có thể tự chế ra 1 trò chơi gia giảm nào đó và tha hồ yên tâm rằng chúng vẫn là tame game. Sau đây là trò chơi Trừ nguyên tố do tôi nghĩ ra, người chơi lấy đi lượng quân là số nguyên tố từ 1 đống ở mỗi lượt. Đây là giá trị nimber cho 1 đống có $N$ quân: <br>
 
+```math
+\left\{ {\begin{array}{*{20}{c}}
+{N = \;0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,...}\
+{{G^ + } = 0,0,1,1,2,2,3,3,4,0,0,1,1,2,2,...}\
+{{G^ - } = 1,1,0,0,2,2,3,3,4,1,1,0,0,2,2,...}
+\end{array}} \right.
+```
+<div align="center">
 
+<Đến đây các bạn đọc tự làm.............> <br>
+</div>
 
+### 5. Chiến lược đối xứng <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Trong thực tế có nhiều impartial game mà việc khám phá ra quy luật giá trị nimber của chúng rất khó. Nhưng nếu mục đích chỉ là tìm chiến lược tất thắng cho những game này thì không cần phức tạp đến vậy, chúng có chiến lược đối xứng. <br>
+<div align="center">
 
+Hình 1            | Hình 2
+:-------------------------:|:-------------------------:
+![image](https://github.com/MustardLawyer1995/LTTC-LTTCKH/assets/156400720/cb22d9e1-c973-45db-a05c-3440a96a7805) | ![image](https://github.com/MustardLawyer1995/LTTC-LTTCKH/assets/156400720/c859ce4e-6753-4090-b06e-ffabd961dc03)
+</div>
 
+&nbsp;&nbsp;&nbsp;&nbsp;-	***<ins>Kayles:</ins>*** Là một impartial game đơn giản, được phát minh bởi Henry Dudeney vào năm 1908. Gồm một hàng
+các chốt bowling tưởng tượng, người chơi thay phiên nhau để hạ 1 hoặc 2 chốt liền kề, cho đến khi hết các chốt. Ai không còn nước đi khi đến lượt sẽ thua (quy ước normal) ***(hình 1)***. Không khó để nhận ra rằng người chơi đầu tiên có một chiến thắng đảm bảo bất cứ khi nào độ dài hàng $> 0$ . Chiến thắng này có thể đạt được bằng cách sử dụng chiến lược đối xứng. Trong lần di chuyển đầu tiên của mình, người chơi đầu tiên đi 1 nước sao cho hàng được chia thành 2 phần có độ dài bằng nhau. Điều này hạn chế tất cả các nước đi trong tương lai có thể tác động tới cả 2 phần. Bây giờ, người chơi thứ nhất chỉ cần bắt chước các động thái của người chơi thứ 2 ở hàng đối diện. Điều này đảm bảo rằng người chơi thứ nhất sẽ luôn là người đi nước cuối cùng và giành chiến thắng. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;-	***<ins>Cram:</ins>*** Trò chơi được chơi trên một bảng hình chữ nhật/hình vuông. Hai người chơi lần lượt đặt các quân domino (miếng gỗ $1 \times 2$ ) lên bảng, theo chiều ngang hoặc dọc. Người chơi đầu tiên không còn nước đi sẽ thua ***(hình 2)***. Chiến lược thắng cho Cram rất đơn giản đối với các bảng $n \times m$ , $n$ chẵn và $m$ chẵn. Trong trường hợp này, người chơi thứ 2 thắng bằng cách chơi đối xứng. Điều này có nghĩa là với bất kỳ động tác nào mà người chơi 1 thực hiện, người chơi 2 có 1 động tác đối xứng tương ứng (đối xứng tâm). Theo một nghĩa nào đó, người chơi 2 "bắt chước" các động tác được thực hiện bởi Người chơi 1. Nếu người chơi 2 tuân theo chiến lược này, anh ta sẽ luôn thực hiện nước đi cuối cùng, và do đó giành chiến thắng trong trò chơi. Trường hợp $n$ chẵn, $m$ lẻ, người chơi đầu tiên thắng bằng cách chơi đối xứng tương tự. Người chơi 1 đặt domino đầu tiên của mình vào chính giữa bảng. Người chơi 2 sau đó thực hiện nước đi của mình, nhưng người chơi 1 có thể chơi đối xứng để bắt chước người chơi 2, do đó đảm bảo chiến thắng cho người chơi 1. Chơi đối xứng là một chiến lược vô dụng trong phiên bản misère, bởi vì trong trường hợp đó, nó chỉ đảm bảo cho người chơi rằng anh ta sẽ thua. <br>
 
 
 
