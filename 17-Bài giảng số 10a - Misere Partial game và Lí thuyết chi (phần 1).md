@@ -139,7 +139,9 @@ V'\left( {1,1} \right) = \left\{ {\left[ {\left( {0,1} \right),\left( {1,1} \rig
 &nbsp;&nbsp;&nbsp;&nbsp;*<ins>Ví dụ 4:</ins>* Grundy Game <br>
 <div align="center">
 
-![image](https://github.com/MustardLawyer1995/LTTC-LTTCKH/assets/156400720/52629785-e733-4090-9f86-cde109905ddb)
+| Heap Size: | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | ... |
+|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
+| Equivalent Nim heap: | 0 | 0 | 0 | 1 | 0 | 2 | 1 | 0 | 2 | 1 | 0 | 2 | 1 | 3 | 2 | 1 | 3 | 2 | 4 | 3 | 0 | ... |
 </div>
 
 &nbsp;&nbsp;&nbsp;&nbsp;Như bài trước đã giới thiệu, đây là dạng trò chơi tách số, ở mỗi lượt người chơi tách 1 số ra thành 2 số không bằng nhau có tổng bằng số ban đầu, trò chơi kết thúc khi trên bàn chỉ toàn các số 1 và 2. Trên ảnh là dãy giá trị $G^+$ cho các số khác nhau. Giờ ta thử đi tính dãy $G^-$ của nó, đây là kết quả cho 14 số tự nhiên đầu tiên gồm cả 0: <br>
