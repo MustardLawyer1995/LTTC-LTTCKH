@@ -56,7 +56,11 @@ $\\{ a;ka \\} = \( k-1;k-1 \)$ với $k \ge 3$ ; $\\{ 3a;2a \\} = \( 0;1 \)$ ; $
 \LARGE \frac{b}{a} = a_{0} + \cfrac{1}{a_{1} + \cfrac{1}{a_{2} + \cfrac{1}{\ddots a_{n-1} + \cfrac{1}{a_n}}}}
 ```
 #### *<ins>Định lí 1</ins>*
-&nbsp;&nbsp;&nbsp;&nbsp; $\[ a_{0};a_{1};...;a_{n} \]$ là dạng liên phân số $\frac{b}{a}$ và $I\( a;b \)$ là số $i$ lớn nhất thỏa 
+&nbsp;&nbsp;&nbsp;&nbsp;Nếu $\[ a_{0};a_{1};...;a_{n} \]$ là dạng liên phân số $\frac{b}{a}$ và $I\( a;b \)$ là số $i$ lớn nhất thỏa $a_{0} = a_{1} = ... a{i-1} \le a_{i}$ với $\lfloor x \rfloor$ là hàm làm tròn dưới, thì khi ấy ta có: <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1) $G\( a;b \) = \left\lfloor {\frac{b}{a}} \right\rfloor$ nếu $I\( a;b \)$ chẵn. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2) $G\( a;b \) = \left\lfloor {\frac{b}{a}} \right\rfloor - 1$ nếu $I\( a;b \)$ lẻ. <br>
+
+
 
 
 
