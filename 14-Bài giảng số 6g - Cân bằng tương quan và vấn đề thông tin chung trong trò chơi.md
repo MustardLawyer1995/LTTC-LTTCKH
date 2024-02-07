@@ -10,6 +10,15 @@
 &nbsp;&nbsp;&nbsp;&nbsp;với $\Omega$ xác định các xác suất có điều kiện $p\( a_{-k}|a_{k} \)$
 
 &nbsp;&nbsp;&nbsp;&nbsp;Định nghĩa trên có vẻ hơi phức tạp? Hãy xem qua ví dụ trực quan sau:  <br>
+<div align="center">
+
+|  | D | C |
+|:--------:|:--------:|:--------:|
+|    **D**    |    $0,0$   |    $7,2$    |
+|    **C**    |    $2,7$   |    $6,6$    |
+
+</div>
+
 &nbsp;&nbsp;&nbsp;&nbsp;Cho một trò chơi (đối xứng) 2 người chơi được xác định như hình trên. Dễ thấy rằng trò chơi này có 3 NE: 2 NE chiến lược thuần túy là $\( D,C \), \( C,D \)$ và 1 NE chiến lược hỗn hợp trong đó mỗi người chơi đều chọn $C$ với xác suất $\frac{2}{3}$ . <br> 
 &nbsp;&nbsp;&nbsp;&nbsp;Bây giờ hãy xem xét một bên thứ 3 rút ngẫu nhiên 1 trong 3 lá bài có nhãn: $\( C,C \), \ ( D,C \), \( C,D \)$ , với cùng xác suất $\frac{1}{3}$ cho mỗi lá. Sau khi rút bài, bên thứ 3 sẽ thông báo cho mỗi người chơi về chiến lược được chỉ định cho họ trên lá bài (nhưng không cho biết chiến lược được chỉ định cho đối thủ của họ). Ta thấy rằng mỗi người chơi sẽ muốn chơi theo chiến lược được chỉ định trên lá bài nếu đối thủ của họ cũng làm như vậy. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;Giả sử một người chơi - tạm gọi là player $\mathbb{I}$ - được chỉ định $D$ (ngụ ý rằng đối thủ của anh ta - player $\mathbb{II}$ - đã được chỉ định $C$ ), anh ta sẽ không muốn làm trái lại chỉ định nếu player $\mathbb{II}$ chơi theo chỉ định (player $\mathbb{I}$ sẽ nhận được 7 khi chơi $D$ , cao hơn 6, phần thưởng khi chơi $C$ ). Ngược lại, giả sử player $\mathbb{I}$ được chỉ định $C$ . Khi đó player $\mathbb{II}$ sẽ được chỉ định chơi $C$ với xác suất (có điều kiện) là $\frac{1}{2}$ và $D$ với xác suất là $\frac{1}{2}$ . <br>
