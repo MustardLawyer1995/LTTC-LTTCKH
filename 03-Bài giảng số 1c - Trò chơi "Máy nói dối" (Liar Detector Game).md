@@ -53,7 +53,7 @@ Ta đặt ra một khái niệm là "mạng sống" của bộ số 🐧. Khi m�
 &nbsp;&nbsp;&nbsp;&nbsp;Cuối cùng ta chỉ còn phải xét các trường hợp sau, rất dễ nên chỉ cần nói qua: <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- $\[ 1N', 1Q' \]$ (còn 3 câu): chỉ còn 2 bộ số, nên cứ chia chúng ra 2 nhóm rồi hỏi, vì $N'$ có 3 mạng nên chỉ cần tối đa 3 lần hỏi. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- $\[ 1P', 1Q' \]$ (còn 2 câu): tương tự như trên, nhưng $P'$ có 2 mạng nên chỉ cần 2 lần hỏi. <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- $\[ 4Q' \]$ (còn 2 câu): liên tục chia những bộ số còn lại thành 2 phần bằng nhau, mỗi câu hỏi lọc được một nửa các bộ số => chỉ cần 2 lần hỏi. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- $\[ 4Q' \]$ (còn 2 câu): liên tục chia những bộ số còn lại thành 2 phần bằng nhau, mỗi câu hỏi lọc được một nửa các bộ số $\Rightarrow$ chỉ cần 2 lần hỏi. <br>
 
 &nbsp;&nbsp;&nbsp;&nbsp;Như vậy, chỉ cần 13 câu hỏi được thiết lập theo những quy tắc trên là đủ để tìm ra bộ 6 số đúng với độ chính xác 100%. <br>
 
