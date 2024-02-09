@@ -43,7 +43,7 @@ Hình 1            | Hình 2
 &nbsp;&nbsp;&nbsp;&nbsp; $\Longrightarrow$Đây đều là các thế thua cho người đi trước. Bổ đề đã được chứng minh. <br>
    
 &nbsp;&nbsp;&nbsp;&nbsp;*<ins>Nhận xét</ins>*   
-&nbsp;&nbsp;&nbsp;&nbsp;Từ bổ đề, nếu trò chơi bắt đầu với số lẻ bảng, người chơi trước chỉ cần đánh vào trung tâm của 1 bảng và trò chơi bị rơi vào thế $W$ ở lượt sau $\rightarrow$ người chơi đầu tiên thắng; nếu trò chơi bắt đầu với chẵn bảng thì bản thân trạng thái này đã là thế $W$ theo định nghĩa rồi $\rightarrow$người chơi trước thua. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Từ bổ đề, nếu trò chơi bắt đầu với số lẻ bảng, người chơi trước chỉ cần đánh vào trung tâm của 1 bảng và trò chơi bị rơi vào thế $W$ ở lượt sau $\rightarrow$ Người chơi đầu tiên thắng; nếu trò chơi bắt đầu với chẵn bảng thì bản thân trạng thái này đã là thế $W$ theo định nghĩa rồi $\rightarrow$ Người chơi trước thua. <br>
 
 
 
