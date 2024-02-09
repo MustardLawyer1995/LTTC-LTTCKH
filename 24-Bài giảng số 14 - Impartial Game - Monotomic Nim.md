@@ -16,7 +16,7 @@ b_{1}=a_{1};b_{2}=a_{2}-1;b_{3}=a_{3}-2;...;b_{i}=a_{i}-i+1;...;b_{n}=a_{n}-n+1
 
 &nbsp;&nbsp;&nbsp;&nbsp;*<ins>Bổ đề:</ins>* Monotonic nim game gồm $2k$ đống: $a_{1};a_{2};a_{3};...a_{2k-1};a_{2k}$ tương đương với nim game gồm $k$ đống: $b_{1};b_{2};...;b_{k}$ trong đó số lượng quân trong đống là: $b_{i}=a_{2i}-a_{2i-1}$ . <br>
 
-&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Chứng minh bổ đề:</ins>*
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Chứng minh bổ đề:</ins>* <br>
 &nbsp;&nbsp;&nbsp;&nbsp;Với một monotonic nim game đang ở trạng thái trên, dễ thấy một động thái làm giảm đống $a_{2i}$ của người chơi tương tự như động thái làm giảm đống bi trong nim game tương đương (với số lượng quân bị lấy ra là tương đương), điều này cũng phù hợp với yêu cầu $a_{2i-1} \le a_{2i}$ của luật monotonic nim và vì thế đảm bảo số lượng $b_{i} \ge 0$ . Mặt khác, nếu bạn làm giảm đống $a_{2i-1}$ , đống bi sẽ tăng lên một lượng tương đương, nhưng ở lượt tiếp theo đối phương có thể làm giảm một lượng tương đương ở đống $a_{2i}$ khiến đống bi giảm trở lại mức ban đầu, hành động vừa rồi của đối thủ chính là một nước đi "undo" lại bước bạn vừa thực hiện. Nếu nhìn nhận theo cách này, monotonic nim game chính là một nim game thông thường nhưng có thêm những "động thái khả đảo" - những nước đi làm giảm các đống $a_{2i-1}$ (hay chính là làm tăng đống bi tương ứng) , như những gì đã nói tới ở các bài trước, chúng là 2 trò chơi tương đương và có giá trị nimber tương ứng là như nhau. <br>
 &nbsp;&nbsp;&nbsp;&nbsp; $\Longrightarrow$ Hoàn tất chứng minh. <br>
 
