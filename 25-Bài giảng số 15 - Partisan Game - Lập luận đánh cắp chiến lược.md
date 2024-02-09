@@ -43,6 +43,11 @@
 &nbsp;&nbsp;&nbsp;&nbsp;Số tự nhiên ban đầu có thể là tích của nhiều hơn 2 số nguyên tố. Trò chơi này là mô hình $n$ chiều của chomp, số tự nhiên ban đầu có $n$ thừa số nguyên tố và kích thước của thanh chocolate quyết định bởi số mũ của các số nguyên tố, lập luận đánh cắp chiến lược vẫn còn giá trị. <br>
 
 #### Ví dụ 4: Hệ thống tiền tệ Sylver
+<div align="center">
+
+![image](https://github.com/MustardLawyer1995/LTTC-LTTCKH/assets/156400720/fdfec7f7-16ca-49e6-a74d-779046f1eee3)
+</div>
+
 &nbsp;&nbsp;&nbsp;&nbsp;Một trò chơi toán học dành cho 2 người chơi, được phát minh bởi John H. Conway. 2 người chơi lần lượt gọi tên các số nguyên dương $> 1$ không phải là tổng của bội số không âm của các số nguyên được gọi tên trước đó. Người chơi không thể gọi tên như vậy sẽ thua. Chẳng hạn, nếu người chơi A mở đầu bằng 2, B có thể thắng bằng cách gọi 3. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;Trò chơi được đặt theo tên của *Sylvester* - người đã chứng minh rằng nếu $a,b$ là các số nguyên dương nguyên tố cùng nhau, thì $\( a-1\) \( b-1 \) - 1$ là số lớn nhất không phải là tổng của bội số không âm của $a,b$ . Do đó, nếu $a,b$ là 2 nước đi đầu tiên trong trò chơi thì công thức này cho biết số lớn nhất có thể chơi được sau đó. Con số này phải giảm ở những nước đi tiếp theo. Do đó, trò chơi cuối cùng sẽ phải kết thúc. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;Không giống như nhiều trò chơi toán học tương tự, Tiền tệ Sylver chưa được giải quyết hoàn toàn, chủ yếu là do nhiều trạng thái có vô số động thái có thể. Định lý Hutchings tuyên bố rằng chọn bất kỳ số nguyên tố nào $≥ 5$ làm nước đi đầu tiên đều dẫn đến chiến thắng, nhưng rất ít thông tin về chiến lược cho các nước đi tiếp theo, đây là những cách mở đầu chiến thắng duy nhất được biết đến. Để hiểu được định lý Hutchings, ta cần biết rõ về định lý Sylvester đã nêu trên. <br>
@@ -76,7 +81,7 @@ Nếu người chơi đầu tiên gọi số nguyên tố $n \ge 5$ , thì ngư�
 &nbsp;&nbsp;&nbsp;&nbsp;*<ins>Nhận xét:</ins>* <br>
 &nbsp;&nbsp;&nbsp;&nbsp;Điểm đặc biệt là lập luận đánh cắp chiến lược được sử dụng ở đây không phải để xác định người chiến thắng, nó thiên về việc cho thấy khi giả định $m(L) \ge 1$ , không có ai thắng cả (vì người này thắng thì người kia cũng thắng), từ đó cho thấy giả định $m(L) \ge 1$ không thể xảy ra vì nó dẫn đến hệ quả phi lý như vậy. <br>
 
-#### Phụ lục 2: : Chứng minh Hex game không thể có kết quả hòa
+#### Phụ lục 2: Chứng minh Hex game không thể có kết quả hòa
 
 <div align="center">
 
