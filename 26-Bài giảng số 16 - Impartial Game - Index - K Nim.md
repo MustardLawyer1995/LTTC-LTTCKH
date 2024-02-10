@@ -39,7 +39,8 @@ $G(x) = m$ $\Leftrightarrow$ $M(x) = m$ với $m \in \( 0;1 \)$
 </div>
 
 &nbsp;&nbsp;&nbsp;&nbsp;*<ins>Chứng minh:</ins>* <br>
-&nbsp;&nbsp;&nbsp;&nbsp;Theo chiến lược tất thắng của trò chơi, $x$ là trạng thái tất bại, điều này tương đương với $M(x) =0$ . Mặt khác theo định nghĩa của nimber: $x$ là trạng thái tất bại $\Leftrightarrow$ $G(x) = 0$ . Suy ra ta có mệnh đề sau: $G(x) = 0$ $\Leftrightarrow$ $M(x) = 0$ . (\*) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Theo chiến lược tất thắng của trò chơi, $x$ là trạng thái tất bại, điều này tương đương với $M(x) =0$ . Mặt khác theo định nghĩa của nimber: $x$ là trạng thái tất bại $\Leftrightarrow$ $G(x) = 0$ .<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Suy ra ta có mệnh đề sau: $G(x) = 0$ $\Leftrightarrow$ $M(x) = 0$ . (\*) <br>
 
 &nbsp;&nbsp;&nbsp;&nbsp;Đặt tập hợp tất cả các trạng thái $x$ có $M(x) = 1$ là $W(1)$ và tập hợp các trạng thái $x$ có $M(x) = 1$ là $W(0)$ . Trong phần chứng minh index - $k$ nim là tame game ta đã xác định được:<br>
 <div align="center">
