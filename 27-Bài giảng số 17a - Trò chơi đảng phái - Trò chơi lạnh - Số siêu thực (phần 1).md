@@ -27,7 +27,8 @@ Hình 1            | Hình 2
 &nbsp;&nbsp;&nbsp;&nbsp;Giá trị của trò chơi ở hình: $G = 3 + 1 + 3 - 2 - 3 = 2 > 0$ <br>
 &nbsp;&nbsp;&nbsp;&nbsp; $\Rightarrow$ Người chơi Xanh thắng (xem hình 2) <br>
 
-&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Mở rộng</ins>*:Giờ sẽ ra sao nếu "áp đặt" 3 quy tắc thành phần ở (#1) cho bất kỳ trạng thái nào của trò chơi? Nó dẫn đến nhiều hệ quả thú vị sau đây... <br>
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Mở rộng</ins>*:Giờ sẽ ra sao nếu "áp đặt" 3 quy tắc thành phần ở (#1) cho bất kỳ trạng thái nào của trò chơi? <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\rightarrow$ Nó dẫn đến nhiều hệ quả thú vị sau đây... (xem hình 3,4) <br>
 <div align="center">
 
 Hình 3            | Hình 4
