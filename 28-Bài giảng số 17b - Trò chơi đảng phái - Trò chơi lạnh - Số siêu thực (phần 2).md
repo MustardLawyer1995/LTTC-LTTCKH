@@ -49,8 +49,13 @@ $n \oplus m \\{ n-1|\text{ } \\} \oplus \\{ m-1|\text{ } \\} = \\{ n \oplus \( m
 &nbsp;&nbsp;&nbsp;&nbsp;Có vẻ hợp lý khi ta luôn chọn các số "chính giữa", sau cùng hãy nhớ rằng đây là những lựa chọn mang tính quy ước mà thôi. Nói cách khác ta đã "đặt tên" cho trạng thái $\\{ 0|1 \\}$ (một trạng thái có thực trong trò chơi nhưng lại không thể biểu diễn bằng giá trị nguyên) là $\frac{1}{2}$ . Các số siêu thực định nghĩa ở ***(2.1)*** được gọi là số hữu tỉ dyadic-số hữu tỉ mà mẫu số là lũy thừa của 2. Một số dyadic được coi là đơn giản hơn các số dyadic khác khi lũy thừa 2 của nó có số mũ nhỏ hơn, nếu số mũ bằng nhau, số dyadic nào gần 0 hơn được coi là đơn giản hơn. <br>
 #### &nbsp;&nbsp;&nbsp;&nbsp;***<ins>Định lí 2.2:</ins>***
 &nbsp;&nbsp;&nbsp;&nbsp; $n \oplus m = n + m$ với $m,n$ là các số hữu tỉ dyadic.<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Chứng minh định lí 2.2:</ins>* <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Giả sử tồn tại các cặp số $\( n;m \) = \( \frac{a}{2^s};\frac{b}{2^r} \)$ với $a,b$ lẻ và $s \ge r \ge 1$ <br>
 #### &nbsp;&nbsp;&nbsp;&nbsp;***<ins>Định lí 2.3:</ins>***
 &nbsp;&nbsp;&nbsp;&nbsp;Ta có: $\\{ L|R \\} = n$ (với $L,R$ là các số hữu tỉ dyadic) được xác định bằng cách chọn $n$ là số hữu tỉ dyadic đơn giản nhất thỏa mãn $L < n < R$ <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Chứng minh định lí 2.3:</ins>* <br>
 
 
 
