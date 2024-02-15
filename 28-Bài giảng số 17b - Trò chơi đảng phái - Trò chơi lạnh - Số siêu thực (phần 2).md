@@ -45,7 +45,7 @@ $n \oplus m \\{ n-1|\text{ } \\} \oplus \\{ m-1|\text{ } \\} = \\{ n \oplus \( m
 #### &nbsp;&nbsp;&nbsp;&nbsp;***<ins>Định nghĩa 2.1:</ins>***
 
 ```math
-\frac{k}{{{2^s}}}|\frac{{k + 1}}{{{2^s}}} = \frac{{2k + 1}}{{{2^{s + 1}}}}\left( {k \in \mathbb{Z} ,s \in \mathbb{N} } \right) \text{ hoặc } \frac{k}{{{2^s}}} = \frac{{k - 1}}{{{2^s}}}|\frac{{k + 1}}{{{2^s}}}\left( {k \equiv 1\left( {\bmod 2} \right),s \in \mathbb{Z}^{+}} \right)
+\left\{ {\frac{k}{{{2^s}}}|\frac{{k + 1}}{{{2^s}}}} \right\} = \frac{{2k + 1}}{{{2^{s + 1}}}}\left( {k \in \mathbb{Z} ,s \in \mathbb{N} } \right) \text{ hoặc } \frac{k}{{{2^s}}} = \left\{ {\frac{{k - 1}}{{{2^s}}}|\frac{{k + 1}}{{{2^s}}}} \right\} \left( {k \equiv 1\left( {\bmod 2} \right),s \in \mathbb{Z}^{+}} \right)
 ```
 &nbsp;&nbsp;&nbsp;&nbsp;Có vẻ hợp lý khi ta luôn chọn các số "chính giữa", sau cùng hãy nhớ rằng đây là những lựa chọn mang tính quy ước mà thôi. Nói cách khác ta đã "đặt tên" cho trạng thái $\\{ 0|1 \\}$ (một trạng thái có thực trong trò chơi nhưng lại không thể biểu diễn bằng giá trị nguyên) là $\frac{1}{2}$ . Các số siêu thực định nghĩa ở ***(2.1)*** được gọi là số hữu tỉ dyadic-số hữu tỉ mà mẫu số là lũy thừa của 2. Một số dyadic được coi là đơn giản hơn các số dyadic khác khi lũy thừa 2 của nó có số mũ nhỏ hơn, nếu số mũ bằng nhau, số dyadic nào gần 0 hơn được coi là đơn giản hơn. <br>
 #### &nbsp;&nbsp;&nbsp;&nbsp;***<ins>Định lí 2.2:</ins>***
