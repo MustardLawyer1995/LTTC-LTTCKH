@@ -39,23 +39,56 @@ $n \oplus m \\{ n-1|\text{ } \\} \oplus \\{ m-1|\text{ } \\} = \\{ n \oplus \( m
 &nbsp;&nbsp;&nbsp;&nbsp;Từ các ý trên kết luận $n \oplus m = n + m$ với $m,n \in \mathbb{Z}$ <br>
 &nbsp;&nbsp;&nbsp;&nbsp; $\Longrightarrow$ Ta hoàn tất chứng minh ***định lí 1.2*** <br>
 
-&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Nhận xét:</ins>* Với trạng thái $\\{ k|k+1 \\} = n$ với $k \in \mathbb{Z}$ , rõ ràng $n$ không thể là số nguyên vì $k < n < k+1$ . Do ta mới chỉ sử dụng các số siêu thực là số nguyên nên $n$ hoàn toàn có thể được định giá tùy ý, ta sẽ đặt $n = k + \frac{1}{2}$ . Tương tự, vì ta mới chỉ sử dụng các phân số mẫu 2 nên $\\{ \frac{k}{2}|\frac{k+1}{2} \\} = n$ có thể được đặt tùy ý sao cho $\frac{k}{2} < n <\frac{k+1}{2}$ , chọn $n = \frac{2k+1}{4}$ .<br>
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Nhận xét:</ins>* Với trạng thái $\\{ k|k+1 \\} = n$ với $k \in \mathbb{Z}$ , rõ ràng $n$ không thể là số nguyên vì $k < n < k+1$ . Do ta mới chỉ sử dụng các số siêu thực là số nguyên nên $n$ hoàn toàn có thể được định giá tùy ý, ta sẽ đặt $n = k + \frac{1}{2}$ . Tương tự, vì ta mới chỉ sử dụng các phân số mẫu 2 nên $\\{ \frac{k}{2} \bigg\vert \frac{k+1}{2} \\} = n$ có thể được đặt tùy ý sao cho $\frac{k}{2} < n <\frac{k+1}{2}$ , chọn $n = \frac{2k+1}{4}$ .<br>
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;***<ins>Định nghĩa 2.1:</ins>***
 
 ```math
-\left\{ {\frac{k}{{{2^s}}}|\frac{{k + 1}}{{{2^s}}}} \right\} = \frac{{2k + 1}}{{{2^{s + 1}}}}\left( {k \in \mathbb{Z} ,s \in \mathbb{N} } \right) \text{ hoặc } \frac{k}{{{2^s}}} = \left\{ {\frac{{k - 1}}{{{2^s}}}|\frac{{k + 1}}{{{2^s}}}} \right\} \left( {k \equiv 1\left( {\bmod 2} \right),s \in \mathbb{Z}^{+}} \right)
+\left\{ {\frac{k}{{{2^s}}} \bigg\vert \frac{{k + 1}}{{{2^s}}}} \right\} = \frac{{2k + 1}}{{{2^{s + 1}}}}\left( {k \in \mathbb{Z} ,s \in \mathbb{N} } \right) \text{ hoặc } \frac{k}{{{2^s}}} = \left\{ {\frac{{k - 1}}{{{2^s}}} \bigg\vert \frac{{k + 1}}{{{2^s}}}} \right\} \left( {k \equiv 1\left( {\bmod 2} \right),s \in \mathbb{Z}^{+}} \right)
 ```
-&nbsp;&nbsp;&nbsp;&nbsp;Có vẻ hợp lý khi ta luôn chọn các số "chính giữa", sau cùng hãy nhớ rằng đây là những lựa chọn mang tính quy ước mà thôi. Nói cách khác ta đã "đặt tên" cho trạng thái $\\{ 0|1 \\}$ (một trạng thái có thực trong trò chơi nhưng lại không thể biểu diễn bằng giá trị nguyên) là $\frac{1}{2}$ . Các số siêu thực định nghĩa ở ***(2.1)*** được gọi là số hữu tỉ dyadic-số hữu tỉ mà mẫu số là lũy thừa của 2. Một số dyadic được coi là đơn giản hơn các số dyadic khác khi lũy thừa 2 của nó có số mũ nhỏ hơn, nếu số mũ bằng nhau, số dyadic nào gần 0 hơn được coi là đơn giản hơn. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Có vẻ hợp lý khi ta luôn chọn các số "chính giữa", sau cùng hãy nhớ rằng đây là những lựa chọn mang tính quy ước. Nói cách khác ta đã "đặt tên" cho trạng thái $\\{ 0|1 \\}$ (một trạng thái có thực trong trò chơi nhưng lại không thể biểu diễn bằng giá trị nguyên) là $\frac{1}{2}$ . Các số siêu thực định nghĩa ở ***(2.1)*** được gọi là số hữu tỉ dyadic-số hữu tỉ mà mẫu số là lũy thừa của 2. Một số dyadic được coi là đơn giản hơn các số dyadic khác khi lũy thừa 2 của nó có số mũ nhỏ hơn, nếu số mũ bằng nhau, số dyadic nào gần 0 hơn được coi là đơn giản hơn. <br>
 #### &nbsp;&nbsp;&nbsp;&nbsp;***<ins>Định lí 2.2:</ins>***
 &nbsp;&nbsp;&nbsp;&nbsp; $n \oplus m = n + m$ với $m,n$ là các số hữu tỉ dyadic.<br>
 
 &nbsp;&nbsp;&nbsp;&nbsp;*<ins>Chứng minh định lí 2.2:</ins>* <br>
-&nbsp;&nbsp;&nbsp;&nbsp;Giả sử tồn tại các cặp số $\( n;m \) = \( \frac{a}{2^s};\frac{b}{2^r} \)$ với $a,b$ lẻ và $s \ge r \ge 1$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Giả sử tồn tại các cặp số $\( n;m \) = \( \frac{a}{2^s};\frac{b}{2^r} \)$ với $a,b$ lẻ và $s \ge r \ge 1$ ***vi phạm 2.2***, lựa chọn cặp có $s+r$ nhỏ nhất. Theo ***2.1***, ta suy ra được: <br>
+
+```math
+n = \left\{ {\frac{{a - 1}}{{{2^s}}} \bigg\vert \frac{{a + 1}}{{{2^s}}}} \right\},m = \left\{ {\frac{{b - 1}}{{{2^r}}} \bigg\vert \frac{{b + 1}}{{{2^r}}}} \right\}
+```
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Giải thích:</ins>* Nếu $m \in \mathbb{Z}$ thì $m = \\{ m-1 |\text{ } \\}$ $\( m \ge 1 \)$ hoặc $m = \\{  \text{ }|m+1 \\}$ $\( m \le -1 \)$ , cách chứng minh bên dưới vẫn áp dụng được, nếu $m = 0$ hoặc $m,n \in \mathbb{Z}$ thì ***2.2*** hiển nhiên thỏa mãn ***1.2***<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Tiếp đến ta có: <br>
+
+```math
+n \oplus m = \left\{ {n \oplus \frac{{b - 1}}{{{2^r}}},m \oplus \frac{{a - 1}}{{{2^s}}} \bigg\vert n \oplus \frac{{b + 1}}{{{2^r}}},m \oplus \frac{{a + 1}}{{{2^s}}}} \right\}
+```
+&nbsp;&nbsp;&nbsp;&nbsp;Nếu cả 4 biểu thức trong $\\{ \text{ } \\}$ đều thỏa mãn ***(2.2)*** thì hệ quả sẽ là:<br>
+
+```math
+n \oplus m = \left\{ {n + \frac{{b - 1}}{{{2^r}}},m + \frac{{a - 1}}{{{2^s}}} \bigg\vert n + \frac{{b + 1}}{{{2^r}}},m + \frac{{a + 1}}{{{2^s}}}} \right\} = \left\{ {n + m - \frac{1}{{{2^r}}},n + m - \frac{1}{{{2^s}}} \bigg\vert n + m + \frac{1}{{{2^r}}},n + m + \frac{1}{{{2^s}}}} \right\}
+```
+&nbsp;&nbsp;&nbsp;&nbsp;Kết hợp biến đổi trên cùng với $s \ge r \Leftrightarrow \frac{1}{2^s} \le \frac{1}{2^r}$ (bởi ***tiên đề 0.1a***) thì khi ấy ta suy ra:<br>
+
+```math
+n \oplus m = \left\{ {n + m - \frac{1}{{{2^s}}} \bigg\vert n + m + \frac{1}{{{2^s}}}} \right\}
+```
+&nbsp;&nbsp;&nbsp;&nbsp;Mặt khác theo ***2.1*** ta có: <br>
+
+```math
+\left\{ {n + m - \frac{1}{{{2^s}}} \bigg\vert n + m + \frac{1}{{{2^s}}}} \right\} = m + n
+```
+&nbsp;&nbsp;&nbsp;&nbsp;Nên khi ấy ta suy ra: $n \oplus m = n + m$ , mâu thuẫn với giả định ban đầu là ***vi phạm (2.2)*** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; $\Rightarrow$ Phải có ít nhất 1 trong 4 cặp số: $\left( {n;\frac{{b - 1}}{{{2^r}}}} \right),\left( {m;\frac{{a - 1}}{{{2^s}}}} \right),\left( {n;\frac{{b + 1}}{{{2^r}}}} \right),\left( {m;\frac{{a + 1}}{{{2^s}}}} \right)$ ***vi phạm 2.2*** <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Do giả thiết $a,b$ lẻ, $\frac{a \pm 1}{2^s}$ và $\frac{b \pm 1}{2^r}$  là các phân số chưa tối giản $\rightarrow$ tồn tại 1 cặp $\( n';m' \) = \( \frac{a'}{2^{s'}};\frac{b'}{2^{r'}} \)$ khác ***vi phạm (2.2)*** mà $s' + r' < s + r$ , mâu thuẫn với giả thiết $n,m$ là cặp có $s + r$ nhỏ nhất $\rightarrow$ không tồn tại cặp $n,m$ nào ***vi phạm (2.2)*** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; $\Longrightarrow$ Ta hoàn tất chứng minh ***định lí 2.2*** <br>
 #### &nbsp;&nbsp;&nbsp;&nbsp;***<ins>Định lí 2.3:</ins>***
 &nbsp;&nbsp;&nbsp;&nbsp;Ta có: $\\{ L|R \\} = n$ (với $L,R$ là các số hữu tỉ dyadic) được xác định bằng cách chọn $n$ là số hữu tỉ dyadic đơn giản nhất thỏa mãn $L < n < R$ <br>
 
-&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Chứng minh định lí 2.3:</ins>* <br>
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Chứng minh định lí 2.3:</ins>* <br> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- *<ins>(2.3a)</ins>*  <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- *<ins>(2.3b)</ins>*  <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- *<ins>(2.3c)</ins>*  <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- *<ins>(2.3d)</ins>*  <br>
 
 
 
