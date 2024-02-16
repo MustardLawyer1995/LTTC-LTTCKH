@@ -141,10 +141,26 @@ n \oplus \left( { - g} \right) = \left\{ {L|R} \right\} \oplus \left\{ {{\rm{ }}
 &nbsp;&nbsp;&nbsp;&nbsp; $\Rightarrow$ Xanh sẽ thắng nếu biết chọn những nước đi tối ưu, Xanh phải đi những nước để trò chơi nhận giá trị   ở lượt đối phương nếu muốn giành chiến thắng. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;Nếu ở trò chơi trên Xanh đi trước, Xanh đưa RBRB0 ( $-\frac{5}{8}$ ) về RBR0B ( $-\frac{3}{4}$ ), tức là đưa trò chơi về $G = \frac{3}{8} + \( - \frac{3}{4} \) - \( - \frac{5}{8} \) = \frac{1}{4} > 0$ $\rightarrow$ Đây là nước đi chiến thắng. Việc này là phi lý khi xét theo lối suy nghĩ thông thường, vì rõ ràng chuyển BR0RB $\rightarrow$ 0RBRB hay chuyển BBR0R $\rightarrow$ B0RBR lợi hơn cơ mà? Xanh vẫn chỉ tốn 1 nước đi nhưng lại có thể chặn được 1 nước đi (cản đường con ếch Đỏ) của đối thủ ? $\rightarrow$ Vâng, nếu làm thế thì bạn thua chắc chắn (nếu đối thủ đi nước tối ưu, bạn đọc tự giải như trên). Thế nên, ta mới nhận ra được, việc phân tích 1 trò chơi bằng lý thuyết giúp tránh được những sai lầm khi phán đoán theo trực giác.
 
+### *<ins>Phụ lục:</ins> Xác định nhanh giá trị của 1 số mẫu hình đặc biệt trong hackenbush 2 màu*
+<div align="center">
 
+Hình 1            | Hình 2
+:-------------------------:|:-------------------------:
+![image](https://github.com/MustardLawyer1995/LTTC-LTTCKH/assets/156400720/8555bc00-58fa-4b5d-ae2f-5d7de8b427cf) | ![image](https://github.com/MustardLawyer1995/LTTC-LTTCKH/assets/156400720/978549d2-14b9-408c-b1c6-1061a9d5cad2)
+</div>
 
+#### 1. Nguyên lí đại tràng:
+&nbsp;&nbsp;&nbsp;&nbsp;Một phát hiện bất ngờ là ***<ins>nguyên lý đại tràng (colon principle)</ins>*** của hackenbush phiên bản *impartial game* vẫn có hiệu lực khi áp dụng cho hackenbush 2 màu. Đối với 1 tập hợp các nhánh được phát sinh từ cùng 1 điểm, ta có thể quy đổi chúng về 1 nhánh thẳng duy nhất có giá trị bằng với giá trị của tập hợp các nhánh bị thay thế. <br>
 
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Chứng minh:</ins>* <br> 
+&nbsp;&nbsp;&nbsp;&nbsp;Có 2 mẫu hình là $G(H)$ và $G(I)$ như trên hình 1,2 (phần không gian trong $G,H,I$ được thiết lập tùy ý), có thể chứng tỏ rằng nếu $H$ và $I$ có giá trị bằng nhau thì $G(H)$ và $G(I)$ cũng có giá trị bằng nhau. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Thiết lập mẫu hình $\( -G \)\( -I \)$ là đối xứng của $G(I)$ (các cạnh xanh và đỏ hoán đổi vai trò cho nhau), nên nếu giá trị của $G(I)$ là $q$ thì giá trị của $\( -G \)\( -I \)$ là $-q$ , xét 1 trò chơi gồm $G(H)$ và $\( -G \)\( -I \)$ , dễ thấy người đi sau luôn thắng: nếu người đi trước cắt 1 cạnh ở $G$ thì người đi sau cắt cạnh tương ứng ở $-G$ (và ngược lại) để làm cho $G$ và $-G$ tiếp tục ở dạng đối xứng khi đến lượt người đi trước, nếu người đi trước cắt ở $-H$ thì người đi sau sẽ cắt ở $-I$ sao cho diễn biến giống như trong 1 trò chơi gồm $H$ và $-I$ , mà trong trò chơi này thì người chơi sau sẽ thắng (tổng $H$ và $-I$ ,  là 0, theo giả thiết giá trị $H$ và $-I$ bằng nhau) $\rightarrow$ Người đi sau sẽ là người đi nước cuối cùng xóa hết toàn bộ $H$ và $-I$ , sau đó trò chơi sẽ chỉ còn 2 mẫu hình đối xứng ( $G$ và $-G$ ) và đến lượt người đi trước $\rightarrow$ Người đi trước thua $\rightarrow$ Trò chơi $G(H) + \( -G \)\( -I \)$ có giá trị là 0 $\rightarrow$ $G(H)$ và $G(I)$ có giá trị bằng nhau. (đpcm) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Và vì $I$ có thể là bất cứ mẫu hình nào có giá trị bằng $H$ nên ta thường lựa chọn $I$ là 1 cây thẳng (không phân nhánh) để có thể tận dụng ***quy tắc 3***. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Thử với mẫu hình trên: ký hiệu là xanh(đỏ, xanh(đỏ, đỏ-xanh)), giá trị của đỏ-xanh theo quy tắc 3 là $-1 + \frac{1}{2} = -\frac{1}{2}$ , khi đó giá trị của (đỏ, đỏ-xanh) là  $-1 - \frac{1}{2} = -\frac{3}{2} = -2 + \frac{1}{2}$ = giá trị của đỏ-đỏ-xanh $\rightarrow$ Ta quy đổi trò chơi về xanh(đỏ, xanh-đỏ-đỏ-xanh), giá trị của (đỏ, xanh-đỏ-đỏ-xanh) là $-1 + \(  1 - \frac{1}{2} - \frac{1}{4} + \frac{1}{8} \) = -\frac{5}{8} = -1 + \frac{1}{2} - \frac{1}{4} + \frac{1}{8}$ = giá trị của đỏ-xanh-đỏ-xanh $\rightarrow$ Trò chơi tiếp tục quy đổi về xanh-đỏ-xanh-đỏ-xanh, và giá trị của cây này là $1 - \frac{1}{2} + \frac{1}{4} - \frac{1}{8} + \frac{1}{16} = 1 + \( - \frac{5}{8} \) \times \frac{1}{2} = \frac{11}{16}$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp; $\Rightarrow$ Kết luận: giá trị của trò chơi ban đầu là $\frac{11}{16}$ . <br>
 
+#### 2. Giá trị của 1 vòng đơn gắn trực tiếp với mặt đất:
+&nbsp;&nbsp;&nbsp;&nbsp;
 
 
 
