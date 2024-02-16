@@ -160,15 +160,15 @@ Hình 1            | Hình 2
 &nbsp;&nbsp;&nbsp;&nbsp; $\Rightarrow$ Kết luận: giá trị của trò chơi ban đầu là $\frac{11}{16}$ . <br>
 
 #### 2. Giá trị của 1 vòng đơn gắn trực tiếp với mặt đất:
-&nbsp;&nbsp;&nbsp;&nbsp;
+<div align="center">
 
+![image](https://github.com/MustardLawyer1995/LTTC-LTTCKH/assets/156400720/66fc1527-a7de-47c2-a7ca-df20a81679a6)
+</div>
 
-
-
-
-
-
-
+&nbsp;&nbsp;&nbsp;&nbsp;Tính giá trị của 1 vòng bằng cách tìm 2 điểm nơi các đoạn bắt đầu đổi màu theo chiều từ mặt đất đi lên (trong hình minh họa trên, những điểm này được đánh dấu (\*)). Tiếp theo, chia phần còn lại của vòng (khoảng giữa 2 dấu \* như hình vẽ) thành 2 đoạn bằng nhau. Nếu số lượng đoạn giữa 2 dấu \* là chẵn (như ở (B)), thì cắt tại điểm nút chính giữa. Nếu có một số lẻ đoạn, cắt đôi đoạn chính giữa thành 2 đoạn (như trong (A)). Giá trị của vòng là tổng giá trị của 2 phân khúc, nói cách khác, giá trị của (A) giống với giá trị của (A') và giá trị của (B) giống với giá trị của (B'). <br>
+&nbsp;&nbsp;&nbsp;&nbsp;- 2 thân cây trong (A') có giá trị $\frac{9}{8}$ và $-\frac{3}{8}$ $\rightarrow$ Giá trị của $(A) = \frac{9}{8} - \frac{3}{8} = \frac{3}{4}$ . <br> 
+&nbsp;&nbsp;&nbsp;&nbsp;- 2 thân trong (B') có các giá trị $\frac{3}{16}$ và $\frac{27}{16}$ $\rightarrow$ Giá trị của $(B) = \frac{3}{16} + \frac{27}{16} = \frac{15}{8}$ . <br> 
+&nbsp;&nbsp;&nbsp;&nbsp;Nguyên lý này có thể dễ dàng chứng minh bằng cách chứng tỏ tổng giá trị của 2 phân đoạn (ký hiệu $\sigma$ ) luôn $<$ tất cả các giá trị tạo ra sau 1 nước đi của Đỏ, và $>$ tất cả các giá trị tạo ra sau 1 nước đi của Xanh (gợi ý: nước đi tạo ra giá trị nhỏ nhất ( $R$ ) của Đỏ hay lớn nhất ( $L$ ) của Xanh luôn là xóa những đoạn nằm gần nhất với vị trí chia cắt vòng), và chứng tỏ rằng $\sigma$ là số hữu tỉ dyadic đơn giản nhất thỏa mãn điều kiện trên (gợi ý: coi $\sigma = \\{ \alpha|\beta \\}$ là biểu diễn theo ***định nghĩa (2.1) phần 4/***, chứng minh $\alpha \le L$ và $R \le \beta$ )
 
 
 
