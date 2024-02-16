@@ -85,14 +85,40 @@ n \oplus m = \left\{ {n + m - \frac{1}{{{2^s}}} \bigg\vert n + m + \frac{1}{{{2^
 &nbsp;&nbsp;&nbsp;&nbsp;Ta có: $\\{ L|R \\} = n$ (với $L,R$ là các số hữu tỉ dyadic) được xác định bằng cách chọn $n$ là số hữu tỉ dyadic đơn giản nhất thỏa mãn $L < n < R$ <br>
 
 &nbsp;&nbsp;&nbsp;&nbsp;*<ins>Chứng minh định lí 2.3:</ins>* <br> 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- *<ins>(2.3a)</ins>*  <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- *<ins>(2.3b)</ins>*  <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- *<ins>(2.3c)</ins>*  <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- *<ins>(2.3d)</ins>*  <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•*<ins>(2.3a)</ins>*  $\\{ L|R \\} = n \rightarrow L < n < R$ (theo ***tiên đề 0.2***)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•*<ins>(2.3b)</ins>*  Nếu $L > 0,R < 0, \\{ L|R \\} = 0$ vì người đi trước luôn thua nên theo ***2.3*** thì hiển nhiên đúng <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•*<ins>(2.3c)</ins>*  Nếu $g \in \mathbb{Z}^{+},g-1 \le L < g < R$ , bởi ***2.2*** nên ta có:<br>
 
+```math
+n \oplus \left( { - g} \right) = \left\{ {L|R} \right\} \oplus \left\{ {{\rm{ }}| - g + 1} \right\} = \left\{ {L \oplus \left( { - g} \right)|n \oplus \left( { - g + 1} \right),\left( { - g} \right) \oplus R} \right\} = \left\{ {L - g|n - g + 1, - g + R} \right\} = 0
+```
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Giải thích:</ins>* vì $L-g < 0$ và $n-g+1,R-g > 0$ cùng với ***2.3b*** $\rightarrow$ $n = g$  $\rightarrow$ $\\{ -R|-L \\} = -g$ (theo ***tiên đề 0.1b***) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\Rightarrow$ $\forall g \in \mathbb{Z}^{-},L < g < R \le g + 1$ ta cũng có $\\{ L|R \\} = g$ . <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•*<ins>(2.3d)</ins>* Nếu với $k$ lẻ, $s \in \mathbb{N}$ : <br>
 
+```math
+0 < \alpha  = \frac{{k - 1}}{{{2^s}}} \le L < \sigma  = \frac{k}{{{2^s}}} < R \le \beta  = \frac{{k + 1}}{{{2^s}}}
+```
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Thì khi ấy ta suy ra: $\\{ \alpha | \beta \\} = \sigma$ tức theo ***2.2*** ta có: <br>
 
+```math
+\left( { - \sigma } \right) \oplus n = \left\{ { - \beta | - \alpha } \right\} \oplus \left\{ {L|R} \right\} = \left\{ {\left( { - \beta } \right) \oplus n,\left( { - \sigma } \right) \oplus L|\left( { - \alpha } \right) \oplus n,\left( { - \sigma } \right) \oplus R} \right\} = \left\{ { - \beta  + n, - \sigma  + L| - \alpha  + n, - \sigma  + R} \right\}
+```
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Do ***2.3a*** và giả thiết ***2.3d*** nên theo ***2.3b*** ta suy ra: <br>
 
+```math
+\left\{ \begin{array}{l}
+ - \beta  + n, - \sigma  + L < 0\
+ - \alpha  + n, - \sigma  + R > 0
+\end{array} \right. \Rightarrow \left\{ { - \beta  + n, - \sigma  + L| - \alpha  + n, - \sigma  + R} \right\} = 0 \Rightarrow \left( { - \sigma } \right) \oplus n = 0 \Leftrightarrow n = \sigma 
+```
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tương tự khi $\alpha  \le L < \sigma  < R \le \beta  < 0$ thì ta cũng có được: $\\{ L|R \\} = \sigma$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Với mọi $L,R$ nếu $\sigma = \frac{k}{2^s}$ ( $s \ge 1$ ) là số dyadic đơn giản nhất sao cho $L < \sigma < R$ và $\sigma = \\{ \alpha | \beta \\}$ (theo ***định nghĩa 2.1***) thì phải có $\alpha  \le L < \sigma  < R \le \beta$ (giả sử điều này sai thì $\alpha$ hoặc $\beta$ sẽ nằm trong khoảng $\( L;R \)$ mà $\alpha , \beta$ là các số dyadic đơn giản hơn $\sigma$ theo ***định nghĩa 2.1***), bởi ***2.3d*** ta có $\\{ L|R \\} = \sigma$ . Nếu $s = 0$ thì $\sigma \in \mathbb{Z}$ (theo ***2.3b***) và ***2.3c*** ta có $\\{ L|R \\} = \sigma$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp; $\Longrightarrow$ Ta hoàn tất chứng minh ***định lí 2.3*** <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Nhận xét:</ins>* <br> 
+&nbsp;&nbsp;&nbsp;&nbsp;Việc xây dựng lý thuyết về hệ thống số siêu thực đã chứng minh lời giải của Hackenbush 2 màu ở ***mục 3/*** là đúng cũng như chỉ ra chiến lược tất thắng cho mọi trò chơi lạnh (bởi vì quá trình lập luận chỉ sử dụng những tiên đề phổ quát đối với mọi trò chơi lạnh): Xác định giá trị $G$ của toàn bộ trò chơi, nếu $G > 0$ , người chơi Trái thắng, nếu $G < 0$ , người chơi Phải thắng, $G = 0$ thì bất cứ ai đi trước sẽ thua. Nếu bạn là Trái và đang ở thế thắng, hãy chọn nước đi để $G \ge 0$ ở lượt của đối phương; ngược lại nếu bạn là Phải, hãy giữ cho $G \le 0$ ở lượt đối phương. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Lý thuyết số siêu thực đem lại 1 kết quả quan trọng: nếu 1 trò chơi là tổng của nhiều trò chơi con thì giá trị của nó bằng tổng các giá trị của tất cả trò chơi con cấu thành nó - điều này khiến cho việc tính toán giá trị trò chơi trở nên dễ dàng hơn bao giờ hết. Cùng thử áp dụng vào 1 trò chơi lạnh khác xem sao... <br>
 
 
 
