@@ -69,6 +69,19 @@ $\\{ 0|1,\frac{1}{2},\frac{1}{4},\frac{1}{8},... \\} = 2\varepsilon$ (giá trị
 ```
 &nbsp;&nbsp;&nbsp;&nbsp;Nên ta suy ra: $\varepsilon \omega - 1 = 0$ tương đương với $\varepsilon \omega = 1$ <br>
 #### &nbsp;&nbsp;&nbsp;b. Tập số siêu thực và tập số thực
+&nbsp;&nbsp;&nbsp;&nbsp;Không phải mọi giá trị trong trò chơi có thành phần vô hạn đều là các giá trị ở trên trời như $\omega$ và $\varepsilon$ . Một số cây vô hạn trong hackenbush 2 màu có các giá trị hữu hạn như cây: xanh-đỏ-đỏ-xanh-đỏ-xanh-đỏ-xanh-đỏ-..., giá trị của nó là: <br>
+
+```math
+1 - \frac{1}{2} - \frac{1}{4} + \frac{1}{8} - \frac{1}{{16}} + \frac{1}{{32}} - \frac{1}{{64}} + ... + \frac{1}{{{2^{2k - 1}}}} - \frac{1}{{{2^{2k}}}} + ... = \frac{1}{4} + \frac{1}{{16}} + \frac{1}{{64}} + ... + \frac{1}{{{4^k}}} + ... = \frac{1}{4}.\frac{1}{{1 - {\raise0.5ex\hbox{$\scriptstyle 1$}
+\kern-0.1em/\kern-0.15em
+\lower0.25ex\hbox{$\scriptstyle 4$}}}} = \frac{1}{3}
+```
+&nbsp;&nbsp;&nbsp;&nbsp;Nhưng $\frac{1}{3}$ không phải là một số dyadic? Phát hiện này gợi ý rằng số siêu thực có thể là một số thực bất kỳ. Giá trị $\frac{1}{3}$ có thể được biểu diễn ở dạng tiêu chuẩn là: <br>
+
+```math
+\left\{ {\frac{1}{4},\frac{5}{{16}},\frac{{21}}{{64}},...,\frac{{{4^k} - 1}}{{{{3.4}^k}}},... \bigg\vert \frac{1}{2},\frac{3}{8},\frac{{11}}{{32}},...,\frac{{{{2.4}^k} + 1}}{{{{6.4}^k}}},...} \right\}
+```
+&nbsp;&nbsp;&nbsp;&nbsp;Mà mặt khác ta lại có: $\left( {{4^k} - 1} \right) \vdots 3$ và $\left( {{{2.4}^k} + 1} \right) \vdots 3$  nên hệ quả là ta sẽ có 2 bộ số ở 2 bên dấu | chỉ gồm các số hữu tỉ dyadic, và vì vậy các kết quả ở ***mục 4/*** vẫn áp dụng được cho những số siêu thực đặc biệt này. Tính hợp lý của dạng thức trên nằm ở việc: <br>
 ### 6. Các giá trị trong trò chơi nóng
 
 
