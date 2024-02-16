@@ -120,6 +120,13 @@ n \oplus \left( { - g} \right) = \left\{ {L|R} \right\} \oplus \left\{ {{\rm{ }}
 &nbsp;&nbsp;&nbsp;&nbsp;Việc xây dựng lý thuyết về hệ thống số siêu thực đã chứng minh lời giải của Hackenbush 2 màu ở ***mục 3/*** là đúng cũng như chỉ ra chiến lược tất thắng cho mọi trò chơi lạnh (bởi vì quá trình lập luận chỉ sử dụng những tiên đề phổ quát đối với mọi trò chơi lạnh): Xác định giá trị $G$ của toàn bộ trò chơi, nếu $G > 0$ , người chơi Trái thắng, nếu $G < 0$ , người chơi Phải thắng, $G = 0$ thì bất cứ ai đi trước sẽ thua. Nếu bạn là Trái và đang ở thế thắng, hãy chọn nước đi để $G \ge 0$ ở lượt của đối phương; ngược lại nếu bạn là Phải, hãy giữ cho $G \le 0$ ở lượt đối phương. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;Lý thuyết số siêu thực đem lại 1 kết quả quan trọng: nếu 1 trò chơi là tổng của nhiều trò chơi con thì giá trị của nó bằng tổng các giá trị của tất cả trò chơi con cấu thành nó - điều này khiến cho việc tính toán giá trị trò chơi trở nên dễ dàng hơn bao giờ hết. Cùng thử áp dụng vào 1 trò chơi lạnh khác xem sao... <br>
 
+#### &nbsp;&nbsp;&nbsp;&nbsp;***<ins>Ví dụ 2.4:</ins>*** Trò chơi cuộc đua ếch
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Luật chơi:</ins>* có 5 ô vuông hàng ngang, xếp vào đó 2 con ếch xanh (B) và 2 con ếch đỏ (R) tùy ý. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Ví dụ như sau (số 0 là ô trống): BR0BR <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Mỗi con ếch trong 1 lượt có thể tiến (1 ô), hoặc nhảy (2 ô, có thể nhảy qua đầu 1 con ếch khác)-theo chiều từ trái sang phải. 2 người chơi Xanh và Đỏ luân phiên mỗi lượt điều khiển 1 con ếch có màu tương ứng với mình. Ai khi đến lượt mà không còn nước để đi coi như thua. Để tăng độ khó, có thể xếp nhiều hàng 5 ô song song nhau, các hàng độc lập với nhau, mỗi lượt người chơi chỉ tác động vào 1 hàng (trò chơi dạng tổng của nhiều trò chơi con). <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Ta sẽ tính giá trị cho các trạng thái của 1 hàng (người chơi Xanh sẽ ở vai trò Trái, còn Đỏ là Phải) tức được biểu diễn như sau:0XXXX (X là B hay R tùy ý), đây là điểm kết thúc trò chơi, khi không còn nước để đi với cả 2 người chơi $\rightarrow$ $G = \\{ \text{ }|\text{ } \\} = 0$
+
+
 
 
 
