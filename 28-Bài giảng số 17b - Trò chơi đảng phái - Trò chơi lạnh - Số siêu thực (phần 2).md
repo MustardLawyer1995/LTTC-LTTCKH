@@ -92,7 +92,8 @@ n \oplus m = \left\{ {n + m - \frac{1}{{{2^s}}} \bigg\vert n + m + \frac{1}{{{2^
 ```math
 n \oplus \left( { - g} \right) = \left\{ {L|R} \right\} \oplus \left\{ {{\rm{ }}| - g + 1} \right\} = \left\{ {L \oplus \left( { - g} \right)|n \oplus \left( { - g + 1} \right),\left( { - g} \right) \oplus R} \right\} = \left\{ {L - g|n - g + 1, - g + R} \right\} = 0
 ```
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Giải thích:</ins>* vì $L-g < 0$ và $n-g+1,R-g > 0$ cùng với ***2.3b*** $\rightarrow$ $n = g$  $\rightarrow$ $\\{ -R|-L \\} = -g$ (theo ***tiên đề 0.1b***) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Giải thích:</ins>* vì $L-g < 0$ và $n-g+1,R-g > 0$ cùng với ***2.3b*** $\rightarrow$ $n = g$  <br> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\rightarrow$ $\\{ -R|-L \\} = -g$ (theo ***tiên đề 0.1b***) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\Rightarrow$ $\forall g \in \mathbb{Z}^{-},L < g < R \le g + 1$ ta cũng có $\\{ L|R \\} = g$ . <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•*<ins>(2.3d)</ins>* Nếu với $k$ lẻ, $s \in \mathbb{N}$ : <br>
 
@@ -124,7 +125,22 @@ n \oplus \left( { - g} \right) = \left\{ {L|R} \right\} \oplus \left\{ {{\rm{ }}
 &nbsp;&nbsp;&nbsp;&nbsp;*<ins>Luật chơi:</ins>* có 5 ô vuông hàng ngang, xếp vào đó 2 con ếch xanh (B) và 2 con ếch đỏ (R) tùy ý. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;Ví dụ như sau (số 0 là ô trống): BR0BR <br>
 &nbsp;&nbsp;&nbsp;&nbsp;Mỗi con ếch trong 1 lượt có thể tiến (1 ô), hoặc nhảy (2 ô, có thể nhảy qua đầu 1 con ếch khác)-theo chiều từ trái sang phải. 2 người chơi Xanh và Đỏ luân phiên mỗi lượt điều khiển 1 con ếch có màu tương ứng với mình. Ai khi đến lượt mà không còn nước để đi coi như thua. Để tăng độ khó, có thể xếp nhiều hàng 5 ô song song nhau, các hàng độc lập với nhau, mỗi lượt người chơi chỉ tác động vào 1 hàng (trò chơi dạng tổng của nhiều trò chơi con). <br>
-&nbsp;&nbsp;&nbsp;&nbsp;Ta sẽ tính giá trị cho các trạng thái của 1 hàng (người chơi Xanh sẽ ở vai trò Trái, còn Đỏ là Phải) tức được biểu diễn như sau:0XXXX (X là B hay R tùy ý), đây là điểm kết thúc trò chơi, khi không còn nước để đi với cả 2 người chơi $\rightarrow$ $G = \\{ \text{ }|\text{ } \\} = 0$
+&nbsp;&nbsp;&nbsp;&nbsp;Ta sẽ tính giá trị cho các trạng thái của 1 hàng (người chơi Xanh sẽ ở vai trò Trái, còn Đỏ là Phải) tức được biểu diễn như sau:0XXXX (X là B hay R tùy ý), đây là điểm kết thúc trò chơi, khi không còn nước để đi với cả 2 người chơi $\rightarrow$ $G = \\{ \text{ }|\text{ } \\} = 0$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Ta có: B0XXX, phe Xanh có 1 nước đi dẫn trò chơi về 0, Đỏ không còn nước đi $\rightarrow$ $G = \\{ 0|\text{ } \\} = 1$ . Nếu thay B thành R thì $G = \\{ \text{ }|0 \\} = -1$ . <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Ta có tiếp: BB0RR, phe Xanh có 2 nước đi dẫn trò chơi về 0 hoặc 1, Đỏ không có nước đi $\rightarrow$ $G = \\{ 0,1|\text{ } \\} = 2$ . Nếu đảo chỗ B và R thì $G = \\{ \text{ }|-1,0 \\} = -2$ . <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Tiếp đến lại có: BR0XX, phe Xanh có 1 nước dẫn về 0, Đỏ có nước dẫn về 1  $\rightarrow$ $G = \\{ 0|1 \\} = \frac{1}{2}$ . Nếu đổi vai trò B và R thì $G = - \frac{1}{2}$ . <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Với BBR0R, thì $G = \\{ 1|2 \\} = \frac{3}{2}$ . Tương tự, đổi vai trò B và R, ta suy ra: $G = - \frac{3}{2}$ . <br> 
+&nbsp;&nbsp;&nbsp;&nbsp;Với BRB0R, thì $G = \\{ \frac{1}{2} | 1 \\} = \frac{3}{4}$ .     
+&nbsp;&nbsp;&nbsp;&nbsp;Với BRR0B, thì $G = \\{ \frac{1}{2} | 1 \\} = 0$ . 
+&nbsp;&nbsp;&nbsp;&nbsp;Với BBRR0, thì $G = \\{ \frac{3}{2} | 2 \\} = 0$ . 
+&nbsp;&nbsp;&nbsp;&nbsp;Với BRBR0, thì $G = \\{ \frac{1}{2} | \frac{3}{4} \\} = \frac{5}{8}$ . 
+&nbsp;&nbsp;&nbsp;&nbsp;Với BRRB0, thì $G = \\{ 0 | \frac{1}{2} \\} = \frac{1}{4}$ . [...] <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;Với trò chơi ở dạng có nhiều hàng 5 ô, ta chỉ việc tính giá trị của từng hàng rồi đem cộng tất cả để thu được giá trị $G$ của toàn bộ trò chơi. Nếu $G > 0$ , Xanh thắng, $G < 0$ , Đỏ thắng, $G = 0$ , người đi sau thắng. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Thử 1 ví dụ: R0RBB, BR0RB, BBR0R, RBRB0 với $G = -1 + \frac{1}{2} + \frac{3}{2} - \frac{5}{8} = \frac{3}{8} > 0$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp; $\Rightarrow$ Xanh sẽ thắng nếu biết chọn những nước đi tối ưu, Xanh phải đi những nước để trò chơi nhận giá trị   ở lượt đối phương nếu muốn giành chiến thắng. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Nếu ở trò chơi trên Xanh đi trước, Xanh đưa RBRB0 ( $-\frac{5}{8}$ ) về RBR0B ( $-\frac{3}{4}$ ), tức là đưa trò chơi về $G = \frac{3}{8} + \( - \frac{3}{4} \) - \( - \frac{5}{8} \) = \frac{1}{4} > 0$ $\rightarrow$ Đây là nước đi chiến thắng. Việc này là phi lý khi xét theo lối suy nghĩ thông thường, vì rõ ràng chuyển BR0RB $\rightarrow$ 0RBRB hay chuyển BBR0R $\rightarrow$ B0RBR lợi hơn cơ mà? Xanh vẫn chỉ tốn 1 nước đi nhưng lại có thể chặn được 1 nước đi (cản đường con ếch Đỏ) của đối thủ ? $\rightarrow$ Vâng, nếu làm thế thì bạn thua chắc chắn (nếu đối thủ đi nước tối ưu, bạn đọc tự giải như trên). Thế nên, ta mới nhận ra được, việc phân tích 1 trò chơi bằng lý thuyết giúp tránh được những sai lầm khi phán đoán theo trực giác.
+
 
 
 
