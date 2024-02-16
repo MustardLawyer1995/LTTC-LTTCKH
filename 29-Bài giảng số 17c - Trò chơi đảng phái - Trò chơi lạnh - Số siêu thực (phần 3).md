@@ -82,7 +82,60 @@ $\\{ 0|1,\frac{1}{2},\frac{1}{4},\frac{1}{8},... \\} = 2\varepsilon$ (giá trị
 \left\{ {\frac{1}{4},\frac{5}{{16}},\frac{{21}}{{64}},...,\frac{{{4^k} - 1}}{{{{3.4}^k}}},... \bigg\vert \frac{1}{2},\frac{3}{8},\frac{{11}}{{32}},...,\frac{{{{2.4}^k} + 1}}{{{{6.4}^k}}},...} \right\}
 ```
 &nbsp;&nbsp;&nbsp;&nbsp;Mà mặt khác ta lại có: $\left( {{4^k} - 1} \right) \vdots 3$ và $\left( {{{2.4}^k} + 1} \right) \vdots 3$  nên hệ quả là ta sẽ có 2 bộ số ở 2 bên dấu | chỉ gồm các số hữu tỉ dyadic, và vì vậy các kết quả ở ***mục 4/*** vẫn áp dụng được cho những số siêu thực đặc biệt này. Tính hợp lý của dạng thức trên nằm ở việc: <br>
-### 6. Các giá trị trong trò chơi nóng
+
+```math
+\frac{{{4^k} - 1}}{{{{3.4}^k}}} < \frac{1}{3} < \frac{{{{2.4}^k} + 1}}{{{{6.4}^k}}}{\rm{  }}\left( {k \in \mathbb{N}} \right) , k \to \infty :  \frac{{{4^k} - 1}}{{{{3.4}^k}}} \to \frac{1}{3},\frac{{{{2.4}^k} + 1}}{{{{6.4}^k}}} \to \frac{1}{3}
+```
+&nbsp;&nbsp;&nbsp;&nbsp; nên $\frac{1}{3}$ là giá trị duy nhất có thể nằm giữa 2 bộ số này. Một cách lý giải cụ thể hơn là Xanh có thể cắt cây vô hạn ban đầu về các cây có độ dài hữu hạn nhận giá trị là $\frac{1}{4},\frac{5}{16},\frac{21}{64}$ tùy thuộc vào vị trí đoạn xanh bị xóa và Đỏ có thể cắt cây về các giá trị $\frac{1}{2},\frac{3}{8},\frac{11}{32}$ tùy thuộc vào vị trí đoạn đỏ bị xóa. Nhưng còn 1 cách hiểu khác giúp ta biểu diễn được dạng tiêu chuẩn của bất kì số thực nào. Viết $\frac{1}{3}$ về dạng nhị phân: $0.01010101...$ bất cứ số thực nào không phải số dyadic cũng có phần sau dấu (.) kéo dài vô hạn, với những số hữu tỉ như $\frac{1}{3}$ thì đoạn kéo dài này có chu kỳ lặp lại $\( 01 \)$ , với những số vô tỉ, không có chu kỳ nào cả. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Xét hai dãy số sau: <br>
+
+```math
+\left\{ {\begin{array}{*{20}{l}}
+{L\left( {\frac{1}{3}} \right):{\rm{ }}0.01,{\rm{ }}0.0101,{\rm{ }}0.010101,{\rm{ }}0.01010101,{\rm{ }}...}\
+{R\left( {\frac{1}{3}} \right):{\rm{ }}0.10,{\rm{ }}0.0110,{\rm{ }}0.010110,{\rm{ }}0.01010110,{\rm{ }}...}
+\end{array}} \right.
+```
+&nbsp;&nbsp;&nbsp;&nbsp;Dễ thấy 2 dãy số này sẽ hội tụ dần về $\frac{1}{3}$ , mặt khác luôn có: <br>
+
+```math
+L\left( {\frac{1}{3}} \right) < \frac{1}{3} < R\left( {\frac{1}{3}} \right) \to \left\{ {L\left( {\frac{1}{3}} \right) \bigg\vert R\left( {\frac{1}{3}} \right)} \right\} = \frac{1}{3}
+```
+&nbsp;&nbsp;&nbsp;&nbsp;Viết 2 dãy số về dạng phân số thập phân như sau: <br>
+
+```math
+L\left( {\frac{1}{3}} \right):{\rm{ }}\frac{1}{4},\frac{5}{{16}},\frac{{21}}{{64}},\frac{{85}}{{256}},...\;\;\;R\left( {\frac{1}{3}} \right):{\rm{ }}\frac{1}{2},\frac{3}{8},\frac{{11}}{{32}},\frac{{43}}{{128}},...
+```
+&nbsp;&nbsp;&nbsp;&nbsp;thì khi ấy ta dễ dàng suy ra: <br>
+
+```math
+{\rm{ }}\left\{ {\frac{1}{4},\frac{5}{{16}},\frac{{21}}{{64}},\frac{{85}}{{256}},...\;\; \bigg\vert {\rm{ }}\frac{1}{2},\frac{3}{8},\frac{{11}}{{32}},\frac{{43}}{{128}}} \right\} = \frac{1}{3}
+```
+&nbsp;&nbsp;&nbsp;&nbsp;Thử với một số thực khác, $\pi  = 3.14159265359...$ ta chuyển nó về dạng nhị phân: $11.00100100001111...$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp; $\rightarrow$ Có 2 dãy số hội tụ về $\pi$ thỏa mãn $L\left( \pi  \right) < \pi  < R\left( \pi  \right)$ là: <br>
+
+```math
+\left\{ \begin{array}{l}
+L\left( \pi  \right):{\rm{ }}11.001,{\rm{ }}11.001001,{\rm{ }}11.00100100001,{\rm{ }}...\;\
+R\left( \pi  \right):{\rm{ }}11.010,{\rm{ }}11.001010,{\rm{ }}11.00100100010,{\rm{ }}...
+\end{array} \right.
+```
+&nbsp;&nbsp;&nbsp;&nbsp; $\rightarrow$ Ở dạng thập phân: <br>
+
+```math
+L\left( \pi  \right):{\rm{ }}\frac{{25}}{8},\frac{{201}}{{64}},\frac{{6433}}{{2048}},...\;\;\;\;\;\;R\left( \pi  \right):{\rm{ }}\frac{{13}}{4},\frac{{101}}{{32}},\frac{{3217}}{{1024}},...
+```
+```math
+\Rightarrow \left\{ {\frac{{25}}{8},\frac{{201}}{{64}},\frac{{6433}}{{2048}},...\;\;\; \bigg\vert \;\;{\rm{ }}\frac{{13}}{4},\frac{{101}}{{32}},\frac{{3217}}{{1024}}} \right\} = \pi 
+```
+&nbsp;&nbsp;&nbsp;&nbsp;Cũng nhờ dạng nhị phân của $\pi$ mà ta có thể tìm được 1 cây vô hạn nhận giá trị là: <br>
+
+```math
+\pi :{\rm{ }}3 + \frac{1}{{{2^3}}} + \frac{1}{{{2^6}}} + \frac{1}{{{2^{11}}}} + ...{\rm{ }} = 4 - \frac{1}{2} - \frac{1}{{{2^2}}} - \frac{1}{{{2^3}}} + \frac{1}{{{2^4}}} - \frac{1}{{{2^5}}} - \frac{1}{{{2^6}}} + \frac{1}{{{2^7}}} - ...
+```
+&nbsp;&nbsp;&nbsp;&nbsp; $\Rightarrow$ xanh-xanh-xanh-xanh-đỏ-đỏ-đỏ-xanh-đỏ-đỏ-xanh-đỏ-đỏ-đỏ-đỏ-xanh-... (như đã nói, vì $\pi$ là số vô tỉ nên trình tự các đoạn khi kéo dài ra không có quy luật nào cả) <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Nhận xét:</ins>* <br> 
+&nbsp;&nbsp;&nbsp;&nbsp;Những kết quả trên cho thấy tập hợp số siêu thực có thể bao trùm lên toàn bộ tập số thực và thậm chí là vượt qua cả tập số thực với những giá trị ở phạm vi vô cùng lớn và vô cùng bé. <br> 
 
 
 
