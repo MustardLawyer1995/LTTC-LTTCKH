@@ -51,11 +51,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp; $\Longrightarrow$ Ta hoàn tất chứng minh ***mệnh đề 3.4b*** <br>
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;***<ins>Ví dụ 3.4c:</ins>***
-&nbsp;&nbsp;&nbsp;&nbsp;Theo ***3.4b***, ta có: <br>
-
-```math
- - 3 < \left\{ {\left\{ {5| - 3} \right\}|0} \right\}{\rm{ }}\left( {3 + \left\{ {\left\{ {5| - 3} \right\}|0} \right\} > 0} \right), - 3 = \left\{ {{\rm{ }}| - 2} \right\} \to \left\{ {\left\{ {5| - 3} \right\}|0} \right\} = \left\{ {{\rm{ }}|0} \right\} =  - 1
-```
+&nbsp;&nbsp;&nbsp;&nbsp;Theo ***3.4b***, ta có: 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Theo ***0.1b***, ta có:
 
 ```math
