@@ -22,7 +22,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;*<ins>Ví dụ:</ins>* 
 
 ```math
-\left\{ { \downarrow | \uparrow } \right\} = \left\{ { \downarrow |*} \right\} = \left\{ {*| \uparrow } \right\} = \left\{ {*|*} \right\} = \left\{ {*|{\rm{ }}} \right\} = \left\{ {{\rm{ }}|*} \right\} = \left\{ {{\rm{ }}| \uparrow } \right\} = \left\{ { \downarrow |{\rm{ }}} \right\} = 0,\left\{ { \uparrow |{\rm{ }}} \right\} = \left\{ {* + \frac{1}{2} \bigg\vert {\rm{ }}} \right\} = \left\{ {\left\{ {0| \uparrow } \right\}|1 + *} \right\} = 1
+\left\{ { \downarrow | \uparrow } \right\} = \left\{ { \downarrow |*} \right\} = \left\{ {*| \uparrow } \right\} = \left\{ {*|*} \right\} = \left\{ {*|\space\space{\rm{ }}} \right\} = \left\{ \space\space{{\rm{ }}|*} \right\} = \left\{ \space\space{{\rm{ }}| \uparrow } \right\} = \left\{ { \downarrow |\space\space{\rm{ }}} \right\} = 0,\left\{ { \uparrow |\space\space{\rm{ }}} \right\} = \left\{ {* + \frac{1}{2} \bigg\vert \space\space{\rm{ }}} \right\} = \left\{ {\left\{ {0| \uparrow } \right\}|1 + *} \right\} = 1
 ```
 ```math
 \left\{ { \uparrow |1} \right\} = \left\{ {* + \frac{1}{2} \bigg\vert 1} \right\} = 1/2,{\rm{ }}\left\{ {2 \uparrow  \bigg\vert \frac{1}{2} +  \downarrow } \right\} = \left\{ {2 \uparrow  + * \bigg\vert \frac{1}{4} +  \uparrow } \right\} = \frac{1}{4},{\rm{ }}...
@@ -56,7 +56,11 @@
 ```math
  - 3 < \left\{ {\left\{ {5| - 3} \right\}|0} \right\}{\rm{ }}\left( {3 + \left\{ {\left\{ {5| - 3} \right\}|0} \right\} > 0} \right), - 3 = \left\{ {{\rm{ }}| - 2} \right\} \to \left\{ {\left\{ {5| - 3} \right\}|0} \right\} = \left\{ {{\rm{ }}|0} \right\} =  - 1
 ```
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Theo ***0.1b***, ta có:
 
+```math
+\left\{ { \uparrow | \downarrow } \right\} = *{\rm{ }}\left( {\left\{ { \uparrow | \downarrow } \right\} + * = 0} \right)
+```
 
 
 
