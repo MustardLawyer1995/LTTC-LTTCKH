@@ -51,12 +51,56 @@
 &nbsp;&nbsp;&nbsp;&nbsp; $\Longrightarrow$ Ta hoàn tất chứng minh ***mệnh đề 3.4b*** <br>
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;***<ins>Ví dụ 3.4c:</ins>***
-&nbsp;&nbsp;&nbsp;&nbsp;Theo ***3.4b***, ta có: 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Theo ***0.1b***, ta có:
+&nbsp;&nbsp;&nbsp;&nbsp;Theo ***3.4b***, ta có: $-3 < \\{ \\{ 5|-3 \\}|0 \\} \Leftrightarrow 3 + \\{ \\{ 5|-3 \\}|0 \\} > 0$ , $\\{ \space\space|-2 \\} = -3 \rightarrow \\{ \\{ 5|-3 \\}|0 \\} = \\{ \space\space|0 \\} = -1$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- $\\{ \uparrow|\downarrow \\} = \ast \Leftrightarrow \\{ \uparrow|\downarrow \\} + \ast = 0$ , mặt khác $\uparrow = \\{ 0|\ast \\}$ , $\\{ 0|0 \\} = \ast$ $\rightarrow$ $\\{ \uparrow|\downarrow \\} = \\{ 0|\downarrow \\}$ ***(3.4b)*** $\rightarrow$ $\\{ \uparrow|0 \\} = \ast$ ***(0.1b)*** <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Ta có: $\uparrow = \\{ 0|\ast \\} ; \ast = \\{ 0|0 \\} < \uparrow + \ast \rightarrow \\{ \uparrow,\ast|0 \\} = \\{ 0,\ast|0 \\}$ (theo ***3.4b***) và $0 < \uparrow$ (theo ***3.4a***) <br> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\Rightarrow$ $\uparrow + \ast = \\{ 0|\ast \\} + \\{ 0|0 \\} = \\{ \uparrow,\ast|0,\uparrow \\} = \\{ \uparrow,\ast|0 \\}$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Ta có: $2\uparrow > \ast$ (theo ***3.2 và 3.4a***) nên: $\uparrow + \ast = \\{ 0|\ast \\} + \\{ \uparrow|\downarrow \\} = \\{ 2\uparrow,\ast|0 \\} = \\{ 2\uparrow|0 \\}$ $\rightarrow$ $\\{ 0,\ast|0 \\} = \\{ 2\uparrow|0 \\} = \uparrow + \ast$ <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Nhận xét:</ins>* <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Một giá trị $G$ được viết dưới dạng $\\{GL|GR \\}$ mà không thể rút gọn bởi các ***quy tắc 3.4a và 3.4b*** nữa thì $\\{GL|GR \\}$ được gọi là dạng hợp quy của $G$ . Ví dụ: $\uparrow + \ast = \\{ 2\uparrow|0 \\}$ không phải là dạng hợp quy vì: $2\uparrow = \\{ \uparrow|\uparrow + \ast \\},\uparrow + \ast = \\{ \ast,\uparrow|\space\space \\} = \\{ 2\uparrow|0 \\}$ $\rightarrow$ theo ***3.4b***, có thể rút gọn $\\{ 2\uparrow|0 \\} = \\{ \ast,\uparrow|0 \\}$ và $\\{ \ast,\uparrow|0 \\}$ có thể tiếp tục rút gọn về $\\{ \ast,0|0 \\}$ (theo ***3.4c***). $\\{ \ast,0|0 \\}$ là dạng hợp quy của $\uparrow + \ast$ vì nó không thể rút gọn hơn được nữa. $2 = \\{ 1|3 \\}$ không phải dạng hợp quy vì: $3 = \\{ 2|\space\space \\} = 2 = \\{ 1|\space\space \\} = \\{ 1|3 \\}$ $\rightarrow$ (theo ***3.4b***), có thể rút gọn $\\{ 1|3 \\} = \\{ 1|\space\space \\}$ với $\\{ 1|\space\space \\}$ là dạng hợp quy của 2 vì nó không thể được rút gọn thêm nữa. <br>
+
+#### &nbsp;&nbsp;&nbsp;&nbsp;***<ins>Định lí 3.5:</ins>***
+&nbsp;&nbsp;&nbsp;&nbsp;Mỗi giá trị chỉ có duy nhất một dạng hợp quy tương ứng. 
+
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Chứng minh định lí 3.5:</ins>* <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Giả sử tồn tại 2 dạng hợp quy khác nhau là $G$ và $H$ của cùng một giá trị $\( G = H \)$ . Không mất tính tổng quát, giả thiết cho $G$ và $H$ khác nhau ở bộ giá trị $GL$ và $HL$ $\rightarrow$ $\exists GL_{1} \in GL , \exists GL_1{1} \notin HL$. Xét trò chơi $G - H = 0$ , Trái sẽ thua nếu đi trước dù đi bất cứ nước nào. Nếu Trái đưa trò chơi về $GL_{1} - H$ , Phải sẽ có 1 nước đi chiến thắng tiếp theo (tức là đưa giá trị trò chơi về $\le 0$ ), nước đi này không nằm ở $GL_{1}$ , vì $\nexists GL_{1}R: GL_{1}R - H \le 0$ ( $\nexists GL_{1}R \le G = H$ , do $G$ đã ở dạng hợp quy) $\rightarrow$ nước đi chiến thắng nằm ở $-H$ $\rightarrow$ $\exists HL_{1}:GL_{1} - HL_{1} \le 0$ $\Leftrightarrow$ $GL_{1} < L_{1}$ (dấu bằng không xảy ra vì $GL_{1} \notin HL$ ) $\rightarrow$ $HL_{1} \notin GL$ (vì $G$ là dạng hợp quy) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Thực hiện lập luận theo cách tương tự cho trò chơi $H - G = 0$ với nước đi đầu của Trái là đưa $H \to HL_{1}$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp; $\Rightarrow$ $\exists GL_{2} > HL_{1} \rightarrow GL_{2} > HL_{1} > GL_{1}$ $\rightarrow$ $\exists GL_{1};GL_{2} \in GL:  GL_{1} < GL_{2}$ mâu thuẫn với giả định ban đầu rằng $G$ và $H$ đều là dạng hợp quy $\rightarrow$ không tồn tại 2 dạng hợp quy khác nhau cho cùng 1 giá trị <br>
+&nbsp;&nbsp;&nbsp;&nbsp; $\Longrightarrow$ Ta hoàn tất chứng minh ***định lí 3.5*** <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Hệ quả:</ins>* <br>
+&nbsp;&nbsp;&nbsp;&nbsp;1 giá trị có thể được viết ở nhiều dạng khác nhau nhưng các quá trình rút gọn của ***3.4a, 3.4b*** sẽ tối giản tất cả chúng về 1 dạng thức duy nhất - dạng hợp quy, và nó đặc trưng cho mỗi giá trị. Dạng hợp quy của các số chính là các định nghĩa ở ***(1.1),(2.1), mục 4/***, dễ thấy rằng chúng không thể rút gọn được nữa. <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;Theo ví dụ ở ***3.3***, $\\{ \\{ 0|\uparrow \\}|1 + \ast \\} = 1$ , bởi $\uparrow = \\{ 0|\ast \\} < 1$ nên $\\{ \\{ 0|\uparrow \\}|1 + \ast \\} = \\{ 0|1 + \ast \\}$ (theo ***3.4b***), bởi $1 + \ast = \\{ 1...|... \\},1 = \\{ 0|\space\space \\} = \\{ 0|1 + \ast \\}$ nên $\\{ 0|1 + \ast \\} = \\{ 0|\space\space \\}$ (theo ***3.4b***). <br>
+
+#### &nbsp;&nbsp;&nbsp;&nbsp;***<ins>Ví dụ 4.1:</ins>***
+<div align="center">
+
+![image](https://github.com/MustardLawyer1995/LTTC-LTTCKH/assets/156400720/c0108178-2be8-4def-9dfe-8d924944fd41)
+</div>
+
+&nbsp;&nbsp;&nbsp;&nbsp;Về trò chơi có thành phần vô hạn. Giá trị của cây hackenbush (xanh-đỏ-xanh-đỏ-xanh-đỏ-...) có thể viết thành:  
 
 ```math
-\left\{ { \uparrow | \downarrow } \right\} = *{\rm{ }}\left( {\left\{ { \uparrow | \downarrow } \right\} + * = 0} \right)
+1 - \frac{1}{2} + \frac{1}{{{2^2}}} - \frac{1}{{{2^3}}} + \frac{1}{{{2^4}}} - \frac{1}{{{2^5}}} + ... = \frac{1}{2} + \frac{1}{{{2^3}}} + \frac{1}{{{2^5}}} + \frac{1}{{{2^7}}} + ... = \frac{1}{{2\left( {1 - {\raise0.5ex\hbox{$\scriptstyle 1$}
+\kern-0.1em/\kern-0.15em
+\lower0.25ex\hbox{$\scriptstyle 4$}}} \right)}} = \frac{2}{3}
 ```
+&nbsp;&nbsp;&nbsp;&nbsp;Như vậy giá trị của toàn bộ trò chơi là: $\frac{2}{3} \times 3 + \( -1 \) \times 2 = 0$ tức Người đi trước thua. <br>
+
+#### &nbsp;&nbsp;&nbsp;&nbsp;***<ins>Ví dụ 4.2:</ins>*** Trò chơi Cóc và Ếch
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Luật chơi:</ins>* trò chơi được chơi trên dải hình vuông $1 \times n$ . Tại 1 thời điểm, mỗi ô vuông hoặc trống hoặc bị chiếm bởi một con cóc hay ếch. Mặc dù trò chơi có thể bắt đầu ở bất kỳ thế sắp đặt nào, nhưng theo thông lệ, thường bắt đầu với những con cóc chiếm các ô vuông liên tiếp ở phía ngoài cùng trái và ếch chiếm các ô vuông liên tiếp ở phía ngoài cùng phải. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Đến lượt của mình, Trái có thể di chuyển 1 con cóc sang ô vuông trống bên phải nó. Nếu 1 con ếch đã chiếm ô này và ô bên phải con ếch đó trống, Trái có thể đưa con cóc vào khoảng trống đó; 1 động thái như vậy gọi là "nhảy". Con cóc không thể nhảy qua nhiều con ếch, cũng không được phép nhảy qua con cóc khác. Các quy tắc tương tự áp dụng cho Phải: trong 1 lượt, anh ta có thể di chuyển 1 con ếch sang ô trống lân cận bên trái hoặc nhảy qua 1 con cóc vào ô trống bên trái con cóc. Người chơi không thể di chuyển trong lượt của mình bị thua. <br>
+<div align="center">
+
+![image](https://github.com/MustardLawyer1995/LTTC-LTTCKH/assets/156400720/6e400aaf-b8b4-450c-b835-bcaef005cf56)
+</div>
+
+&nbsp;&nbsp;&nbsp;&nbsp;Các trạng thái trò chơi thường được thể hiện bằng 1 chuỗi gồm ba ký tự: T cho 1 con cóc, F cho 1 con ếch, và   cho 1 ô trống (như hình trên). <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Phân tích: Hình trên là tập hợp tất cả các trạng thái có thể xảy ra trong trò chơi đã được tính sẵn, ta chỉ cần dùng lại. Bởi vì định giá trị cho các trạng thái trò chơi là 1 việc dễ dàng nhưng tương đối nhàm chán (bạn đọc đã được làm quen ở những bài trước). Ta chỉ điểm qua rất nhanh những thao tác này để nhuần nhuyễn chúng. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Việc định giá trị bao giờ cũng được thực hiện từ điểm kết thúc trò chơi đi ngược lên trạng thái bắt đầu (trừ những trò chơi đã khám phá ra công thức giá trị tổng quát). Điểm kết thúc là những trạng thái mà cả 2 người chơi đều không còn nước đi, theo quy ước chúng nhận giá trị là 
+
 
 
 
