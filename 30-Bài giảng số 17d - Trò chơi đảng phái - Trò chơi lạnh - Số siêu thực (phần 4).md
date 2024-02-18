@@ -97,9 +97,11 @@
 ![image](https://github.com/MustardLawyer1995/LTTC-LTTCKH/assets/156400720/6e400aaf-b8b4-450c-b835-bcaef005cf56)
 </div>
 
-&nbsp;&nbsp;&nbsp;&nbsp;Các trạng thái trò chơi thường được thể hiện bằng 1 chuỗi gồm ba ký tự: T cho 1 con cóc, F cho 1 con ếch, và   cho 1 ô trống (như hình trên). <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Các trạng thái trò chơi thường được thể hiện bằng 1 chuỗi gồm ba ký tự: $T$ cho 1 con cóc, $F$ cho 1 con ếch, và $\bullet$ cho 1 ô trống (như hình trên). <br>
 &nbsp;&nbsp;&nbsp;&nbsp;Phân tích: Hình trên là tập hợp tất cả các trạng thái có thể xảy ra trong trò chơi đã được tính sẵn, ta chỉ cần dùng lại. Bởi vì định giá trị cho các trạng thái trò chơi là 1 việc dễ dàng nhưng tương đối nhàm chán (bạn đọc đã được làm quen ở những bài trước). Ta chỉ điểm qua rất nhanh những thao tác này để nhuần nhuyễn chúng. <br>
-&nbsp;&nbsp;&nbsp;&nbsp;Việc định giá trị bao giờ cũng được thực hiện từ điểm kết thúc trò chơi đi ngược lên trạng thái bắt đầu (trừ những trò chơi đã khám phá ra công thức giá trị tổng quát). Điểm kết thúc là những trạng thái mà cả 2 người chơi đều không còn nước đi, theo quy ước chúng nhận giá trị là 
+&nbsp;&nbsp;&nbsp;&nbsp;Việc định giá trị bao giờ cũng được thực hiện từ điểm kết thúc trò chơi đi ngược lên trạng thái bắt đầu (trừ những trò chơi đã khám phá ra công thức giá trị tổng quát). Điểm kết thúc là những trạng thái mà cả 2 người chơi đều không còn nước đi, theo quy ước chúng nhận giá trị là 0: $FF \bullet T$ , $F \bullet TTF$ , $TTFF \bullet$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Xác định giá trị của các trạng thái khác theo định nghĩa đệ quy: <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 
 
 
 
