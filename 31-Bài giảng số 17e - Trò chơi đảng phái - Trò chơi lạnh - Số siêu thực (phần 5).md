@@ -80,7 +80,6 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Với $n \ne m$ thì $\ast n \parallel \ast m$ <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- $\downarrow < \ast n < \uparrow$ , $\forall n \ne 1$ <br>
 
-### 9. Tích Norton
 
 
 
