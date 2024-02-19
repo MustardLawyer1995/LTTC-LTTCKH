@@ -43,15 +43,22 @@
 &nbsp;&nbsp;&nbsp;&nbsp;*<ins>Trường hợp 2:</ins>* $G_{1} \notin \mathbb{Z}$ , nên mọi nước đi của Phải trong $G_{1} \bullet H$ sẽ đưa về $G_{1}R \bullet H - HL$ hay $G_{1}R \bullet H - 2H + HR$ . Bởi $G_{1} + G_{2} + G_{3} \ge 0$ , nên $G_{1}R + G_{2} + G_{3} \parallel > 0$ . Ta đến với 2 trường hợp nhỏ hơn như sau: <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- *<ins>Trường hợp 2a:</ins>* $G_{1}R,G_{2},G_{3} \in \mathbb{Z}$ . Bởi $G_{1}R + G_{2} + G_{3} \parallel > 0$ nên $G_{1}R + G_{2} + G_{3} = m \ge 1$ . Nước đi đầu tiên của Phải đưa trò chơi trở về: $G_{1}R \bullet H - 2H + HR + G_{2} \bullet H + G_{3} \bullet H = \( m-2 \)H + HR$ hoặc $G_{1}R \bullet H - HL + G_{2} \bullet H + G_{3} \bullet H = mH - HL$ . Bởi $m \ge 1 \to mH - HL \ge H - HL \ge 0$ và $\( m-2 \)H + HR \ge HR - H \parallel > 0$ nên khi ấy ở lượt tiếp, Trái có nước đi chiến thắng. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- *<ins>Trường hợp 2b:</ins>* không phải tất cả  $G_{1}R,G_{2},G_{3}$ đều $\in \mathbb{Z}$ . Nước đi đầu của Phải đưa trò chơi về:  $G_{1}R \bullet H - 2H + HR + G_{2} \bullet H + G_{3} \bullet H$ hoặc $G_{1}R \bullet H - HL + G_{2} \bullet H + G_{3} \bullet H$ . Bởi $G_{1}R + G_{2} + G_{3} \parallel > 0$ , nên không mất tính tổng quát, giả định $G_{1}R \notin \mathbb{Z}$ và $G_{1}RL + G_{2} + G_{3} \ge 0$ (theo ***4.5***) khi ấy suy ra $G_{1}RL \bullet H + G_{2} \bullet H + G_{3} \bullet H \ge 0$ (theo giả thiết quy nạp). Sau nước đi đầu tiên của Phải, Trái có thể đưa $G_{1}R \bullet H$ về $G_{1}RL \bullet H + HL$ hay $G_{1}RL \bullet H + 2H - HR$ và trò chơi trở thành $G_{1}RL \bullet H + G_{2} \bullet H + G_{3} \bullet H \ge 0$ , Phải đi lượt tiếp và thua. <br>
-&nbsp;&nbsp;&nbsp;&nbsp; $\Rightarrow$ Từ tất các trường hợp trên thấy rằng, dù Phải đi bất cứ nước nào trong trò chơi $G_{1} \bullet H + G_{2} \bullet H + G_{3} \bullet H \ge 0$ cũng thua <br>
+&nbsp;&nbsp;&nbsp;&nbsp; $\Rightarrow$ Từ tất các trường hợp trên thấy rằng, dù Phải đi bất cứ nước nào trong trò chơi $G_{1} \bullet H + G_{2} \bullet H + G_{3} \bullet H$ cũng thua nên suy ra $G_{1} \bullet H + G_{2} \bullet H + G_{3} \bullet H \ge 0$ <br>
 &nbsp;&nbsp;&nbsp;&nbsp; $\Longrightarrow$ Ta hoàn tất chứng minh ***bổ đề 5.2a*** <br>
 
 &nbsp;&nbsp;&nbsp;&nbsp;*<ins>Chứng minh định lí 5.1b và 5.1c:</ins>* <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Với $U > 0 , A \ge B \to A + \( -B \) + 0 \ge 0$ , bởi ***(5.2a) và (5.1a)*** nên $A \bullet U + \( -B \) \bullet U + 0 \bullet U = A \bullet U - B \bullet U \ge 0 \Leftrightarrow  A \bullet U \ge B \bullet U$ nên ta kết luận $A \ge B \to A \bullet U \ge B \bullet U$ (##) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Lại có: $-\( A+B \) + A + B \ge 0,\( A+B \) + \( -A \) + \( -B \) \ge 0$, bởi ***(5.2a),(5.1a)*** nên $-\( A+B \) \bullet U + A \bullet U + B \bullet U \ge 0$ và $\( A+B \) \bullet U - A \bullet U - B \bullet U \ge 0$ $\Leftrightarrow A \bullet U + B \bullet U = \( A+B \) \bullet U$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp; $\Longrightarrow$ Ta hoàn tất chứng minh ***tính chất 5.1c*** <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Ta có: $K \parallel > 0 \to KL \ge 0 \to KL \bullet U \ge 0$ (theo ***5.2a***) $\to KL \bullet U + UL \ge 0$ (vì $U > 0 \to UL \ge 0$ ). Xét trò chơi $K \bullet U$ , Trái đi trước có nước thắng: đưa trò chơi về $KL \bullet U + UL \ge 0 \to K \bullet U \parallel > 0$ . Suy ra: $K \parallel > 0 \to K \bullet U \parallel > 0$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Từ điều này ta suy ra: $A \parallel > B \Leftrightarrow A - B \parallel > 0 \to \( A-B \) \bullet U = A \bullet U - B \bullet U \parallel > 0$ (theo ***5.1c***) $\Leftrightarrow A \bullet U \parallel > B \bullet U$ . Bởi vậy nên: $A \bullet U \ge B \bullet U \to A \ge B$ (giả đỉnh $A < \parallel B$ dẫn đến $A \bullet U < \parallel B \bullet U$ , mâu thuẫn), kết hợp với (##) <br>
+&nbsp;&nbsp;&nbsp;&nbsp; $\Longrightarrow$ Ta hoàn tất chứng minh ***tính chất 5.1b*** <br>
 
+#### &nbsp;&nbsp;&nbsp;&nbsp;***<ins>Bổ đề 5.2b:</ins>***
+&nbsp;&nbsp;&nbsp;&nbsp;Với $G \notin \mathbb{Z},U > 0$ thì $G \bullet U = \\{ GL \bullet U + U + I|GR \bullet U - U - I \\}$ là dạng hợp quy $\Leftrightarrow G = \\{ GL|GR \\}$ cũng chính là dạng hợp quy. <br>
 
-
-
-
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Chứng minh bổ đề 5.2b:</ins>* <br>
+&nbsp;&nbsp;&nbsp;&nbsp;
 
 
 
