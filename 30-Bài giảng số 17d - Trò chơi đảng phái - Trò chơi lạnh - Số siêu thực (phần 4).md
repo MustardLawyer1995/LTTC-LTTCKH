@@ -126,7 +126,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp; $\rightarrow$ $G = \ast + 0 + \uparrow + \frac{1}{2} + \ast - 1 + \ast + \frac{1}{2} + \uparrow = \ast + 2\uparrow > 0$ (theo ***3.2***) <br>
 &nbsp;&nbsp;&nbsp;&nbsp; $\rightarrow$ Người chơi Trái (cóc) thắng. Nếu Trái đi trước, ta có thể chỉ cho anh ấy nước đi chiến thắng là chơi ở $TT \bullet FF$ để biến \* thành $\uparrow$ , đưa trò chơi về $G = 3\uparrow > 0$ , hoặc chơi ở $T \bullet FTF$ để biến \* thành 0, đưa trò chơi về $G = 2\uparrow > 0$ <br>
 
-#### &nbsp;&nbsp;&nbsp;&nbsp;***<ins>Ví dụ 4.4:</ins>*** Trò chơi Hackenbush 3 màu\
+#### &nbsp;&nbsp;&nbsp;&nbsp;***<ins>Ví dụ 4.4:</ins>*** Trò chơi Hackenbush 3 màu
 <div align="center">
 
 ![image](https://github.com/MustardLawyer1995/LTTC-LTTCKH/assets/156400720/832e72b3-6739-4630-bf52-bc24f4f502be)
