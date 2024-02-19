@@ -97,24 +97,48 @@
 ![image](https://github.com/MustardLawyer1995/LTTC-LTTCKH/assets/156400720/6e400aaf-b8b4-450c-b835-bcaef005cf56)
 </div>
 
-&nbsp;&nbsp;&nbsp;&nbsp;Các trạng thái trò chơi thường được thể hiện bằng 1 chuỗi gồm ba ký tự: $T$ cho 1 con cóc, $F$ cho 1 con ếch, và $\bullet$ cho 1 ô trống (như hình trên). <br>
-&nbsp;&nbsp;&nbsp;&nbsp;Phân tích: Hình trên là tập hợp tất cả các trạng thái có thể xảy ra trong trò chơi đã được tính sẵn, ta chỉ cần dùng lại. Bởi vì định giá trị cho các trạng thái trò chơi là 1 việc dễ dàng nhưng tương đối nhàm chán (bạn đọc đã được làm quen ở những bài trước). Ta chỉ điểm qua rất nhanh những thao tác này để nhuần nhuyễn chúng. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Các trạng thái trò chơi thường được thể hiện bằng 1 chuỗi gồm ba ký tự: $T$ cho 1 con cóc, $F$ cho 1 con ếch, và $\bullet$ cho 1 ô trống (hình trên). <br>
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Phân tích:</ins>* Hình trên là tập hợp tất cả các trạng thái có thể xảy ra trong trò chơi đã được tính sẵn, ta chỉ cần dùng lại. Bởi vì định giá trị cho các trạng thái trò chơi là 1 việc dễ dàng nhưng tương đối nhàm chán (bạn đọc đã được làm quen ở những bài trước). Ta chỉ điểm qua rất nhanh những thao tác này để nhuần nhuyễn chúng. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;Việc định giá trị bao giờ cũng được thực hiện từ điểm kết thúc trò chơi đi ngược lên trạng thái bắt đầu (trừ những trò chơi đã khám phá ra công thức giá trị tổng quát). Điểm kết thúc là những trạng thái mà cả 2 người chơi đều không còn nước đi, theo quy ước chúng nhận giá trị là 0: $FF \bullet T$ , $F \bullet TTF$ , $TTFF \bullet$ <br>
 &nbsp;&nbsp;&nbsp;&nbsp;Xác định giá trị của các trạng thái khác theo định nghĩa đệ quy: <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- $FTF \bullet T = \\{ F \bullet FTT|\space\space \\} = \\{ -1|\space\space \\} = 0$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- $FTFT \bullet = \\{ FTF \bullet T|\space\space \\} = \\{ 0|\space\space \\} = 1$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- $FT \bullet TF = \\{ F \bullet TTF|FTFT \bullet \\} = \\{ 0|1 \\} = \frac{1}{2}$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- $\bullet TFTF = \\{ \space\space|FT \bullet TF \\} = \\{ \space\space|\frac{1}{2} \\} = 0$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- $\bullet FTTF = \\{ \space\space|F \bullet TTF \\} = \\{ \space\space|0 \\} = -1$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- $TF \bullet TF = \\{ \bullet FTTF|TFFT \bullet \\} = \\{ \bullet FTTF| - \bullet FTTF \\} = \\{ -1|1 \\} = 0$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- $T \bullet FTF = \\{ \bullet TFTF|TF \bullet TF \\} = \\{ 0|0 \\} = \ast$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- $TTF \bullet F = \\{ T \bullet FTF|TTFF \bullet \\} = \\{ \ast|0 \\} = \downarrow$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- $TT \bullet FF = \\{ T \bullet TFF|TTF \bullet F \\} = \\{ -TTF \bullet F|TTF \bullet F \\} = \\{ -\downarrow|\downarrow \\} = \\{ \uparrow|\downarrow \\} = \ast$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;( $\\{ 0|0 \\} = \ast, \\{ 0|\ast \\} = \downarrow$ theo ***định nghĩa 3.2*** và $\\{ -\downarrow|\downarrow \\} = \ast$ theo ***3.4c***)<br>
 
+&nbsp;&nbsp;&nbsp;&nbsp;- Các trạng thái còn lại chỉ là đối xứng của các trạng thái trên. Nếu chỉ chơi đơn thuần thì Cóc và Ếch chẳng có gì đáng bàn vì như ta thấy, tại mỗi trạng thái, người chơi chỉ có 1 nước đi khả dụng duy nhất. Người chiến thắng là người chơi đầu tiên, vì giá trị của điểm bắt đầu là \*. Tuy nhiên, khi biến trò chơi trở thành tổng của nhiều ván chơi Cóc và Ếch đơn lẻ, ta có 1 trò chơi không tầm thường. Lý thuyết về số siêu thực sẽ phát huy tính hữu dụng của nó. <br>
 
+#### &nbsp;&nbsp;&nbsp;&nbsp;***<ins>Ví dụ 4.3:</ins>*** Cóc và Ếch phiên bản mở rộng
+<div align="center">
 
+![image](https://github.com/MustardLawyer1995/LTTC-LTTCKH/assets/156400720/f9259b89-709f-411d-b033-ef0d7a3e9d94)
+</div>
 
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Luật chơi:</ins>* có nhiều trò chơi Cóc và Ếch diễn ra đồng thời, mỗi trò chơi là 1 hàng (ảnh trên). Cách di chuyển như cũ nhưng ở mỗi lượt người chơi chỉ được thực hiện di chuyển ở 1 hàng mà anh ta chọn ra (tùy ý) trong lượt đó. Ai không còn nước đi ở lượt của mình thì thua. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Phân tích:</ins>* Đây là 1 trò chơi có dạng tổng của nhiều trò chơi con, vì mỗi nước đi chỉ tác động vào 1 hàng và các hàng không bị phụ thuộc nhau. Chiến lược của trò chơi như đã biết: xác định giá trị của từng hàng, tính tổng tất cả chúng để thu được $G$ , giá trị của toàn bộ trò chơi. Nếu $G > 0$ : Trái (cóc) thắng, $G < 0$ : Phải (ếch) thắng, $G = 0$ : người đi trước thua, $G \parallel 0$ : người đi trước thắng. Và cách chơi tối ưu khi đang ở thế tất thắng là chọn nước đi thích hợp để đưa $G$ về những giá trị có lợi cho mình ở lượt tiếp theo (à dĩ nhiên nếu đang ở thế tất bại thì không có nước đi tối ưu vì đi nước nào cũng thua).<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Thử với trò chơi trong ảnh, giá trị các hàng từ trên xuống lần lượt là: $TT \bullet FF = \ast$ , $TFTF \bullet = 0$ , $T \bullet TFF = \uparrow$ , $FT \bullet TF = \frac{1}{2}$ , $T \bullet FTF = \ast$ , $\bullet FTTF = -1$ , $TT \bullet FF = \ast$ , $FT \bullet TF = \frac{1}{2}$ , $T \bullet TFF = \uparrow$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp; $\rightarrow$ $G = \ast + 0 + \uparrow + \frac{1}{2} + \ast - 1 + \ast + \frac{1}{2} + \uparrow = \ast + 2\uparrow > 0$ (theo ***3.2***) <br>
+&nbsp;&nbsp;&nbsp;&nbsp; $\rightarrow$ Người chơi Trái (cóc) thắng. Nếu Trái đi trước, ta có thể chỉ cho anh ấy nước đi chiến thắng là chơi ở $TT \bullet FF$ để biến \* thành $\uparrow$ , đưa trò chơi về $G = 3\uparrow > 0$ , hoặc chơi ở $T \bullet FTF$ để biến \* thành 0, đưa trò chơi về $G = 2\uparrow > 0$ <br>
 
+#### &nbsp;&nbsp;&nbsp;&nbsp;***<ins>Ví dụ 4.4:</ins>*** Trò chơi Hackenbush 3 màu\
+<div align="center">
 
+![image](https://github.com/MustardLawyer1995/LTTC-LTTCKH/assets/156400720/832e72b3-6739-4630-bf52-bc24f4f502be)
+</div>
 
+&nbsp;&nbsp;&nbsp;&nbsp;Hãy cùng đến với trò chơi Hackenbush 3 màu, được tạo ra bằng việc bổ sung vào trò chơi hackenbush 2 màu những đoạn màu xanh lục, được phép xóa bởi cả 2 người chơi. Xét trò chơi gồm 1 cây lục-xanh (hình), giá trị của cây được xác định dễ dàng bởi những quy tắc đã biết: $\\{ 0,\ast|0 \\} = \uparrow + \ast$ ***(theo (3.4c))***, với giá trị của 1 cây "lục" đơn độc là $\\{ 0|0 \\} = \ast$ , vì nó có thể bị cắt bởi cả 2 người chơi. Bởi tính đối xứng, giá trị của 1 cây lục - đỏ là $\downarrow + \ast$ . <br>
 
+#### &nbsp;&nbsp;&nbsp;&nbsp;***<ins>Ví dụ 4.5:</ins>***
+<div align="center">
 
+![image](https://github.com/MustardLawyer1995/LTTC-LTTCKH/assets/156400720/f87c13e6-26d3-40e2-a17d-90523f208012)
+</div>
 
-
-
-
-
-
-
+&nbsp;&nbsp;&nbsp;&nbsp;Giá trị của bông hoa bên trái là bao nhiêu? Thật khó để tính toán theo cách thông thường. Nhìn vào trò chơi gồm bông hoa và cây lục-đỏ trong hình, người nào cắt 1 trong 2 đoạn lục trước chắc chắn thua, bởi người kia chỉ việc cắt đoạn lục còn lại. Cả 2 người chơi sẽ ưu tiên cắt các đoạn có màu tương ứng với mình (xanh/đỏ) trước, số lượng các đoạn xanh và đỏ là bằng nhau, và việc cắt 1 trong số chúng không ảnh hưởng đến các đoạn còn lại $\rightarrow$ người đi trước sẽ thua vì bị đưa vào thế chỉ còn 2 đoạn lục. $\rightarrow$ tổng giá trị của bông hoa và cây lục - đỏ là 0. Mà giá trị của cây lục-đỏ là $\downarrow + \ast$ theo ***ví dụ 4.4*** $\rightarrow$ giá trị của bông hoa $= \uparrow + \ast$ . <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Một cách khác thông minh hơn là nhận ra *nguyên lý đại tràng* vẫn còn hiệu lực trong hackenbush 3 màu (đọc lại phần chứng minh ở mục ***<ins>nguyên lí đại tràng - Colon Principle</ins>***)nên bông hoa: lục(3 xanh, 2 đỏ) có thể được quy đổi về cây lục-xanh, bởi vì giá trị của (3 xanh, 2 đỏ) = giá trị của (xanh), nên bông hoa và cây lục - xanh có giá trị như nhau và $= \uparrow + \ast$ . <br>
