@@ -38,7 +38,17 @@ Hình 3            | Hình 4
 ```math
 \left[ {2627} \right] = \left\{ {\left[ {2637} \right],\left[ {2647} \right],\left[ {3627} \right],\left[ {4627} \right]{\rm{ }}\space|\space{\rm{ }}\left[ {2527} \right],\left[ {2626} \right],\left[ {2625} \right]} \right\}
 ```
+&nbsp;&nbsp;&nbsp;&nbsp;Có 7 trạng thái mới phái sinh từ $\[ 2627 \]$ . Tương tự, mỗi trong số chúng lại có các trạng thái phái sinh khác. Tuy nhiên, ta không cần phải xem xét tất cả chúng, chỉ cần chú ý đến một số điểm quan trọng: <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Tính đối xứng của 2 cột $a,b$ : $\[ xyzt \] = \[ ztxy \]$ . <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Các trạng thái mà 2 cột bị tách ra (không còn gây ảnh hưởng lên nhau được nữa) có thể được định giá trị nhanh bằng cách tính giá trị riêng từng cột rồi cộng vào: $\[ xyzt \] = \[ xy \] + \[ zt \]$ <br>
 
+```math
+\left[ {2337} \right] = \left[ {23} \right] + \left[ {37} \right] = 0 + \left( {2 \downarrow  + *} \right) = 2 \downarrow  + *\;;\;\;\left[ {2447} \right] = \left[ {24} \right] + \left[ {47} \right] = * +  \downarrow \;;\;\;\left[ {2446} \right] = \left[ {24} \right] + \left[ {46} \right] = * + * = 0
+```
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Những nước đi khiến cho người thực hiện "thua ngay lập tức" sẽ không bao giờ được sử dụng, vì vậy có thể được lược bỏ khỏi công thức. Ví dụ: tiến tốt 1 ô (nước duy nhất có thể đi) ở $\[ 4536 \]$ tạo điều kiện cho đối thủ ăn con tốt này, tốt của đối thủ sau đó không còn bị cản, có thể đi đến cuối bàn cờ để phong hậu, dẫn tới chiến thắng tất yếu  <br>
+&nbsp;&nbsp;&nbsp;&nbsp; $\rightarrow$ $\[ 3645 \] = \[ 4536 \] = \\{ \space\space|\space\space \\} = 0 \to \[ 3636 \] = \[ 4527 \] = 0$ do người đi trước luôn thua (người đi sau chỉ cần đi những nước đưa thế cờ về giá trị bằng $0$ ) $\to \[ 3627 \] = 0$ (chứng minh diễn giải tương tự). <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;
 
 
 
