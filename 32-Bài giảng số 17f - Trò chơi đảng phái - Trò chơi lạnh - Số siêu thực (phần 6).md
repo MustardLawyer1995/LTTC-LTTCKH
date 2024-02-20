@@ -96,8 +96,49 @@ A \bullet \left( {B \bullet C} \right) = A \bullet \left\{ {BL \bullet C + C + I
 &nbsp;&nbsp;&nbsp;&nbsp;Do vậy $\( A \bullet B \) \bullet C = A \bullet \( B \bullet C \)$ được thỏa mãn bởi quy nạp (giả định đẳng thức đúng khi thay $A \to AL,AR$ ) <br>
 &nbsp;&nbsp;&nbsp;&nbsp; $\Longrightarrow$ Ta hoàn tất chứng minh ***tính chất 5.2d*** <br>
 
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Ví dụ:</ins>* Ta có ví dụ minh họa về tích Norton như sau, với: <br>
 
+```math
+G \notin \mathbb{Z} \bigg\vert \frac{{Gp}}{{{2^s}}} = \left\{ {\frac{{Gp}}{{{2^s}}} + \frac{{p - 1}}{{{2^s}}} \bigg\vert \frac{{GRp}}{{{2^s}}} - \frac{{p - 1}}{{{2^s}}}} \right\}
+```
+```math
+\Rightarrow * \bullet \frac{1}{2} = *,* \bullet \frac{3}{2} = \left\{ {1| - 1} \right\},\left( {\frac{1}{2}} \right) \bullet \frac{3}{2} = \left\{ {1 \bigg\vert \frac{1}{2}} \right\}, \uparrow  \bullet \frac{1}{2} = \left\{ {0 \bigg\vert * \bullet \frac{1}{2}} \right\} = \left\{ {0|*} \right\} =  \uparrow ,{\rm{ }}...
+```
+```math
+\Rightarrow G \bullet n = \left\{ {GL \bullet n + n - 1|GR \bullet n - n + 1} \right\}\; \to * \bullet n = \left\{ {n - 1| - n + 1} \right\},{\rm{ }}\left( {\frac{1}{2}} \right) \bullet n = \left\{ {n - 1|1} \right\},{\rm{ }}...
+```
+```math
+\left\{ \begin{array}{l}
+G \bullet  \uparrow  = \left\{ {GL \bullet  \uparrow  + 2 \uparrow  + *|GR \bullet  \uparrow  + 2 \downarrow  + *} \right\}\; \to \;\left( {\frac{1}{2}} \right) \bullet  \uparrow  = \left\{ {2 \uparrow  + *| \downarrow  + *} \right\},* \bullet  \uparrow \\
+{\rm{                                                               }} = \left\{ {2 \uparrow  + *|2 \downarrow  + *} \right\},\left\{ {1| - 1} \right\} \bullet  \uparrow  = \left\{ {3 \uparrow  + *|3 \downarrow  + *} \right\}...
+\end{array} \right.
+```
 
+#### &nbsp;&nbsp;&nbsp;&nbsp;***<ins>Nguyên lí 5.3a:</ins>***
+&nbsp;&nbsp;&nbsp;&nbsp;Nguyên lý chuyển dịch sao: $\forall G \notin \mathbb{Z}$ , ta có: <br>
+
+```math
+G \bullet  \uparrow  + *n = \left\{ {GL \bullet  \uparrow  + 2 \uparrow  + * + *n|GR \bullet  \uparrow  + 2 \downarrow  + * + *n} \right\}
+```
+
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Chứng minh nguyên lí 5.3a:</ins>* <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Xét trò chơi $\\{ GL \bullet \uparrow + 2\uparrow + \ast + \ast n | GR \bullet \uparrow + 2\downarrow + \ast + \ast n \\} - G \bullet \uparrow + \ast n$ , nước đi duy nhất mà người chơi có thể nghĩ đến là chơi ở $\ast n$ , bởi những nước đi còn lại đều dễ dàng bị đối thủ khắc chế bằng cách đưa toàn bộ trò chơi về 0. Không mất tính tổng quát, giả định Phải đưa $\ast n$ về $\ast n'$ (với $n' < n$ ), Trái có thể đưa trò chơi về: <br>
+
+```math
+GL \bullet  \uparrow  + 2 \uparrow  + * + *n - G \bullet  \uparrow  + *n'{\rm{ }} = \left( {GL - G + 2} \right) \bullet  \uparrow  + * + *n + *n'
+```
+&nbsp;&nbsp;&nbsp;&nbsp;bởi $G \notin \mathbb{Z}$ nên $GL - G > -1$ (theo ***2.1 và 4.3***) $\to \( GL - G + 2 \) \bullet \uparrow + \ast + \ast n + \ast n' > \uparrow + \ast + \ast n + \ast n' > 0$ $\to$ Phải thua. Do vậy, trong trò chơi ban đầu, người đi trước luôn thua nên giá trị của trò chơi $= 0$ , dẫn tới kết luận hiển nhiên của ***(5.3a)***. <br>
+&nbsp;&nbsp;&nbsp;&nbsp; $\Longrightarrow$ Ta hoàn tất chứng minh ***nguyên lí 5.3a*** <br>
+
+#### &nbsp;&nbsp;&nbsp;&nbsp;***<ins>Nguyên lí 5.3b:</ins>***
+&nbsp;&nbsp;&nbsp;&nbsp;Với $n \in \mathbb{N}, m \in \mathbb{Z}^{+}$ hoặc $n \in \mathbb{Z}^{+}, m \in \mathbb{N}$ , có: $\\{ 0|n\uparrow + \ast m \\} = \( n+1 \)\uparrow + \ast + \ast m$ và đây cũng là dạng hợp quy. <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Chứng minh nguyên lí 5.3b:</ins>* <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Chứng minh bằng cách chỉ ra trò chơi $\\{ 0|n\uparrow + \ast m \\} + \( n+1 \)\downarrow + \ast + \ast m = 0$ , tức là người đi trước luôn thua, cũng như chỉ ra $\\{ 0|n\uparrow + \ast m \\}$ không thể rút gọn bởi ***3.4a,b***) <br>
+&nbsp;&nbsp;&nbsp;&nbsp; $\Longrightarrow$ Ta hoàn tất chứng minh ***nguyên lí 5.3b*** <br>
+
+#### &nbsp;&nbsp;&nbsp;&nbsp;***<ins>Nguyên lí 5.3c:</ins>***
+&nbsp;&nbsp;&nbsp;&nbsp;Ta có: 
 
 
 
