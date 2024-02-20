@@ -51,16 +51,50 @@
 &nbsp;&nbsp;&nbsp;&nbsp;Lại có: $-\( A+B \) + A + B \ge 0,\( A+B \) + \( -A \) + \( -B \) \ge 0$, bởi ***(5.2a),(5.1a)*** nên $-\( A+B \) \bullet U + A \bullet U + B \bullet U \ge 0$ và $\( A+B \) \bullet U - A \bullet U - B \bullet U \ge 0$ $\Leftrightarrow A \bullet U + B \bullet U = \( A+B \) \bullet U$ <br>
 &nbsp;&nbsp;&nbsp;&nbsp; $\Longrightarrow$ Ta hoàn tất chứng minh ***tính chất 5.1c*** <br>
 &nbsp;&nbsp;&nbsp;&nbsp;Ta có: $K \parallel > 0 \to KL \ge 0 \to KL \bullet U \ge 0$ (theo ***5.2a***) $\to KL \bullet U + UL \ge 0$ (vì $U > 0 \to UL \ge 0$ ). Xét trò chơi $K \bullet U$ , Trái đi trước có nước thắng: đưa trò chơi về $KL \bullet U + UL \ge 0 \to K \bullet U \parallel > 0$ . Suy ra: $K \parallel > 0 \to K \bullet U \parallel > 0$ <br>
-&nbsp;&nbsp;&nbsp;&nbsp;Từ điều này ta suy ra: $A \parallel > B \Leftrightarrow A - B \parallel > 0 \to \( A-B \) \bullet U = A \bullet U - B \bullet U \parallel > 0$ (theo ***5.1c***) $\Leftrightarrow A \bullet U \parallel > B \bullet U$ . Bởi vậy nên: $A \bullet U \ge B \bullet U \to A \ge B$ (giả đỉnh $A < \parallel B$ dẫn đến $A \bullet U < \parallel B \bullet U$ , mâu thuẫn), kết hợp với (##) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Từ điều này ta suy ra: $A \parallel > B \Leftrightarrow A - B \parallel > 0 \to \( A-B \) \bullet U = A \bullet U - B \bullet U \parallel > 0$ (theo ***5.1c***) $\Leftrightarrow A \bullet U \parallel > B \bullet U$ . Bởi vậy nên: $A \bullet U \ge B \bullet U \to A \ge B$ (giả định $A < \parallel B$ dẫn đến $A \bullet U < \parallel B \bullet U$ , mâu thuẫn), kết hợp với (##) <br>
 &nbsp;&nbsp;&nbsp;&nbsp; $\Longrightarrow$ Ta hoàn tất chứng minh ***tính chất 5.1b*** <br>
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;***<ins>Bổ đề 5.2b:</ins>***
 &nbsp;&nbsp;&nbsp;&nbsp;Với $G \notin \mathbb{Z},U > 0$ thì $G \bullet U = \\{ GL \bullet U + U + I|GR \bullet U - U - I \\}$ là dạng hợp quy $\Leftrightarrow G = \\{ GL|GR \\}$ cũng chính là dạng hợp quy. <br>
 
 &nbsp;&nbsp;&nbsp;&nbsp;*<ins>Chứng minh bổ đề 5.2b:</ins>* <br>
-&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;Bởi $I = \text{ max } \( UL - U,U - UR \)$ nên $GL \bullet U + U + I = \text{ max } \( GL \bullet U + UL,GL \bullet U + 2U - UR \)$ , ta cần chỉ ra với mọi phần tử trong tập sau: <br>
+<div align="center">
 
+$\( GL \bullet U + U + I\)R = \\{ GLR \bullet U,GL \bullet U + ULR,GL \bullet U + U,GL \bullet U + 2U -  ULR \\}$ đều $\parallel > G \bullet U$ 
+</div>
 
+&nbsp;&nbsp;&nbsp;&nbsp;Thật vậy, ta có: $GLR \parallel > G$ (do giả thiết $G = \\{ GL|GR \\}$ là dạng hợp quy) $\Leftrightarrow GLR \bullet U \parallel > G \bullet U$ (từ ***hệ quả 5.1b***); có $ULR \parallel > U$ và $ULR < \parallel U$ (do $U = \\{ UL|UR \\}$ là dạng hợp quy) $GL \bullet U + ULR \parallel > GL \bullet U + U$ và $GL \bullet U + 2U - URL \parallel > GL \bullet U + U$ , mặt khác bởi $G \notin \mathbb{Z}$ nên $1 > G - GL$ (theo ***2.1 và 4.3***) $\Leftrightarrow U > \( G - GL \) \bullet U$ và $\( GR \bullet U - U - I \)L$ đều $< \parallel G \bullet U$ , dẫn đến kết luận bổ đề. <br>
+&nbsp;&nbsp;&nbsp;&nbsp; $\Longrightarrow$ Ta hoàn tất chứng minh ***bổ đề 5.2b*** <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Chứng minh tính chất 5.1d:</ins>* <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Khi $A \in \mathbb{Z}$ thì đẳng thức tự động thỏa mãn bởi ***5.1c***, nên ta xét trường hợp $A \notin \mathbb{Z}$ .<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Đặt $Ib = \text{ max } \( BL - B,B - BR \) , Ic = \text{ max } \( CL - C,C - CR \)$ . Khi ấy ta có: <br>
+
+```math
+\begin{array}{l}
+\left( {A \bullet B} \right) \bullet C = \left\{ {AL \bullet B + B + Ib|AR \bullet B - B - Ib} \right\} \bullet C\\
+{\rm{                          }} = \left\{ {\left( {AL \bullet B} \right) \bullet C + \left( {B + Ib} \right) \bullet C + C + Ic|\left( {AR \bullet B} \right) \bullet C - \left( {B + Ib} \right) \bullet C - C - Ic} \right\}.
+\end{array}
+```
+&nbsp;&nbsp;&nbsp;&nbsp;Mặt khác, $B \bullet C = \\{ BL \bullet C + C + Ic|BR \bullet C - C - Ic \\}$ là dạng hợp quy ***theo 5.2b***, lại có: <br>
+
+```math
+\left\{ \begin{array}{l}
+\left( {B \bullet C} \right)L - B \bullet C = \left( {BL - B} \right) \bullet C + C + Ic\
+B \bullet C - \left( {B \bullet C} \right)R = \left( {B - BR} \right) \bullet C + C + Ic
+\end{array} \right.
+```
+&nbsp;&nbsp;&nbsp;&nbsp;Nên khi ấy: $\text{ max } = \( \( B \bullet C \)L - B \bullet C , B \bullet C - \( B \bullet C \)R \) = Ib \bullet C + C + Ic$ . Từ đó ta suy ra: <br>
+
+```math
+\begin{array}{l}
+A \bullet \left( {B \bullet C} \right) = A \bullet \left\{ {BL \bullet C + C + Ic|BR \bullet C - C - Ic} \right\}\\
+{\rm{                 }} = \left\{ {AL \bullet \left( {B \bullet C} \right) + \left( {B + Ib} \right) \bullet C + C + Ic|AR \bullet \left( {B \bullet C} \right) - \left( {B + Ib} \right) \bullet C - C - Ic} \right\}
+\end{array}
+```
+&nbsp;&nbsp;&nbsp;&nbsp;Do vậy $\( A \bullet B \) \bullet C = A \bullet \( B \bullet C \)$ được thỏa mãn bởi quy nạp (giả định đẳng thức đúng khi thay $A \to AL,AR$ ) <br>
+&nbsp;&nbsp;&nbsp;&nbsp; $\Longrightarrow$ Ta hoàn tất chứng minh ***tính chất 5.2d*** <br>
 
 
 
