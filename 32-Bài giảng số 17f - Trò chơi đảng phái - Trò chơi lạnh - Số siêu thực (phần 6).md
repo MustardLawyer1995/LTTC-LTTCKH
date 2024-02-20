@@ -99,7 +99,7 @@ A \bullet \left( {B \bullet C} \right) = A \bullet \left\{ {BL \bullet C + C + I
 &nbsp;&nbsp;&nbsp;&nbsp;*<ins>Ví dụ:</ins>* Ta có ví dụ minh họa về tích Norton như sau, với: <br>
 
 ```math
-G \notin \mathbb{Z} \bigg\vert \frac{{Gp}}{{{2^s}}} = \left\{ {\frac{{Gp}}{{{2^s}}} + \frac{{p - 1}}{{{2^s}}} \bigg\vert \frac{{GRp}}{{{2^s}}} - \frac{{p - 1}}{{{2^s}}}} \right\}
+G \notin \mathbb{Z} \bigg\vert \frac{{G \bullet p}}{{{2^s}}} = \left\{ {\frac{{G \bullet p}}{{{2^s}}} + \frac{{p - 1}}{{{2^s}}} \bigg\vert \frac{{GR \bullet p}}{{{2^s}}} - \frac{{p - 1}}{{{2^s}}}} \right\}
 ```
 ```math
 \Rightarrow * \bullet \frac{1}{2} = *,* \bullet \frac{3}{2} = \left\{ {1| - 1} \right\},\left( {\frac{1}{2}} \right) \bullet \frac{3}{2} = \left\{ {1 \bigg\vert \frac{1}{2}} \right\}, \uparrow  \bullet \frac{1}{2} = \left\{ {0 \bigg\vert * \bullet \frac{1}{2}} \right\} = \left\{ {0|*} \right\} =  \uparrow ,{\rm{ }}...
@@ -138,7 +138,27 @@ GL \bullet  \uparrow  + 2 \uparrow  + * + *n - G \bullet  \uparrow  + *n'{\rm{ }
 &nbsp;&nbsp;&nbsp;&nbsp; $\Longrightarrow$ Ta hoàn tất chứng minh ***nguyên lí 5.3b*** <br>
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;***<ins>Nguyên lí 5.3c:</ins>***
-&nbsp;&nbsp;&nbsp;&nbsp;Ta có: 
+&nbsp;&nbsp;&nbsp;&nbsp;Ta luôn có: $A \bullet \( B \bullet \uparrow \) = \( A \bullet B \) \bullet \uparrow , \forall B > 0$ <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Chứng minh nguyên lí 5.3c:</ins>* <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Với $B \notin \mathbb{Z}$ , đẳng thức được thỏa mãn bởi ***(5.1d)***, nên ta giả sử $B \in \mathbb{Z}$ . Theo ***5.3b***, thì ta có $B \bullet \uparrow = \\{ 0|\( B - 1 \) \uparrow + \ast \\}$ là dạng hợp quy <br>
+
+```math
+\to A \bullet \left( {B \bullet  \uparrow } \right) = \left\{ {AL \bullet \left( {B \bullet  \uparrow } \right) + \left( {B + 1} \right) \uparrow  + *|AR \bullet \left( {B \bullet  \uparrow } \right) + \left( {B + 1} \right) \downarrow  + *} \right\}
+```
+&nbsp;&nbsp;&nbsp;&nbsp;Mặt khác, ta có: <br>
+
+```math
+\begin{array}{l}
+\left( {A \bullet B} \right) \bullet  \uparrow  = \left\{ {AL \bullet B + B - 1|AR \bullet B - B + 1} \right\} \bullet  \uparrow \
+{\rm{              }} = \left\{ {\left( {AL \bullet B} \right) \bullet  \uparrow  + \left( {B - 1} \right) \bullet  \uparrow  + 2 \uparrow  + *|\left( {AR \bullet B} \right) \bullet  \uparrow  - \left( {B - 1} \right) \bullet  \uparrow  + 2 \downarrow  + *} \right\}\
+{\rm{              }} = \left\{ {\left( {AL \bullet B} \right) \bullet  \uparrow  + \left( {B + 1} \right) \bullet  \uparrow  + *|\left( {AR \bullet B} \right) \bullet  \uparrow  - \left( {B + 1} \right) \bullet  \uparrow  + *} \right\}
+\end{array}
+```
+&nbsp;&nbsp;&nbsp;&nbsp;Từ đây, ***(5.3c)*** có thể được chứng minh bằng quy nạp với giả thiết đẳng thức đúng khi thay $A \to AL,AR$ . <br>
+&nbsp;&nbsp;&nbsp;&nbsp; $\Longrightarrow$ Ta hoàn tất chứng minh ***nguyên lí 5.3c*** <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Nhận xét:</ins>* Khi đó ta rút ra được: <br>
 
 
 
