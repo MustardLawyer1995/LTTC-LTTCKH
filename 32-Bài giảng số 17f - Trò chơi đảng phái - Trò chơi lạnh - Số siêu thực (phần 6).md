@@ -159,8 +159,32 @@ GL \bullet  \uparrow  + 2 \uparrow  + * + *n - G \bullet  \uparrow  + *n'{\rm{ }
 &nbsp;&nbsp;&nbsp;&nbsp; $\Longrightarrow$ Ta hoàn tất chứng minh ***nguyên lí 5.3c*** <br>
 
 &nbsp;&nbsp;&nbsp;&nbsp;*<ins>Nhận xét:</ins>* Khi đó ta rút ra được: <br>
+&nbsp;&nbsp;&nbsp;&nbsp;- $\uparrow \bullet \uparrow = \\{ 2\uparrow + \ast|\( \ast - 2 \) \bullet \uparrow + \ast \\} = \\{ 2\uparrow + \ast| \\{ -2|-2 \\} \bullet \uparrow + \ast \\} = \\{ 2\uparrow + \ast| \\{ \ast|4\downarrow + \ast \\} + \ast \\} = \\{ 2\uparrow + \ast| \\{ 0|4\downarrow \\} \\}$ (theo ***5.3a***)<br>
+&nbsp;&nbsp;&nbsp;&nbsp; $\to \uparrow \bullet \downarrow = - \uparrow \bullet \uparrow = \\{ \\{ 4\uparrow|0 \\} |2\downarrow + \ast \\}$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;- $\frac{1}{2} \bullet \uparrow \bullet \uparrow = \( \frac{1}{2} \bullet \uparrow \) \bullet \uparrow = \frac{1}{2} \bullet 
+\( \uparrow \bullet \uparrow \) = \\{ 2\uparrow \bullet \uparrow + \ast \bullet \uparrow + 2\uparrow + \ast| \downarrow \bullet \uparrow + \ast \bullet \uparrow + 2\downarrow + \ast \\}$ (theo ***5.3c***) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;- Do $2\uparrow + \ast = \\{ 0|\uparrow \\}$ (theo ***5.3b***) nên $G \bullet \( 2\uparrow + \ast \) = \\{ GL \bullet \( 2\uparrow + \ast \) + 3\uparrow|GR \bullet \( 2\uparrow + \ast \) + 3\downarrow \\}$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp; $\to \( 1 + \ast \) \bullet \( 2\uparrow + \ast \) = \\{ 1|1 \\} \bullet \( 2\uparrow + \ast \) = \\{ 5\uparrow + \ast|\downarrow + \ast \\} = \\{ 3\uparrow|\uparrow \\} \bullet \uparrow = \( 2\uparrow + \ast \) \bullet \uparrow$ (do $\\{ 3\uparrow|\uparrow \\} = \\{ 0|\uparrow \\} = 2\uparrow + \ast$ theo ***3.3***)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;và $\frac{1}{2} \bullet \( 2\uparrow|\ast \) = \\{ 3\uparrow|\ast + \downarrow \\} , \ast \bullet \( 2\uparrow + \ast \) = \\{ 3\uparrow|3\downarrow \\} = \\{ -1|-1 \\} \bullet \uparrow + \ast$ (theo ***5.3a***),... <br>
 
+&nbsp;&nbsp;&nbsp;&nbsp;Tích Norton giúp ta tính toán được nhiều loại giá trị vốn rất khó để khảo sát theo cách thông thường. Có thể bạn sẽ gặp tình huống cần tính tổng của các giá trị phức tạp: $a_{1} + a_{2} + a_{3} +...= a$ , bằng cách nào đó mà bạn đã biết $a_{1} = A_{1} \bullet U , a_{2} = A_{2} \bullet U , a_{3} = A_{3} \bullet U ,...$ , mà $A_{1} + A_{2} + A_{3} +...= A$ lại là những giá trị đơn giản dễ tính toán, như vậy bạn có thể tính tổng $A_{1} \bullet U + A_{2} \bullet U + A_{3} \bullet U + ... = \( A_{1} + A_{2} + A_{3} +... \) \bullet U = A \bullet U$ theo ***(5.1c)***, sau đó chỉ cần tính $a = A \bullet U$ theo định nghĩa của tích Norton. Mặt khác, nếu chỉ muốn so sánh $a$ với $0$ thì bạn chỉ cần so sánh $A$ với $0$ theo ***(5.1b)***. <br>
 
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Ví dụ:</ins>* Ta có: <br>
+
+```math
+\begin{array}{l}
+\left\{ {2 \uparrow  + *| \downarrow  + *} \right\} + \left\{ {2 \uparrow  + *| \downarrow  + *} \right\} = \frac{1}{2} \bullet  \uparrow  + \frac{1}{2} \bullet  \uparrow  =  \uparrow ,{\rm{ }}\left\{ {2 \uparrow  + *| \downarrow  + *} \right\} + n \uparrow  = \frac{1}{2} \bullet  \uparrow  + n \bullet  \uparrow  = \left( {\frac{1}{2} + n} \right) \bullet  \uparrow \\
+{\rm{                                 = }}\left\{ {\left( {n + 2} \right) \uparrow  + *|\left( {n - 1} \right) \uparrow  + *} \right\},{\rm{ }}\left\{ {5 \uparrow | \downarrow } \right\} + \left\{ {2 \uparrow |2 \downarrow } \right\} = \left( {\left( {2 \uparrow  + *} \right) \bullet  \uparrow  + *} \right) + \left( {* \bullet  \uparrow  + *} \right) = 2 \uparrow  \bullet  \uparrow  > 0
+\end{array}
+```
+&nbsp;&nbsp;&nbsp;&nbsp;Khi đó ta có: <br>
+
+```math
+\left\{ {2 \uparrow  + *,\left\{ {4 \uparrow |0} \right\}|2 \downarrow  + *} \right\} = \left\{ {2 \uparrow  + *,\left( {* + 2} \right) \bullet  \uparrow  + *|2 \downarrow  + *} \right\} = \left\{ {0,*|0} \right\} \bullet  \uparrow  = \left( { \uparrow  + *} \right) \bullet  \uparrow 
+```
+```math
+\to \left\{ {2 \uparrow  + *,\left\{ {4 \uparrow |0} \right\}|2 \downarrow  + *} \right\} + \left\{ {\left\{ {4 \uparrow |0} \right\}|2 \downarrow  + *} \right\} = \left( { \uparrow  + *} \right) \bullet  \uparrow  +  \downarrow  \bullet  \uparrow  = * \bullet  \uparrow  = \left\{ {2 \uparrow  + *|2 \downarrow  + *} \right\},{\rm{ }}...
+```
 
 
 
