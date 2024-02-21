@@ -48,27 +48,26 @@ Hình 3            | Hình 4
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Những nước đi khiến cho người thực hiện "thua ngay lập tức" sẽ không bao giờ được sử dụng, vì vậy có thể được lược bỏ khỏi công thức. Ví dụ: tiến tốt 1 ô (nước duy nhất có thể đi) ở $\[ 4536 \]$ tạo điều kiện cho đối thủ ăn con tốt này, tốt của đối thủ sau đó không còn bị cản, có thể đi đến cuối bàn cờ để phong hậu, dẫn tới chiến thắng tất yếu  <br>
 &nbsp;&nbsp;&nbsp;&nbsp; $\rightarrow$ $\[ 3645 \] = \[ 4536 \] = \\{ \space\space|\space\space \\} = 0 \to \[ 3636 \] = \[ 4527 \] = 0$ do người đi trước luôn thua (người đi sau chỉ cần đi những nước đưa thế cờ về giá trị bằng $0$ ) $\to \[ 3627 \] = 0$ (chứng minh diễn giải tương tự). <br>
 
-&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; $\[ 4646 \] = \[ 3535 \] = 0$ (tương tự, với $\[ 4556 \] = \[ 3445 \] = \\{ \space\space|\space\space \\} = 0$ ) <br>
+&nbsp;&nbsp;&nbsp;&nbsp; $\[ 4526 \] = \[ 2645 \] = \\{ \[ 3645 \] |\space\space \\} = \\{ 0|\space\space \\} = 1$ ; $\[ 2534 \] = \[ 3425 \] = \\{ \[ 3445 \]|\space\space \\} = \\{ 0|\space\space \\} = 1$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp; $\[ 3426 \] = \\{ \[ 3446 \]|\[ 3425 \] \\} = \\{ \ast|1 \\} = 0$ ; $\[ 3427 \] = \\{ \[ 3447 \]|\[ 3426 \],\[ 3425 \] \\} = \\{ \downarrow|0,1 \\} = \\{ \downarrow|0 \\} = 2\downarrow + \ast$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp; $\[ 2537 \] = 0$ do người đi trước luôn thua (người đi sau có thể đưa về các thế $\[ 3535 \] = \[ 4536 \] = 0$ hoặc ăn tốt chéo) <br>
+&nbsp;&nbsp;&nbsp;&nbsp; $\[ 2647 \] = \\{ \[ 3647 \],\[ 4647 \],\[ 2657 \]|\[ 2547 \],\[ 2646 \],\[ 2645 \] \\} = \\{ \\{ ..|..,0 \\},\\{ ..|..,0 \\} ,\[ 2657 \]|\[ 2547 \],\\{ 0,..|.. \\} , 1 \\}$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;(với $\[ 3645 \] = \[ 4646 \] = 0$ ), Phải (Đen) sẽ thắng nếu đi trước ở $\[ 2657 \]$ (ăn tốt $b5$ , sau đó tốt $b7$ tiến 1 ô) và Trái (Trắng) sẽ thắng nếu đi trước ở $\[ 2547 \]$ (ăn tốt $a5$ ) $\to \[ 2647 \] = 0$ . <br>
+&nbsp;&nbsp;&nbsp;&nbsp; $\[ 2427 \] = \\{ \[ 3427 \],\[ 2447 \],\[ 2437 \]|\[ 2327 \],\[ 2425 \],\[ 2426 \] \\} = \\{ 2\downarrow + \ast , \downarrow + \ast ,\\{ ..|.., 2\downarrow + \ast \\} | \[ 2327 \], \\{ 1,..|,, \\} , \\{ 0,..|.. \\} \\}$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp; $\[ 2337 \] = 2\downarrow + \ast < 0, \[ 3425 \] = 1, \[ 3426 \] = 0, \downarrow + \ast \parallel 0$ , Trái thắng nếu đi trước ở $\[ 2327 \]$ (ăn tốt chéo) $\to \[ 2427 \] = 0$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp; $\[ 2626 \] = \\{ \[ 2646 \],\[ 2636 \]|\[ 2625 \] \\} = \\{ \\{ ..|..,1 \\},\[ 2636 \]| \\{ 1,..|.. \\} \\}$ , trong đó $\[ 2636 \] = \\{ \space\space|\[ 2635 \],\[ 2536 \] \\} = \\{ ..|\\{ 1,..|.. \\} , \\{ 0,..|.. \\} \\}$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;( $\[ 2645 \] = 1$ và $\[ 4536 \] = 0$ ) $\to \[ 2636 \] \ge 0$ (Phải sẽ thua nếu đi trước), hơn nữa: <br>
+&nbsp;&nbsp;&nbsp;&nbsp; $\[ 2536 \] = \\{ 0,\[ 3536 \],\[ 2546 \]|.. \\} = \\{ 0, \\{ ..|..,0 \\}|.. \\}$ ( $\[ 3535 \] = \[ 2446 \] = 0$ ) $\[ 2536 \] - 1 \le 0$ (Trái sẽ thua nếu đi trước) $\to \[ 2536 \] < \ 1$ (Phải sẽ thắng nếu đi trước) $\to 0 \le \[ 2636 \] < \parallel 1$ $\to$ Theo ***3.1 và hệ quả của 3.3*** (xem lại ***Số siêu thực -phần b, mục 6/***), có: $\[ 2626 \] = 1$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp; $\[ 2525 \] = \\{ \[ 2535 \],\[ 2545 \]|\[ 2524 \] \\} = \\{ \\{ ..|1,\[ 2435 \] \\},\\{ ..|.., \ast \\}|\\{ 1,..|.. \\} \\}$ ( $\[ 2534 \] = 1,\[ 2445 \] = \ast < 1$ ),trong đó: $\[ 2435 \] \parallel 0$ (người đi trước thắng bằng cách ăn tốt chéo) $\to \[ 2535 \] \ge 0$ $\to$ Theo ***(3.1) và hệ quả của (3.3)*** ( xem lại ***Số siêu thực -phần b, mục 6/***), ta có được: $\[ 2525 \] = 1$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp; $\[ 2527 \] = \\{ \[ 2547 \],\[ 4527 \],\[ 2537 \],\[ 3527 \]|\[ 2427 \],\[ 2526 \],\[ 2526 \],\[ 2525 \] \\} = \\{ \[ 2547 \],0,\[ 3527 \]|0,\[ 2526 \],1 \\}$ , và có: $\[ 4526 \] = 1$ là $\[ 2526 \]L$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp; $\to \[ 2527 \] + \uparrow + \ast = \\{ ..,0|0,\\{ 1,..|.. \\} \\} + \\{ 0, \ast|0 \\} \ge 0$ do Phải sẽ thua nếu đi trước $\( \uparrow + \ast \parallel 0, 1 + \ast > 0 \)$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp; $\to \[ 2527 \] \ge \downarrow + \ast > 2\downarrow + \ast$ , mà $\[ 2447 \] = \downarrow + \ast = \\{ 0|0,\ast \\}$ là $\[ 2547 \]R$ và $\[ 3427 \] = 2\downarrow + \ast = \\{ \downarrow|0 \\}$ là $\[ 3527 \]R$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp; $\to$ Theo ***(3.4b)*** (xem lại ***Số siêu thực -phần b, mục 6/***), ta có được: $\[ 2527 \] = \\{ 0,\downarrow|0, \[ 2526 \] \\} = \\{ 0|0,\[ 2526 \] \\} \to \[ 2527 \] - 1 \le 0 \Leftrightarrow \[ 2527 \] \le 1$ , mà $\\{ 0|\space\space \\} = 1$ là $\[ 2526 \]L$ nên theo ***(3.4b)*** (xem lại ***Số siêu thực -phần b, mục 6/***) ta có: $\[ 2527 \] = \\{ 0|0 \\} = \ast$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Quay lại với $\[ 2627 \]$ , các giá trị phái sinh từ nó đã được tìm ra gần hết, có: $\[ 2627 \] = \\{ \[ 2637 \],0,\[ 4627 \]|\ast,1,\[ 2625 \] \\}$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Như trên, $\[ 2625 \] =\[ 2526 \] = \\{ 1,..|.. \\} \to \[ 2627 \] \ge 0$ , mà $\[ 2537 \] = \[ 4527 \] = 0 = \\{ \space\space|\space\space \\}$ là $\[ 2637 \]R,\[ 4627 \]R$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp; $\to$ Theo ***(3.4b)*** (xem lại ***Số siêu thực -phần b, mục 6/***), ta có được: $\[ 2627 \] = \\{ 0|\ast,\\{ 1,..|.. \\} \\} \to \[ 2627 \] - 1\le 0 \Leftrightarrow \[ 2627 \] \le 1$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp; $\to$ Theo ***(3.4b)*** (xem lại ***Số siêu thực -phần b, mục 6/***), ta có được: $\[ 2627 \] = \\{ 0|\ast \\} = \uparrow$ <br>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+&nbsp;&nbsp;&nbsp;&nbsp;Từ những điều trên, giá trị của toàn bộ trò chơi $= 0 + \( 2\downarrow + \ast \) + \uparrow = \downarrow + \ast$ , một giá trị mờ. Bất cứ ai di chuyển trước đều có thể giành chiến thắng nếu chọn được nước đi tối ưu. Cụ thể hơn, nước đi tối ưu nếu Trắng đi trước là tiến Tốt cột $h$ lên 1 ô, giá trị cột $h$ trở thành $\downarrow$ , khi đó giá trị trò chơi là: $0 + \uparrow + \downarrow = 0$ , Đen đi lượt tiếp theo và thua; nước đi tối ưu nếu Đen đi trước là tiến Tốt $a$ lên 1 ô, đưa giá trị của 2 cột $a,b$ về $\ast$ và giá trị của trò chơi trở thành: $0 + 2\downarrow + \ast + \ast = 2\downarrow < 0$ , Đen thắng. Người đi sau không có lựa chọn nào khác ngoài việc cuối cùng phải di chuyển Vua, vì thế mất Trébuchet và chẳng mấy chốc thua cả trò chơi.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;LTTCKH là một công cụ rất mạnh để phân tích một số loại trò chơi nhất định. Những trò chơi đơn giản như Nim là một minh họa tốt về cách thức hoạt động của kỹ thuật này, nhưng sức mạnh của nó chỉ thực sự trở nên rõ ràng khi được áp dụng cho các kịch bản phức tạp hơn nhiều như cờ vua. Nó thậm chí có thể giải được một câu đố 75 tuổi đã đánh bại một bậc thầy cờ vua với bằng tiến sĩ toán học. <br>
