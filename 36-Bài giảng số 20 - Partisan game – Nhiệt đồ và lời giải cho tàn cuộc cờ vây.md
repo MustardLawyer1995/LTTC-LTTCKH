@@ -73,8 +73,9 @@ cho các trò chơi, nhưng nó còn dẫn ta đến điều gì nữa...
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quy nạp theo giả thiết ***1.5e*** đúng với mọi tùy chọn phát sinh từ $G$ , và chỉ ra là nó cũng đúng với $G$ . Thật vậy, $r(GRL)≤r(GRL(u))$ $\rightarrow$ $l(GR)≤l(GR(u))+u$ (theo ***1.5d***; với $GR(u)$ là số, thay $u$ bằng $t$ nhỏ nhất để $GR(t)$ là số) $\rightarrow r(G)≤r(G(u)$ ) (theo ***1.5d***; với $G(u)$ là số, thay $u$ bằng $t$ nhỏ nhất để $G(t)$ là số) (đpcm). Chứng minh $l(G)≥l(G(u))$ theo cách tương tự. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\Longrightarrow$ Ta hoàn tất chứng minh ***tính chất 1.5e*** <br>
 
-
-
+### 2. Áp dụng lý thuyết trò chơi kết hợp vào cờ vây <br>
+#### 1. Cờ vây và cờ vây toán học 
+&nbsp;&nbsp;&nbsp;&nbsp;Luật chơi cơ bản của cờ vây đã được nói đến trong bài 
 
 
 
