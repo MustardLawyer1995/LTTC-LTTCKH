@@ -131,8 +131,24 @@ Hình 1            | Hình 2
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nếu có khả năng bị 'kiếp' trong 1 vùng lớn đất, cứu quân bằng cách bẻ đường đi dãy  đám quân lớn quân đối phương mà thực tế quân của bạn sẽ chết. Như vậy, đối phương sẽ phải chọn một trong hai trường hợp: Hoặc ăn đám lớn của bạn và bạn ăn đám lớn mà bạn vừa chẹt, hoặc ăn quân mà bạn vừa chẹt để cứu đám quân kia. <br>
 #### &nbsp;&nbsp;&nbsp;&nbsp; 2.3. Kĩ thuật bắt quân: <br>
-##### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.3.1 Tạo mắt: <br>
+##### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.3.1 Kĩ thuật thang: <br>
+<div align="center">
 
+![image](https://github.com/user-attachments/assets/116dc9e1-0894-469d-a9e2-86624bf73e15)
+</div>
+
+&nbsp;&nbsp;&nbsp;&nbsp;Lưới đc tạo ra để giam hãm quân cờ. Nhìn chung, kĩ thuật không phụ thuộc vào điều kiện không có quân đối phương cản đường, cũng như không cho phép đối phương phá thang. <br>
+##### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.3.2 Kĩ thuật tạo lưới (Geta): <br>
+<div align="center">
+
+![image](https://github.com/user-attachments/assets/696c25e4-5bd4-4466-97e8-8fcd4a63c4ea)
+</div>
+
+##### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.3.3 Kĩ thuật Snapback (cú búng tay của Tony): <br>
+<div align="center">
+
+![image](https://github.com/user-attachments/assets/6599f2ee-7baa-4a19-b68e-b1494711fa74)
+</div>
 
 
 
