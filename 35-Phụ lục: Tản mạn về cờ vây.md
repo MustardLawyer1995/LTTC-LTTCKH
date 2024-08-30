@@ -137,12 +137,15 @@ Hình 1            | Hình 2
 ![image](https://github.com/user-attachments/assets/116dc9e1-0894-469d-a9e2-86624bf73e15)
 </div>
 
-&nbsp;&nbsp;&nbsp;&nbsp;Lưới đc tạo ra để giam hãm quân cờ. Nhìn chung, kĩ thuật không phụ thuộc vào điều kiện không có quân đối phương cản đường, cũng như không cho phép đối phương phá thang. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Là sử dụng liên tục các mối đe dọa bắt quân gọi là atari để ép đối phương. Người chơi bị vây cần đưa ra quyết định cứu hay không những quân cờ trong thang. Sự hiện diện của một cái thang trên bàn cờ cho phép người chơi tùy chọn để nối khí một quân cờ trên đường đi của cái thang bằng 1 quân tự do bên ngoài, do đó đe dọa giải cứu những quân cờ bên trong. Đây là kĩ thuật phá thang. <br>
+
 ##### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.3.2 Kĩ thuật tạo lưới (Geta): <br>
 <div align="center">
 
 ![image](https://github.com/user-attachments/assets/696c25e4-5bd4-4466-97e8-8fcd4a63c4ea)
 </div>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lưới đc tạo ra để giam hãm quân cờ. Nhìn chung, kĩ thuật không phụ thuộc vào điều kiện không có quân đối phương cản đường, cũng như không cho phép đối phương phá thang. <br>
 
 ##### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.3.3 Kĩ thuật Snapback (cú búng tay của Tony): <br>
 <div align="center">
@@ -150,7 +153,7 @@ Hình 1            | Hình 2
 ![image](https://github.com/user-attachments/assets/6599f2ee-7baa-4a19-b68e-b1494711fa74)
 </div>
 
-
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Khi áp dụng kĩ thuật snapback, người chơi ăn 1 quân và sau đó chơi trên điểm mà trước đây viên đá đó chiếm giữ. Bằng cách đó, người chơi bắt được một nhóm lớn hơn các quân cờ của đối thủ của họ. <br>
 
 
 
