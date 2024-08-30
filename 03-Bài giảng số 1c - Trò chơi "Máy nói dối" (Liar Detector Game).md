@@ -27,7 +27,10 @@ Ta đặt ra một khái niệm là "mạng sống" của bộ số 🐧. Khi m�
 &nbsp;&nbsp;&nbsp;&nbsp;Bắt đầu từ đây, để thuận tiện, ta sẽ gọi chung những bộ số còn 3 mạng là $N'$ , còn 2 mạng là $P'$ , còn 1 mạng là $Q'$ . <br>
 &nbsp;&nbsp;&nbsp;&nbsp;Máy trả lời câu 7, những bộ số bị phủ nhận sẽ mất đi 1 mạng, bộ số nào còn 0 mạng sẽ bị loại. Những bộ số còn trụ lại sau câu 7 (2 trường hợp nhỏ như sau): $\[1N', 1P', 12Q' \] / \[6P', 9Q' \]$ <br>
 &nbsp;&nbsp;&nbsp;&nbsp;Cách chơi trong giai đoạn còn lại như sau: <br>
-&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Quy ước</ins>*: $\rightarrow$ để chỉ thao tác chia ra 2 nhóm bộ số. $\longrightarrow$ để chỉ những bộ số còn trụ lại sau câu hỏi. “ / ” để chia ra 2 trường hợp có thể xảy ra, nếu 2 trường hợp gần tương đồng nhau, ta sẽ chỉ xét những trường hợp xui xẻo nhất, tức là có ít bộ số bị loại nhất. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Quy ước</ins>*: <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\rightarrow$ (mũi tên ngắn) để chỉ thao tác chia ra 2 nhóm bộ số. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\longrightarrow$ (mũi tên dài) để chỉ những bộ số còn trụ lại sau câu hỏi. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “ / ” để chia ra 2 trường hợp có thể xảy ra, nếu 2 trường hợp gần tương đồng nhau, ta sẽ chỉ xét những trường hợp xui xẻo nhất, tức là có ít bộ số bị loại nhất. <br>
 &nbsp;&nbsp;&nbsp;&nbsp; $\[ 1N', 1P', 12Q' \] \rightarrow \\{ 1N', 6Q' \\} \wedge \\{ 1P', 6Q' \\} \longrightarrow \[ 1N', 7Q' \] / \[ 2P', 6Q' \]$ (còn 5 câu hỏi). <br>
 
 &nbsp;&nbsp;&nbsp;&nbsp; $\[ 6P', 9Q' \] \rightarrow \\{ 3P', 4Q' \\} \wedge \\{ 3P', 5Q' \\}$. <br>
