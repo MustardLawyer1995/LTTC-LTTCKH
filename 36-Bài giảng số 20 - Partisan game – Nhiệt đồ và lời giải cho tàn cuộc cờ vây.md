@@ -75,7 +75,35 @@ cho các trò chơi, nhưng nó còn dẫn ta đến điều gì nữa...
 
 ### 2. Áp dụng lý thuyết trò chơi kết hợp vào cờ vây <br>
 #### 1. Cờ vây và cờ vây toán học 
-&nbsp;&nbsp;&nbsp;&nbsp;Luật chơi cơ bản của cờ vây đã được nói đến trong bài 
+&nbsp;&nbsp;&nbsp;&nbsp;Luật chơi cơ bản của cờ vây đã được nói đến trong ***<ins>bài giảng số 35 Phụ lục: Tản mạn về cờ vây</ins>*** <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Giờ ta sẽ thay đổi/bổ sung một số luật để cờ vây trở thành ***"cờ vây toán học"***: <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•1) Gửi trả lại 1 tù binh bị bắt cho bên đối thủ cũng được coi là 1 nước đi. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•2) Không được phép bỏ lượt. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•3) Người chơi nào không thể thực hiện 1 nước đi hợp lệ khi đến lượt của mình bị coi là thua. Luật mới này làm kết quả trận đấu giống như khi chơi theo luật thông thường trừ trường hợp số điểm 2 bên bằng nhau: luật thông thường cho ta 1 trận hòa, còn luật mới cho biết người đi sau sẽ thắng. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•4) Không có các trạng thái dẫn đến vòng lặp. Về cơ bản điều này nghĩa là không có "Ko" trong cờ vây toán học. Ta cũng giả định rằng không có "Seki", tình trạng 2 nhóm quân trái màu cùng sống sót. "Ko" và "Seki" rất quan trọng trong cờ vây thường nhưng lý thuyết trò chơi kết hợp (LTTCKH) chỉ xét những game kết thúc sau hữu hạn lượt đi, nên yêu cầu này là bắt buộc. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•5) Một quân trên bàn cờ được coi là sống sót cho đến khi bị bắt. Không cần bận tâm về tình trạng sống/chết. Trong cờ vây thường, điều này cũng luôn xảy ra khi có đủ số nước đi. <br>
+&nbsp;&nbsp;&nbsp;&nbsp; $\Rightarrow$ Vậy là ta đã tìm ra cách chuyển đổi hệ thống tính điểm của cờ vây về luật "đi nước cuối" của LTTCKH. Bằng cách coi hành động trả lại 1 tù binh là 1 nước đi, cờ vây trở thành một game mà ai hết nước đi trước là người thua, và vì vậy, có cấu trúc tương tự một trò chơi kết hợp. Từ đoạn này về sau, cụm từ "cờ vây" sẽ được ngầm hiểu là ***<ins>cờ vây toán học</ins>*** <br>
+#### 2. b)	Công thức hóa các thế cờ cơ bản
+&nbsp;&nbsp;&nbsp;&nbsp;Độ phức tạp tính toán của cờ vây là rất lớn, nên LTTCKH chỉ phô diễn được tối đa sức mạnh ở tàn cục, khi bàn cờ đã phân chia ra các vùng không liên quan đến nhau. Mỗi vùng này là một chiến trường riêng biệt-một trò chơi con, và cờ vây tàn cục chính là tổng của các trò chơi con này (xem ví dụ tương tự, cờ vua bị phân rã thành nhiều trò chơi con ở tàn cục (xem lại ***<ins>bài giảng số 18</ins>***) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Ta thống nhất quy ước phe Đen là người chơi Trái và phe Trắng là người chơi Phải. Theo định nghĩa, những trạng thái mà 2 người chơi đều không còn nước đi hợp lệ ứng với giá trị 0. Đó là khi không còn ô trống trên bàn cờ, và không còn tù binh ở cả 2 bên. Giá trị của các thế cờ (trò chơi) con quan trọng khác được trình bày ở các hình sau: <br>
+<div align="center">
+
+ Hình 1            | Hình 2            | Hình 3            |
+:-------------------------:|:-------------------------:|:-------------------------:|
+![image](https://github.com/user-attachments/assets/ef5c97a8-5226-44e4-9e4d-4125f23f815d)|![image](https://github.com/user-attachments/assets/baf5f471-04ca-42c2-9a02-5827b0930947)|![image](https://github.com/user-attachments/assets/2e898d23-4d84-4b1c-a305-c19f8fefb050)
+</div>
+
+&nbsp;&nbsp;&nbsp;&nbsp;Nếu Đen (Trái) có 1 tù binh trắng, nước đi duy nhất của anh ta là trả lại tù binh đó cho Trắng (Phải), đưa giá trị trò chơi về 0, còn Trắng không có nước đi hợp lệ nào. Bởi vậy giá trị của thế này là $\\{ 0| \\} = 1$ . Tương tự nếu Trắng có 1 tù binh đen thì giá trị là $-1$ . Theo cách này, Đen (Trắng) có $n$ tù binh thì giá trị trò chơi là $n +(-n)$ . <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Trên bàn cờ, thế cờ mà Đen có 1 nước đi còn Trắng không có chính là mắt đơn Đen. Có lẽ bạn đã biết định nghĩa của "mắt" qua bài về luật cờ vây cơ bản, nếu không, hãy coi bức hình trên như định nghĩa. "Mắt" hiểu đơn giản là vùng lãnh thổ mà người chơi tạo ra bằng cách dùng các quân cờ của mình vây bọc xung quanh. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Để thuận tiện trong phạm vi bài viết, ta sẽ xác định các ô bằng tọa độ $(x;y)$ với $x$ là số thứ tự của cột (từ trái qua) và $y$ là số thứ tự của hàng (từ dưới lên). Ở thế cờ trong hình bên trái, Đen có 1 nước đi là điền vào ô $(3,3)$ , đưa trò chơi về giá trị $0$ , trong khi Trắng không có nước đi nào vì đi vào ô $(3,3)$ là nước cờ "tự tử" với anh ta. Bởi vậy thế cờ này cũng có giá trị là $1$ . <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Tiếp đến tại hình giữa, theo cách tương tự, cả 2 thế cờ con trong hình (thế có 2 mắt đơn Đen bên trái và thế có mắt kép Đen phải), đều nhận giá trị là 2. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Từ đây ta biết rằng việc người chơi sở hữu $n$ tù binh hoàn toàn tương đương với việc anh ta có một vùng lãnh thổ diện tích $n$ ô trên bàn cờ, trong đó thao tác trả lại 1 tù binh tương tự như thao tác điền vào 1 ô trên chính vùng lãnh thổ của mình. Ta cũng hiểu ngay lý do tại sao các quân cờ nằm trong lãnh thổ của địch cho đến cuối trận bị xem như tù binh và được nhấc ra khỏi bàn cờ. Về khía cạnh này, LTTCKH lại rất tương thích với cờ vây. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Thế cờ con trong hình bên phải (trong thuật ngữ cờ vây gọi là "dame") có giá trị là $\\{ 0|0 \\} = \ast$ , bởi vì nước đi duy nhất của cả 2 người chơi là đi vào ô $(3,3)$ , đưa trò chơi về giá trị $0$ . <br>
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
 
 
 
