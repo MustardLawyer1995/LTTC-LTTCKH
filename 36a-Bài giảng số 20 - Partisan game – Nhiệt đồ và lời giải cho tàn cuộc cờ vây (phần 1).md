@@ -26,7 +26,7 @@ cho các trò chơi, nhưng nó còn dẫn ta đến điều gì nữa...
 &nbsp;&nbsp;&nbsp;&nbsp;***Ví dụ:*** Nếu $G$ là số thì $G(t)=G \forall t≥0$; nếu $G$ là phi số vô cùng bé $\( *,↑,↓,... \)$ thì $G(t)=0 \forall t>0$ <br>
 
 &nbsp;&nbsp;&nbsp;&nbsp;Với $G=±1, G\( 0 \)=±1, G\( \frac{1}{2} \) = \\{ 1-\frac{1}{2}|-1+\frac{1}{2} \\} = \frac{1}{2} , G(1)= \\{ 1-1|-1+1 \\} =\\{ 0|0 \\} =*, G(t)=0 \text{   } \forall t>1$ <br>
-#### &nbsp;&nbsp;&nbsp;&nbsp;***<ins>Định nghĩa 1.2:</ins>***
+#### &nbsp;&nbsp;&nbsp;&nbsp;***<ins>Định lí 1.2:</ins>***
 &nbsp;&nbsp;&nbsp;&nbsp;Luôn tồn tại $t$ để $G(t)$ là số <br>
 &nbsp;&nbsp;&nbsp;&nbsp;*<ins>Chứng minh định lí 1.2:</ins>* <br>
 &nbsp;&nbsp;&nbsp;&nbsp;Quy nạp với giả thiết rằng các tùy chọn của $G$ đều có thể được làm lạnh thành số, chọn $t$ đủ lớn để $GL(t)$ và $GR(t)$ là số $\Rightarrow$ $G(t)= \\{ a|b \\}$ với $a,b$ là số. Nếu $a<b$ thì $G(t)$ cũng là số; nếu $a≥b$ , đặt $k=\frac{a-b}{2}+1$ $\rightarrow$ $G(t+k)= \\{ \frac{a+b}{2}-1|\frac{a+b}{2}+1 \\}$ là số. <br>
@@ -148,9 +148,17 @@ cho các trò chơi, nhưng nó còn dẫn ta đến điều gì nữa...
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\Longrightarrow$ Ta hoàn tất chứng minh ***tính chất 2.2c*** <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***<ins>Nhận xét:</ins>*** So sánh với ***(1.1)***, làm mát là phiên bản yếu hơn của làm lạnh bởi 1. Nhưng trong cờ vây, chúng hoàn toàn tương đương, đây là một phần trong chứng minh của định lý ***(3.6)***. <br>
 #### &nbsp;&nbsp;&nbsp;&nbsp;***<ins>Định nghĩa 2.3:</ins>***
+&nbsp;&nbsp;&nbsp;&nbsp;Một thế cờ vây được gọi là chẵn (lẻ) khi số lượng ô trống trên bàn cờ cộng với số quân cờ bị bắt là một số chẵn (lẻ). <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Các tính chất sau là hiển nhiên: <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***<ins>Tính chất 2.3a:</ins>*** Mỗi nước đi được thực hiện sẽ biến thế cờ từ chẵn thành lẻ hoặc ngược lại. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***<ins>Tính chất 2.3b:</ins>*** Nếu một thế cờ là tổng của nhiều thế cờ con, thì tính chẵn lẻ của nó bằng tổng tính chẵn lẻ của các thế cờ con (chẵn+lẻ=lẻ, chẵn+chẵn=chẵn, lẻ+lẻ=chẵn). <br>
+#### &nbsp;&nbsp;&nbsp;&nbsp;***<ins>Định lí 2.4:</ins>***
+&nbsp;&nbsp;&nbsp;&nbsp;Các thế cờ vây có cùng giá trị luôn có cùng tính chẵn lẻ. <br>
 
-
-
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Chứng minh định lí 1.2:</ins>* <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Nếu tồn tại 2 thế cờ $G_{1}=G_{2}$ nhưng khác nhau về tính chẵn lẻ, thì $G_{1}-G_{2}=0$ là thế cờ lẻ. Vì vậy chỉ cần chứng minh rằng mọi thế cờ có giá trị $0$ đều chẵn. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Xét thế cờ $H$ , nếu Đen đi trước thì Trắng là người đi nước cuối cùng và thắng. Sau nước đi cuối này, nếu Trắng còn ít nhất 1 nước đi dự phòng (các quân tù binh và ô lãnh thổ chưa sử dụng), thì Trắng vẫn thắng khi là người đi trước: diễn biến khi Trắng đi trước tương đương với kịch bản Đen đi trước trong trò chơi $H+1$ (Đen sở hữu thêm 1 tù binh trước trận đấu, Đen trả tù binh này trong lượt đầu tiên, đưa trò chơi về $H=0$ , Trắng đi tiếp và thua); theo định lý tránh số nguyên, Đen có thể trả tù binh đó ở lượt cuối cùng mà vẫn không làm thay đổi kết quả trò chơi, diễn biến trận đấu sẽ giống như ở trò chơi   khi Đen đi trước, chỉ khác là Đen có thêm 1 nước đi ở cuối game; nhưng với giả định Trắng cũng có ít nhất 1 nước đi dự phòng, Trắng vẫn là người đi nước sau cùng và thắng! Mâu thuẫn với việc  (Trắng lẽ ra phải thua)  Trắng không còn nước đi dự phòng nào sau khi đi nước cuối cùng trong  . 
+   Mặt khác, 2 người đã thực hiện số nước đi bằng nhau (Đen đi trước, Trắng đi cuối)  Nếu gọi   là tổng số nước đi tiềm năng của cả 2 người chơi (bao gồm cả những nước đi đã thực hiện và nước đi dự phòng sau khi trò chơi kết thúc) thì  chẵn.  , với   là tổng số ô trống và tù binh lúc bắt đầu (tính chẵn lẻ của   đại diện cho tính chẵn lẻ của thế cờ  ) và   là tổng số tù binh mà 2 bên bắt thêm được trong lúc chơi (mỗi tù binh bị bắt sẽ tạo cho người bắt thêm 2 nước đi, bởi anh ta có thêm 1 tù binh và 1 ô lãnh thổ - vị trí mà quân tù binh vừa bị nhấc ra). Khi   chẵn    chẵn    là thế cờ chẵn (đpcm). (2.4) cho phép ta xác định ngay tính chẵn lẻ của một thế cờ từ giá trị của nó mà không cần phải xem xét thế cờ cụ thể.
 
 
 
