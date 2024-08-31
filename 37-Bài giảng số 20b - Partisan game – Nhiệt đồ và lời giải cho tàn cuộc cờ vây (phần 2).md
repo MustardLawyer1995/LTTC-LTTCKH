@@ -35,6 +35,12 @@
 &nbsp;&nbsp;&nbsp;&nbsp; $\Longrightarrow$ Ta hoàn tất chứng minh ***hệ quả*** <br>
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;***<ins>Định nghĩa 3.3:</ins>***
+&nbsp;&nbsp;&nbsp;&nbsp;Định nghĩa hồi quy dãy $\\{ w_{n} \\} : w_{1} = \\{ 1|\ast \\} , w_{k+1} = \\{ 2|w_{k} \\}-1$ . Dễ thấy tất cả các thế $w_{n}$ đều chẵn (theo ***2.3a*** và ***2.3b***). Chúng có các tính chất sau (quy nạp cho ***3.3a*** và ***3.3b***): <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***<ins>Tính chất 3.3a:</ins>*** $w_{n}(1)=\frac{1}{2^n}, t(w_{n})=\frac{1}{2}+\frac{1}{4}+\frac{1}{8}+...+\frac{1}{2^n}$ (theo ***1.1, 1.3, 1.4d***) $\Rightarrow$ $w_{n}$ là phi số. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***<ins>Tính chất 3.3b:</ins>*** $fw_{n}=\frac{1}{2^n}, f(w_{n}+x)=fw_{n}+x$ với $x \in \mathbb{Z}$ (do ***2.2*** và hệ quả của ***<ins>định lý tránh số nguyên</ins>***) <br>
+
+
+
 
 
 
