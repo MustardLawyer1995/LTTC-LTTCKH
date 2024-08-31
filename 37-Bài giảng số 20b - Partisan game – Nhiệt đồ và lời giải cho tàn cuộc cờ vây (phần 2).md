@@ -38,9 +38,37 @@
 &nbsp;&nbsp;&nbsp;&nbsp;Định nghĩa hồi quy dãy $\\{ w_{n} \\} : w_{1} = \\{ 1|\ast \\} , w_{k+1} = \\{ 2|w_{k} \\}-1$ . Dễ thấy tất cả các thế $w_{n}$ đều chẵn (theo ***2.3a*** và ***2.3b***). Chúng có các tính chất sau (quy nạp cho ***3.3a*** và ***3.3b***): <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***<ins>Tính chất 3.3a:</ins>*** $w_{n}(1)=\frac{1}{2^n}, t(w_{n})=\frac{1}{2}+\frac{1}{4}+\frac{1}{8}+...+\frac{1}{2^n}$ (theo ***1.1, 1.3, 1.4d***) $\Rightarrow$ $w_{n}$ là phi số. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***<ins>Tính chất 3.3b:</ins>*** $fw_{n}=\frac{1}{2^n}, f(w_{n}+x)=fw_{n}+x$ với $x \in \mathbb{Z}$ (do ***2.2*** và hệ quả của ***<ins>định lý tránh số nguyên</ins>***) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***<ins>Tính chất 3.3c:</ins>***  Cho tập hợp các giá trị có dạng $W=x+wk_{1}+wk_{2}+wk_{3}+... (x \in \mathbb{Z})$ , có: $fW=x+ƒwk_{1}+ƒwk_{2}+ƒwk_{3}+...$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Chứng minh tính chất 3.3c:</ins>* <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quy nạp rằng nếu ***3.3c*** đúng với: $W∈ \\{ W_{1},W_{2},W_{1}L,W_{1}R,W_{2}L,W_{2}R,W_{1}L+W_{2},W_{1}R+W_{2},W_{1}+W_{2}L,W_{1}+W_{2}R \\}$ thì nó cũng đúng với $W=W_{1}+W_{2}$ . Ta sẽ chỉ ra rằng: <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(c1) Nếu ***3.3c*** đúng với $W = W' = x' + w{k_1}^\prime  + w{k_2}^\prime  + w{k_3}^\prime  + ...$ thì: $fW^{'}=n \in \mathbb{Z}$ $\Leftrightarrow$ $W^{'}=n$ hoặc $n+ \ast$ . Thật vậy, do ***(3.3a,b),(1.4d)*** nên ta có:  $fW' = x' + w{k_1}^\prime  + w{k_2}^\prime  + w{k_3}^\prime  + ... = x'\left( 1 \right) + w{k_1}^\prime \left( 1 \right) + w{k_2}^\prime \left( 1 \right) + w{k_3}^\prime \left( 1 \right) + ... = W'\left( 1 \right)$ , nếu $ƒW'=n \in \mathbb{Z}$ thì $n(1)=W'(1)$ $\Rightarrow$ $W'=n$ hoặc $n+ \ast$ (do ***hệ quả*** của ***3.2***) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(c2) $ƒ(W_{1}+W_{2})=ƒW_{1}+ƒW_{2}$ . Với $W_{1},W_{2} \in \mathbb{Z}$ thì (c2) là hiển nhiên; với $W_{1},W_{2} \notin \mathbb{Z}$ thì (c2) được thỏa mãn bởi ***(2.2a)*** và giả thiết quy nạp. Với $W_{1} \notin \mathbb{Z}, W_{2} \in \mathbb{Z}$ , nếu $ƒW_{1} \notin \mathbb{Z}$ thì (c2) được suy ra từ ***hệ quả*** của ***<ins>định lý tránh số nguyên</ins>*** và giả thiết quy nạp; nếu $ƒW_{1}=n \in \mathbb{Z}$ thì $W_{1}=n+ \ast$ theo (c1) $\Rightarrow$ (c2) trở thành hiển nhiên. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Từ (c2) và giả thiết quy nạp suy ra ***3.3c*** cũng đúng với $W=W_{1}+W_{2}$ , quy nạp hoàn tất. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\Longrightarrow$ Ta hoàn tất chứng minh ***tính chất 3.3c*** <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***<ins>Tính chất 3.3d:</ins>*** Với các giá trị $W$ được định nghĩa ở ***3.3c***, ta luôn có: $ƒ(W+ \ast)=ƒW$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Chứng minh tính chất 3.3d:</ins>* <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $(w_{1}+w_{1}-1)(1)=0=0(1)$ (do ***1.4d, 3.3a***) $\Rightarrow$ $w_{1}+w_{1}-1=0$ hoặc $\ast$ (do hệ quả của ***3.2***), mà $w_{1}+w_{1}-1$ là thế lẻ (do $w_{1}$ là thế chẵn và ***2.3b***) $\Rightarrow$ $w_{1}+w_{1}-1= \ast$ . Bởi ***3.3c***, nên ta có: $ƒ(W+ \ast)=ƒ(W+w_{1}+w_{1}-1)=ƒW+ƒ(w_{1}+w_{1}-1)=ƒW+ƒ( \ast )=ƒW$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\Longrightarrow$ Ta hoàn tất chứng minh ***tính chất 3.3d*** <br>
 
+#### &nbsp;&nbsp;&nbsp;&nbsp;***<ins>Bổ đề 3.4:</ins>***
+&nbsp;&nbsp;&nbsp;&nbsp;Trong tàn cục cờ vây, làm mát tương đương với làm lạnh bởi 1: $G(1)=ƒG$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Chứng minh bổ đề 3.4:</ins>* <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Nếu $G(1)=a$ là số (với $t(G)<1$ ), $a$ có thể viết thành dạng: $a=x+\frac{1}{2^{k_{1}}}+\frac{1}{2^{k_{2}}}+\frac{1}{2^{k_{3}}}+...$ (với $x \in \mathbb{Z}$ và $k_{1},k_{2},k_{3}, ... \in \mathbb{Z^+}$ ). <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Đặt $W=x+wk_{1}+wk_{2}+wk_{2}+...$ , khi đó ta có: $G(1)=a=x(1)+wk_{1}(1)+wk_{2}(1)+wk_{3}(1)+...=x+ƒwk_{1}+ƒwk_{2}+ƒwk_{3}+...$ (theo ***3.3a*** và ***3.3b***) $\Leftrightarrow$ $G(1)=W(1)=fW$ (theo ***1.4d*** và ***3.3c***) $\Rightarrow$ $G=W$ hoặc $W+ \ast$ (hệ quả của ***3.2***) $\Rightarrow$ $G(1)=fW=f(W+ \ast)=fG$ (theo ***3.3d***) (đpcm) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Nếu $G(1)$ không phải là số (với $t(G)≥1$ ) thì $G(1)=\\{ GL(1)-1|GR(1)+1 \\} = \\{ f(GL)-1|f(GR)+1 \\}=fG$ (theo ***1.1*** và ***2.2a***) (quy nạp) <br>
+&nbsp;&nbsp;&nbsp;&nbsp; $\Longrightarrow$ Ta hoàn tất chứng minh ***bổ đề 3.4*** <br>
 
+#### &nbsp;&nbsp;&nbsp;&nbsp;***<ins>Bổ đề 3.5:</ins>***
+&nbsp;&nbsp;&nbsp;&nbsp;Với $G$ là thế cờ chẵn, ta luôn có: $\int (fG) = G$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Chứng minh bổ đề 3.5:</ins>* <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Với $G=n$ hoặc $G=n+ \ast$ (với $n∈ \mathbb{Z}$ ) thì ***(3.5)*** là hiển nhiên theo ***2.1, 2.2***. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Với $G≠n$ và $G≠n+ \ast$ (với $n∈ \mathbb{Z}$ ), nếu $fG=G(1)=n∈ \mathbb{Z}$ thì $G=n$ hoặc $G=n+ \ast$ (theo ***3.4*** và hệ quả của ***3.2***) $\Rightarrow$ $ƒG\notin \mathbb{Z}$ $\Rightarrow$ $\int(fG)= \\{ \int(f(GL)-1)+1|\int(ƒ(GR)+1)-1 \\} = \\{ \int(f(GL-1))+1|\int(f(GR+1))-1 \\} = \\{ GL|GR \\} = G$ (bởi ***3.4***, ***1.4b*** nên $\forall$ thế cờ $H$ , có $f(H+x)=fH+x, x∈ \mathbb{Z}$ ), quy nạp theo giả thiết ***(3.5)*** đã đúng với ***GL-1, GR+1*** (chúng đều là thế chẵn bởi vì $G$ là thế chẵn, theo ***2.3a,b***). <br>
+&nbsp;&nbsp;&nbsp;&nbsp; $\Longrightarrow$ Ta hoàn tất chứng minh ***bổ đề 3.5*** <br>
 
+#### &nbsp;&nbsp;&nbsp;&nbsp;***<ins>Định lí 3.6:</ins>***
+&nbsp;&nbsp;&nbsp;&nbsp;Cho $G$ là thế cờ vây chẵn, có $\intG(1)=G$ . Nói cách khác, làm ấm là phép toán đảo ngược của làm lạnh bởi 1. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Chứng minh định lí 3.6:</ins>* <br>
+&nbsp;&nbsp;&nbsp;&nbsp;
 
 
 
