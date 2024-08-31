@@ -113,7 +113,17 @@ cho các trò chơi, nhưng nó còn dẫn ta đến điều gì nữa...
 &nbsp;&nbsp;&nbsp;&nbsp;  Với khó khăn vừa nêu trên, đừng lo, giải pháp sẽ có trong phần tiếp theo ***<ins>(mời quay trở lại mạch chính của bài viết)</ins>***. <br>
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
-
+#### 3. Làm mát, làm ấm và tính chẵn lẻ của thế cờ 
+&nbsp;&nbsp;&nbsp;&nbsp;Ý tưởng đột phá trong phân tích toán học cho cờ vây chính là khám phá ra phép ***làm mát*** và ***làm ấm***. Làm mát về cơ bản làm cho giá trị của các thế cờ trở nên đơn giản hơn. Ví dụ như giá trị của hành lang trong hình ở (\*) có thể được làm mát thành $2 + \frac{1}{8}$ , từ đó ta có thể tính toán tổng của các trò chơi con một cách dễ dàng. Làm ấm là đảo ngược của làm mát, cho phép ta tìm ra giá trị gốc của trò chơi trước khi bị làm mát. Ta cũng làm quen với một khái niệm mới là tính chẵn lẻ của thế cờ, nó sẽ rất hữu ích về sau. <br>
+#### &nbsp;&nbsp;&nbsp;&nbsp;***<ins>Định nghĩa 2.1:</ins>***
+&nbsp;&nbsp;&nbsp;&nbsp;Cho trò chơi $G$ , toán tử làm ấm $\int$ được định nghĩa như sau: <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- $\int G = G$ nếu $G$ là số nguyên chẵn. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- $\int G = G + \ast$ nếu $G$ là số nguyên lẻ. <br> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- $\int G = \\{ \int GL + 1|\int GR - 1 \\}$ cho các trường hợp còn lại. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Nhiều giá trị khác nhau khi bị "làm lạnh bởi 1" có thể đưa về cùng một kết quả (chẳng hạn $\ast (1) = \uparrow (1) = 0$ ). Vì vậy khi xét các trò chơi nói chung, không thực sự tồn tại phép toán đảo ngược của làm lạnh. Lời giải tuyệt đẹp của ***tàn cục cờ vây*** dựa trên một định lý lớn ở ***<ins>mục (3.6) </ins>*** (xem ***bài giảng 36b, mục 3***), phát biểu rằng nếu chỉ giới hạn trong tàn cục cờ vây, làm ấm chính là phép toán đảo ngược của làm lạnh bởi 1. <br>
+#### &nbsp;&nbsp;&nbsp;&nbsp;***<ins>Định nghĩa 2.2:</ins>***
+&nbsp;&nbsp;&nbsp;&nbsp;Toán tử làm mát $f$ được định nghĩa như sau: <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 
 
 
 
