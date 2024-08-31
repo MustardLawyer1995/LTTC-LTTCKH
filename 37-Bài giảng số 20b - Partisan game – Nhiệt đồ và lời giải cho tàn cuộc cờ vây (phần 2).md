@@ -81,6 +81,16 @@
 &nbsp;&nbsp;&nbsp;&nbsp;Bởi hệ quả của ***(3.6)*** cùng với tính tuyến tính của toán tử làm lạnh và làm mát (***1.4d và 3.4***), nếu có một thế cờ là tổng của nhiều thế cờ con, ta chỉ cần làm mát từng thế cờ con rồi tính tổng của chúng, sau đó làm ấm tổng này để truy ngược lại giá trị thực của thế cờ ban đầu. <br>
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;***<ins>Ví dụ:</ins>***
+<div align="center">
+
+![image](https://github.com/user-attachments/assets/540c3ff1-f14f-42e7-a4e6-db9f68c54e9d)
+</div>
+
+&nbsp;&nbsp;&nbsp;&nbsp;Cùng thử phân tích một thế tàn cục trên bảng $9 \times 9$ (hình). Đen đã chiếm được 8 ô lãnh thổ, còn Trắng là 7 ô. Có 6 khu vực được đặt tên từ $A$ đến $F$ là những vùng chưa thuộc lãnh thổ của người chơi nào, tại đây đang diễn ra giao tranh giữa 2 phe. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Sử dụng những kiến thức của chương 2, 3 để chứng tỏ (bằng quy nạp) rằng giá trị sau khi làm mát của một hành lang như trong hình ở phần ( $\ast$ )với $n$ ô trống ( $n≥2$ ) là $n-2+\frac{1}{2^{n-1}}$ , khi trắng và đen đảo vai trò cho nhau thì giá trị là $-(n-2) - \frac{1}{2^{n-1}}$ . <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Quay lại với hình trên, $A$ và $F$ là 2 hành lang tương đương nhau, bởi công thức trên nên $fA=fF=-\frac{1}{2}$ . $E= \ast$ như đã nói trong phần hình 3 ở ***<ins>bài giảng số 36</ins>***, nên $fE=0$ . Với $B$ , có thể nhận ra nước đi tối ưu của cả 2 người chơi là đánh vào ô $(4,7)$ $\Rightarrow$ $B=\\{ 1+ \ast|-1+ \ast \\}$ $\Rightarrow$ $fB=\\{ 0|0 \\}= \ast$ . Với $C$ , nước đi tối ưu của cả 2 là ô $(7,6)$ $\Rightarrow$ $C=\\{ 3| \\{ 2|0 \\} \\}$ $\Rightarrow$ $fC=\\{ 2|2+ \ast \\} =2+ \uparrow$ . Tương tự, $fD=-2+ \downarrow$ . <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Giá trị của trò chơi là $G=8-7+A+B+C+D+E+F$ $\Rightarrow$ $fG=1+fA+fB+fC+fD+fE+fF=1-\frac{1}{2}+ \ast +2+ \uparrow -2+ \downarrow +0-frac{1}{2}= \ast$ . Số ô trống trên bàn cờ là một số lẻ nên đây là một thế cờ lẻ, bởi hệ quả của ***(3.6)***: $G= \ast + \int (fG)= \ast +\int ( \ast )= \ast ±1= \\{ 1+ \ast|-1+ \ast \\}$ (theo ***0.0***) $\Rightarrow$ Người đi trước luôn thắng. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Nước đi tối ưu của người đi trước là chơi ở $B$ , đánh vào ô $(4,7)$ , bằng cách này Đen (Trắng) sẽ đưa trò chơi về $1+ \ast (-1+ \ast )$ , người đi lượt sau phải nhận một thất bại không thể tránh khỏi. <br>
 
 
 
