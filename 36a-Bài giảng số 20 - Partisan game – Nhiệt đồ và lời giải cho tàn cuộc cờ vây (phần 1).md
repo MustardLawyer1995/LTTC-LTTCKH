@@ -23,7 +23,7 @@ cho các trò chơi, nhưng nó còn dẫn ta đến điều gì nữa...
 &nbsp;&nbsp;&nbsp;&nbsp;Cho trò chơi $G$ và số $t≥0$ , $G\( t \)$ được định nghĩa đệ quy như sau: <br>
 &nbsp;&nbsp;&nbsp;&nbsp; $G \( t \) = \\{ GL \( t \) -t|GR \( t \)+t \\}$ khi $t≤r$ với $r$ là giá trị nhỏ nhất để $G(r)$ là số; $G(t)=G(r)$ khi $t>r$ <br>
 &nbsp;&nbsp;&nbsp;&nbsp;Ta nói $G(t)$ là trò chơi $G$ bị "làm lạnh" bởi $t$ . <br>
-&nbsp;&nbsp;&nbsp;&nbsp;***Ví dụ:*** Nếu $G$ là số thì $G(t)=G \forall t≥0$; nếu $G$ là phi số vô cùng bé $\( *,↑,↓,... \)$ thì $G(t)=0 \forall t>0$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;***Ví dụ:*** Nếu $G$ là số thì $G(t)=G \forall t≥0$; nếu $G$ là phi số vô cùng bé $\( *,↑,↓,... \)$ thì $G(t)=0 , \forall t>0$ <br>
 
 &nbsp;&nbsp;&nbsp;&nbsp;Với lần lượt các biểu thức sau: <br> 
 ```math
