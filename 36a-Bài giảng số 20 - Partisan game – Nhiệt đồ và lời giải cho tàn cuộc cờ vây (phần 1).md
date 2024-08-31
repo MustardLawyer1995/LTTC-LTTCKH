@@ -25,7 +25,15 @@ cho các trò chơi, nhưng nó còn dẫn ta đến điều gì nữa...
 &nbsp;&nbsp;&nbsp;&nbsp;Ta nói $G(t)$ là trò chơi $G$ bị "làm lạnh" bởi $t$ . <br>
 &nbsp;&nbsp;&nbsp;&nbsp;***Ví dụ:*** Nếu $G$ là số thì $G(t)=G \forall t≥0$; nếu $G$ là phi số vô cùng bé $\( *,↑,↓,... \)$ thì $G(t)=0 \forall t>0$ <br>
 
-&nbsp;&nbsp;&nbsp;&nbsp;Với $G=±1, G\( 0 \)=±1, G\( \frac{1}{2} \) = \\{ 1-\frac{1}{2}|-1+\frac{1}{2} \\} = \frac{1}{2} , G(1)= \\{ 1-1|-1+1 \\} =\\{ 0|0 \\} =*, G(t)=0 \text{   } \forall t>1$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Với lần lượt các biểu thức sau: <br> 
+```math
+\left\{ \begin{array}{l}
+G =  \pm 1,G\left( 0 \right) =  \pm 1\\
+G\left( {\frac{1}{2}} \right) = \left\{ {1 - \frac{1}{2}| - 1 + \frac{1}{2}} \right\} =  \pm \frac{1}{2}\\
+G\left( 1 \right) = \left\{ {1 - 1| - 1 + 1} \right\} = \left\{ {0|0} \right\} = *\\
+G\left( t \right) = 0,{\rm{  }}\forall t > 1
+\end{array} \right.
+```
 #### &nbsp;&nbsp;&nbsp;&nbsp;***<ins>Định lí 1.2:</ins>***
 &nbsp;&nbsp;&nbsp;&nbsp;Luôn tồn tại $t$ để $G(t)$ là số <br>
 &nbsp;&nbsp;&nbsp;&nbsp;*<ins>Chứng minh định lí 1.2:</ins>* <br>
