@@ -62,17 +62,25 @@
 &nbsp;&nbsp;&nbsp;&nbsp;Với $G$ là thế cờ chẵn, ta luôn có: $\int (fG) = G$ <br>
 &nbsp;&nbsp;&nbsp;&nbsp;*<ins>Chứng minh bổ đề 3.5:</ins>* <br>
 &nbsp;&nbsp;&nbsp;&nbsp;Với $G=n$ hoặc $G=n+ \ast$ (với $n∈ \mathbb{Z}$ ) thì ***(3.5)*** là hiển nhiên theo ***2.1, 2.2***. <br>
-&nbsp;&nbsp;&nbsp;&nbsp;Với $G≠n$ và $G≠n+ \ast$ (với $n∈ \mathbb{Z}$ ), nếu $fG=G(1)=n∈ \mathbb{Z}$ thì $G=n$ hoặc $G=n+ \ast$ (theo ***3.4*** và hệ quả của ***3.2***) $\Rightarrow$ $ƒG\notin \mathbb{Z}$ $\Rightarrow$ $\int(fG)= \\{ \int(f(GL)-1)+1|\int(ƒ(GR)+1)-1 \\} = \\{ \int(f(GL-1))+1|\int(f(GR+1))-1 \\} = \\{ GL|GR \\} = G$ (bởi ***3.4***, ***1.4b*** nên $\forall$ thế cờ $H$ , có $f(H+x)=fH+x, x∈ \mathbb{Z}$ ), quy nạp theo giả thiết ***(3.5)*** đã đúng với ***GL-1, GR+1*** (chúng đều là thế chẵn bởi vì $G$ là thế chẵn, theo ***2.3a,b***). <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Với $G≠n$ và $G≠n+ \ast$ (với $n∈ \mathbb{Z}$ ), nếu $fG=G(1)=n∈ \mathbb{Z}$ thì $G=n$ hoặc $G=n+ \ast$ (theo ***3.4*** và hệ quả của ***3.2***) $\Rightarrow$ $fG\notin \mathbb{Z}$ $\Rightarrow$ $\int(fG)= \\{ \int(f(GL)-1)+1|\int(f(GR)+1)-1 \\} = \\{ \int(f(GL-1))+1|\int(f(GR+1))-1 \\} = \\{ GL|GR \\} = G$ (bởi ***3.4***, ***1.4b*** nên $\forall$ thế cờ $H$ , có $f(H+x)=fH+x, x∈ \mathbb{Z}$ ), quy nạp theo giả thiết ***(3.5)*** đã đúng với ***GL-1, GR+1*** (chúng đều là thế chẵn bởi vì $G$ là thế chẵn, theo ***2.3a,b***). <br>
 &nbsp;&nbsp;&nbsp;&nbsp; $\Longrightarrow$ Ta hoàn tất chứng minh ***bổ đề 3.5*** <br>
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;***<ins>Định lí 3.6:</ins>***
-&nbsp;&nbsp;&nbsp;&nbsp;Cho $G$ là thế cờ vây chẵn, có $\intG(1)=G$ . Nói cách khác, làm ấm là phép toán đảo ngược của làm lạnh bởi 1. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Cho $G$ là thế cờ vây chẵn, có $\int G(1)=G$ . Nói cách khác, làm ấm là phép toán đảo ngược của làm lạnh bởi 1. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;*<ins>Chứng minh định lí 3.6:</ins>* <br>
-&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;Với 2 phần quan trọng nhất của bằng chứng cho ***(3.6)*** đã được hoàn thành: <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1) $G(1)=fG$ , theo ***bổ đề (3.4)*** <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2) $\int (fG)=G$ , theo ***bổ đề (3.5)*** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; $\Rightarrow$ Ta kết hợp 1) và 2) ta có ***định lý (3.6)***. Cần nhấn mạnh rằng toàn bộ chứng minh dựa trên khái niệm về tính chẵn lẻ của các thế cờ. Vì vậy kết quả này chỉ giới hạn cho tàn cục cờ vây. <br>
+&nbsp;&nbsp;&nbsp;&nbsp; $\Longrightarrow$ Ta hoàn tất chứng minh ***định lí 3.6*** <br>
 
+#### &nbsp;&nbsp;&nbsp;&nbsp;***<ins>Hệ quả:</ins>***
+&nbsp;&nbsp;&nbsp;&nbsp;Nếu $G$ là thế cờ vây chẵn thì $G=\int G(1)$ . Nếu $G$ là thế cờ vây lẻ thì $G= \ast + \int G(1)$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Chứng minh hệ quả:</ins>* <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Bởi (3.6), nếu $G$ là thế chẵn thì $\int G(1)=G$ , nếu $G$ là thế lẻ thì $G+ \ast$ là thế chẵn $\Rightarrow$ $\int G(1)= \int (G+ \ast)(1) = G+ \ast$ $\Leftrightarrow$ $G= \ast + \int G(1)$ .  <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Bởi hệ quả của ***(3.6)*** cùng với tính tuyến tính của toán tử làm lạnh và làm mát (***1.4d và 3.4***), nếu có một thế cờ là tổng của nhiều thế cờ con, ta chỉ cần làm mát từng thế cờ con rồi tính tổng của chúng, sau đó làm ấm tổng này để truy ngược lại giá trị thực của thế cờ ban đầu. <br>
 
-
-
+#### &nbsp;&nbsp;&nbsp;&nbsp;***<ins>Ví dụ:</ins>***
 
 
 
