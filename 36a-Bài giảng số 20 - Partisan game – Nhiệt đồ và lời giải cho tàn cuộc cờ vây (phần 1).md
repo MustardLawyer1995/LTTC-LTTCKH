@@ -140,7 +140,16 @@ cho các trò chơi, nhưng nó còn dẫn ta đến điều gì nữa...
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ Nếu Phải đưa trò chơi về $f(GR) + 1 - fH$ thì Trái đưa về $f(GR) + 1 - f(HR) - 1 = f(GR) - f(HR)$ hoặc $f(GRL) - 1 + 1 - fH = f(GRL) - fH$ (khi $GR \notin \mathbb{Z}$ ) hoặc $GRL + 1 - fH$ (khi $GR \in \mathbb{Z}$ ) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ Nếu Phải đưa trò chơi về $fG - f(HL) + 1$ thì Trái đưa về $f(GL) - f(HL)$ hoặc $fG - f(HLR)$ (khi $HL \notin \mathbb{Z}$ ) hoặc $fG - HLR + 1$ (khi $HL \in \mathbb{Z}$ ) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Các giá trị mà Trái đưa về đều $\ge 0$ theo giả thiết quy nạp. <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***<ins>Tính chất 2.2d:</ins>*** 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- *<ins>Trường hợp 3:</ins>* $G∉Z, H∈Z$ , có $G>H$ (bởi giả thiết $G≥H$ , nhưng $G≠H$ ) $\Rightarrow$ Trái thắng khi đi trước trong $G-H$ $\Rightarrow$ $∃GL≥H$ theo định lý tránh số nguyên (xem ***Bài giảng số 17f - Số siêu thực -phần 3, VII/, 4.5***), do đó, trong trò chơi $ƒG-ƒH=ƒG-H$ , ta có: <br> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ Nếu Phải đưa trò chơi về $ƒ(GR)+1-H$ , diễn biến như trường hợp 2. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ Nếu Phải đưa trò chơi về $ƒG-HL$ thì $HL=H-1$ (không $∃HL$ nếu $H≤0 \to \\{ H-1| 
+ \\} =H > 0$ ), Trái đưa về $ƒ(GL)-1-HL=ƒ(GL)-H≥0$ (giả thiết quy nạp). <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lập luận tương tự khi $G∈Z, H∉Z$ . Từ các trường hợp trên suy ra đpcm. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\Longrightarrow$ Ta hoàn tất chứng minh ***tính chất 2.2c*** <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***<ins>Nhận xét:</ins>*** So sánh với ***(1.1)***, làm mát là phiên bản yếu hơn của làm lạnh bởi 1. Nhưng trong cờ vây, chúng hoàn toàn tương đương, đây là một phần trong chứng minh của định lý ***(3.6)***. <br>
+#### &nbsp;&nbsp;&nbsp;&nbsp;***<ins>Định nghĩa 2.3:</ins>***
+
+
 
 
 
