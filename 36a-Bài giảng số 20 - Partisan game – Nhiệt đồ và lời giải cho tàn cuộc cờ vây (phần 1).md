@@ -120,11 +120,27 @@ cho các trò chơi, nhưng nó còn dẫn ta đến điều gì nữa...
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- $\int G = G$ nếu $G$ là số nguyên chẵn. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- $\int G = G + \ast$ nếu $G$ là số nguyên lẻ. <br> 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- $\int G = \\{ \int GL + 1|\int GR - 1 \\}$ cho các trường hợp còn lại. <br>
-&nbsp;&nbsp;&nbsp;&nbsp;Nhiều giá trị khác nhau khi bị "làm lạnh bởi 1" có thể đưa về cùng một kết quả (chẳng hạn $\ast (1) = \uparrow (1) = 0$ ). Vì vậy khi xét các trò chơi nói chung, không thực sự tồn tại phép toán đảo ngược của làm lạnh. Lời giải tuyệt đẹp của ***tàn cục cờ vây*** dựa trên một định lý lớn ở ***<ins>mục (3.6) </ins>*** (xem ***bài giảng 36b, mục 3***), phát biểu rằng nếu chỉ giới hạn trong tàn cục cờ vây, làm ấm chính là phép toán đảo ngược của làm lạnh bởi 1. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Nhiều giá trị khác nhau khi bị "làm lạnh bởi 1" có thể đưa về cùng một kết quả (chẳng hạn $^{\ast} (1) = \uparrow (1) = 0$ ). Vì vậy khi xét các trò chơi nói chung, không thực sự tồn tại phép toán đảo ngược của làm lạnh. Lời giải tuyệt đẹp của ***tàn cục cờ vây*** dựa trên một định lý lớn ở ***<ins>mục (3.6) </ins>*** (xem ***bài giảng 36b, mục 3***), phát biểu rằng nếu chỉ giới hạn trong tàn cục cờ vây, làm ấm chính là phép toán đảo ngược của làm lạnh bởi 1. <br>
 #### &nbsp;&nbsp;&nbsp;&nbsp;***<ins>Định nghĩa 2.2:</ins>***
 &nbsp;&nbsp;&nbsp;&nbsp;Toán tử làm mát $f$ được định nghĩa như sau: <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 
-
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- $fG =n$ nếu $G=n$ hoặc $G= n+ \ast$ $\forall n \in \mathbb{Z}$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- $fG = \\{ f(GL) - 1|f(GR) + 1 \\}$ cho các trường hợp khác. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Làm mát cũng có các tính chất sau: <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***<ins>Tính chất 2.2a:</ins>*** $\forall G \notin \mathbb{Z}, fG = \\{ f(GL) - 1|f(GR) + 1 \\}$ (theo ***2.2*** và chú ý rằng $n + \ast = \\{ n|n \\} , \forall n \in \mathbb{Z}$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***<ins>Tính chất 2.2b:</ins>*** $f(-G) = -f(G)$ (điều này được quy nạp từ ***2.2***) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***<ins>Tính chất 2.2c:</ins>*** $G \ge H \to fG \ge fH$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Chứng minh tính chất 2.2c:</ins>* <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ta biến đổi $G \ge H \Leftrightarrow G-H \ge 0$ $\Leftrightarrow$ Phải đi trước ở $G-H$ luôn thua $\Leftrightarrow$ 2 mệnh đề sau cùng được thỏa mãn: <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- $\forall GR, \exists GRL \ge H$ hoặc $\exists HR \le GR$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- $\forall HL, \exists GL \ge HL$ hoặc $\exists HLR \le G$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ta quy nạp với giả thiết ***2.2c*** đúng khi thay $G,H$ bằng các tùy chọn phát sinh từ chúng, để chỉ ra rằng ***2.2c*** cũng đúng với $G$ và $H$ . <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $fG \ge fH \Leftrightarrow fG - fH \ge 0$ . Cần chỉ ra: Phải đi trước trong $fG - fH$ luôn thua. Thật vậy ta xét qua 3 trường hợp sau đây: <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- *<ins>Trường hợp 1:</ins>* $G,H \in \mathbb{Z}$ thì ***2.2c*** là điều hiển nhiên. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- *<ins>Trường hợp 2:</ins>* $G,H \notin \mathbb{Z}$ thì sử dụng ***2.2a*** và ***2.2b*** <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ Nếu Phải đưa trò chơi về $f(GR) + 1 - fH$ thì Trái đưa về $f(GR) + 1 - f(HR) - 1 = f(GR) - f(HR)$ hoặc $f(GRL) - 1 + 1 - fH = f(GRL) - fH$ (khi $GR \notin \mathbb{Z}$ ) hoặc $GRL + 1 - fH$ (khi $GR \in \mathbb{Z}$ ) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ Nếu Phải đưa trò chơi về $fG - f(HL) + 1$ thì Trái đưa về $f(GL) - f(HL)$ hoặc $fG - f(HLR)$ (khi $HL \notin \mathbb{Z}$ ) hoặc $fG - HLR + 1$ (khi $HL \in \mathbb{Z}$ ) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Các giá trị mà Trái đưa về đều $\ge 0$ theo giả thiết quy nạp. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***<ins>Tính chất 2.2d:</ins>*** 
 
 
 
