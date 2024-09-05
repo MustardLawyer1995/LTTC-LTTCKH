@@ -85,12 +85,18 @@
 &nbsp;&nbsp;&nbsp;&nbsp; $\oint G = \oint H \Leftrightarrow G = H$ <br>
 &nbsp;&nbsp;&nbsp;&nbsp;*<ins>Chứng minh hệ quả:</ins>* <br>
 &nbsp;&nbsp;&nbsp;&nbsp;Ta có: $\oint G = \oint H \Leftrightarrow \oint G \ge \oint H$ và $\oint G \le \oint H$ <br>
-&nbsp;&nbsp;&nbsp;&nbsp;Suy ra: $G \ge H$ mà theo ***1.6*** ta có: $G \le H$ nên suy ra $G = H$ . 
+&nbsp;&nbsp;&nbsp;&nbsp;Suy ra: $G \ge H$ mà theo ***1.6*** ta có: $G \le H$ nên suy ra $G = H$ . <br>
 &nbsp;&nbsp;&nbsp;&nbsp;Ngược lại, nếu $G = H$ , thì $\to \oint G - \oint H = \oint \( {G - H} \) = \oint 0 = 0$ (theo ***1.5***) có nghĩa là khi tính $\oint G$ , $G$ không bắt buộc phải ở dạng hợp quy. <br>
 &nbsp;&nbsp;&nbsp;&nbsp; $\Longrightarrow$ Ta hoàn tất chứng minh ***hệ quả*** <br>
 
 ### 3. Giải thuật tổng quát <br>
+#### &nbsp;&nbsp;&nbsp;&nbsp;***<ins>Định lí 2.1:</ins>***
+&nbsp;&nbsp;&nbsp;&nbsp;Nếu $G$ là giá trị của trò chơi Phong tỏa và $G \notin \mathbb{Z}$ thì $G + \ast = \\{ {GL + \ast|GR + \ast} \\}$ . <br>
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Chứng minh định lí 2.1:</ins>* <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Dễ thấy $R1R = \ast$ $\to$ Trò chơi $G+\ast$ tương đương với $G+R1R$ . Việc đi vào $R1R$ là vô dụng với cả 2 người chơi (nó không mang lại điểm số cho Trái). Mặt khác, đi trước trong trò chơi $G$ luôn có lợi hơn. Thật vậy, giả sử Trái thu được mức điểm lớn hơn khi đi sau, Trái sẽ có một chiến lược $S$ tối ưu để đối phó với mọi nước đi của Phải. Sử dụng lập luận đánh cắp chiến lược (xem lại ***<ins>bài giảng số 15</ins>***) xét trường hợp Trái đi trước, ta cho Trái sử dụng lại $S$ , diễn biến sẽ tương tự như trường hợp Trái đi sau, chỉ khác là có thêm 1 ô xanh "bổ sung" trên chiến trường. Hệ quả là khi trò chơi kết thúc, nếu Phải đi nước cuối cùng, bố cục các ô màu sẽ y hệt như TH Trái đi sau; nếu Trái đi cuối cùng, bố cục các ô màu giống như trường hợp Trái đi sau trừ 1 ô đỏ bị đổi thành xanh $\to$ Số điểm của Trái khi đi trước luôn bằng hoặc lớn hơn khi đi sau $\to$ Đi trước có lợi cho Trái hơn. Lập luận tương tự để chỉ ra đi trước cũng có lợi hơn cho Phải $\to$ Từ những điều trên, người đi trước trong $G+\ast$ luôn tránh chơi ở $\ast$ vì đó là nước đi vô dụng, lại còn làm cho đối thủ được chơi trước ở $G$ trong lượt tiếp theo $\to$ $G + \ast = \\{ {GL + \ast|GR + \ast} \\}$ (đpcm). <br>
+&nbsp;&nbsp;&nbsp;&nbsp; $\Longrightarrow$ Ta hoàn tất chứng minh ***định lí 2.1*** <br>
 
+#### &nbsp;&nbsp;&nbsp;&nbsp;***<ins>Định lí 2.2a:</ins>***
 
 
 
