@@ -57,10 +57,10 @@
 &nbsp;&nbsp;&nbsp;&nbsp; $\Longrightarrow$ Ta hoàn tất chứng minh ***định lí 1.3*** <br>
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;***<ins>Bổ đề 1.4:</ins>***
-&nbsp;&nbsp;&nbsp;&nbsp;Nếu $G \in \\{ {n,{\rm{ }}n + \ast {\rm{ }}:n \in } \\} \backslash \mathbb{Z}$ thì $$ là phi số. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Nếu $G \in \\{ {n,{\rm{ }}n + \ast {\rm{ }}:n \in \mathbb{R}} \\} \backslash \mathbb{Z}$ thì $\oint G$ là phi số. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;*<ins>Chứng minh bổ đề 1.4:</ins>* <br>
-&nbsp;&nbsp;&nbsp;&nbsp;Ta có: $G = n + \ast {\rm{ }} \( {n \in } \),G = \\{ {n + 1 + \ast|n - 1 + \ast} \\} = n \pm 1 + \ast$ . <br>
-&nbsp;&nbsp;&nbsp;&nbsp;Với $G \in \\{ {n,{\rm{ }}n + \ast:n \in \backslash } \\},\exists k \in :k < G < k + 1$ $\rightarrow$ Theo ②, có: $k \le G' \le k + 1$ với $G'$ là tùy chọn (dạng $x$ hoặc $x + \ast$ , với $x$ là số) phát sinh từ $G$ (#). Ta quy nạp theo giả thiết ***(1.4)*** đúng với mọi $G'$ , và cho thấy nó cũng đúng với $G$ . Giả sử $\oint G$ là số, ta có: <br> 
+&nbsp;&nbsp;&nbsp;&nbsp;Ta có: $G = n + \ast {\rm{ }} \( {n \in \mathbb{Z}} \),G = \\{ {n + 1 + \ast|n - 1 + \ast} \\} = n \pm 1 + \ast$ . <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Với $G \in \\{ {n,{\rm{ }}n + \ast:n \in \mathbb{R} \backslash \mathbb{Z} } \\},\exists k \in \mathbb{Z} :k < G < k + 1$ $\rightarrow$ Theo ②, có: $k \le G' \le k + 1$ với $G'$ là tùy chọn (dạng $x$ hoặc $x + \ast$ , với $x$ là số) phát sinh từ $G$ (#). Ta quy nạp theo giả thiết ***(1.4)*** đúng với mọi $G'$ , và cho thấy nó cũng đúng với $G$ . Giả sử $\oint G$ là số, ta có: <br> 
 &nbsp;&nbsp;&nbsp;&nbsp; $r \( {\oint GL + 1 + \ast} \) < \oint G < l \( {\oint GR - 1 + \ast } \)$ (theo ①). Bởi ③, ***(1.3)*** , giả thiết quy nạp, định nghĩa của $r,l$ , ta có:<br>
 
 &nbsp;&nbsp;&nbsp;&nbsp; $r \( {\oint GL + 1 + \ast} \) \approx r \( {\oint GL} \) + 1 = l \( {\oint GLR - 1 + \ast} \) + 1 \approx l \( {\oint GLR} \) \approx r \( {\oint GLRL} \) + 1 \approx l \( {\oint GLRLR} \) \approx ... \approx k + 1$ <br>
