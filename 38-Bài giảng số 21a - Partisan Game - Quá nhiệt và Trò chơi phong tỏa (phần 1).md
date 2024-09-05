@@ -76,7 +76,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp; $\Longrightarrow$ Ta hoàn tất chứng minh ***định lí 1.5*** <br>
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;***<ins>Định lí 1.6:</ins>***
-&nbsp;&nbsp;&nbsp;&nbsp; $\oint G \ge \oint H \to \;G \ge H$
+&nbsp;&nbsp;&nbsp;&nbsp; $\oint G \ge \oint H \to \;G \ge H$ <br>
 &nbsp;&nbsp;&nbsp;&nbsp;*<ins>Chứng minh định lí 1.6:</ins>* <br>
 &nbsp;&nbsp;&nbsp;&nbsp;Đặt $M=G-H$ , có $\oint M = \oint G - \oint H$ (theo ***1.5***). Cần chỉ ra: $\oint M \ge 0 \to M \ge 0$ ***(1.6o)***. Thật vậy, nếu $M \in \mathbb{Z}$ thì ***(1.6o)*** là hiển nhiên, với $M \notin ,\oint M \ge 0{\rm{ }} \Leftrightarrow$ Phải luôn thua khi đi trước trong $\oint M{\rm{ }} \Leftrightarrow \forall MR$ , Trái có nước đi chiến thắng trong $\oint MR - 1 + \ast {\rm{ }} \Leftrightarrow \forall MR,\oint MR - 1 = \oint \( {MR - 1} \) \ge 0$ hoặc $\exists MRL:\oint MRL \ge 0$ ; nếu ***(1.6o)*** đúng khi thay $M$ bằng $MR - 1,MRL$ thì $\forall MR,\exists MRL \ge 0{\rm{ }} \Leftrightarrow$ Phải luôn thua khi đi trước trong $M$ $\Leftrightarrow \ge 0$ , ***(1.6o)*** cũng đúng với $M$ (quy nạp). <br>
 &nbsp;&nbsp;&nbsp;&nbsp; $\Longrightarrow$ Ta hoàn tất chứng minh ***định lí 1.6*** <br>
