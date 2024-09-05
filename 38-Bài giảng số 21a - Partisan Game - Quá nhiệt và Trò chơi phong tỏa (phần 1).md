@@ -29,5 +29,69 @@
 &nbsp;&nbsp;&nbsp;&nbsp; $\Rightarrow$ Vậy phải giải quyết vấn đề này như thế nào đây ? <br>
 
 ### 2. Toán tử quá nhiệt <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Lời giải cho các nan đề trong toán học thường dựa trên việc mở rộng khái niệm. ***<ins>"Phong tỏa"</ins>*** cũng không ngoại lệ, giải thuật tổng quát của nó cần dùng đến một loại ***<ins>phép toán mới - quá nhiệt</ins>***, có cách hoạt động gần tương tự "làm mát và làm ấm" trong tàn cục cờ vây. Trước khi giới thiệu về quá nhiệt, ta sẽ điểm lại một số định lý trong các bài cũ để thuận tiện cho việc trích dẫn và tra cứu. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-①: Mục 1.5a ở bài Nhiệt đồ (bài giảng số 20) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-②: Hệ quả của (3.3) ở bài Số siêu thực, mục 6 (bài giảng số 17) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-③: Mục (1.5c) ở bài Nhiệt đồ mục 1 (bài giảng số 20) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-④: Hệ quả của định lý tránh số nguyên ở bài Số siêu thực, mục 7 (bài giảng số 17) <br>
+
+#### &nbsp;&nbsp;&nbsp;&nbsp;***<ins>Định nghĩa 1.1a:</ins>***
+&nbsp;&nbsp;&nbsp;&nbsp;Định nghĩa phép toán "quá nhiệt từ $s$ tới $t$ " đối với $G$ ( $G,s,t$ là các trò chơi tùy ý, $s>0$ ) bằng đệ quy như sau: <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- $\int_s^t G  = G \bullet s$ nếu $G \in \mathbb{Z}$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- $\int_s^t G  = \\{ {\int_s^t {GL + t} |\int_s^t {GR - t} } \\}$ nếu $G \notin \mathbb{Z}$ <br>
+
+#### &nbsp;&nbsp;&nbsp;&nbsp;***<ins>Định nghĩa 1.1b:</ins>***
+&nbsp;&nbsp;&nbsp;&nbsp; Định nghĩa: $\oint G = \int_1^{* + 1} G$  là phép toán giới hạn trên $G \in \\{ {n,n + *{\rm{ }}:n \in \mathbb{R}} \\}$ <br>
+
+#### &nbsp;&nbsp;&nbsp;&nbsp;***<ins>Định nghĩa 1.2:</ins>***
+&nbsp;&nbsp;&nbsp;&nbsp;Ta quy ước kí hiệu $\approx$ như sau: <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Nếu $a = n \pm \delta$ (với $n$ là số, $\delta  \to {0^+}$ thì ta nói $a \approx n$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Nếu $a \approx c$ và  $b \approx c$ thì theo tính chất bắc cầu ta suy ra  $a \approx b$ <br>
+
+#### &nbsp;&nbsp;&nbsp;&nbsp;***<ins>Định lí 1.3:</ins>***
+&nbsp;&nbsp;&nbsp;&nbsp;Ta luôn có: $l\left( {G + \ast} \right) \approx l\left( G \right),{\rm{ }}r\left( {G + \ast} \right) \approx r\left( G \right)$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Chứng minh định lí 1.3:</ins>* <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Với trò chơi $G$ tùy ý, xét số $x$ bất kỳ thỏa $l\left( G \right) \ne x - \delta ,l\left( G \right) < x \to \exists x':l\left( G \right) < x' < x \to G \le x'$  (theo ①) <br>
+&nbsp;&nbsp;&nbsp;&nbsp; $\Rightarrow$ $G + \ast \le x' + \ast < x \to l\left( {G + \ast} \right) < x$ (theo ①). <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Bởi vậy, $l \( G + \ast \) \lessapprox l(G)$ , nhưng nếu coi $G' = G + \ast$ thì $l\( {G' + \ast} \) \lessapprox l \( {G'} \) \Leftrightarrow l\( G \) \lessapprox l \( {G + \ast} \)$ . Từ đây suy ra $l \( {G + \ast} \) \approx l \( G \),{\rm{ }}\forall G$ . Khi đó ta chỉ ra $r \( {G + \ast} \) \approx r \( G \)$ theo cách tương tự. <br>
+&nbsp;&nbsp;&nbsp;&nbsp; $\Longrightarrow$ Ta hoàn tất chứng minh ***định lí 1.3*** <br>
+
+#### &nbsp;&nbsp;&nbsp;&nbsp;***<ins>Bổ đề 1.4:</ins>***
+&nbsp;&nbsp;&nbsp;&nbsp;Nếu $G \in \\{ {n,{\rm{ }}n + \ast {\rm{ }}:n \in } \\} \backslash \mathbb{Z}$ thì $$ là phi số. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Chứng minh bổ đề 1.4:</ins>* <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Ta có: $G = n + \ast {\rm{ }} \( {n \in } \),G = \\{ {n + 1 + \ast|n - 1 + \ast} \\} = n \pm 1 + \ast$ . <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Với $G \in \\{ {n,{\rm{ }}n + \ast:n \in \backslash } \\},\exists k \in :k < G < k + 1$ $\rightarrow$ Theo ②, có: $k \le G' \le k + 1$ với $G'$ là tùy chọn (dạng $x$ hoặc $x + \ast$ , với $x$ là số) phát sinh từ $G$ (#). Ta quy nạp theo giả thiết ***(1.4)*** đúng với mọi $G'$ , và cho thấy nó cũng đúng với $G$ . Giả sử $\oint G$ là số, ta có: <br> 
+&nbsp;&nbsp;&nbsp;&nbsp; $r \( {\oint GL + 1 + \ast} \) < \oint G < l \( {\oint GR - 1 + \ast } \)$ (theo ①). Bởi ③, ***(1.3)*** , giả thiết quy nạp, định nghĩa của $r,l$ , ta có:<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; $r \( {\oint GL + 1 + \ast} \) \approx r \( {\oint GL} \) + 1 = l \( {\oint GLR - 1 + \ast} \) + 1 \approx l \( {\oint GLR} \) \approx r \( {\oint GLRL} \) + 1 \approx l \( {\oint GLRLR} \) \approx ... \approx k + 1$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;(theo #, với $G' \in \mathbb{Z}$ , nếu $G'=G...L$ thì $G'=k$ , nếu $G'=G...R$ thì $G'=k+1$ ); tương tự, ta cũng có được: <br>  
+&nbsp;&nbsp;&nbsp;&nbsp; $l \( {\oint GR - 1 + \ast} \) \approx l \( {\oint GR} \) - 1 \approx r \( {\oint GRL} \) \approx l \( {\oint GRLR} \) - 1 \approx r \( {\oint GRLRL} \) \approx ... \approx k$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Từ đây ta có $k + 1 \lessapprox \oint G \lessapprox k \to k + 1 \lessapprox k$ , điều này là vô lý! $\Rightarrow$ $\oint G$ không thể là số (đpcm). <br>
+&nbsp;&nbsp;&nbsp;&nbsp; $\Longrightarrow$ Ta hoàn tất chứng minh ***bổ đề 1.4*** <br>
+
+#### &nbsp;&nbsp;&nbsp;&nbsp;***<ins>Định lí 1.5:</ins>***
+&nbsp;&nbsp;&nbsp;&nbsp; $\oint \( {G + H} \) = \oint G + \oint H$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Chứng minh định lí 1.5:</ins>* <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Từ ***(1.1b), (1.4)***, và ④, ta chỉ ra ***(1.5)*** đúng $\forall G,H \in \\{ {n,{\rm{ }}n + \ast {\rm{ }}:n \in \mathbb{R} } \\}$ bằng quy nạp. <br>
+&nbsp;&nbsp;&nbsp;&nbsp; $\Longrightarrow$ Ta hoàn tất chứng minh ***định lí 1.5*** <br>
+
+#### &nbsp;&nbsp;&nbsp;&nbsp;***<ins>Định lí 1.6:</ins>***
+&nbsp;&nbsp;&nbsp;&nbsp; $\oint G \ge \oint H \to \;G \ge H$
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Chứng minh định lí 1.6:</ins>* <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Đặt $M=G-H$ , có $\oint M = \oint G - \oint H$ (theo ***1.5***). Cần chỉ ra: $\oint M \ge 0 \to M \ge 0$ ***(1.6o)***. Thật vậy, nếu $M \in \mathbb{Z}$ thì ***(1.6o)*** là hiển nhiên, với $M \notin ,\oint M \ge 0{\rm{ }} \Leftrightarrow$ Phải luôn thua khi đi trước trong $\oint M{\rm{ }} \Leftrightarrow \forall MR$ , Trái có nước đi chiến thắng trong $\oint MR - 1 + \ast {\rm{ }} \Leftrightarrow \forall MR,\oint MR - 1 = \oint \( {MR - 1} \) \ge 0$ hoặc $\exists MRL:\oint MRL \ge 0$ ; nếu ***(1.6o)*** đúng khi thay $M$ bằng $MR - 1,MRL$ thì $\forall MR,\exists MRL \ge 0{\rm{ }} \Leftrightarrow$ Phải luôn thua khi đi trước trong $M$ $\Leftrightarrow \ge 0$ , ***(1.6o)*** cũng đúng với $M$ (quy nạp). <br>
+&nbsp;&nbsp;&nbsp;&nbsp; $\Longrightarrow$ Ta hoàn tất chứng minh ***định lí 1.6*** <br>
+
+#### &nbsp;&nbsp;&nbsp;&nbsp;***<ins>Hệ quả:</ins>***
+&nbsp;&nbsp;&nbsp;&nbsp; $\oint G = \oint H \Leftrightarrow G = H$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Chứng minh hệ quả:</ins>* <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Ta có: $\oint G = \oint H \Leftrightarrow \oint G \ge \oint H$ và $\oint G \le \oint H$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Suy ra: $G \ge H$ mà theo ***1.6*** ta có: $G \le H$ nên suy ra $G = H$ . 
+&nbsp;&nbsp;&nbsp;&nbsp;Ngược lại, nếu $G = H$ , thì $\to \oint G - \oint H = \oint \( {G - H} \) = \oint 0 = 0$ (theo ***1.5***) có nghĩa là khi tính $\oint G$ , $G$ không bắt buộc phải ở dạng hợp quy. <br>
+&nbsp;&nbsp;&nbsp;&nbsp; $\Longrightarrow$ Ta hoàn tất chứng minh ***hệ quả*** <br>
+
+### 3. Giải thuật tổng quát <br>
+
+
+
 
 
