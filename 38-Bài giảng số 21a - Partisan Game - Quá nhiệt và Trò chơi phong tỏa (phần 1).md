@@ -97,6 +97,39 @@
 &nbsp;&nbsp;&nbsp;&nbsp; $\Longrightarrow$ Ta hoàn tất chứng minh ***định lí 2.1*** <br>
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;***<ins>Định lí 2.2a:</ins>***
+&nbsp;&nbsp;&nbsp;&nbsp;Đặt $L_{n}L=n \bullet \ast + \oint x_{n}$ , $L_{n}R=n \bullet \ast + \oint y_{n}$ , $R_{n}R=n \bullet \ast + \oint z_{n}$ sao cho thỏa mãn hai điều kiện như sau: <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- ***(2.2a1)***: $x_{n},y_{n},z_{n} \in \\{ m,m+\:m \in \mathbb{R} \\}$ (mục đích là để các phép toán về hàm $\oint$ sử dụng được). <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- ***(2.2a2)***: $\\{ x_{k} + x_{n-1-k} -1|y_{k} + y_{n-1-k} +1 \\} = m \in \mathbb{Z}$ thì <br> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(1): $\\{ {\oint \( {{x_k} + {x_{n - 1 - k}}} \) + \ast|\oint \( {{y_k} + {y_{n - 1 - k}}} \) + \ast} \\} = m$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(2): $\\{ {{x_k} + {y_{n - 1 - k}} - 1|{y_k} + {z_{n - 1 - k}} + 1} \\} = m \in \mathbb{Z}$ thì $\\{ {\oint \( {{x_k} + {y_{n - 1 - k}}} \) + \ast|\oint \( {{y_k} + {z_{n - 1 - k}}} \) + \ast} \\} = m$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(3): $\\{ {{y_k} + {y_{n - 1 - k}} - 1|{z_k} + {z_{n - 1 - k}} + 1} \\} = m \in \mathbb{Z}$ thì $\\{ {\oint \( {{y_k} + {y_{n - 1 - k}}} \) + \ast|\oint \( {{z_k} + {z_{n - 1 - k}}} \) + \ast} \\} = m$ <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;Từ công thức hồi quy của $L_{n}L,L{n}R,R_{n}R$ ở mục I/, ta suy ra: <br>
+```math
+n \bullet * + \oint {x_n} = \left\{ {\oint {x_k} + \oint {x_{n - 1 - k}} + \left( {n - 1} \right) \bullet *|\oint {y_k} + \oint {y_{n - 1 - k}} + \left( {n - 1} \right) \bullet *} \right\}
+```
+&nbsp;&nbsp;&nbsp;&nbsp;Suy ra: $\oint {x_n} = \\{ {\oint \( {{x_k} + {x_{n - 1 - k}} - 1} \) + 1 + \ast|\oint \( {{y_k} + {y_{n - 1 - k}} + 1} \) - 1 + \ast} \\}$ theo ***1.5 và 2.1***. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Suy ra: ${x_n} = \\{ {{x_k} + {x_{n - 1 - k}} - 1|{y_k} + {y_{n - 1 - k}} + 1} \\}$ theo ***1.1b, hệ quả của 1.6, 2.2a2*** và tương tự với ${y_n}$ và ${z_n}$ . <br>
+&nbsp;&nbsp;&nbsp;&nbsp; $\Rightarrow$ Khi ấy ta có công thức hồi quy của ba dãy ${x_n}$ , ${y_n}$ , ${z_n}$ như sau: <br>
+```math
+\left\{ {{x_n}} \right\}:{x_0} = 1;{x_n} = \left\{ {\max \left( {{x_k} + {x_{n - 1 - k}}} \right) - 1|\min \left( {{y_k} + {y_{n - 1 - k}}} \right) + 1} \right\}
+```
+```math
+\left\{ {{y_n}} \right\}:{y_0} = 0;{y_n} = \left\{ {\max \left( {{x_k} + {y_{n - 1 - k}}} \right) - 1|\min \left( {{y_k} + {z_{n - 1 - k}}} \right) + 1} \right\}
+```
+```math
+\left\{ {{z_n}} \right\}:{z_0} = 0;{z_n} = \left\{ {\max \left( {{y_k} + {y_{n - 1 - k}}} \right) - 1|\min \left( {{z_k} + {z_{n - 1 - k}}} \right) + 1} \right\}
+```
+
+#### &nbsp;&nbsp;&nbsp;&nbsp;***<ins>Tính chất 2.2b:</ins>***
+&nbsp;&nbsp;&nbsp;&nbsp; Các dãy ${x_n}$ , ${y_n}$ , ${z_n}$ có tính chu kì như sau: <br>
+
+
+
+
+
+
+
 
 
 
