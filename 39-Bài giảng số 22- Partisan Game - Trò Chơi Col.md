@@ -46,6 +46,15 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***<ins>Trường hợp 3:</ins>*** chơi ở nút • không gắn với $K$ trong $G$ (tô xanh), Trái chơi ở  $\ast$ . Áp dụng ( $\ast$ ) để xác định các thay đổi sau 2 nước đi, dễ thấy trong game mới tạo ra (Phải đi trước): 6 nút được biểu thị không thể được sử dụng bởi Phải trong các lượt tiếp, nếu Trái thực hiện các thao tác như ở trường hợp 2, Trái sẽ là người đi nước sau cùng và thắng. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***<ins>Trường hợp 4:</ins>*** chơi ở nút • (gắn với $K$ ) hoặc ◙ trong $G$ (tô xanh), Trái chơi ở vị trí tương ứng trên $GR$ (tô xanh). Trong game mới tạo ra: nút • không gắn với $K$ ở $G$ trở thành ◘ (chỉ có thể được chơi bởi Trái), nếu Phải chơi $\ast$ thì Trái chơi nút này, nếu Phải chơi bất cứ nút nào trên $GR(G)$ thì Trái chơi ở vị trí tương ứng trên $G(GR)$ $\to$ Trái sẽ là người đi nước sau cùng và thắng. <br>
 &nbsp;&nbsp;&nbsp;&nbsp; $\Rightarrow$ Từ các trường hợp trên suy ra Phải luôn thua khi đi trước trong $GR + \ast -G$ $\Leftrightarrow$ $GR + \ast -G \ge 0$ $\rightarrow$ $GL + \ast \le G$ (do tính đối xứng) $\to$ $GL + \ast \le G \le GR + \ast$ (đpcm). <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Khi ấy suy ra: $Gl \le GR$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Đặt giả thiết quy nạp rằng: $GL,GR \in \\{ {n,{\rm{ }}n + \ast {\rm{ }}:n \in \mathbb{R}} \\}$ . <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Nếu $GL=GR$ thì $G = \\{ {n|n} \\} = n + \ast$ hoặc $G = \\{ {n + \ast|n + \ast} \\} = n$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Nếu $GL<GR$ thì $GR-GL=d$ hoặc $d + \ast {\rm{ }} \( {d \in {\mathbb{R}^+}} \)$ . Suy ra: $\exists d' \in \mathbb{R} {\rm{ }}:0 < d' < d$ . <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\to$ $GL < GL + d' < GR$ và $GL < GL + d' + \ast < GR$ với 1 trong 2 giá trị $GL + d',{\rm{ }}GL + d' + \ast$ là số. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Suy ra: $G = \\{ {GL|GR} \\}$ là số (xem lại ***Số siêu thực mục 6, hệ quả của 3.3, bài giảng số 17d***) <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;Từ đây ta kết luận: $G \in \\{ {n,{\rm{ }}n + \ast {\rm{ }}:n \in \mathbb{R}} \\}$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp; $\Longrightarrow$ Ta hoàn tất chứng minh ***giải thuật*** trên. <br>
 
 
 
