@@ -1,4 +1,4 @@
-# Partisan Game - Quá nhiệt và Trò chơi phong tỏa (phần 1)
+# Partisan Game - Quá nhiệt và Trò chơi phong tỏa
 ### 1. Tổng quan về trò chơi <br>
 &nbsp;&nbsp;&nbsp;&nbsp; ***<ins>"Phong tỏa"</ins>*** là một partisan game với 2 người chơi là Xanh và Đỏ (Xanh thường được quy ước là Trái, và Đỏ là Phải). Chiến trường là một dải ô vuông $n \times 1$ (dải đất), mỗi người chơi khi đến lượt sẽ "xác nhận quyền sở hữu" bằng cách tô màu vào 1 ô (lô đất) trống mà mình chọn. Trò chơi kết thúc khi tất cả các ô đã bị tô màu, số điểm của Trái (Xanh) sẽ là số lượng "cạnh" hình vuông mà được tô màu xanh ở cả 2 phía. Mục đích của Trái là cố gắng tối đa hóa số lượng này, còn Phải cố gắng giảm nó xuống thấp nhất có thể. Như vậy, chỉ có các cặp ô vuông liền kề Trái-Trái (xanh-xanh) mới được tính điểm, các cặp Trái-Phải (xanh-đỏ) và Phải-Phải (đỏ-đỏ) đều không ảnh hưởng đến kết quả, không có điểm số cho người chơi Phải. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;Trò chơi là một phép ẩn dụ về hành vi "phong tỏa" trong kinh doanh bất động sản ngoài đời thực: 2 người chơi là 2 đại lý bất động sản đối địch nhau đang thu mua hết các lô đất trên một con phố, Trái theo chủ nghĩa phân biệt chủng tộc, cố gắng sắp đặt để các khách hàng tương lai của mình là hàng xóm của nhau, còn Phải là người theo chủ nghĩa hợp chủng, cố gắng chia tách họ. <br>
@@ -155,10 +155,27 @@ n \bullet * + \oint {x_n} = \left\{ {\oint {x_k} + \oint {x_{n - 1 - k}} + \left
 ```math
 {G_1} + {G_2} + {G_3} + ... = \left( {{h_1} + {h_2} + {h_3} + ...} \right) \bullet * + \oint \left( {{g_1} + {g_2} + {g_3} + ...} \right) = h \bullet * + \oint g
 ```
-&nbsp;&nbsp;&nbsp;&nbsp;Cuối cùng, 
+&nbsp;&nbsp;&nbsp;&nbsp;Cuối cùng, ta quy đổi thành công: $h \bullet \ast + \oint g = G$ (sử dụng ***1.1a,b***) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Tuy nhiên có vài mẹo nhỏ để xác định nhanh: <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1)	Bởi ***(2.2c)*** mà ta biết các nước đi tối ưu khi chơi ở 1 dải đất. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2)	Bởi ***(2.1)***, không cần quan tâm đến $h \bullet \ast$ . <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3)	Bởi ***(1.6)***, $\oint g$ lớn nhất $\to$ $g$ lớn nhất. Nên hãy chọn nước đi mà làm cho $g$ thay đổi ít nhất (giảm ít nhất nếu bạn là Trái và tăng ít nhất nếu bạn là Phải) $\to$ Câu trả lời là: ưu tiên chơi ở dải đất có $g_{i} = n + \ast$ ( $n$ là số) (thật ra có duy nhất dải đất $L1L$ thuộc loại này, xem ***2.2b***); trong các $g_{i}$ là số, ưu tiên chơi ở phân số dyadic phức tạp nhất (mẫu số tối giản là một lũy thừa của 2 có số mũ lớn nhất). <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4)  Về số điểm khi kết thúc trò chơi (2 người đều có lối chơi tối ưu): <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-	Nếu $g \in \mathbb{Z}$ thì kết quả trò chơi là $g$ điểm. <Bb>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-	Nếu $g= n+\ast \( n \in \mathbb{Z} \)$ thì kết quả trò chơi là $n+1$ điểm (khi Trái đi trước) hay $n-1$ (khi Phải đi trước). <br>
 
-
-
+&nbsp;&nbsp;&nbsp;&nbsp;***<ins>Nhận xét</ins>***: Những trường hợp còn lại, $\exists k \in \mathbb{Z} :k < g < k + 1$ , kết quả trò chơi là $k+1$ điểm (khi Trái đi trước) hay $k$ (khi Phải đi trước). <br> 
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Chứng minh nhận xét trên:</ins>* <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Ta có: $g \in \\{ {m,{\rm{ }}m + \ast {\rm{ }}:m \in \mathbb{R} \backslash \mathbb{Z} } \\},k < g < k + 1 \to k \le g' \le k + 1$ với $g'$ là tùy chọn (dạng $x$ hoặc $x+\ast$ , với $x$ là số) phát sinh từ $g$ (theo ②) $\to$ $g' \in \mathbb{Z}$ , nếu $g'=g...L$ thì $g'=k$ và nếu $g'=g...R$ thì $g'=k+1$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Từ đây ta suy ra sơ đồ diễn biến trò chơi như sau: <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Khi Trái đi trước; <br>
+```math
+\oint g \to \oint gL + 1 + * \to \oint gLR \to \oint gLRL + 1 + * \to \oint gLRLR \to ... \to k + 1
+```
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Khi Phải đi trước; <br>
+```math
+\oint g \to \oint gR - 1 + * \to \oint gRL \to \oint gRLR - 1 + * \to \oint gRLRL \to ... \to k
+```
 
 
 
