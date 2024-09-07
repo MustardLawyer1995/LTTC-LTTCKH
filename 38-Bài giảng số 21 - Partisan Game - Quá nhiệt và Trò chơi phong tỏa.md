@@ -161,7 +161,7 @@ n \bullet * + \oint {x_n} = \left\{ {\oint {x_k} + \oint {x_{n - 1 - k}} + \left
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2)	Bởi ***(2.1)***, không cần quan tâm đến $h \bullet \ast$ . <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3)	Bởi ***(1.6)***, $\oint g$ lớn nhất $\to$ $g$ lớn nhất. Nên hãy chọn nước đi mà làm cho $g$ thay đổi ít nhất (giảm ít nhất nếu bạn là Trái và tăng ít nhất nếu bạn là Phải) $\to$ Câu trả lời là: ưu tiên chơi ở dải đất có $g_{i} = n + \ast$ ( $n$ là số) (thật ra có duy nhất dải đất $L1L$ thuộc loại này, xem ***2.2b***); trong các $g_{i}$ là số, ưu tiên chơi ở phân số dyadic phức tạp nhất (mẫu số tối giản là một lũy thừa của 2 có số mũ lớn nhất). <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4)  Về số điểm khi kết thúc trò chơi (2 người đều có lối chơi tối ưu): <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-	Nếu $g \in \mathbb{Z}$ thì kết quả trò chơi là $g$ điểm. <Bb>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-	Nếu $g \in \mathbb{Z}$ thì kết quả trò chơi là $g$ điểm. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-	Nếu $g= n+\ast \( n \in \mathbb{Z} \)$ thì kết quả trò chơi là $n+1$ điểm (khi Trái đi trước) hay $n-1$ (khi Phải đi trước). <br>
 
 &nbsp;&nbsp;&nbsp;&nbsp;***<ins>Nhận xét</ins>***: Những trường hợp còn lại, $\exists k \in \mathbb{Z} :k < g < k + 1$ , kết quả trò chơi là $k+1$ điểm (khi Trái đi trước) hay $k$ (khi Phải đi trước). <br> 
