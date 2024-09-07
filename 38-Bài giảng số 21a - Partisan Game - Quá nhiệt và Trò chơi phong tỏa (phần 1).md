@@ -123,11 +123,39 @@ n \bullet * + \oint {x_n} = \left\{ {\oint {x_k} + \oint {x_{n - 1 - k}} + \left
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;***<ins>Tính chất 2.2b:</ins>***
 &nbsp;&nbsp;&nbsp;&nbsp; Các dãy ${x_n}$ , ${y_n}$ , ${z_n}$ có tính chu kì như sau: <br>
+<div align="center">
 
+| n | $x_{n}$ | $y_{n}$ | $z_{n}$ |
+|:----------:|:----------:|:----------:|:----------:|
+| $0$ | $1$ | $0$ | $0$ |
+| $1$ | $1+\ast$ | $\frac{1}{2}$ | $0$ |
+| $2$ | $1$ | $\frac{3}{4}$ | $0$ |
+| $3$ | $1+\frac{1}{2}$ | $\frac{7}{8}$ | $\frac{1}{2}$ |
+| $4$ | $1+\frac{3}{4}$ | $1$ | $\frac{1}{2}$ |
+| $5$ | $1+\frac{7}{8}$ | $1+\frac{1}{4}$ | $\frac{3}{4}$ |
+| $6$ | $2$ | $1+\frac{1}{2}$ | $1$ |
+| $7$ | $2+\frac{1}{4}$ | $1+\frac{3}{4}$ | $1$ |
+| $...$ | $...$ | $...$ | $...$ |
+</div>
 
-
-
-
+&nbsp;&nbsp;&nbsp;&nbsp;Tổng quát được: ${x_{j + 5}} = {x_j} + 1{\rm{ }}\left( {j \ge 3} \right)$ &nbsp;&nbsp;&nbsp;&nbsp; ${y_{j + 5}} = {y_j} + 1{\rm{ }}\left( {j \ge 1} \right)$ &nbsp;&nbsp;&nbsp;&nbsp; ${z_{j + 5}} = {z_j} + 1{\rm{ }}\left( {j \ge 1} \right)$ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;*<ins>Chứng minh tính chất 2.2b:</ins>* <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Sử dụng phương pháp quy nạp, với gợi ý như sau: <br>
+```math
+\left( {n \ge 1} \right):\left\{ \begin{array}{l}
+\max \left( {{x_k} + {x_{n - 1 - k}}} \right) = {x_0} + {x_{n - 1}},{\rm{ min}}\left( {{y_k} + {y_{n - 1 - k}}} \right) = {y_0} + {y_{n - 1}},{\rm{ }}\\
+\max \left( {{x_k} + {y_{n - 1 - k}}} \right){\rm{ }} = {x_0} + {y_{n - 1}},{\rm{ min}}\left( {{y_k} + {z_{n - 1 - k}}} \right) = {y_0} + {z_{n - 1}};
+\end{array} \right.
+```
+```math
+\left( {n \ge 4} \right):\max \left( {{y_k} + {y_{n - 1 - k}}} \right) = {y_2} + {y_{n - 3}},{\rm{ min}}\left( {{z_k} + {z_{n - 1 - k}}} \right) = {z_2} + {z_{n - 3}} \left( \text{2.3c} \right)
+```
+&nbsp;&nbsp;&nbsp;&nbsp;Điều này có thể được kiểm tra dễ dàng nhưng rườm rà, do đó không diễn giải cụ thể ở đây. Từ ***(2.2b)***, có thể thấy ${x_n}$ , ${y_n}$ , ${z_n}$ đã thỏa mãn ***(2.2a1,a2)*** $\to$ các thiết lập ở (2.2a) là hợp lệ. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Tới đây, lời giải cho trò chơi Phong tỏa đã rõ ràng: Để tổng quát nhất, ta xem xét trò chơi $G$ gồm nhiều dải đất tách biệt $G_{1},G_{2},G_{3}...$ thay vì chỉ 1 dải đất (hơn nữa, 1 dải đất cũng có thể bị phân rã thành nhiều dải đất nhỏ hơn trong quá trình chơi). Để tính $G$ , ta tính giá trị của từng dải đất: $G_{1},G_{2},G_{3}...$ , quy đổi ${G_i} = {h_i} \bullet \ast + \oint {g_i}$ (sử dụng ***2.2a,b***), theo ***(1.5)*** ta có: <br>
+```math
+{G_1} + {G_2} + {G_3} + ... = \left( {{h_1} + {h_2} + {h_3} + ...} \right) \bullet * + \oint \left( {{g_1} + {g_2} + {g_3} + ...} \right) = h \bullet * + \oint g
+```
+&nbsp;&nbsp;&nbsp;&nbsp;Cuối cùng, 
 
 
 
