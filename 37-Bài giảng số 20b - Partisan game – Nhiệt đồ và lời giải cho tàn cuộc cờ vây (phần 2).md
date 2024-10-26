@@ -1,4 +1,4 @@
-# Partisan game – Nhiệt đồ và lời giải cho tàn cuộc cờ vây (phần 2)
+# Partisan game – Nhiệt đồ và lời giải cho tàn cuộc cờ vây (phần 2) (fixed)
 ### 3. Lời giải trọn vẹn cho tàn cuộc cờ vây. <br>
 #### &nbsp;&nbsp;&nbsp;&nbsp;***<ins>Bổ đề 3.1:</ins>***  
 &nbsp;&nbsp;&nbsp;&nbsp;Một thế cờ có giá trị là phi số vô cùng bé luôn là thế cờ lẻ. <br>
