@@ -143,7 +143,7 @@ n \bullet * + \oint {x_n} = \left\{ {\oint {x_k} + \oint {x_{n - 1 - k}} + \left
 &nbsp;&nbsp;&nbsp;&nbsp;Sử dụng phương pháp quy nạp, với gợi ý như sau: <br>
 ```math
 \left( {n \ge 1} \right):\left\{ \begin{array}{l}
-\max \left( {{x_k} + {x_{n - 1 - k}}} \right) = {x_0} + {x_{n - 1}},{\rm{ min}}\left( {{y_k} + {y_{n - 1 - k}}} \right) = {y_0} + {y_{n - 1}},{\rm{ }}\\
+\max \left( {{x_k} + {x_{n - 1 - k}}} \right) = {x_0} + {x_{n - 1}},{\rm{ min}}\left( {{y_k} + {y_{n - 1 - k}}} \right) = {y_0} + {y_{n - 1}},{\rm{ }}\
 \max \left( {{x_k} + {y_{n - 1 - k}}} \right){\rm{ }} = {x_0} + {y_{n - 1}},{\rm{ min}}\left( {{y_k} + {z_{n - 1 - k}}} \right) = {y_0} + {z_{n - 1}};
 \end{array} \right.
 ```
