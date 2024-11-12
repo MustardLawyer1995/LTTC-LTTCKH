@@ -150,7 +150,7 @@ n \bullet * + \oint {x_n} = \left\{ {\oint {x_k} + \oint {x_{n - 1 - k}} + \left
 ```math
 \left( {n \ge 4} \right):\max \left( {{y_k} + {y_{n - 1 - k}}} \right) = {y_2} + {y_{n - 3}},{\rm{ min}}\left( {{z_k} + {z_{n - 1 - k}}} \right) = {z_2} + {z_{n - 3}} \left( \text{2.3c} \right)
 ```
-&nbsp;&nbsp;&nbsp;&nbsp;Điều này có thể được kiểm tra dễ dàng nhưng rườm rà, do đó không diễn giải cụ thể ở đây. Từ ***(2.2b)***, có thể thấy ${x_n}$ , ${y_n}$ , ${z_n}$ đã thỏa mãn ***(2.2a1,a2)*** $\to$ các thiết lập ở (2.2a) là hợp lệ. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Điều này có thể được kiểm tra dễ dàng nhưng rườm rà, do đó không diễn giải cụ thể ở đây. Từ ***(2.2b)***, có thể thấy ${x_n}$ , ${y_n}$ , ${z_n}$ đã thỏa mãn ***(2.2a1,a2)*** $\to$ các thiết lập ở ***(2.2a)*** là hợp lệ. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;Tới đây, lời giải cho trò chơi Phong tỏa đã rõ ràng: Để tổng quát nhất, ta xem xét trò chơi $G$ gồm nhiều dải đất tách biệt $G_{1},G_{2},G_{3}...$ thay vì chỉ 1 dải đất (hơn nữa, 1 dải đất cũng có thể bị phân rã thành nhiều dải đất nhỏ hơn trong quá trình chơi). Để tính $G$ , ta tính giá trị của từng dải đất: $G_{1},G_{2},G_{3}...$ , quy đổi ${G_i} = {h_i} \bullet \ast + \oint {g_i}$ (sử dụng ***2.2a,b***), theo ***(1.5)*** ta có: <br>
 ```math
 {G_1} + {G_2} + {G_3} + ... = \left( {{h_1} + {h_2} + {h_3} + ...} \right) \bullet * + \oint \left( {{g_1} + {g_2} + {g_3} + ...} \right) = h \bullet * + \oint g
